@@ -120,13 +120,15 @@ Content lengths: caption 30–50 words · flavour story 50–75 · email 150–2
 
 ## 10. Character sheet brief and negative list (for the creative operator)
 
-**Face:** early 30s in look, open face, quick genuine smile, natural skin, no styled perfection; dark-blond to light-brown hair, loosely tied; no heavy make-up. Not modelled on any real person (no consent needed; if a reference photo of a real person is ever used, guardrails 7 applies first).
+**Face:** early 30s in look, open face, quick genuine smile, natural skin, no styled perfection; dark-brown hair, loosely tied (locked 2026-10-30); no heavy make-up. Not modelled on any real person (no consent needed; if a reference photo of a real person is ever used, guardrails 7 applies first).
 **Wardrobe:** soft linen or cotton in Vanilla #F8F3E2, sage, warm caramel #D4AA7D; rolled sleeves; small gold pendant.
 **Anchor detail:** a pencil behind her ear and a worn notebook of guests' names (v3 §3.2). Every still must show it.
 **Settings (real photos of the atelier as backgrounds, guardrails 5):** the counter at Rakovski 149, the Note jar, the doorway onto Rakovski, a café table with a Note. Never a generated room, street or food.
 **Seven fixed shots:** front, 3/4 left, 3/4 right, profile, smiling, serious, with product (a real cup of gelato composited, not generated), plus one still per expression-palette row (§9).
 **Negative list:** styled-perfect, stock smile, cute or doll-like, pastel kitsch, exclamation energy, product-only hero, process theatre, uniform of any real chain, "Baci", any likeness of Evo, Menelaos or a team member.
 **Tooling:** ElevenLabs creative flows (image + video) connected in this account; locked stills go to Drive › clients › atelier › character-sheet.
+
+**Locked front reference (2026-10-30, approved by Menelaos):** ElevenLabs flow rSFjHurIwOvgycHcD39U, node Af1lz2s8KalediWEoiXK, generation GlAeEOZQPe4PqW1eGm1I (gemini-3-pro-image, 1376×768). Accepted deviation: hair dark brown rather than dark blond; the brief is updated to dark brown, loosely tied. Every further still and clip must be generated with this node as reference so the face stays the same.
 
 ## 11. Voice spec per language and consent
 

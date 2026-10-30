@@ -37,9 +37,9 @@ BG: Джулия вярва, че щастието е нагласа и малк
 
 | KPI | Measure | Baseline | Target | Review |
 | --- | --- | --- | --- | --- |
-| Guest-moment posts | posts per month built on a real, permitted guest moment | open | ≥ 35% of posts (v3 pillar share) | monthly |
-| Saves + shares per post | Metricool, n beside every % | open | up vs own history | monthly |
-| DMs and comments answered | % answered within 24 h, with n | open | ≥ 90% | weekly |
+| Guest-moment posts | posts per month built on a real, permitted guest moment | 0 of 24 (Aug–Oct 2026) | ≥ 35% of posts (v3 pillar share) | monthly |
+| Saves + shares per post | Metricool, n beside every % | saves median 1, shares median 5 (n=14 feed, n=10 reels) | up vs own history | monthly |
+| DMs and comments answered | % answered within 24 h, with n | unknown; comments 0–2 per post | ≥ 90% | weekly |
 | Reviews mentioning the ritual | Google reviews that mention the question, a note or being noticed | open (count from 2026-11) | rising count, raw numbers | monthly |
 | Return visits | Barsy repeat-card or loyalty signal if available; else staff-counted regulars | open | define in pilot | quarterly |
 | B2B enquiries | "For Venues" messages per month | 0 | first 3 by Q1 2027 | monthly |

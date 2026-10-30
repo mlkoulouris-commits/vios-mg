@@ -61,3 +61,6 @@ all other checks pass or N/A
 - Content lead: releases filed in Drive › clients › atelier › consents before shooting.
 
 Approver: not yet named — nothing publishes without this sign-off.
+
+## Update 2026-10-30, later
+Cleared: approver named (Menelaos), emoji policy (none), hours 11:00–20:00 daily, Atelier Notes set approved and printed, gluten-free verified. Remaining holds on all five: releases (row 15); row 13 day-of truth for "made this morning"; row 9 stills or cut for the reel. Attempt 2 runs once real moments replace the placeholders.

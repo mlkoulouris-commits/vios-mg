@@ -42,9 +42,9 @@ Shot list, 20–30 seconds, real team member, real guests with releases:
 3. A hand draws a note from the jar and passes it over. (20–26 s)
 4. Closing frame, warm resting face, on-screen: „Щастието е нагласа." (26–30 s)
 
-Caption BG (29 words): Всяка поръчка при нас започва с един въпрос. Отговорите тази седмица: [три кратки истински отговора]. А твоят? Ателието е на Раковски 149, отворено днес.
+Caption BG (29 words): Всяка поръчка при нас започва с един въпрос. Отговорите тази седмица: [три кратки истински отговора]. А твоят? Ателието е на Раковски 149, всеки ден 11–20.
 
-Caption EN (27 words): Every order here starts with one question. This week's answers: [three short real answers]. What's yours? The atelier is on Rakovski 149, open today.
+Caption EN (27 words): Every order here starts with one question. This week's answers: [three short real answers]. What's yours? The atelier is on Rakovski 149, every day 11 to 20.
 
 Hashtags: #MyAtelierMoment #HappinessIsAnAttitude. Audio: licensed Italian acoustic from a commercial library (guardrails 9).
 
@@ -61,8 +61,6 @@ Show pieces 1–5 to 3–5 real guests matching Elena. Ask: does it feel like th
 
 ## Open before any of this ships
 
-- Approver named (Bible front page DECIDE 1).
-- Emoji policy confirmed (DECIDE 3).
 - Releases for every guest and team member shown.
 - "Made this morning" true on the day for piece 3.
-- Hours confirmed for "open every day".
+- Hours on file: 11:00–20:00 daily (2026-10-30).

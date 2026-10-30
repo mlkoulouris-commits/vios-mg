@@ -1,17 +1,17 @@
 # Persona Bible — Atelier del Gelato · Giulia
 
-**Status: DRAFT v0.1, 2026-10-30.** Built by `vios-persona-builder` from Brand Book v3 (7 Oct 2026) and `diagnosis.md`. Items marked DECIDE are recommendations awaiting the client. Nothing ships until the approver is named.
+**Status: v0.2, 2026-10-30.** Built by `vios-persona-builder` from Brand Book v3 (7 Oct 2026) and `diagnosis.md`. Front-page decisions taken by Menelaos Koulouris (partner, venue manager) on 2026-10-30; Evo to be informed.
 
 ## Front page (read before every piece of copy)
 
 | Field | Value |
 | --- | --- |
-| Approver | DECIDE — recommended: **Evo** approves brand-level items (new flavour stories, campaigns, B2B partners, printed materials); **Menelaos Koulouris** approves daily content and replies. Brand Book v3 §8.3 leaves this open. |
+| Approver | **Menelaos Koulouris** (partner, venue manager) signs everything that publishes, replies, spends or goes to print. Decided 2026-10-30. Evo is informed of brand-level items (new flavour stories, campaigns, B2B partners, print) before they go out. |
 | Address register | Social and in-atelier: BG **ти**, EN "you" warm; email and B2B: BG **Вие**; a guest who writes in Вие is answered in Вие. |
-| Emoji policy | DECIDE — recommended: none in captions and Notes; at most one, never a face, in a comment reply when the guest used one first. No exclamation marks anywhere (v3 §3.1). |
+| Emoji policy | **None** in captions, Notes, stories and emails. In a comment reply, at most one non-face emoji, only mirroring one the guest used first. No exclamation marks anywhere (v3 §3.1). Decided 2026-10-30. |
 | Alcohol | **yes** (Aperitivo line: tiramisu gelato, limoncello sorbet, prosecco & peach). Guardrails 8: 18+ targeting on any paid post featuring it; never with driving, sport, youth or health claims. |
 | AI disclosure rule | **None needed in the recommended format** (see §1): Giulia is a written voice and a standard for real team members, never a synthetic face or voice. If an AI face or voice is ever produced, the full set in §13 applies from the first frame. |
-| Version | 0.1 draft |
+| Version | 0.2 |
 | Next review | at pilot close (target 2026-12-15), then quarterly: 2027-01-01 |
 
 ## 1. Persona at a glance
@@ -20,7 +20,7 @@
 | --- | --- | --- |
 | Name | Giulia | Джулия |
 | Archetype | Lover 70 / Innocent 30 (carried over from Brand Book v3 §3.1; Role: Peer) | Любовник 70 / Невинен 30; роля: равен до госта |
-| Format | DECIDE — recommended **real team + written voice**: Giulia is how the brand writes and how every team member is trained to greet; on camera we show real staff and real guests (with consent), never a generated person. Alternatives considered: AI digital ambassador (needs §13 disclosure, clashes with "Stay human"), illustrated mascot (Innocent risks "cute", which v3 forbids). | Реални хора + писмен глас |
+| Format | **Real team + written voice** (decided 2026-10-30): Giulia is how the brand writes and how every team member is trained to greet; on camera we show real staff and real guests (with consent), never a generated person. Alternatives considered: AI digital ambassador (needs §13 disclosure, clashes with "Stay human"), illustrated mascot (Innocent risks "cute", which v3 forbids). | Реални хора + писмен глас |
 | One-line essence | A warm peer who asks before she tells, and makes sure one good thing in your day gets noticed. | Топъл човек до теб, който първо пита, после казва, и се грижи едно хубаво нещо от деня ти да бъде забелязано. |
 | Speaks for | the ateliers, the Instagram and Facebook account, Atelier Notes, story cards, email letters | |
 | Never speaks for | Evo or Menelaos by name; legal, press, allergy, food-safety or staff matters (guardrails 11) | |
@@ -81,7 +81,7 @@ Content lengths: caption 30–50 words · flavour story 50–75 · email 150–2
 | Regular | familiar, remembers | "Pistachio again, or something new today?" | „Пак шамфъстък или нещо ново днес?" |
 | High-spender / celebration box buyer | same welcome, more time, no upsell language | "Who are we celebrating? We'll choose the twelve together." | „Кого празнуваме? Ще изберем дванайсетте заедно." |
 | Excited group | joins the energy, stays calm | "Then let's choose something that tastes like it." | „Тогава да изберем нещо, което има вкус на това." |
-| Upset guest | calm, short, no defence, hands to a named person | "I'm sorry. Menelaos will write to you today." | „Съжалявам. Менелаос ще ти пише днес." |
+| Upset guest | calm, short, no defence, hands to the approver | "I'm sorry. Menelaos will write to you today." | „Съжалявам. Менелаос ще ти пише днес." |
 | B2B venue owner | clear, warm, professional (Вие) | "Every delivery arrives with story cards for your tables." | „Всяка доставка идва с картички с история за Вашите маси." |
 
 ## 7. Signature phrases and habits
@@ -158,4 +158,4 @@ Pull within 2 hours by the approver → correction signed by Menelaos or Evo, ne
 1 no pressure · 2 real moments and reviews only, permission on file · 3 true prices · 5 real food and room, AI may enhance a real photo only · 7 staff and guest consent · 8 alcohol (Aperitivo line) · 9 claims from the fact sheet only · 10 human sign-off · 11 escalate, don't draft · 12 guest data.
 
 ---
-**Summary:** Giulia is a warm peer, Lover 70 / Innocent 30, written voice and team standard rather than a synthetic face, who asks "What are we celebrating today?" and never rushes. **Next step:** Evo and Menelaos settle the three DECIDE items (approver split, format, emoji), then the pilot pieces, then `vios-content-calendar` for December.
+**Summary:** Giulia is a warm peer, Lover 70 / Innocent 30, written voice and team standard rather than a synthetic face, who asks "What are we celebrating today?" and never rushes. **Next step:** releases on file, shoot the pilot pieces, QA attempt 2, then `vios-content-calendar` for December.

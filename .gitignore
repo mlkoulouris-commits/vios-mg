@@ -1,0 +1,10 @@
+# Personal data and raw pulls never leave the machine / Drive
+clients/*/consents/*
+!clients/*/consents/.gitkeep
+clients/*/data/*
+!clients/*/data/.gitkeep
+clients/*/character-sheet/*.png
+clients/*/character-sheet/*.jpg
+clients/*/character-sheet/*.mp4
+.env*
+node_modules/

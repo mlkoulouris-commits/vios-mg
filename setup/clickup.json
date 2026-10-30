@@ -1,0 +1,74 @@
+{
+  "description": "ClickUp structure for the Vios Marketing department. Recreate in any workspace by asking Claude to 'recreate the ClickUp structure from setup/clickup.json'. Ids below are the personal-account instance created 2026-10-29.",
+  "space_statuses": [
+    {
+      "status": "Draft",
+      "type": "open",
+      "color": "#d3d3d3"
+    },
+    {
+      "status": "QA",
+      "type": "custom",
+      "color": "#6647f0"
+    },
+    {
+      "status": "Approved",
+      "type": "custom",
+      "color": "#1bbc9c"
+    },
+    {
+      "status": "Scheduled",
+      "type": "custom",
+      "color": "#3397dd"
+    },
+    {
+      "status": "Published",
+      "type": "custom",
+      "color": "#7c4dff"
+    },
+    {
+      "status": "Reported",
+      "type": "closed",
+      "color": "#008844"
+    }
+  ],
+  "folder": {
+    "name": "Vios Marketing",
+    "lists": [
+      {
+        "name": "Department — Setup & SOP",
+        "content": "Department build tasks, onboarding checklists, quarterly reviews."
+      },
+      {
+        "name": "<Client> — Content",
+        "content": "One task per post. Draft → QA → Approved (qa-log signed) → Scheduled (Metricool) → Published → Reported."
+      },
+      {
+        "name": "<Client> — Engagement",
+        "content": "Daily triage batches (comments, DMs, reviews). Hard-line 11 escalations carry the facts only."
+      },
+      {
+        "name": "<Client> — Ads",
+        "content": "Weekly vios-ads-audit action list. Pauses and budget changes need the client owner."
+      }
+    ],
+    "per_client": "Create the three <Client> lists for every onboarded client."
+  },
+  "instances": {
+    "personal_2026-10-29": {
+      "workspace_id": "1500500000004655",
+      "space_id": "1500500000023707",
+      "folder_id": "1500500000049965",
+      "lists": {
+        "Department — Setup & SOP": "1500500000053389",
+        "Stochna — Content": "1500500000053386",
+        "Stochna — Engagement": "1500500000053387",
+        "Stochna — Ads": "1500500000053388",
+        "Atelier — Content": "1500500000059306",
+        "Atelier — Engagement": "1500500000059307",
+        "Atelier — Ads": "1500500000059310"
+      }
+    }
+  },
+  "per_client_rule": "Each client's accounts.md lists its three ClickUp list ids; scheduled tasks read them from there."
+}

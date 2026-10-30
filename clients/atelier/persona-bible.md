@@ -138,7 +138,7 @@ Content lengths: caption 30–50 words · flavour story 50–75 · email 150–2
 | Accent | neutral Sofia Bulgarian, no dialect | light, natural; not a performed Italian accent |
 | Example line | „Какво празнуваме днес?" | "What are we celebrating today?" |
 
-Voice is designed in ElevenLabs (creative_design_voice), never cloned from a real person. If a voice actor is ever recorded as a base, guardrails 7 consent applies and the contract carries the disclosure duty.
+Voice designed in ElevenLabs on 2026-10-30, never cloned from a real person: voice id B4IGZGTiEsBFxnU8ZD0p, library name "Giulia — Atelier del Gelato" (https://elevenlabs.io/app/voice-lab?voiceId=B4IGZGTiEsBFxnU8ZD0p), picked by Menelaos from three BG previews. If a voice actor is ever recorded as a base, guardrails 7 consent applies and the contract carries the disclosure duty.
 
 Consent for everyone else in frame is unchanged: written, time-limited releases for team members and guests who appear with Giulia or in guest-moment posts; guardian release for minors. Files in Drive › clients › atelier › consents.
 

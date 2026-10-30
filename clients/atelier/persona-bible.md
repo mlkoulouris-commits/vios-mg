@@ -165,6 +165,8 @@ Channels: Instagram primary, Facebook information and events. Hashtags #MyAtelie
 | Paid | paid label + AI label | |
 | Contracts | disclosure duty and liability in every agency, freelancer, voice contract | |
 | Scheduler can't set the label | Metricool cannot set Instagram's AI label: Giulia videos are posted natively from the Instagram app with the label on, or verified live after publish; QA logs "label ✓ confirmed live" | |
+| Instagram profile label | If Giulia ever gets her own account, enable Instagram's "AI-generated profile" setting (opt-in label introduced 2026; undisclosed AI profiles reportedly lose reach). On the shared brand account the bio line carries the disclosure. | |
+| Machine-readable marking | From 2 Dec 2026 generative providers must mark outputs; keep original ElevenLabs exports with metadata intact, do not strip C2PA or metadata when editing. | |
 | EU AI Act Art. 50 | transparency duties from 2 Aug 2026; account manager confirms Digital Omnibus deferral status before release and quarterly; until confirmed, no grace period assumed | |
 
 ## 14. Error protocol and retirement

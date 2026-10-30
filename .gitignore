@@ -8,3 +8,4 @@ clients/*/character-sheet/*.jpg
 clients/*/character-sheet/*.mp4
 .env*
 node_modules/
+.claude/settings.local.json

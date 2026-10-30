@@ -17,7 +17,7 @@ Pilot client from 2026-10-30: full access held by Vios.
 | Google Drive: client folder (consents, stills, data) | https://drive.google.com/drive/folders/1eu2vX3sYrcqnVUrP4SSoGEYAkLr0sCvJ (Drive › clients › atelier, mirror of this repo folder) | mkoulouris@gmail.com | created 2026-10-30 |
 | Google Drive: brand sources | https://drive.google.com/drive/folders/1D0U7iVt8OVuFJV8mkzhXcpIHqVp6TMAN (Drive › Projects › atelier del gelato: Brand Book v3 PDF, Atelier Notes v3 print file, Stage 1 harvest) | mkoulouris@gmail.com | 2026-10-30 |
 | ElevenLabs voice (Giulia) | voice id B4IGZGTiEsBFxnU8ZD0p, "Giulia — Atelier del Gelato" | Vios workspace | saved 2026-10-30 |
-| ElevenLabs creative flow (Giulia stills) | flow id rSFjHurIwOvgycHcD39U (created 2026-10-30, reuse for every Giulia image/video so nodes can connect) | Vios workspace | empty, first generation not started (service busy) |
+| ElevenLabs creative flow (Giulia stills) | flow id rSFjHurIwOvgycHcD39U (created 2026-10-30, reuse for every Giulia image/video so nodes can connect) | Vios workspace | face reference node Af1lz2s8KalediWEoiXK generating 2026-10-30 (gemini-3-pro-image) |
 | POS | Barsy (Baci shop = Atelier location 1; Lab = location 2) | Memento Atelier instance | live |
 | Booking system | none (walk-in retail) | | |
 | Website | CONFIRM | | |

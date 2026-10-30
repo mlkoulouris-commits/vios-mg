@@ -78,7 +78,8 @@ Audience desire: "You see me, and you celebrate with me." Brand archetype **Love
 3. **Values from seven to four.** The 2025 book's seven values collapse into four operating statements. Staff training material must follow the four.
 4. **"Slowness is non-negotiable; during rush we limit capacity, not speed"** (2025) vs Ring Mall counter and B2B growth. Hard case for "Notice the moment" is "a long queue". CONFIRM how the ritual survives a mall queue; otherwise the mall counter is a second brand expression.
 5. **Approver.** Brand Book v3 §8.3 left it open. Decided 2026-10-30: Menelaos Koulouris approves everything; Evo informed on brand-level items. Revisit when there are 2–3 ateliers.
-6. **Alcohol is on the menu** (Aperitivo line). Guardrails hard line 8 applies: 18+ targeting on any paid post with it, no link to driving, sport or youth. Not mentioned anywhere in the brand book.
+6. **AI ambassador vs Stay human.** Decided 2026-10-30: Giulia becomes a disclosed AI digital ambassador for content. Brand Book v3 says "human, in person, never automated or faceless" and "we don't automate the welcome away". Resolution recorded in the Bible: Giulia exists on screen only, always labelled; the counter welcome stays human. Evo to be told explicitly; the book's §3.3 row needs a footnote in the next revision.
+7. **Alcohol is on the menu** (Aperitivo line). Guardrails hard line 8 applies: 18+ targeting on any paid post with it, no link to driving, sport or youth. Not mentioned anywhere in the brand book.
 
 ## 10. Next step
 

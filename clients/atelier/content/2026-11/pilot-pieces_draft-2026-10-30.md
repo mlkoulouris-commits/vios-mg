@@ -34,6 +34,20 @@ Hashtags: #MyAtelierMoment #Gelato #Sofia · Alt text: a tray of hazelnut gelato
 
 Fact check needed: Nocciola Piemonte origin is on the v3 menu (confirmed by the venue manager Oct 2026); "made this morning" must be true on the posting day.
 
+## 4a. Reel — Giulia introduces herself (Attitude pillar, AI, labelled)
+
+15–20 seconds. On-screen label „AI домакин · AI host" from frame 1 and the Instagram AI label set natively. Background: real video plate of the counter at Rakovski 149.
+Script BG: „Здравей. Аз съм Джулия, AI домакинът на Atelier del Gelato. Сладоледът, тирамисуто и хората тук са истински. Аз само питам: какво празнуваме днес?"
+Script EN: "Hi. I'm Giulia, Atelier del Gelato's AI host. The gelato, the tiramisu and the people here are real. I only ask: what are we celebrating today?"
+Expression: welcome row (warmth 3, gaze to camera). Caption 30–50 words with #AIcreated #AIсъздадено #MyAtelierMoment.
+
+## 4b. Reel — Giulia reads today's Note (Attitude pillar, AI, labelled)
+
+10–15 seconds. Label from frame 1. Real jar and real card (approved set) on a real table; Giulia composited beside it, hand not touching the card (no generated objects).
+Script BG: „Бележката за днес: [текст от картата]. Малките победи се броят."
+Script EN: "Today's note: [card text]. Small wins count."
+Expression: sincerity row (2). Caption with the two AI hashtags.
+
 ## 4. Reel — the question (Attitude pillar)
 
 Shot list, 20–30 seconds, real team member, real guests with releases:
@@ -60,6 +74,10 @@ Three frames, daily format:
 Show pieces 1–5 to 3–5 real guests matching Elena. Ask: does it feel like the place? did you notice the question and the Note? would you share your own moment? Record answers in `qa-log.csv` notes and in this file.
 
 ## Open before any of this ships
+
+- Bio line live on Instagram and Facebook before the first Giulia post (Bible §13).
+- Character sheet stills locked and voice designed (Bible §10–11).
+- Giulia clips posted natively with the Instagram AI label, or verified live after publish.
 
 - Releases for every guest and team member shown.
 - "Made this morning" true on the day for piece 3.

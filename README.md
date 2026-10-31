@@ -13,6 +13,8 @@ plugin, re-run `setup/` and the department is up. See `docs/migration.md`.
 | --- | --- |
 | `docs/plan.md` | The department plan: stage → skill → tool → approver |
 | `docs/sop.md` | Daily / weekly / monthly / quarterly procedure per role |
+| `docs/method.md` | The pinned reference set: manuscript, framework master, guidelines structure, plugin, worked examples |
+| `docs/workflow.md` | Workflow chart with stage, skill, tool and human per step |
 | `docs/migration.md` | Moving from the personal account to the corporate account |
 | `templates/client/` | Empty client folder, exactly the `vios-guardrails` convention |
 | `clients/<slug>/` | One folder per client (Stochna is the pilot) |

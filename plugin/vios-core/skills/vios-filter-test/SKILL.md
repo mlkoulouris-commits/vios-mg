@@ -5,7 +5,7 @@ description: "Derive, sharpen and apply a Vios client's filter test: the single 
 
 # Vios Filter Test
 
-One question, derived from character, that transfers brand judgement from the practice to the operation. "Is this effusive?" "Is this performed?" "Is this anxious?" It tests character fit, not quality; both are required. Shared instrument: `vios-brand-book` builds it into Part 5, `vios-journey-design` runs every script through it, `vios-training-programme` prints it on the wall chart and in the playbook, `vios-consistency-qa` uses it beside row 2, `vios-persona-voice` holds it as the pre-write filter.
+One question, derived from character, that transfers brand judgement from the practice to the operation. Scope: lines addressed to a guest, a partner or a team member (scripts, captions, replies, signage, emails, internal notes). The name, the tagline and the lockup are judged by the brand book's own tests, not by the filter test; say so in the output when a tagline would fail it. "Is this effusive?" "Is this performed?" "Is this anxious?" It tests character fit, not quality; both are required. Shared instrument: `vios-brand-book` builds it into Part 5, `vios-journey-design` runs every script through it, `vios-training-programme` prints it on the wall chart and in the playbook, `vios-consistency-qa` uses it beside row 2, `vios-persona-voice` holds it as the pre-write filter.
 
 ## Read first
 
@@ -31,7 +31,7 @@ Too lenient (names a trait the category shares) · too strict (tests a word, not
 
 ## Output
 
-`[client]/brand-book.md` › Part 5 › Filter test: the question, the trait and why, two passes and two fails with one-line reasoning, the two sharpening batches in `[client]/archive/filter-test-batches.md`, the review date. One line at the end: the question, and where it has been placed.
+`[client]/brand-book.md`, in a section headed "Filter test" (inside Part 5 when the file has parts; under Messages and story when it is the live summary): the question, the trait and why, two passes and two fails with one-line reasoning, the two sharpening batches in `[client]/archive/filter-test-batches.md`, the review date. One line at the end: the question, and where it has been placed.
 
 ## Example (placeholders)
 

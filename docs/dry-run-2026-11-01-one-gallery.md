@@ -56,6 +56,14 @@ Candidate patterns, each used once (threshold for recording), none yet confirmed
 
 Framework revision suggested: § 2.1.3 can now be specified from Format A. Instrument 6 (Persona in Practice) was not exercised here; it stays provisional.
 
+## Blind generation test (2026-11-01, Atelier del Gelato, fresh session)
+
+A fresh session ran `vios-journey-map`, `vios-filter-test` and one `vios-journey-design` page on Atelier from Brand Book v3 and the client folder, with every ONE Gallery file withheld. Output in `clients/atelier/journey/` and `archive/`; its own notes in `clients/atelier/journey/blind-test-notes.md`.
+
+Result: 31 moments, 8 phases, 6 HIGH, 12 MEDIUM, 10 LOW, 3 silent; signature ★ M07 the question, peak ◉ M15 the note from the jar, end ⊐ M22 + M23. The map, the Reasoning Note, the handoff and the M07 page follow the house form without having seen it; target states are quoted guest sentences, the B2B line is an eighth phase mapped thin, every missing input is marked to confirm. The filter test came out as "Is this processing the guest?" with markers hurry · sell · talk past. Judgement: the skills generate, not only shape. Reviewer's questions for Evo and Menelaos are listed in the notes.
+
+Thirteen friction points reported; fixes applied to the three skills: intake file named; shares of all moments with silent as its own row and no earlier client's numbers in the skill; owner derived from the phase at the bridge; BG editions and the Claude Doc produced on request, EN in the repo; LOW rows at twelve words, silent rows empty, two-digit codes from the map onward, three or four rendered pages accepted; B2B phase rule; single-page mode in the design skill; BE/NV citation form; filter-test section location and scope (taglines outside it).
+
 ## Not compared yet
 
 - The Exhibition Workflow v2 has no counterpart skill: a two-week exhibition sprint is venue-specific operations, outside the Practice's four stages.

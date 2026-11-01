@@ -22,7 +22,7 @@ Every page names its dominant inputs: **brand** (who it is for, the Role here, w
 
 ## Working order (§ 2.3.2.3)
 
-HIGH first, and within HIGH the peak and the end first. Then MEDIUM, then LOW, then the silent moments last (what staff do not do, and where they are while not doing it). The schedule is written down before the first page.
+HIGH first, and within HIGH the peak and the end first. Then MEDIUM, then LOW, then the silent moments last (what staff do not do, and where they are while not doing it). The schedule is written down before the first page. **Single-page mode**: when one page is asked for before the set exists (a test, a pilot moment), write it, say on the page that it is out of order, and reference `choreography.md`, `recovery.md` and `schedule.md` as "to be written" with the scenario codes it expects.
 
 ## The design page (one per moment)
 
@@ -35,7 +35,7 @@ The manuscript's fields, rendered in the house layout the practice ships (ONE Ga
 | SAY | the script, marked **LOCKED** where the words are exact; floor register; filter-tested; the caption voice for digital moments |
 | DON'T | the failure modes and the tempting defaults, as short prohibitions |
 | NON-VERBAL | body, geometry, silence, tone, volume, timing (omitted on digital and silent pages) |
-| BEHAVIORAL ECONOMICS | the principle at work, named from section 3.1, and what it does to the decision here |
+| BEHAVIORAL ECONOMICS | the principle at work, cited as "BE n name" (the numbered principles of section 3.1.5, e.g. BE 17 thin-slicing) and what it does to the decision here; non-verbal entries cited as "NV letter.number" (e.g. NV C.2 eye behaviour) |
 | RECOVERY | "If … → …": trigger, what is done and said, who takes over; references the recovery document |
 | state arc | one line: before → during → after ("Curious → Visualising → Decided") |
 | Success metric | an observable signal, never a sentiment |
@@ -82,10 +82,10 @@ Six questions, yes/no with the fix: every map moment has a page · every page na
 
 ## Output
 
-`[client]/journey/design/` with `pages/M01.md … Mnn.md` in journey order, `choreography.md`, `recovery.md`, `briefs/operations.md`, `briefs/equipment-layout.md`, the design schedule, and `[client]/archive/harvest-stage-3.md` (new patterns, recovery scenarios, library entries, template refinements; half a day, the practice's pattern factory). Claude Docs for the founder's review when the connector is present. Volume is expected: two to three hundred pages for thirty moments; the uniform template is what keeps it usable.
+`[client]/journey/design/` with `pages/M01.md … Mnn.md` in journey order (two-digit codes, the same as the map), `choreography.md`, `recovery.md`, `briefs/operations.md`, `briefs/equipment-layout.md`, the design schedule, and `[client]/archive/harvest-stage-3.md` (new patterns, recovery scenarios, library entries, template refinements; half a day, the practice's pattern factory). Claude Docs for the founder's review when the connector is present. Volume is expected: two to three hundred pages for thirty moments; the uniform template is what keeps it usable.
 
 End with: pages written by tier, HIGH recoveries done, the threshold sequence and the bookended end in one line each, open dependencies, and the next step (`vios-training-programme`).
 
 ## Example (one HIGH page compressed; brewery; placeholders)
 
-**M02 · CRITICAL IMPACT · Threshold crossed** · In-room · ~30 sec · Arrival. CURRENT STATE: made the trip, checking it was worth it; the room speaks before anyone does. DO: 1. host at the stand two metres inside the door, turns before the guest reaches it; 2. one beat, then the greeting, then lead; 3. tanks visible from the door, kitchen pass lit, room at 62–66 dB, bread and wort in the air. SAY (LOCKED): "Welcome — sit anywhere." (filter test: not performed ✓). DON'T: no reservation question inside the greeting; no tour on the walk. NON-VERBAL: lens-level eye contact for the line only, open palm toward the room, moderate pace, lead slightly ahead. BEHAVIORAL ECONOMICS: thin-slicing (§3.1.17), cognitive ease (§3.1.1); nothing to decide yet. RECOVERY: if the guest hovers → the second welcome (R01). Checking → Settling → In. Success metric: moves into the room without a question within ten seconds. Target emotion: at ease. Brand pillar: welcome.
+**M02 · CRITICAL IMPACT · Threshold crossed** · In-room · ~30 sec · Arrival. CURRENT STATE: made the trip, checking it was worth it; the room speaks before anyone does. DO: 1. host at the stand two metres inside the door, turns before the guest reaches it; 2. one beat, then the greeting, then lead; 3. tanks visible from the door, kitchen pass lit, room at 62–66 dB, bread and wort in the air. SAY (LOCKED): "Welcome — sit anywhere." (filter test: not performed ✓). DON'T: no reservation question inside the greeting; no tour on the walk. NON-VERBAL: lens-level eye contact for the line only, open palm toward the room, moderate pace, lead slightly ahead. BEHAVIORAL ECONOMICS: thin-slicing (BE 17), cognitive ease (BE 1); nothing to decide yet. RECOVERY: if the guest hovers → the second welcome (R01). Checking → Settling → In. Success metric: moves into the room without a question within ten seconds. Target emotion: at ease. Brand pillar: welcome.

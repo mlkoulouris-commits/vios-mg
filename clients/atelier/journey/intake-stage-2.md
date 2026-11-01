@@ -1,0 +1,24 @@
+# Stage 2 intake — Atelier del Gelato
+
+Date 2026-11-01. Brand book edition: **v3, 7 Oct 2026** (Drive PDF, read in full). Companion inputs: `persona-bible.md` v0.3 (2026-10-30), `diagnosis.md` (2026-10-30), `fact-sheet.md` (2026-10-30). Move 0 of `vios-journey-map`; this page opens `journey/` as the Stage 2 file.
+
+| Element | In the practice's words | Thin? |
+| --- | --- | --- |
+| **Audience persona** | Elena, 34, creative director in central Sofia. Days blur; small wins pass unnoticed; cafés rush her; mass desserts feel empty and "healthy" feels joyless. Before: busy, a little drained. After: calm, seen, lighter, reconnected. Creator 70 / Lover 30: wants real quality and to be appreciated, fears the mediocre, the fake and being processed. "If they remember my name, I'll come back." | No. **Second audience** (B2B venue owner) has no persona: phase 8 is mapped thin and marked to confirm. |
+| **Brand Role and Connection statement** | Peer. "Your day matters to us as much as it does to you, so let's celebrate it together." The ritual only works side by side: "we", not "you". | No. |
+| **Archetypal mix** | Lover 70 / Innocent 30. Lover: warm, attentive, sensory, unhurried, makes people feel special. Innocent: optimistic, simple, honest; stays light, never cute. Drive: connection that makes ordinary moments feel special. Fear: being ordinary, transactional or fake. | No. |
+| **Eight expression dimensions** (Giulia, v3 §3.2) | Appearance: early 30s, open face, quick genuine smile, never styled-perfect. Dress: linen or cotton in cream, sage, caramel; rolled sleeves. Accessories: pencil behind the ear, small gold pendant, worn notebook of guests' names. Language: simple, sensory, warm; "today", "this moment", "yours", "together"; "we". Tone: calm, light, sincere, gently playful; asks before she tells. Sound: soft-spoken, easy laugh; Italian acoustic and soft jazz, low enough to talk over. Attitudes: optimistic by choice, curious about people, generous with time; never rushes or judges. Beliefs: happiness is an attitude; small wins count; everyone deserves to be noticed. | No. Note: the Bible (v0.3) makes Giulia a disclosed AI host on screen only; in the atelier the dimensions are carried by real team members. The map places them on the team. |
+| **Differentiator and positioning** | The celebration ritual: ask ("What are we celebrating today?"), choose together, mark it (an Atelier Note drawn by chance). Onliness: the only gelato and tiramisu atelier where every order becomes a small celebration of your day. Positioning: for people in Sofia who believe their everyday moments matter but feel processed and rushed, a short pause that is truly theirs, unlike gelaterias and tiramisu shops that compete on product and serve transactionally. Needs no theatre, only people, so it holds in every atelier; on partner tables the story card asks the same question. | No. |
+| **Core messages and story framework** | Nine message blocks (v3 §5.1): 1 audience, 2 pain, 3 key benefit (a short pause truly yours, fresh today, back into the day seen and lighter), 4 alternative, 5 differentiator (question + note), 6 purpose, 7 vision (the question travels to partner tables), 8 mission (fresh today, honest, with its true story), 9 values. Story (v3 §4): Elena's blur → the pitch win nobody marked → walking home along Rakovski → the question at the counter → "I won a pitch" and tasting two → ten minutes with a card that reads as if written for her → the card on her desk and the question asked in her own team meeting. | No in v3. **Not yet transcribed** into `brand-book.md` (its Messages and story section still says "to transcribe"); the map reads them from the PDF directly. |
+
+## Operation as it is (fact sheet)
+
+Walk-in, no bookings, 11:00–20:00 every day at Rakovski 149; Ring Mall counter on mall hours (to confirm). Gelato Classics 8, Aperitivo 3 (alcoholic), Mindful 3, Seasonal 2; tiramisu collection in single, sharing and celebration-box (12) sizes; coffee. Made fresh daily in the Lab; tiramisu behind the scenes, alla minute retired. Every order: the question and a Note; the Notes (25 cards) are printed and in the jar. Prices, allergen policy, Ring Mall hours, legal entity: CONFIRM. Summer peak, winter carried by tiramisu. The Lab sells B2B to cafés and restaurants with story cards.
+
+## Gaps the map inherits
+
+1. No B2B persona (phase 8 thin).
+2. How the ritual survives a Ring Mall queue (diagnosis contradiction 4; asked of Evo on 2026-10-30, unanswered).
+3. Room facts not on file: whether the display is visible from the street, whether the celebration board exists, where the tables are, who draws the Note (guest or team member).
+4. Prices, allergen policy, the legal age line for the Aperitivo gelato, the email capture route.
+5. The brand book's Messages and story are in the PDF only, not in `brand-book.md`.

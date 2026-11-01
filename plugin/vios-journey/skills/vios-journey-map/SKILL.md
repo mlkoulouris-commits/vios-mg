@@ -17,20 +17,21 @@ Stage 2. The map translates the brand into the moments where it has to act, what
 ## House form (from the ONE Gallery map, the practice's worked deliverable)
 
 - **Markers**: ★ signature (the one moment where the differentiator becomes visible), ◉ peak, ⊐ end (may be two moments, end-1 and end-2, designed as one), ○ silent. All four are named on the cover legend with the count of HIGH, MEDIUM and LOW moments.
-- **One table per phase**, columns: code · moment · weight · brand intention · role-in-moment · dominant dimension · customer target state · marker. Not five separate bands; the bands are the columns.
+- **One table per phase**, columns: code · moment · weight · brand intention · role-in-moment · dominant dimension · customer target state · marker. Not five separate bands; the bands are the columns. Codes are two-digit from the start (M01 … M31) so the design pages match. Silent rows carry code, name, ○ in weight and marker, and nothing else; the reason lives in the Reasoning Note. LOW rows keep the intention to twelve words or fewer; the full text lives in the inventory. A map of 25–35 moments renders in three or four pages with these rules; the manuscript's one or two is the target, not a rule.
 - **Customer target state** is the guest's inner sentence, in quotes: "This is for me." "I know where to sit." "I'll come back."
 - **Arc table**: phase · name · duration as a range ("~30 sec", "2–10 min", "days–weeks") · what the customer is doing. Then one line naming the peak, the end and the signature with their phases.
 - **Summary section, "what passes to Stage 3"**: the HIGH table with "why HIGH" per moment; the silent table with "why silent"; the five-question coherence test as a table with YES/NO and the evidence.
 - **Realignment**: when the brand book moves edition, the map is re-read against it, changed cells carry a `[vX.Y]` marker, and a cover note states what changed and what did not (weights, signature, peak, end, silences usually hold; what changes is outside the room).
-- **Languages**: the map, the Reasoning Note and the handoff are delivered in the client's working languages (EN and BG for Bulgarian teams), the BG version a redraft, not a translation.
+- **Languages**: the repo holds the EN files (`CLAUDE.md`: English in the repo). The client-facing editions in the team's language (BG for Bulgarian teams) are redrafts, not translations, delivered as Claude Docs or Drive files and linked from `[client]/journey/README.md`; the account manager asks for them, the skill does not produce them unasked.
+- **Claude Doc**: produced when the account manager asks for the deliverable edition, not as part of writing the files.
 
 ## Move 0 — Intake summary
 
-One page: the six elements in the practice's words, dated, with the brand book edition. Opens `[client]/journey/` as the Stage 2 file. If any element is thin, say so here; the map inherits the gap.
+One page, `[client]/journey/intake-stage-2.md`: the six elements in the practice's words, dated, with the brand book edition. It opens the Stage 2 file and is not part of the Reasoning Note. If any element is thin, say so here; the map inherits the gap.
 
 ## Move 1 — Establish the arc
 
-Four to eight phases, named for this brand's customer, not the category (pattern S2-01). The arc starts before arrival (decision, booking) and ends after departure (post-visit) when the brand owns those phases. Mark each phase's share of the experience. Test: do the phases produce different moments, or only different names?
+Four to eight phases, named for this brand's customer, not the category (pattern S2-01). A phase whose customer has no persona on file (a B2B line, partner tables, event hosts) is mapped thin and MEDIUM-only with its target states marked "to confirm", and the Reasoning Note says a persona is needed before it can carry HIGH moments; or it is left out and named as a separate map to come. Say which. The arc starts before arrival (decision, booking) and ends after departure (post-visit) when the brand owns those phases. Mark each phase's share of the experience. Test: do the phases produce different moments, or only different names?
 
 ## Move 2 — Identify the moments
 
@@ -45,7 +46,7 @@ HIGH, MEDIUM or LOW for every moment, from four sources, named per moment:
 3. **The brand's own logic**: where the differentiator becomes visible, where the Role is enacted (a Defender's threshold, a bar-led brand's every bar moment).
 4. **The threshold thin-slice**: the first seconds inside are HIGH in every hospitality journey, whatever their length.
 
-Restraint rule (pattern S2-02): three to seven HIGH out of the inventory. More than that and there is no hierarchy; renegotiate. Mark the **signature** ★ separately from the peak: the signature is the brand's identifying ritual (the differentiator made visible), the peak is the moment of highest memory weight; they are usually different moments. State the distribution as counts and shares (ONE Gallery: 6 HIGH 21 %, 12 MEDIUM 43 %, 10 LOW 36 %).
+Restraint rule (pattern S2-02): three to seven HIGH out of the inventory. More than that and there is no hierarchy; renegotiate. Mark the **signature** ★ separately from the peak: the signature is the brand's identifying ritual (the differentiator made visible), the peak is the moment of highest memory weight; they are usually different moments. State the distribution as counts and shares of **all** moments, with silent moments as their own row. Do not aim at any earlier client's split; the numbers come from this brand's moments.
 
 ## Move 4 — Place the brand at each moment
 
@@ -73,7 +74,7 @@ Five questions, each yes or no with the fix: arc specific to this customer · al
 1. `[client]/journey/journey-map.md` in the house form above: cover (venue, descriptor, stage, date, edition note), how to read, weight tiers with counts, markers, the arc table, one table per phase, the summary that passes to Stage 3. One or two pages when rendered. The Claude Doc version when the docs connector is present, landscape, readable at a glance by a founder or a designer. The inventory of band 2 (customer action, brand action per moment) stays in `[client]/archive/journey-inventory.md`.
 2. `[client]/journey/reasoning-note.md`.
 3. `[client]/journey/handoff-to-design.md` (§ 2.2.6): constraints grouped by moment cluster, each as constraint · detail and source (the brand-book section or the operational fact, e.g. a named host's hours); the critical dependencies Stage 3 must flag; the convergent inputs per HIGH moment; where the design has latitude.
-4. **Bridge to marketing**: update `[client]/brand-book.md` › Journey so the canonical touchpoints (`vios-core:vios-guardrails` › Journey) point at their moment codes, the peak is marked, and the guest state per touchpoint is copied from band 4. `vios-content-calendar`, `vios-persona-voice` and `vios-persona-builder` read that table; the full map stays in `journey/`.
+4. **Bridge to marketing**: update `[client]/brand-book.md` › Journey so the canonical touchpoints (`vios-core:vios-guardrails` › Journey) point at their moment codes, the peak and the signature are marked, the guest state per touchpoint is copied from the placement table, and the owner column is derived from the phase (pre-arrival and post-visit phases are marketing, in-venue phases are floor, unless the fact sheet says otherwise). `vios-content-calendar`, `vios-persona-voice` and `vios-persona-builder` read that table; the full map stays in `journey/`.
 5. Brief revisions, if the map constrains the room: architect or interior-designer brief revision, versioned and dated (§ 2.2.6).
 6. Harvest note (§ 2.2.7): arc patterns, moment patterns, template refinements, peak-end placements, in `[client]/archive/harvest-stage-2.md`.
 

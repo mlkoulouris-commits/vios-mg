@@ -37,20 +37,22 @@ Integrity rule: a piece reinforces at least one, contradicts none.
 | 6 Transformation | Brewing and cooking as one system, proper choices, pacing for the table, warm equal hosting, a room for conversation |
 | 7 New world | Well-fed, well-watered, socially energised, back with different friends: "You have to try this place." |
 
-### Journey (guest order; owner = marketing or floor; peak = block 4 of the brand book, the evening unfolds)
-| # | Touchpoint | Guest state and tension | Designed moment to show | Owner | Peak |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Discovery | Choosing where to spend an evening with friends; most places are fine, not special | A full table mid-evening, beer and food together, the making visible behind it | marketing | |
-| 2 | Profile check | Thin-slicing the grid: is this a brewery, a restaurant, a scene? | Consistent proof the two are one system; people, not product shots | marketing | |
-| 3 | Booking | Is it worth the 2 km? Will there be room for the group? | Table for the group restated plainly; formal register; no pressure | marketing | |
-| 4 | Reminder | Plan check the day before | Date, time, people restated; one warm line; how to change | marketing | |
-| 5 | Arrival | Made the trip, checking it was worth it | Warm greeting without ceremony; smell of food and beer; visible production | floor | |
-| 6 | Ordering | Is the short menu care or limitation? | Confident guidance, "this goes with that"; no upsell | floor | |
-| 7 | Making | Real making or performance? | Calm practiced handling; spent grain from this morning's brew in the bread | floor | |
-| 8 | The evening | Stay or move on? | Another round arrives when the table is ready; conversation uninterrupted | floor | **peak** |
-| 9 | Departure | One-time thing or my new place? | "See you next time" as a prediction; no rushed bill, nothing requested | floor | |
-| 10 | After-visit | Telling friends: "you have to try this place" | Guest's own photo reposted with permission; the next brew announced as fact | marketing | |
-| 11 | Review | Writing it up, good or bad | Every review answered by the specific detail named; escalation topics to the approver | marketing | |
+### Journey (guest order; owner = marketing or floor; from `journey/journey-map.md` v1.0, 2026-11-01)
+Moment codes, markers and guest states come from the journey map (36 moments, 7 phases; weights provisional, unobserved). ★ signature M17 · ◉ peak M24 · ⊐ end M30 + M31. Owner derives from the phase: pre-arrival and after are marketing, in-venue is floor; the sign and the window at the trip (M06) are the venue's, so floor. The full map, the silences and the reasons stay in `journey/`; this table is the bridge the marketing skills read.
+
+| # | Touchpoint | Moments | Guest state (target, from the map) | Designed moment to show | Owner | Marker |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Discovery | M01 | "That might be it." | A full table mid-evening, beer and food together, the making visible behind it | marketing | |
+| 2 | Profile check | M02 | "It's someone's place, not a concept." | Consistent proof the two are one system; people, not product shots | marketing | |
+| 3 | Booking | M03, M04 | "Everyone there came on purpose. So will we." → "Done. Thursday, six of us." | The 2 km named plainly; table for the group restated; formal register; no pressure | marketing | |
+| 4 | Reminder | M05 | "Still on." | Date, time, people restated; one warm line; how to change | marketing | |
+| 5 | Arrival | M06–M10 | "This is it." → "Relax. It's going to be a good evening." → "I know where to sit." | The window shows the room; smell of bread and hops, visible production, people having a good time; one-line greeting, "sit anywhere"; coats and settling left alone (M10 ○) | floor | M07 HIGH |
+| 6 | Ordering | M11–M15 | "Short. Everything here is chosen." → "Everything here is good." | Short menu left to be read (M13 ○); one linking suggestion, "if you're not sure, I'll pour you something"; order for the table; no upsell | floor | M15 HIGH |
+| 7 | Making | M16–M21 | "Someone thought about this." → "They actually make it here." | First beer and bread land together with one sentence (M17), then silence (M16 ○, M18 ○); plates for the beer; making in view; questions answered plainly | floor | ★ M17 |
+| 8 | The evening | M22–M29 | "We're staying. Best evening in months." → "Nobody's hurrying us." | Conversation left alone (M22 ○); the next round offered once, when the table is ready, tied to the kitchen (M24); nothing pushed at clearing; "Stay as long as you like. We're not counting." | floor | ◉ M24 |
+| 9 | Departure | M30–M32 | "That was a great evening." → "This is my place." | Bill when asked, nothing requested (M30); "See you next time" as a prediction (M31); the walk out left alone (M32 ○) | floor | ⊐ M30, M31 |
+| 10 | After-visit | M33, M35, M36 | "I'm bringing everyone here." → "Same as last time. Good." | Guest's own photo reposted with permission; the next brew announced as fact, no CTA; the regular treated as an equal (M36 to confirm) | marketing (M36 floor) | |
+| 11 | Review | M34 | "They actually read it." | Every review answered by the specific detail named; escalation topics to the approver | marketing | |
 
 ### Micro-message blocks (per touchpoint)
 | Block | Touchpoint | Anchors | Understanding to create | Verbal expression | Failure modes |

@@ -85,3 +85,28 @@ Lockup: **Art Coffee Aperitivo**. Editorial: **Where the art continues into your
 ### Journey and micro-message blocks
 
 The journey is the Stage 2 map (28 moments, 8 phases; see README). v2.2 has no micro-message block table; the design pages (Journey Design v2) carry the per-moment intention, script and non-verbal frame instead. A filter test has not been derived for ONE Gallery yet (`vios-core:vios-filter-test`).
+
+
+## Filter test (derived 2026-11-01 by `vios-core:vios-filter-test` from v2.2 §1.3, §1.4 Discovery, §3.2 Brand Role Guide, §5.4 voice, §6 the positioning as a working tool)
+
+**Is this a lecture?** — does it explain unasked, assume expertise, or instruct the guest on how to see?
+
+Pass when the answer is no.
+
+**Trait and why.** The category default for a gallery is the lecture: the label that decodes, the host that explains, the opening that tests whether you belong. ONE Gallery refuses it in writing: "art presented to be approached, not deciphered" (Mission), Discovery as "short, clear context, never a lecture", the Guide who knows the terrain and "shows you in without testing you at the door", the one-line principle at M13 and the silent peak at M18. The refusal is the trait. A second candidate, refusal of effusion (the voice is "quiet, real, peer-to-peer"), is covered by the markers: a lecture and a gush both talk at the guest rather than with her.
+
+**Markers.** Explains what was not asked · uses art-world jargon or assumes the guest knows the artist · tells the guest what to feel or how to look · more than one sentence of context before an invitation.
+
+**Passes.**
+- "Hi, I'm Dobri. Bar or a table?" (locked greeting M8): nothing explained, nothing assumed.
+- "The Series follows the exhibition upstairs; have a look whenever you like." (M13 one-line principle): one sentence, an invitation, no decoding.
+- Email: "The new show opens Thursday. Three works, one artist, the Gallery Series to match. Come and see." Context in one line, then the door.
+
+**Fails.**
+- "This piece interrogates the liminality of post-industrial Sofia through a gestural vocabulary you'll recognise from …": jargon, assumed expertise, decoding.
+- "Let me walk you through what the artist intended with each work before you sit down.": explains unasked, delays the room.
+- Caption: "Here's how to read this painting properly:" tells her how to see.
+
+**Scope.** Lines addressed to a guest, a partner or the team: scripts, captions, labels, emails, openings, internal notes. The name and the two-line tagline are judged by the brand book (§9), not here; "Where the art continues into your glass" is editorial, not a lecture, and is outside the test anyway.
+
+**Review:** yearly with the standing rotation, and at the first exhibition where the curator's voice goes on the floor. Batches in `archive/filter-test-batches.md`.

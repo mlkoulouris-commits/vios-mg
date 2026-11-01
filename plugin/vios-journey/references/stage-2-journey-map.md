@@ -2,6 +2,26 @@
 
 Source: Drive › `03_VIOS_Practice_Stage_2_Journey_Map.docx` (id 1sHiA9ajatufgakyFimzYyyppJokd8A4h), text taken from the identical local copy `OneDrive/projects/Vios-MG/files/`, verified sentence-by-sample against the Drive version on 2026-11-01. Transcribed verbatim for the `vios-journey` skills; headings added, wording unchanged.
 
+## Contents (added)
+
+Read the section the skill points at; the whole chapter is here for when a step needs the surrounding reasoning.
+
+- 2.2 Stage 2 — Customer Journey Map
+- 2.2.1 What this stage does
+- 2.2.2 Method — building the journey map
+  - 2.2.2.1 Inputs from Stage 1
+  - 2.2.2.2 Establish the arc
+  - 2.2.2.3 Identify the moments
+  - 2.2.2.4 Assign weight
+  - 2.2.2.5 Place the brand at each moment
+  - 2.2.2.6 Name the silent moments
+  - 2.2.2.7 Close the map
+- 2.2.3 Template — the journey map
+- 2.2.4 Toolkit
+- 2.2.5 Patterns
+- 2.2.6 Briefs generated
+- 2.2.7 Harvest
+
 
 ## 2.2 Stage 2 — Customer Journey Map
 

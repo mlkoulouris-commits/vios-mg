@@ -2,6 +2,36 @@
 
 Source: Drive › `06_VIOS_Practice_Section_3-1_Behavioural_Economics.docx` (id 142-Xlg-JEJ5lrQ2UKT3FQXk6RICprTCC), downloaded 2026-11-01. Transcribed verbatim for `vios-be-lens` and every skill that quotes the BE library; headings normalised, wording unchanged. The books it draws on (Kahneman, *Thinking, Fast and Slow*; Gladwell, *Blink*) stay outside the plugin.
 
+## Contents (added)
+
+Read the section the skill points at; the whole chapter is here for when a step needs the surrounding reasoning.
+
+- 3.1 Behavioural Economics for Hospitality
+- 3.1.1 Why this library exists
+- 3.1.2 How to use it
+- 3.1.3 The foundation — System 1 and System 2
+- 3.1.4 The two selves — experiencing and remembering
+- 3.1.5 The principles
+  - 1. Cognitive ease
+  - 2. WYSIATI and substitution
+  - 3. Anchoring
+  - 4. Availability heuristic
+  - 5. Affect heuristic
+  - 6. Defaults
+  - 7. Peak-end and duration neglect
+  - 8. Choice architecture
+  - 9. Framing
+  - 10. Friction design
+  - 11. Social proof
+  - 12. Prospect theory — loss aversion and the endowment effect
+  - 13. Mental accounting
+  - 14. Decision fatigue
+  - 15. Status quo bias
+  - 16. Hyperbolic discounting
+  - 17. Thin-slicing
+- 3.1.6 The limits of asking customers
+- 3.1.7 Using more than one principle at a moment
+
 ## 3.1 Behavioural Economics for Hospitality
 
 ## 3.1.1 Why this library exists

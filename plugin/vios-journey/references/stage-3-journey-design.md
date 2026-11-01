@@ -2,6 +2,26 @@
 
 Source: Drive › `04_VIOS_Practice_Stage_3_Journey_Design.docx` (id 16ez9Dfgt2FP3oFF4hX52UUf5uA0LAo5D), downloaded 2026-11-01. Transcribed verbatim for the `vios-journey` skills; headings normalised, wording unchanged.
 
+## Contents (added)
+
+Read the section the skill points at; the whole chapter is here for when a step needs the surrounding reasoning.
+
+- 2.3 Stage 3 — Customer Journey Design
+- 2.3.1 What this stage does
+- 2.3.2 Method — designing the journey
+  - 2.3.2.1 Inputs from Stage 2
+  - 2.3.2.2 The four converging inputs
+  - 2.3.2.3 Working order — by weight, not by sequence
+  - 2.3.2.4 Designing a single moment
+  - 2.3.2.5 Connecting moments — the choreography
+  - 2.3.2.6 Designing the recovery
+  - 2.3.2.7 Closing the design
+- 2.3.3 Template — the design document
+- 2.3.4 Toolkit
+- 2.3.5 Patterns
+- 2.3.6 Briefs generated
+- 2.3.7 Harvest
+
 
 ## 2.3 Stage 3 — Customer Journey Design
 

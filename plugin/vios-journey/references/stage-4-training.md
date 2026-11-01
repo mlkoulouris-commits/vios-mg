@@ -2,6 +2,26 @@
 
 Source: Drive › `05_VIOS_Practice_Stage_4_Training.docx` (id 1isbo8AMTNXm1vR_uhjL1y3Be6NJ6TC1C), downloaded 2026-11-01. Transcribed verbatim for the `vios-journey` skills; headings normalised, wording unchanged.
 
+## Contents (added)
+
+Read the section the skill points at; the whole chapter is here for when a step needs the surrounding reasoning.
+
+- 2.4 Stage 4 — Training Material & Programme
+- 2.4.1 What this stage does
+- 2.4.2 Method — building the training programme
+  - 2.4.2.1 Inputs from Stage 3
+  - 2.4.2.2 Translate across registers
+  - 2.4.2.3 Decide the document architecture
+  - 2.4.2.4 Set the cadence
+  - 2.4.2.5 Write the materials
+  - 2.4.2.6 Build the coaching infrastructure
+  - 2.4.2.7 Close the programme
+- 2.4.3 Template — the document architecture
+- 2.4.4 Toolkit
+- 2.4.5 Patterns
+- 2.4.6 Briefs and handoffs
+- 2.4.7 Harvest
+
 
 ## 2.4 Stage 4 — Training Material & Programme
 

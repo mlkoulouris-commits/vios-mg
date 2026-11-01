@@ -2,6 +2,33 @@
 
 Source: `OneDrive/projects/Vios-MG/02_VIOS_Practice_Stage_1_Brand_Strategy_v1.3.docx` (M1 in `docs/method.md`). Transcribed verbatim on 2026-11-01 for the `vios-brand` skills; headings added, wording unchanged. When M1 moves to a new version, re-transcribe and re-check every skill in this plugin.
 
+## Contents (added)
+
+Read the section the skill points at; the whole chapter is here for when a step needs the surrounding reasoning.
+
+- 2.1 Stage 1 — Brand Strategy &  Brand Book
+- 2.1.1 What this stage does
+- 2.1.2 Method — the brand strategy sequence
+  - 2.1.2.1 Brand Purpose
+  - 2.1.2.2 Brand Vision
+  - 2.1.2.3 Brand Mission
+  - 2.1.2.4 Core Values
+  - 2.1.2.5 Audience Persona
+  - 2.1.2.6 Competitor Audit
+  - 2.1.2.7 Differentiator
+  - 2.1.2.8 Brand Personality
+  - 2.1.2.9 Brand Positioning Statement
+  - 2.1.2.10 Core Message Blocks
+  - 2.1.2.11 Story Framework
+  - 2.1.2.12 Brand Interrogation &  Brand Name
+  - 2.1.2.13 Tagline
+  - 2.1.2.14 Designer Selection
+- 2.1.3 Deliverable — the brand book
+- 2.1.4 Toolkit
+- 2.1.5 Patterns
+- 2.1.6 Briefs generated
+- 2.1.7 Harvest
+
 
 ## 2.1 Stage 1 — Brand Strategy &  Brand Book
 

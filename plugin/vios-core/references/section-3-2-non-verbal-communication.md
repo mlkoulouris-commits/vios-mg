@@ -2,6 +2,23 @@
 
 Source: Drive › `07_VIOS_Practice_Section_3-2_Non-verbal_Communication.docx` (id 1JEFr-yVH3JnPCi2SjvJtPkSlE3GbkCPw), downloaded 2026-11-01. Transcribed verbatim for `vios-nonverbal-lens`, `vios-journey-design` and `vios-training-programme`; headings normalised, wording unchanged.
 
+## Contents (added)
+
+Read the section the skill points at; the whole chapter is here for when a step needs the surrounding reasoning.
+
+- 3.2 Non-verbal Communication for Hospitality
+- 3.2.1 Why this library exists
+- 3.2.2 How to use it
+- 3.2.3 The first three seconds — thin-slicing and the threshold
+- 3.2.4 The categories
+  - A. Proxemics — the geometry of distance
+  - B. Paralanguage — the sound around the words
+  - C. Kinesics — the body, the eyes, the gesture
+  - D. Haptics — touch and its absence
+  - E. Chronemics — time, pace, the design of waits
+  - F. Environmental cues — the room as a channel
+- 3.2.5 Coaching non-verbal behaviour
+
 ## 3.2 Non-verbal Communication for Hospitality
 
 ## 3.2.1 Why this library exists

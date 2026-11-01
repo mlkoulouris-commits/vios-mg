@@ -1,6 +1,6 @@
 # Scheduled tasks
 
-Claude scheduled tasks created in the personal account on 2026-10-29. They run while the Claude desktop app is open (a missed run fires on next launch). To recreate in another account, ask Claude: "create the scheduled tasks from setup/scheduled-tasks.md". Each prompt is self-contained and lives in `~/.claude/scheduled-tasks/<taskId>/SKILL.md`; copies are kept here so the corporate account can be set up without the personal machine.
+Claude scheduled tasks created in the personal account on 2026-10-29. They run while the Claude desktop app is open (a missed run fires on next launch). To recreate in another account, ask Claude: "create the scheduled tasks from setup/scheduled-tasks.md". Each prompt is self-contained and lives in `~/.claude/scheduled-tasks/<taskId>/SKILL.md`; copies are kept in `setup/prompts/` so the corporate account can be set up without the personal machine; `python scripts/release.py tasks` pushes an edited copy to the live task.
 
 | taskId | Schedule (local) | Skill | Writes to | Needs |
 | --- | --- | --- | --- | --- |

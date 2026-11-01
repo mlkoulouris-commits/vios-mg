@@ -25,6 +25,15 @@ Everything here is portable: clone this repo in any Claude account, enable the V
 
 diagnosis → persona → calendar → copy / video → QA → publish → engage → ads → report
 
+## Releasing a skill change
+
+Edit under `plugin/<plugin>/skills/`, then `python scripts/release.py`:
+
+- `package <plugin> <x.y.z>` bumps the version, rebuilds `plugin/<plugin>-<x.y.z>.plugin`; upload it in Settings › Plugins, commit.
+- `sync [plugin]` copies the repo skills into the installed plugin cache for a quick fix (live next session, replaced by the next upload).
+- `tasks` copies `setup/prompts/*.md` over the live scheduled-task prompts.
+- `status` shows repo, packaged and installed versions.
+
 ## Non-negotiables
 
 - Skills draft; humans publish (`vios-guardrails` hard line 10).

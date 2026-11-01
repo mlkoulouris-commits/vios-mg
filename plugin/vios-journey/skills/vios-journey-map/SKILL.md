@@ -37,14 +37,22 @@ Four to eight phases, named for this brand's customer, not the category (pattern
 
 Walk each phase and ask three questions: what does the customer do, what does the brand do, what is at stake if either does it badly. Every answer that is not "nothing" is a moment. Capture operational moments and brand moments, all of them, in sequence, with the customer's action and the brand's action, coded M01, M02 … (two-digit, as the house form). Twenty to fifty is normal. Routine moments (coat, water, bathroom) are mapped, not skipped (pattern S2-04).
 
+## Move 2b — Observe before weighing
+
+The brand book says what the brand wants to happen; it cannot say what guests do. Before any weight is assigned, two inputs from the real operation go into `[client]/journey/observation.md`, dated: (1) **two shadowed services** on different dayparts (or, for a venue not yet open, two services at the closest comparable venue, named as such), noting per moment what guests did, where they hesitated, where staff improvised, and how long each phase took; (2) **a review read** of the last 50 guest reviews across platforms, tagging each remark to a moment code. A moment that guests mention unprompted, or where observation shows hesitation, is a candidate HIGH whatever the brand book says; a moment the book calls important that no guest noticed is a candidate for MEDIUM. The Reasoning Note records every weight the observation changed. No observation possible (remote engagement, no venue yet): say so on the cover, mark all weights "provisional, unobserved", and set the re-weighting date below as a condition of the map. Observation is not a survey; the limits of asking customers (section 3.1) still apply, this is watching, not asking.
+
+**Re-weighting date.** Every map carries a date, thirty to sixty days after opening or after the design goes live, when HIGH weights are re-read against what the floor and the reviews show. The account manager owns the date; the Reasoning Note names it.
+
 ## Move 3 — Assign weight
 
-HIGH, MEDIUM or LOW for every moment, from four sources, named per moment:
+HIGH, MEDIUM or LOW for every moment, from four sources plus the observation, named per moment:
 
 1. **Peak-end and duration neglect** (`vios-core:vios-be-lens`, Two Selves): name the peak and the end; both HIGH by default.
 2. **Moments of decision**: order, drink, dessert, stay, return; usually HIGH.
 3. **The brand's own logic**: where the differentiator becomes visible, where the Role is enacted (a Defender's threshold, a bar-led brand's every bar moment).
 4. **The threshold thin-slice**: the first seconds inside are HIGH in every hospitality journey, whatever their length.
+
+5. **What was observed** (Move 2b): hesitation, improvisation, unprompted mentions. A HIGH with no observation behind it is marked "brand-led" in the Reasoning Note.
 
 Restraint rule (pattern S2-02): three to seven HIGH out of the inventory. More than that and there is no hierarchy; renegotiate. Mark the **signature** ★ separately from the peak: the signature is the brand's identifying ritual (the differentiator made visible), the peak is the moment of highest memory weight; they are usually different moments. State the distribution as counts and shares of **all** moments, with silent moments as their own row. Do not aim at any earlier client's split; the numbers come from this brand's moments.
 

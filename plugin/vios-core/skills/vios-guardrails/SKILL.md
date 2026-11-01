@@ -26,6 +26,16 @@ One place for the lines we don't cross and the numbers we share, so every skill 
 
 one message · one CTA or none · no pressure device · no persuasion after a "no" · plain words, no superlatives. The full library (System 1 and System 2, the two selves, the seventeen principles from cognitive ease to thin-slicing, the limits of asking customers) is in this plugin: `../../references/section-3-1-behavioural-economics.md` (BE, read by `vios-be-lens`) and `../../references/section-3-2-non-verbal-communication.md` (non-verbal, read by `vios-nonverbal-lens`). The marketing-side devices (one CTA, the tone ladder neutral/suggestive/directive, restating the plan in confirmations, shareable moments as the success signal) are `vios-be-lens` checks built on the library, not library entries: cite them as checks, and cite principles by their section 3.1 name. The five lines above are enough to run any skill; the references are for the lenses and the journey stages.
 
+## Evidence and house doctrine
+
+The practice's rules come from three kinds of source, and every lens, skill and client document says which kind it is leaning on, so that a client, a designer or a new team member can tell a finding from a choice:
+
+- **Evidence**: findings that have held up across studies and that the practice would defend to a sceptic. Peak-end and duration neglect, the two selves, cognitive ease, loss aversion and the reference point, choice overload, defaults. Cite the section 3.1 entry; where a client asks, the primary study is named in that entry.
+- **Contested**: ideas the practice uses as working heuristics because they produce good design decisions, while the science behind them is disputed or has failed to replicate in part. Thin-slicing and first-impression speed, facial expression as a universal readout of emotion (the basis of the non-verbal lens), priming effects, most of the "persuasion" literature. Use them as design heuristics; never present them to a client as proven mechanisms, and never build a measurement claim on them.
+- **House doctrine**: the practice's own choices, held because of who the brand wants to be, not because a study says so. The refusal of pressure devices, no persuasion after a "no", plain words, silent moments, the filter test, the three-to-seven HIGH rule, the 70/30 archetype split, the tone ladder, the reporting thresholds (n ≥ 30, 50 results per cell). These are commitments. A client may be told they cost click-through; they are not negotiated per post.
+
+When a skill states a mechanism ("viewers read the face before the words"), it is in the second group unless the library entry says otherwise. When a number is quoted, it is in the third group unless a dated source is beside it.
+
 ## Messages and micro-stories (owned here)
 
 The brand book's message architecture (VIOS Practice, Stage 1 §2.1.2.10–11) is the source every piece of copy, video, calendar slot and reply draws from. It has three layers, and `brand-book.md` carries them per client:
@@ -61,7 +71,7 @@ Every client has a folder (`[client]/`) with:
 | `calendar-sources.md` | Where holiday / name-day / event dates come from (dated sources, never memory) |
 | `qa-log.csv` | `date, client, asset, platform, language, attempt, verdict, failed_checks (joined with ;), approver, signed_off_by, signed_off_at` — scheduling and upload require `signed_off_at` filled |
 | `data/YYYY-MM/` | Raw pulls with source and pulled-at in the filename |
-| `journey/` | Stage 2 and 3 outputs (`vios-journey`): `journey-map.md`, `reasoning-note.md`, `handoff-to-design.md`, `design/` (pages, choreography, recovery, briefs) |
+| `journey/` | Stage 2 and 3 outputs (`vios-journey`): `intake-stage-2.md`, `observation.md` (shadowed services and review read, dated; the re-weighting date), `journey-map.md`, `reasoning-note.md`, `handoff-to-design.md`, `design/` (pages, choreography, recovery, briefs) |
 | `training/` | Stage 4 outputs (`vios-journey:vios-training-programme`): architecture, registers, cadence calendar, staff and management stacks, handoffs |
 | `archive/` | Stage 1–4 working documents that stay out of the deliverable: filled worksheets, `deep-interrogation.md` (the interrogation answers, from `vios-name-and-tagline`), `naming.md` (long list, scores), `filter-test-batches.md` (the pass/fail batches from `vios-filter-test`), `harvest-stage-1.md` |
 | `brand-book-vN.md` | The assembled brand book per edition (`vios-brand-book`); `brand-book.md` stays the live summary the operating skills read |

@@ -30,7 +30,7 @@ Creative is the targeting now. Meta's and Google's systems find the audience; wh
 - **Round 2, tone.** The winning concept as three ads on the Vios tone ladder (A neutral: asks or states · B suggestive: proposes · C directive: recommends), separate ad sets. Round 2 needs 3 cells (≈ €24/day); under that, test only neutral vs suggestive, or run the same two cells for 14 days. Never split a cell below ~€8/day.
 - **Delivery event**: the highest-volume event the budget can feed (landing-page view or link click; a booking event on €8/day never leaves learning).
 - **Decision metric, round 1**: cost per landing-page view / link click, pre-registered in the test plan; bookings by code as a sanity check, not the winner call. Trade-off, stated plainly: a click winner can lose on covers, so a click winner is confirmed against offer-day covers before scaling.
-- **Calling a winner**: the `vios-ads-audit` › Rules › Winner rule, as written there (minimum sample, results per cell, gap); otherwise "inconclusive, keep running". Labelled "early read" in any report.
+- **Calling a winner**: the `vios-ads-audit` › Rules › Winner rule, as written there (minimum sample, 50 results per cell, gap); otherwise "inconclusive, keep running". Labelled "early read" in any report. Before round 1 starts, the test plan states whether the budget can reach 50 results per cell within 14 days; if it cannot, the plan says so and round 1 is a **bet** (the recap names what would have been needed), not a test.
 - **Warm and guest campaigns**: only with the minimum audience in `vios-ads-audit` › Rules and only when ≥ €5/day is left over; otherwise cold only, noted in the recap. Never one budget across cold, warm and guests.
 
 ## Meta build

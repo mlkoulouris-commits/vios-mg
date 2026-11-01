@@ -11,7 +11,7 @@ Read first: `../../references/section-3-2-non-verbal-communication.md`, the libr
 
 ## Why the face matters
 
-Viewers read emotion from the face in a fraction of a second, before the words (thin-slicing; Gladwell's *Blink*, drawing on Ekman's facial-expression research). If the face is wrong, the script doesn't matter.
+Working heuristic (contested evidence, per `vios-guardrails` › Evidence and house doctrine): viewers form an impression from the face before they process the words (thin-slicing; Gladwell's *Blink*, drawing on Ekman's facial-expression research, whose universality claims are disputed). The practice designs as if this holds because a wrong face costs trust whether or not the mechanism is universal. If the face is wrong, the script doesn't matter.
 
 ## Evidence
 

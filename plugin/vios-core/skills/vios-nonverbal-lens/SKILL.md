@@ -7,7 +7,7 @@ description: Review a Vios Marketing persona video or avatar clip for facial exp
 
 The Vios Non-verbal Communication library, moved from the venue floor to the camera. Run it on every persona video, avatar clip or talking-head ad, after the script passes `vios-be-lens` and before `vios-consistency-qa`. Hard lines: `vios-guardrails` 6 and 7.
 
-If the VIOS Practice manuscript (Non-verbal library) is in the project, read it first and let it override anything below. Load the client's Persona Bible, especially the Expression palette, and the character sheet.
+Read first: `../../references/section-3-2-non-verbal-communication.md`, the library verbatim (thin-slicing and the threshold, the six categories: proxemics, paralanguage, kinesics, haptics, chronemics, environmental cues, each with mechanism and failure mode). It overrides anything below; the checks here are the camera-side application of it. Then load the client's Persona Bible, especially the Expression palette, and the character sheet. On the floor the same library is applied by `vios-journey:vios-journey-design` and `vios-journey:vios-training-programme`.
 
 ## Why the face matters
 

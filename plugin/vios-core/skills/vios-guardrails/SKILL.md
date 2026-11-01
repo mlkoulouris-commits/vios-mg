@@ -24,7 +24,7 @@ One place for the lines we don't cross and the numbers we share, so every skill 
 
 ## Behavioural economics, the five-line version
 
-one message · one CTA or none · no pressure device · no persuasion after a "no" · plain words, no superlatives. The full library (Two Selves, peak-end, thin-slicing, cognitive ease, proper choices, tone ladder neutral/suggestive/directive, commitment devices, system output not guest tendency, accepted trade-offs) is in the VIOS Practice manuscript, held by the account manager; the five lines above are enough to run any skill.
+one message · one CTA or none · no pressure device · no persuasion after a "no" · plain words, no superlatives. The full library (Two Selves, peak-end, thin-slicing, cognitive ease, proper choices, tone ladder neutral/suggestive/directive, commitment devices, system output not guest tendency, accepted trade-offs) is in this plugin: `vios-core/references/section-3-1-behavioural-economics.md` (BE, read by `vios-be-lens`) and `section-3-2-non-verbal-communication.md` (non-verbal, read by `vios-nonverbal-lens`); the five lines above are enough to run any skill, the references are for the lenses and the journey stages.
 
 ## Messages and micro-stories (owned here)
 

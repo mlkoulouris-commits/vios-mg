@@ -7,7 +7,7 @@ description: Review any Vios Marketing post, video script, ad, booking flow or r
 
 A review pass run on Vios Marketing output before it goes to QA. It applies the Vios behavioural economics library (grounded in Kahneman, *Thinking, Fast and Slow*, and Gladwell, *Blink*) to digital work: online content is the first touchpoints of the guest journey, so the same rules apply as in the venue. Hard lines: `vios-guardrails` 1–12.
 
-If the VIOS Practice manuscript (BE library, Section 3.1) is in the project, read it first and let it override anything below.
+Read first: `../../references/section-3-1-behavioural-economics.md`, the library verbatim (System 1 and System 2, the two selves, the principles with mechanism and failure mode per entry, the limits of asking customers). It overrides anything below; the checks here are the marketing-side application of it. Cite entries by their section-3.1 name when you flag something, so the fix traces to the library.
 
 ## Foundation: Two Selves
 

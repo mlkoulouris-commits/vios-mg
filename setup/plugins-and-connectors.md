@@ -6,7 +6,7 @@ What the department needs enabled in a Claude account, and why. Status column is
 
 | Plugin | Why | Status |
 | --- | --- | --- |
-| `vios-core` | guardrails, BE lens, non-verbal lens, filter test; every other Vios plugin loads it | **upload 0.2.0** |
+| `vios-core` | guardrails, BE lens, non-verbal lens, filter test, Part III references; every other Vios plugin loads it | **upload 0.3.0** |
 | `vios-brand` | Stage 1: brand diagnosis, persona builder | **upload 0.1.0** |
 | `vios-marketing` | operations: calendar, voice, video, QA, ads, audit, report | enabled 0.2.0; **upload 0.3.0** |
 | `vios-journey` | Stages 2–4: journey map, journey design, training programme | **upload 0.1.0** |

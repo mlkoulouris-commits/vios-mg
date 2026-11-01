@@ -22,7 +22,7 @@ Every page names its dominant inputs: **brand** (who it is for, the Role here, w
 
 ## Working order (§ 2.3.2.3)
 
-HIGH first, and within HIGH the peak and the end first. Then MEDIUM, then LOW, then the silent moments last (what staff do not do, and where they are while not doing it). The schedule is written down before the first page. **Single-page mode**: when one page is asked for before the set exists (a test, a pilot moment), write it, say on the page that it is out of order, and reference `choreography.md`, `recovery.md` and `schedule.md` as "to be written" with the scenario codes it expects.
+HIGH first, and within HIGH the peak and the end first. Then MEDIUM, then LOW, then the silent moments last (what staff do not do, and where they are while not doing it). The schedule is written down before the first page and seeds the recovery codes (one `R-Mnn` per HIGH moment plus the concept's scenario codes, e.g. `R-UPSET`, `R-ESC`, `R-QUEUE`) so that HIGH pages can name their recovery before `recovery.md` exists; `recovery.md` then adopts those codes. **Single-page mode**: when one page is asked for before the set exists (a test, a pilot moment), write it, say on the page that it is out of order, and reference `choreography.md`, `recovery.md` and `schedule.md` as "to be written" with the scenario codes it expects.
 
 ## The design page (one per moment)
 
@@ -48,7 +48,7 @@ The manuscript's eleven questions, for completeness, map onto the blocks as foll
 2. **Customer state**: where on the arc, what they just had, what comes next.
 3. **Brand intention** (from band 4).
 4. **Action**: who approaches from where, says what, places what where. Precise enough for two people to do it identically.
-5. **Script**: only where exact words are required; one or two locked lines; floor register; passes the filter test. "Welcome" is not a script; "Welcome — sit anywhere" is. Where the moment changes with the daypart or the occasion, give the line in **registers** (default · evening · private event) rather than variations.
+5. **Script**: only where exact words are required; one or two locked lines; floor register; passes the filter test. "Welcome" is not a script; "Welcome — sit anywhere" is. Where the moment changes with the daypart or the occasion, give the line in **registers** (default · evening · private event) rather than variations. A locked line first written at Stage 3 is new copy: mark it NEW on the page for the approver and append it to the Stage 3 block of `[client]/archive/filter-test-batches.md`.
 6. **Non-verbal frame**: body, geometry, silence, tone, volume, timing. Usually larger than the script.
 7. **Sensory frame**: light, sound, scent, surface, temperature; or "inherits the room".
 8. **BE design**: the decisions the guest makes here and how the design shapes them; empty for low-decision moments.
@@ -56,7 +56,7 @@ The manuscript's eleven questions, for completeness, map onto the blocks as foll
 10. **Success metric**: an observable signal ("sat without asking which table"), never a sentiment.
 11. **Failure mode** and the recovery reference.
 
-HIGH pages add: the brand-coherence test for this moment (does it hold the Role and the Connection statement), the story-framework block it plays, operational dependencies. MEDIUM pages carry the same blocks, shorter. LOW pages: CURRENT STATE, DO, DON'T, the metric line. SILENT pages: DO is "Nothing" with what M-before did the work, and DON'T lists what would break the silence. Footer: brand-book sections, BE and NV entries, dependencies. Every page is one rendered page; uniform layout across the set.
+HIGH pages add: the brand-coherence test for this moment (does it hold the Role and the Connection statement), the story-framework block it plays, operational dependencies. MEDIUM pages carry the same blocks, shorter. LOW pages: CURRENT STATE, DO, DON'T, the metric line. SILENT pages: DO is "Nothing" with what M-before did the work, and DON'T lists what would break the silence. Footer: brand-book sections, BE and NV entries, dependencies. Every page is one rendered page; uniform layout across the set. A two-moment end (end-1 and end-2 designed as one on the map) is two pages, one per moment, each with the same header note naming the pair and cross-referencing the other; the shared design lives in the choreography's cluster, not in a merged page.
 
 ## Choreography (§ 2.3.2.5)
 
@@ -68,7 +68,7 @@ By failure scenario, not by moment: wrong order, wait exceeded, guest visibly un
 
 ## Patterns to apply by default
 
-S3-08 threshold thin-slice + S3-01 locked greeting + S3-02 silent walk as one composition · S3-03 non-visible information rule · S3-04 one decision anchor at ordering, defended, not drifting · S3-05 peak placement test ("if the evening ended here, would it feel complete?") · S3-06 bookended end that echoes the threshold · S3-07 recovery within character. Record a pattern the engagement used that is not in the chapter, in the standard form.
+S3-08 threshold thin-slice + S3-01 locked greeting + S3-02 silent walk as one composition · S3-03 non-visible information rule · S3-04 one decision anchor at ordering, defended, not drifting · S3-05 peak placement test ("if the evening ended here, would it feel complete?") · S3-06 bookended end that echoes the threshold · S3-07 recovery within character. **Counter formats** (no host, no walk): one guest's end (S3-06) and the next guest's threshold (S3-08) land on the same team member in the same seconds; no chapter pattern covers it, so design the pair as one composition with an explicit split rule (body to the leaver, eyes to the newcomer, or the brand's equivalent) and record it as a harvest candidate, the counter variant of S3-06/S3-08. Record a pattern the engagement used that is not in the chapter, in the standard form.
 
 ## Close the design (§ 2.3.2.7)
 

@@ -1,0 +1,32 @@
+# Stage 2 intake — Atelier del Gelato
+
+**Draft — book edition v1.0 unsigned (open-facts 39); observation move not held.**
+
+Date 2026-11-01. Move 0 of `vios-journey:vios-journey-map`. Brand book edition read: **Brand Book v1.0, draft** (`brand-book-v1.md`, 2026-11-01, Format A, unsigned) with the live summary `brand-book.md` (identity table, Messages and story, provisional journey, filter test), `persona-bible.md` v1.0, `fact-sheet.md` and `accounts.md` (carried from the archive, each row sourced), `open-facts.md` rows 1–39. The founder's prior, Brand Book v3 (7 Oct 2026), is cited only through those files. Nothing from the October engagement's map, pages or reasoning is carried; its dated notes are cited in `observation.md` as facts.
+
+The skill reads "a finished brand book". This one is a draft edition: the owner interview is not held (open-facts 7) and the founder has not signed (39). The map is therefore built on the founder's prior as re-derived by Stage 1, and every weight is **provisional, unobserved** (Move 2b not held). The map is re-read against the signed edition and against the observation before the Reasoning Note goes to Evo.
+
+## The six elements, in the practice's words
+
+| Element | In the practice's words | Thin? |
+| --- | --- | --- |
+| **Audience persona** (all layers) | Elena, 34, creative director, central Sofia, walks home along Rakovski with the day on her shoulders. Pain: mass desserts empty, "healthy" joyless, cafés rush her, her small wins pass unmarked. Need: to feel her everyday moments matter. Before: busy, a little drained. After: calm, seen, lighter. Creator 70 / Lover 30: wants real quality and to be met as herself; fears the mediocre, the duplicated, being processed as one of many. Situational desire at the counter: noticed as herself, something real in her hands in under a minute. Affinities (COS, Aesop, Apple, Kinfolk, her coffee bar): restraint, being addressed as a person, slowness as a luxury, a short range. (`brand-book-v1.md` Part 2.) | Founder's prior, not yet ground-truthed (open-facts 16, 18). **Second audience** (B2B venue owner) has no persona: the partner-table phase is mapped thin and MEDIUM-only (open-facts 19). |
+| **Brand Role and Connection statement** | **Peer.** "Your day matters to us as much as it does to you, so let's celebrate it together." Beside her, never above the counter; "what are *we* celebrating". (Part 3.) | No. |
+| **Archetypal mix** | **Lover 70 / Innocent 30.** Lover: closeness, affection, red-carpet treatment for an ordinary day; its fear of invisibility mirrors her fear of being processed. Innocent: lightness, honesty, simplicity; stays light, never cute. Refused: sensuality, heaviness, cuteness, party energy; rejected pairs Caregiver, Jester, Creator-primary. (Part 3.) | No. |
+| **Eight expression dimensions** | One imagined person: a warm peer in her early thirties. Physical presence 3 (in the room, never the hero of the frame); dress 2 (linen, cream/sage/caramel, nothing styled); accessories 1 (a pencil, a notebook of guests' names, no device between her and the guest); language 4 plain ("we", "today", one question before a statement); tone 4 warm, never gushing; volume 2 (no exclamation energy); attitude 2 (lightly playful, earnest without solemnity); beliefs 2 (spoken rarely, never as a reply). Carried on the floor by real team members; online as the written voice (format: open-facts 26). (Part 3; `persona-bible.md` §5.) | No. |
+| **Differentiator and positioning** | Every order opens with "What are we celebrating today?" and closes with an Atelier Note drawn by chance; needs no theatre, only people, so it travels to a mall counter and a partner's table. Onliness: the only gelato and tiramisu atelier where every order becomes a small celebration of your day. Positioning: for people in Sofia who believe their everyday moments matter but feel processed and rushed, a short pause in which the moment is noticed and celebrated, unlike gelato shops that sell product and tiramisu bars that sell novelty. (Parts 2, 4, 6.) | The ritual at Ring Mall is unverified (open-facts 9); who draws the Note and when it is handed is unverified (28). The differentiator is a fact at Rakovski (fact sheet: 25 cards printed and in the jar, Menelaos 2026-10-30). |
+| **Core messages and story framework** | Twelve blocks: 1 Your moment · 2 Not an order · 3 The pause · 4 Ask, not sell · 5 The question and the Note (primary); 6 Happiness is an attitude · 7 The name people think of · 8 Fresh, the Italian way, with its story · 9–12 the four values (secondary). Story: Elena's unmarked day (1) → every counter treats her as the next order (2) → a Tuesday with something small in it (3) → someone looks up and asks (4) → saying it out loud feels silly; the risk is the generic friendly (5) → the answer taken as it is, two flavours tasted, a card drawn by chance, ten minutes (6) → "they asked what I was celebrating, and I actually told them" (7). (Parts 7–8.) | Written on the draft diagnosis; inherits its status. Not thin as text. |
+
+## The operation as it is (fact sheet, 2026-11-01)
+
+Walk-in, no bookings. Rakovski 149, 11:00–20:00 every day; Ring Mall counter since May 2026 on mall hours (hours, format, queue behaviour: open-facts 11); the Lab produces for both and sells B2B (53 % of Lab sales external, Jun 2025–Aug 2026). Range: 8 classics, 3 Aperitivo (alcoholic, age line open-facts 14), 3 Mindful (no added sugar), 2 seasonal; tiramisu collection single / sharing / box of 12, made behind the scenes ("alla minute" retired); coffee. Made fresh daily in the Lab. The Note: 25 cards printed and in the jar at Rakovski. Prices (12), allergen matrix (13), room facts (27), email capture (29): not on file. Summer peak; winter carried by tiramisu. Languages BG, EN; register ти at the counter, Вие in letters and B2B.
+
+## Gaps the map inherits
+
+1. No observation: no shadowed service, no review read tagged to moments (open-facts 40, 16). All weights provisional.
+2. The founder's voice: the book is a draft on his prior (7, 39).
+3. The ritual at Ring Mall: unverified (9); the mall counter's format, seating, queue, jar (11, 43).
+4. Who draws the Note and when it is handed relative to payment (28).
+5. No B2B persona; partner names; whether story cards exist printed and sit on partner tables today (19, 48).
+6. Room facts at Rakovski: counter, display from the street, tables, sound (27, 44).
+7. Prices, the age line, the allergen line (12, 14, 13), which the ordering pages cannot lock without.

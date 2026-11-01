@@ -1,0 +1,9 @@
+date,client,asset,platform,language,attempt,verdict,failed_checks,approver,signed_off_by,signed_off_at
+2026-11-01,atelier,2026-11 slot 1 weekly facts (GBP 3 Nov),GBP,BG/EN,1,HOLD,Visual identity;Food truth;Accessibility;route (open-facts 74),Menelaos Koulouris,,
+2026-11-01,atelier,2026-11 slot 2 the card Reel (5 Nov),Instagram+Facebook,BG+EN,1,HOLD,Visual identity;BE rules;Food truth;Consent & rights;Accessibility,Menelaos Koulouris,,
+2026-11-01,atelier,2026-11 slot 3 Arhangelovden photo (8 Nov),Instagram+Facebook,BG+EN,1,HOLD,Facts;Visual identity;Food truth;Accessibility,Menelaos Koulouris,,
+2026-11-01,atelier,2026-11 slot 4 tiramisu collection (GBP 10 Nov),GBP,BG/EN,1,HOLD,Facts;Visual identity;Food truth;Accessibility;route (open-facts 74),Menelaos Koulouris,,
+2026-11-01,atelier,2026-11 slot 5 four origins carousel (11 Nov),Instagram+Facebook,BG+EN,1,HOLD,Persona voice;Facts;Visual identity;Food truth;Accessibility,Menelaos Koulouris,,
+2026-11-01,atelier,2026-11 slot 6 for venues Lab photo (13 Nov),Instagram+Facebook,BG+EN,1,HOLD,One CTA;Platform fit;Visual identity;Food truth;Accessibility,Menelaos Koulouris,,
+2026-11-01,atelier,2026-11 slot 7 guest card frame (15 Nov),Instagram+Facebook,BG+EN,1,BLOCK,Consent & rights;Facts;Visual identity;Food truth,Menelaos Koulouris,,
+2026-11-01,atelier,2026-11 slot 7b fallback story (15 Nov),Instagram story,BG/EN,1,HOLD,Visual identity;Food truth;Consent & rights,Menelaos Koulouris,,

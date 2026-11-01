@@ -47,6 +47,14 @@ The brand book's message architecture (VIOS Practice, Stage 1 §2.1.2.10–11) i
 
 **Micro-story rule.** Every post, story, caption, script, ad, reply and booking message is a micro-instance of the frame: it names its anchor core message and the story block it plays (most social content sits in blocks 1–4 and 6; departure and after-visit copy in 7). Touchpoint copy is written from the matching micro-message block's "understanding to create" and "verbal expression", and is checked against its failure modes. One piece plays one block; the arc is covered across the month (`vios-content-calendar`), never inside one post. A micro-story shows the hero's moment; it does not narrate the brand's story.
 
+## Changing the method (owned here)
+
+The skills are the method; a change to a skill is a change to the practice. Three rules:
+
+1. **Doctrine changes go through the owner.** A hard line, a shared number, a weighting rule, a tier in the evidence table or a stage's moves changes only on the owner's explicit word, in a commit whose message names the change, with a line in the dry-run or harvest note so the manuscript's next version carries it. Wording, examples and references can change without that.
+2. **One writer at a time** in the method repository. Before any edit or package, check that no other session is working in it; two sessions editing skills in one afternoon is how a method drifts without anyone deciding.
+3. **Evals before a package.** The three verdict skills (`vios-consistency-qa`, `vios-ads-audit`, `vios-filter-test`) carry `evals/cases.json`; a package is cut only after a run that passes, logged in `evals/runs.md`. `release.py check` guards the structure, a session runs the cases.
+
 ## Shared numbers (owned here)
 
 - **Reporting n**: show *n* beside every percentage. If either side is < 30, show raw numbers and say "too small to call". An owner will act on "doubled" when it's 3 vs 6.

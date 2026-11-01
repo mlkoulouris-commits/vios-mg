@@ -5,6 +5,7 @@
   python scripts/release.py sync [plugin ...]            copy repo SKILL.md files into the installed Claude plugin cache (all three if none named)
   python scripts/release.py tasks                        copy setup/prompts/*.md over the live scheduled-task prompts
   python scripts/release.py status                       show repo version, packaged file and cache version per plugin
+  python scripts/release.py check [plugin ...]           structure check: frontmatter names, reference paths, eval files (run before package)
 
 "package" is the proper route (then upload the .plugin file in Settings > Plugins and commit).
 "sync" is the quick route: live at the next session, overwritten by the next upload, so edit the repo first.
@@ -15,7 +16,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 PLUGIN_DIR = REPO / "plugin"
 MARKET = REPO / ".claude-plugin" / "marketplace.json"
-PLUGINS = ["vios-core", "vios-brand", "vios-journey", "vios-marketing"]
+PLUGINS = ["vios-core", "vios-brand", "vios-journey", "vios-marketing", "vios-engage"]
 HOME = Path.home()
 CACHE_ROOT = Path(os.environ.get("APPDATA", HOME / "AppData" / "Roaming")) / "Claude" / "rpm"
 TASK_ROOT = HOME / ".claude" / "scheduled-tasks"
@@ -54,6 +55,45 @@ def find_cache(name: str):
     return max(hits, key=lambda d: d.stat().st_mtime) if hits else None
 
 
+def cmd_check(args):
+    """Structure check a package must pass: frontmatter name == folder, every ../../references/ path resolves,
+    evals/cases.json parses where present, no stray __pycache__. It cannot run a skill; see docs/evals.md."""
+    names = args or PLUGINS
+    bad = 0
+    for name in names:
+        root = PLUGIN_DIR / name
+        if not root.exists():
+            print(f"{name}: no such plugin"); bad += 1; continue
+        for skill in sorted((root / "skills").iterdir()):
+            md = skill / "SKILL.md"
+            if not md.exists():
+                print(f"  {name}/{skill.name}: missing SKILL.md"); bad += 1; continue
+            s = read_text(md)
+            m = re.search(r'^name:\s*"?([^"\n]+)"?\s*$', s, re.M)
+            if not m or m.group(1).strip() != skill.name:
+                print(f"  {name}/{skill.name}: frontmatter name {m.group(1) if m else None!r} != folder"); bad += 1
+            for ref in re.findall(r"`(\.\./\.\./references/[^`]+?\.md)`", s):
+                if not (skill / ref).resolve().exists():
+                    print(f"  {name}/{skill.name}: reference not found {ref}"); bad += 1
+            for ref in re.findall(r"`(references/[^`]+?\.md)`", s):
+                if not (skill / ref).exists():
+                    print(f"  {name}/{skill.name}: reference not found {ref}"); bad += 1
+            cases = skill / "evals" / "cases.json"
+            if cases.exists():
+                try:
+                    json.loads(read_text(cases)); print(f"  {name}/{skill.name}: evals ok")
+                except Exception as e:
+                    print(f"  {name}/{skill.name}: evals/cases.json invalid: {e}"); bad += 1
+        pj = root / ".claude-plugin" / "plugin.json"
+        try:
+            json.loads(read_text(pj))
+        except Exception as e:
+            print(f"  {name}: plugin.json invalid: {e}"); bad += 1
+    print("check:", "OK" if bad == 0 else f"{bad} problem(s)")
+    if bad:
+        sys.exit(1)
+
+
 def cmd_status(_args):
     for name in PLUGINS:
         pkg = sorted(PLUGIN_DIR.glob(f"{name}-*.plugin"))
@@ -70,6 +110,7 @@ def cmd_package(args):
         sys.exit(f"unknown plugin {name}; one of {PLUGINS}")
     if not re.fullmatch(r"\d+\.\d+\.\d+", version):
         sys.exit("version must be x.y.z")
+    cmd_check([name])
     pj = plugin_json(name)
     s = read_text(pj)
     s2 = re.sub(r'"version":\s*"[^"]+"', f'"version": "{version}"', s, count=1)
@@ -130,7 +171,7 @@ def cmd_tasks(_args):
 
 
 if __name__ == "__main__":
-    cmds = {"status": cmd_status, "package": cmd_package, "sync": cmd_sync, "tasks": cmd_tasks}
+    cmds = {"status": cmd_status, "package": cmd_package, "sync": cmd_sync, "tasks": cmd_tasks, "check": cmd_check}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
     cmds[sys.argv[1]](sys.argv[2:])

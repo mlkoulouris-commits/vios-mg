@@ -1,0 +1,42 @@
+{
+  "skill": "vios-ads-audit",
+  "how": "A fresh session loads the skill, treats each fixture as this week's Meta Ads export for one client with the ads-plan below, and runs the Rules. Compare the flag it raises for the named ad or cell with expected. Record the run in runs.md.",
+  "ads_plan": {"monthly_budget": 600, "target_cost_per_booking": 8, "planned_test": {"name": "Autumn A/B", "ends": "2026-11-20", "cells": ["A", "B"]}},
+  "cases": [
+    {
+      "id": "ads-01-too-thin",
+      "fixture": {"ad": "Reel 3", "window_7d": {"impressions": 620, "clicks": 9, "results": 1, "spend": 11.2}},
+      "expected_flag": "too thin to judge",
+      "expected_action": "keep on the Watch list; no verdict on any metric",
+      "rule": "Minimum sample: < 1,000 impressions or < 30 clicks"
+    },
+    {
+      "id": "ads-02-winner-not-yet",
+      "fixture": {"test": "Autumn A/B", "cells": {"A": {"impressions": 1540, "clicks": 48, "results": 22}, "B": {"impressions": 1510, "clicks": 51, "results": 35}}},
+      "expected_flag": "inconclusive, keep running",
+      "expected_action": "no winner called; both cells below 50 results; an early read may be shown as raw numbers headed 'too small to call'",
+      "rule": "Winner: minimum sample in both cells AND >= 50 results per cell AND >= 30 % gap"
+    },
+    {
+      "id": "ads-03-fatigue",
+      "fixture": {"ad": "Carousel 1", "window_7d": {"impressions": 2300, "clicks": 60, "results": 34, "frequency": 3.4, "ctr": 0.026}, "previous_7d": {"ctr": 0.035, "results": 31}, "first_full_week": {"cost_per_result": 6.1}, "this_week": {"cost_per_result": 6.6}},
+      "expected_flag": "fatigue",
+      "expected_action": "two of three signals turned (frequency > 3, CTR down 26 %); CPR up 8 % does not count; recommend a refresh for human approval",
+      "rule": "Fatigue when two of three turn together"
+    },
+    {
+      "id": "ads-04-learning-phase",
+      "fixture": {"ad_set": "Warm 2", "age_days": 4, "status": "learning", "window_7d": {"impressions": 1800, "clicks": 40, "results": 3}},
+      "expected_flag": "in learning, not judged",
+      "expected_action": "no edit, no pause; revisit after day 7",
+      "rule": "Learning phase: don't judge or edit ads < 7 days old"
+    },
+    {
+      "id": "ads-05-planned-test-protected",
+      "fixture": {"test": "Autumn A/B", "today": "2026-11-10", "cell_B": {"impressions": 2100, "clicks": 55, "results": 12, "cost_per_result": 14.0}},
+      "expected_flag": "planned test, protected until 2026-11-20",
+      "expected_action": "not paused even though cost per result is above target; note it; only disapproval or overspend ends it early",
+      "rule": "Planned tests: don't pause before the end date"
+    }
+  ]
+}

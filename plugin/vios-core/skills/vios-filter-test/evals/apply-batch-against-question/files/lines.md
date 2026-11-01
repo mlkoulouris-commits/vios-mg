@@ -9,3 +9,4 @@
 9. We hope everything was perfect for you today?
 10. Lozenets kitchen. There's a chair.
 11. (tagline candidate) "Sunday, at the table."
+12. Sorry if the wait was long — I hope everything was okay? Do let us know if anything at all was wrong.

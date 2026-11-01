@@ -1,10 +1,8 @@
 schema_version: "1.1"
 name: apply-batch-against-question
 expected_outcome: |
-  Lines 2, 4, 6, 8 and 10 pass. Lines 1, 3, 5, 7 and 9 fail, each with the marker named (exclamation marks and
-  self-praise for 1; telling the guest how they will feel for 3; performed warmth for 5; pressure plus superlative
-  for 7; anxious reassurance-seeking for 9). Line 11 is a tagline, so the output says the filter test does not judge
-  it and points to the name-and-tagline tests instead. The output does not rewrite the failing lines unless asked;
-  it classifies.
+  Lines 2, 4, 6, 8 and 10 pass. Lines 1, 3, 5, 7 and 9 fail, each with the marker named. Line 11 is a tagline, set
+  aside with a pointer to the name-and-tagline tests. Line 12 is the edge case: it passes "Is this effusive?" but breaks
+  the never-trait "anxious", and the output says so without mixing the two tests. One line of reasoning each; no rewrites.
 context:
   scaffold_script: place-files.sh

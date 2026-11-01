@@ -4,4 +4,4 @@ focus: trace
 weight: 1
 ---
 
-client/qa-log.csv gains one row with verdict SHIP
+client/qa-log.csv gains one row with verdict SHIP and attempt 1

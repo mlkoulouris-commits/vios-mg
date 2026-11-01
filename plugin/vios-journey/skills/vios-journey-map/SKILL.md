@@ -5,7 +5,7 @@ description: "Build the customer journey map for a Vios F&B client from a finish
 
 # Vios Journey Map
 
-Stage 2. The map translates the brand into the moments where it has to act, what it has to do there, and which moments carry disproportionate weight in memory. It is a one- or two-page strategic instrument, not an emotion diagram and not a touchpoint inventory. Hard lines: `vios-core:vios-guardrails` 10 (the founder signs the map), 11.
+Stage 2. The map translates the brand into the moments where it has to act, what it has to do there, and which moments carry disproportionate weight in memory. It is a short strategic instrument (one or two pages in the manuscript, three or four in the house form), not an emotion diagram and not a touchpoint inventory. Hard lines: `vios-core:vios-guardrails` 10 (the founder signs the map), 11.
 
 ## Read first
 
@@ -35,7 +35,7 @@ Four to eight phases, named for this brand's customer, not the category (pattern
 
 ## Move 2 — Identify the moments
 
-Walk each phase and ask three questions: what does the customer do, what does the brand do, what is at stake if either does it badly. Every answer that is not "nothing" is a moment. Capture operational moments and brand moments, all of them, in sequence, with the customer's action and the brand's action, coded M1, M2 … Twenty to fifty is normal. Routine moments (coat, water, bathroom) are mapped, not skipped (pattern S2-04).
+Walk each phase and ask three questions: what does the customer do, what does the brand do, what is at stake if either does it badly. Every answer that is not "nothing" is a moment. Capture operational moments and brand moments, all of them, in sequence, with the customer's action and the brand's action, coded M01, M02 … (two-digit, as the house form). Twenty to fifty is normal. Routine moments (coat, water, bathroom) are mapped, not skipped (pattern S2-04).
 
 ## Move 3 — Assign weight
 
@@ -71,7 +71,7 @@ Five questions, each yes or no with the fix: arc specific to this customer · al
 
 ## Output
 
-1. `[client]/journey/journey-map.md` in the house form above: cover (venue, descriptor, stage, date, edition note), how to read, weight tiers with counts, markers, the arc table, one table per phase, the summary that passes to Stage 3. One or two pages when rendered. The Claude Doc version when the docs connector is present, landscape, readable at a glance by a founder or a designer. The inventory of band 2 (customer action, brand action per moment) stays in `[client]/archive/journey-inventory.md`.
+1. `[client]/journey/journey-map.md` in the house form above: cover (venue, descriptor, stage, date, edition note), how to read, weight tiers with counts, markers, the arc table, one table per phase, the summary that passes to Stage 3. Three or four pages when rendered under the house-form rules above. The Claude Doc edition (landscape, readable at a glance by a founder or a designer) only when the account manager asks for it. The inventory of band 2 (customer action, brand action per moment) stays in `[client]/archive/journey-inventory.md`.
 2. `[client]/journey/reasoning-note.md`.
 3. `[client]/journey/handoff-to-design.md` (§ 2.2.6): constraints grouped by moment cluster, each as constraint · detail and source (the brand-book section or the operational fact, e.g. a named host's hours); the critical dependencies Stage 3 must flag; the convergent inputs per HIGH moment; where the design has latitude.
 4. **Bridge to marketing**: update `[client]/brand-book.md` › Journey so the canonical touchpoints (`vios-core:vios-guardrails` › Journey) point at their moment codes, the peak and the signature are marked, the guest state per touchpoint is copied from the placement table, and the owner column is derived from the phase (pre-arrival and post-visit phases are marketing, in-venue phases are floor, unless the fact sheet says otherwise). `vios-content-calendar`, `vios-persona-voice` and `vios-persona-builder` read that table; the full map stays in `journey/`.

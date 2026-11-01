@@ -60,7 +60,7 @@ HIGH pages add: the brand-coherence test for this moment (does it hold the Role 
 
 ## Choreography (§ 2.3.2.5)
 
-A separate document, "Choreography & continuities", in three sections, **continuities first**: section 1 the continuities as titled rules (the voice is the same from the caption to the farewell · approach angle and distance · step back after every locked gesture · where the team stands when not at a table · the signature leads, every guest, every daypart · the **moment cluster** around the peak designed as one, every moment serving it · the silences as design); section 2 the transitions as moment pairs (M8 → M9 …) with what the transition does and why it matters, duration and what fills it; section 3 the handoffs (who passes the guest to whom, what is said and shown, what the guest does not see). Name the cluster explicitly (ONE Gallery: M13–M21 protects the peak at M18).
+A separate document, "Choreography & continuities", in three sections, **continuities first**: section 1 the continuities as titled rules (the voice is the same from the caption to the farewell · approach angle and distance · step back after every locked gesture · where the team stands when not at a table · the signature leads, every guest, every daypart · the **moment cluster** around the peak designed as one, every moment serving it · the silences as design); section 2 the transitions as moment pairs (M08 → M09 …) with what the transition does and why it matters, duration and what fills it; section 3 the handoffs (who passes the guest to whom, what is said and shown, what the guest does not see). Name the cluster explicitly (ONE Gallery: M13–M21 protects the peak at M18).
 
 ## Recovery (§ 2.3.2.6)
 
@@ -82,7 +82,7 @@ Six questions, yes/no with the fix: every map moment has a page · every page na
 
 ## Output
 
-`[client]/journey/design/` with `pages/M01.md … Mnn.md` in journey order (two-digit codes, the same as the map), `choreography.md`, `recovery.md`, `briefs/operations.md`, `briefs/equipment-layout.md`, the design schedule, and `[client]/archive/harvest-stage-3.md` (new patterns, recovery scenarios, library entries, template refinements; half a day, the practice's pattern factory). Claude Docs for the founder's review when the connector is present. Volume is expected: two to three hundred pages for thirty moments; the uniform template is what keeps it usable.
+`[client]/journey/design/` with `pages/M01.md … Mnn.md` in journey order (two-digit codes, the same as the map), `choreography.md`, `recovery.md`, `briefs/operations.md`, `briefs/equipment-layout.md`, `schedule.md` (the design schedule), and `[client]/archive/harvest-stage-3.md` (new patterns, recovery scenarios, library entries, template refinements; half a day, the practice's pattern factory). Claude Docs for the founder's review only when the account manager asks for them, not as part of writing the files. Volume is expected: two to three hundred pages for thirty moments; the uniform template is what keeps it usable.
 
 End with: pages written by tier, HIGH recoveries done, the threshold sequence and the bookended end in one line each, open dependencies, and the next step (`vios-training-programme`).
 

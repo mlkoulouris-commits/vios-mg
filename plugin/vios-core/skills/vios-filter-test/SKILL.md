@@ -5,7 +5,7 @@ description: "Derive, sharpen and apply a Vios client's filter test: the single 
 
 # Vios Filter Test
 
-One question, derived from character, that transfers brand judgement from the practice to the operation. Scope: lines addressed to a guest, a partner or a team member (scripts, captions, replies, signage, emails, internal notes). The name, the tagline and the lockup are judged by the brand book's own tests, not by the filter test; say so in the output when a tagline would fail it. "Is this effusive?" "Is this performed?" "Is this anxious?" It tests character fit, not quality; both are required. Shared instrument: `vios-brand-book` builds it into Part 5, `vios-journey-design` runs every script through it, `vios-training-programme` prints it on the wall chart and in the playbook, `vios-consistency-qa` uses it beside row 2, `vios-persona-voice` holds it as the pre-write filter.
+One question, derived from character, that transfers brand judgement from the practice to the operation. Scope: lines addressed to a guest, a partner or a team member (scripts, captions, replies, signage, emails, internal notes). The name, the tagline and the lockup are judged by the `vios-name-and-tagline` tests (strategy fit, the one-thing test), not by the filter test; say so in the output when a tagline would fail it. "Is this effusive?" "Is this performed?" "Is this anxious?" It tests character fit, not quality; both are required. Shared instrument: `vios-brand-book` builds it into Part 5, `vios-journey-design` runs every script through it, `vios-training-programme` prints it on the wall chart and in the playbook, `vios-consistency-qa` uses it beside the Persona voice check, `vios-persona-voice` holds it as the pre-write filter.
 
 ## Read first
 

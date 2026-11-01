@@ -9,7 +9,7 @@ The deliverable of Stage 1: the strategy organised for use, not a stack of works
 
 ## Read first
 
-- `../../references/brand-book-structure.md`: the part order, what each part holds and where it comes from. Follow it.
+- `../../references/brand-book-structure.md`: the two formats (A, interrogation order, the engagement deliverable; B, Why → Govern, the team edition derived from A), what each part holds and where it comes from. Follow it; Format A unless the brief asks for the team edition as well.
 - `../../references/stage-1-brand-strategy.md` § 2.1.3 (deliverable rules), § 2.1.2.14 (designer selection), § 2.1.6 (briefs), § 2.1.7 (harvest).
 - The client folder: `diagnosis.md`, `persona-bible.md`, `brand-book.md` (Messages and story, Journey), `fact-sheet.md`, `archive/` (naming, interrogation), `character-sheet/`. A previous edition of the book, if any: the new edition states what changed.
 
@@ -26,12 +26,13 @@ The deliverable of Stage 1: the strategy organised for use, not a stack of works
 
 1. **Inventory.** List every source file with its version and date; mark what is missing. Missing diagnosis → stop, `vios-brand-diagnosis`. Missing messages → `vios-messages-and-story`. Missing persona → `vios-persona-builder` (the book can be issued as "Part 5 to confirm", say so). Name undecided → `vios-name-and-tagline`, or the book uses the working name and flags it.
 2. **Run the closing test** from § 2.1.2 "Closing the sequence" across the inventory: differentiator solves the pain; Role answers the audience's personality desires; archetypal mixes produce a relationship the audience accepts; positioning uses the differentiator; story casts a hero this brand can guide. A failed check names the step to revisit before assembly.
-3. **Assemble** Parts 0–8 and Annex A per the structure reference. Each section carries its source step in a footnote line. Where the practice's house examples (Stochna V2, Atelier v3) show a better section shape, use it and keep the wording the client's.
+3. **Assemble** per the structure reference: Format A sections 1–13 with the foreword (version history, what changed since the last edition, what did not), the positioning as a working tool with three or four proposals it rejects, tone-by-moment under the messages, the brand belief deployed under the story, the two-line tagline system under the name, the coherence test as a question/verdict table, the engagement notes with closed / still open / provisional. Then Format B if asked. Annex A in both. Each section carries its source step in a footnote line. Where the practice's house examples (Stochna V2, Atelier v3) show a better section shape, use it and keep the wording the client's.
 4. **Brand Wheel** on one page, last.
 5. **Designer selection** (if a visual identity is in scope): apply the six criteria from § 2.1.2.14 (processes, language, variation, style guide, interview, the brief) to each candidate, as a table; recommend; the owner chooses.
 6. **Designer brief** (Annex B): one-paragraph brand summary · what the identity must achieve · what the brand refuses · what the brand is indifferent to (name it; it gives the designer the field) · applications (signage, menu, digital, print, packaging, staff) · constraints from the room · the Brand Identity Notes reproduced · review and revision protocol with versioning. Four to eight pages plus the book as appendix. Architect and interior-designer briefs follow the same six-section structure when the engagement has a room; see § 2.1.6.
 7. **Govern.** Part 8 names the approver, the AI disclosure set, the consent rule, the edition, date and next review. Version the file: `[client]/brand-book-vN.md` for the book, `brand-book.md` stays the live summary the operating skills read (identity table, Messages and story, Journey).
-8. **Harvest** (§ 2.1.7): one hour at close. New patterns in the standard form (when to use, what it produces, what it asks, failure mode), framework revisions suggested, which Persona in Practice layers held or were thin. Written to `[client]/archive/harvest-stage-1.md` and proposed for the manuscript's next version.
+8. **Revision pass** (v2.1 pattern): when Stage 3, Stage 4 or a marketing review surfaces operating facts, write them into section 11, add one coherence row per addition, update the engagement notes and move the edition number; the strategy sections stay unless a coherence row fails.
+9. **Harvest** (§ 2.1.7): one hour at close. New patterns in the standard form (when to use, what it produces, what it asks, failure mode), framework revisions suggested, which Persona in Practice layers held or were thin. Written to `[client]/archive/harvest-stage-1.md` and proposed for the manuscript's next version.
 
 ## Output
 

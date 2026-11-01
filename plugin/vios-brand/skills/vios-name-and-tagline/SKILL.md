@@ -44,7 +44,7 @@ Score each candidate yes/no on: archetype and Brand Role fit · positioning fit 
 
 ## Step 5 — Tagline (optional by design)
 
-Same keyword-driven process into the worksheet-4 table: keyword | tagline concept. Tests: everything in step 4, plus **one thing**: placed next to the name it reads as one idea, not two phrases. A tagline is a plain claim the brand can keep for years; no superlatives, no price, no pressure (guardrails 1, 3). If no concept carries the conviction the rest of the strategy has, the recommendation is **no tagline**, documented. A weak tagline harms more than none.
+Same keyword-driven process into the worksheet-4 table: keyword | tagline concept. Tests: everything in step 4, plus **one thing**: placed next to the name it reads as one idea, not two phrases. A tagline is a plain claim the brand can keep for years; no superlatives, no price, no pressure (guardrails 1, 3). Consider the **two-line system** (ONE Gallery): a lockup tagline for the identity, three nouns or fewer that categorise in two seconds, and an editorial tagline for story-facing use that carries the brand belief; both must pass the one-thing test next to the name, each in its own place. If no concept carries the conviction the rest of the strategy has, the recommendation is **no tagline**, documented. A weak tagline harms more than none.
 
 ## Step 6 — Decision record
 

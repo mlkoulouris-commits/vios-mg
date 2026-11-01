@@ -33,11 +33,33 @@ Purpose: test the Stage 2 and 3 skills, written from the manuscript on 2026-11-0
 | 15 | training-programme | For a small team the shipped set is the plan, the design pages as script source and the Ops Brief, not the full two-stack architecture. | Minimum set defined; omissions recorded. |
 | 16 | journey-design | The real Operations Brief has eight sections including a daypart staffing table, five boxed service-flow assumptions, equipment dependencies inside it, a standards-and-metrics table and a daily/weekly/monthly review cadence. The skill prescribed a thinner ops brief plus a separate equipment brief. | Eight-section house form adopted; equipment brief separate only for a large build. |
 
+| 17 | brand-book | ONE Gallery v2.2 follows the fourteen interrogations one to one (13 sections, foreword with version history, coherence test as a table, engagement notes with open items). Atelier v3 and Stochna V2 use Why → Who → Soul → Story → Voice → Look → Use → Govern. The structure reference knew only the second. | Both formats written into the reference: A is the engagement deliverable, B the team edition derived from A. |
+| 18 | brand-book | Revision passes (v2.1 after Stage 3, v2.2 after the Instagram review) write operating facts back into the book and extend the coherence test; the strategy stays. | Revision-pass step added. |
+| 19 | brand-book | "The positioning as a working tool": the statement followed by the proposals it rejects (VIP area, closing 3–6 pm, reservations-only, a lecture series). | Added to the assembly step. |
+| 20 | messages-and-story | Secondary core has one message per value, not one for "values"; a tone-by-moment table sits under the messages; the brand belief is held separately and deployed under the story, at the peak and in the email voice. | All three added. |
+| 21 | name-and-tagline | A two-line tagline system: lockup (three nouns) and editorial (story-facing). | Added to the tagline step. |
+| 22 | diagnosis | v2.2 carries a Brand Affinity Audit and a second audience section; the diagnosis skill has the worksheets but names neither. | Noted; diagnosis skill to be checked in a later pass. |
+
+## Harvest entry for the manuscript (Stage 1–4, from this dry run)
+
+Candidate patterns, each used once (threshold for recording), none yet confirmed by a second engagement:
+
+- **S2-06 The signature marker.** The differentiator made visible is marked separately from the peak; they are usually different moments (ONE Gallery: M13 signature, M18 peak).
+- **S2-07 The end as two moments designed as one.** Sign-up card and farewell carry the peak-end rule together; the first is an invitation offered once, the second a specific person.
+- **S3-09 The DO / SAY / DON'T page.** The manuscript's eleven fields shipped as a page staff and trainers read: current state, do, say (locked, in registers), don't, non-verbal, behavioural economics, recovery, state arc, metric, target emotion, pillar.
+- **S3-10 The peak cluster.** The moments around the peak are designed as one cluster, named in the choreography; a helpful act anywhere in the cluster breaks the peak.
+- **S4-08 The onboarding plan by weight.** For a running venue: five sessions, foundations first and alone, HIGH before MEDIUM before LOW, silences last and never skipped, then shadow shifts and a signed checklist.
+- **S4-09 The three drills.** Retreat without the glance back; silent moment under a clock; welcome symmetry.
+- **S3-11 The eight-section operations brief.** Staffing by daypart, boxed service-flow assumptions, equipment inside, standards as observable metrics, a daily/weekly/monthly review cadence.
+- **S1-06 Two brand-book formats.** Interrogation order as the engagement deliverable with the coherence table and open-items ledger; Why → Govern as the derived team edition.
+- **S1-07 The revision pass.** Operating foundations written back after Stages 3–4 and after a marketing review, with one coherence row per addition.
+
+Framework revision suggested: § 2.1.3 can now be specified from Format A. Instrument 6 (Persona in Practice) was not exercised here; it stays provisional.
+
 ## Not compared yet
 
-- `vios-messages-and-story` and `vios-brand-book` against Brand Book v2.2 (33 pages, art-led revision).
 - The Exhibition Workflow v2 has no counterpart skill: a two-week exhibition sprint is venue-specific operations, outside the Practice's four stages.
 
 ## Next
 
-Compare `vios-messages-and-story` and `vios-brand-book` against Brand Book v2.2, then close the dry run with a harvest entry for the manuscript (patterns: the signature marker, the DO/SAY/DON'T page, the end as two moments, the peak cluster, the by-weight onboarding plan, the three drills, the eight-section operations brief).
+Dry run closed on the skill side. Open: the diagnosis skill against v2.2 §2 (Brand Affinity Audit, second audience); the house decision on which brand-book format is the standard; running one skill blind on a new client to test generation, not only shape.

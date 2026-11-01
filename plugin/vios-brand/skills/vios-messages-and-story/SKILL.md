@@ -38,7 +38,9 @@ Then write each as the house format the practice's books use: **For** (who) · *
 
 ## Step 2 — Secondary core messages (4)
 
-Purpose, vision, mission, values, each rewritten as a takeaway for the audience, not a fact about the brand ("We believe…" becomes "You should understand that here…"). Format: **Underlying belief** · **Understanding we want to create** · **Reinforces** (the behaviours, choices and refusals that prove it).
+Purpose, vision, mission, and **one message per value** (ONE Gallery: Welcome, Ritual, Discovery, Quality each as a single line), each rewritten as a takeaway for the audience, not a fact about the brand ("We believe…" becomes "You should understand that here…"). Format: **Underlying belief** · **Understanding we want to create** · **Reinforces** (the behaviours, choices and refusals that prove it).
+
+Then a **tone-by-moment** table: the voice stays one, the tone is calibrated to the moment (morning, afternoon, golden hour, evening for a day-long venue; arrival, the evening, departure for a dinner venue), one line of direction and one example each.
 
 **Integrity rule**, written into the output: before communicating anything, does it reinforce at least one primary or secondary message without contradicting another? If not, it does not belong. `vios-consistency-qa` row 23 enforces it.
 
@@ -54,7 +56,7 @@ Each block a short story, three to six sentences, specific, present tense where 
 6. **The transformation** — the payoff; before against after.
 7. **The new world** — life with the resolution in place; the sentence the hero says to a friend.
 
-Write the arc in the client's languages when the audience persona is local-language; EN alongside for the team. Rewrite, never translate tone.
+Write the arc in the client's languages when the audience persona is local-language; EN alongside for the team. Rewrite, never translate tone. Where the diagnosis holds a **brand belief** (one sentence the brand uses when the moment calls for narrative rather than category), place it under the story as "the belief, deployed" with where it lives (the peak, the email, long-form copy), not at the front of the differentiator.
 
 ## Step 4 — Micro-message blocks (per touchpoint)
 

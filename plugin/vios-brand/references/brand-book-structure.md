@@ -2,6 +2,14 @@
 
 What `vios-brand-book` assembles. Built from three sources: the manuscript's rules for the deliverable (`stage-1-brand-strategy.md` § 2.1.3: synthesis, not worksheets; governs the visual identity, does not contain it; carries Persona in Practice with the AI Persona Brief as annex), the structure reference M3 (Brand Wheel, tiered themes, tone lexicon, brand in action, summary), and the two worked examples the practice already produced (Stochna Brand Book V2, Atelier del Gelato Brand Book v3), whose part order is the house order: Why → Who → Soul → Story → Voice → Look → Use → Govern.
 
+## Two formats in use (both produced by the practice in October 2026)
+
+**Format A, interrogation order** (ONE Gallery v2.2, 33 pages): the sections follow the fourteen interrogations one to one, so every section is the output of one skill and the book doubles as the engagement record. Foreword with the version history and what changed · 1 Foundation (purpose, vision, mission, values with operating statements and where each costs) · 2 Audience (demographics and psychographics, emotional insights, archetypal mix, Brand Affinity Audit, a second audience where one exists) · 3 Competitors (the five, ideas, opportunities) · 4 Differentiator (why this is the one, experience keywords, the brand belief held separately, the differentiator performed) · 5 Personality (audience link, Brand Role and Connection, archetypal mix, the eight expression dimensions, Brand Identity Notes) · 6 Positioning Statement, plus "the positioning as a working tool" with the proposals it rejects · 7 Core Message Blocks (primary, secondary with one message per value, tone-by-moment) · 8 Story Framework, with the brand belief deployed · 9 Brand Name and Tagline (interrogation, name, the two-line tagline system: lockup and editorial) · 10 Designer Selection · 11 Operating Foundations (facts surfaced by Stages 2–4: team structure and operating principle, the named signature ritual, venue geometry, supplier partnerships, the programme in communication, measures) · 12 Coherence Test as a question/verdict table, extended with each revision · 13 Engagement Notes and Open Items (closed since the last version, still open, provisional decisions). Register: practice voice, neutral. Readers: the practice, partners who receive briefs, the founder.
+
+**Format B, Why → Who → Soul → Story → Voice → Look → Use → Govern** (Atelier del Gelato v3, 20 pages; Stochna V2): the same content re-cut for the founder and the team, with a "brand at a glance" page, the guest journey and sensory identity in Use, do's and don'ts and approvals in Govern. Register: neutral, with the manifesto in the brand's voice. Readers: the founder, the team, the designer.
+
+Rule: Format A is the engagement deliverable the practice signs off, because it carries the coherence test and the open-items ledger; Format B is derived from it when a team-facing edition is wanted. A client does not get Format B without a Format A behind it. Both carry the Brand Wheel page.
+
 Voice of the book: neutral descriptive register throughout, except the one-paragraph manifesto that opens Part 1, which is written in the brand's own voice. Length: 25–45 pages for a venue; shorter when sections are marked "to confirm".
 
 | Part | Title | Holds | From |
@@ -15,6 +23,9 @@ Voice of the book: neutral descriptive register throughout, except the one-parag
 | 6 | How we look | Brand Identity Notes (colour, typography, image style, with reasoning) and the visual reference set, marked "direction until the designer delivers"; after delivery: logo rules, palette with Pantone/CMYK/RGB, type roles, image rules, graphic elements | diagnosis / persona-bible §10; designer deliverable |
 | 7 | How we use it | tiered themes (venue → offer lines → single dishes/events); social pillars and shares; channels; hashtags; content lengths per format; campaigns; brand in action examples per tier | content-calendar inputs; brand's own examples |
 | 8 | How we govern it | approver; AI disclosure set; consent rule; version, date, next review; what counts as a change to the book vs. a change to content; the Brand Wheel one-pager as the closing summary | guardrails 6, 7, 10; persona-bible front page |
+| A-11 | Operating foundations (Format A) | facts surfaced downstream and written back: team structure and principle, signature ritual, venue geometry, suppliers, programme in communication, measures | journey map, design, operations brief, marketing |
+| A-12 | Coherence test (Format A) | the manuscript's closing questions plus one row per later addition, each with a verdict | § 2.1.2 closing the sequence |
+| A-13 | Engagement notes and open items (Format A) | closed since the last version, still open, provisional under review | the engagement file |
 | Annex A | AI Persona Brief | the nine layers compressed into one instruction set, test record on three tasks | persona-bible |
 | Annex B | Designer brief | what the identity must achieve, must not do, applications, constraints from the room, revision protocol | designer-selection step; `stage-1-brand-strategy.md` § 2.1.6 |
 
@@ -23,5 +34,5 @@ Rules the assembler enforces:
 - Every section names its source step. A section with no source is marked **to confirm**, never written from imagination.
 - Worksheet wording stays out; the book carries the synthesis. The worksheets are filed in `[client]/archive/`.
 - The Brand Wheel (essence, rational and emotional attributes, positioning, key messages, personality) closes the book as one page, and every creative decision refers back to it.
-- The book is versioned per edition (V1, V2, v3 …) with the date on the cover and the changes since the last edition in Part 0.
+- The book is versioned per edition (V1, V2, v3 …) with the date on the cover and the changes since the last edition in the foreword (Format A) or Part 0 (Format B). A **revision pass** after Stage 3 or after a marketing framework review writes the operating facts back into the book (ONE Gallery v2.1, v2.2) without reopening the strategy unless the coherence test fails.
 - Colours in Part 6 are specified in Pantone, CMYK and RGB once the designer has delivered; until then the section holds direction only.

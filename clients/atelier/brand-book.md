@@ -6,7 +6,7 @@ Section 6 of v3 is interim rules until the designer delivers the new identity.
 
 | Element | Interim (use now) | Direction for the designer |
 | --- | --- | --- |
-| Name / tagline | Atelier del Gelato · "Happiness is an attitude." | lock-up to carry the tagline and both descriptors |
+| Name / tagline | Atelier del Gelato · "Happiness is an attitude." (lock-up tagline) · "Italian joy crafted daily." (editorial tagline, story-facing use; owner decision 2026-11-01) | lock-up to carry the lock-up tagline and both descriptors; the editorial line never enters the lock-up |
 | Descriptors | ateliers: Gelato · Tiramisu · Caffè — B2B: Gelato & Tiramisu | |
 | Logo | warm brown wordmark; black formal, white on dark; clear space = height of "A"; min 25 mm / 150 px; never stretch, recolour, shadow | refresh |
 | Colours | Base Vanilla #F8F3E2 · Text Chocolate #3B2A20 · Lead Pistachio #BDD0B6 · Secondary Caramel #D4AA7D, Rose #E8C4C8, Gold #D4B572 | lead becomes a warm apricot ≈ #E5A07A; Rose, Pistachio, Gold secondary only (cream + green is Doppio's) |

@@ -76,7 +76,8 @@ Line 11 was the false-positive risk: it says "you" and "celebrate". It fails on 
 
 ## Boundary cases noted
 
-- "Happiness is an attitude." — the tagline. Not a line to a guest; judged by the brand book, not the test. If it ever appears as a reply to a person, it would fail "talk past".
+- "Happiness is an attitude." — the lock-up tagline. Not a line to a guest; judged by the brand book, not the test. If it ever appears as a reply to a person, it would fail "talk past".
+- "Italian joy crafted daily." — the editorial, story-facing tagline (owner decision 2026-11-01, recorded in `brand-book.md`). Same status: outside the test, judged by the brand book. Two things the brand book will judge it on: v3 §2.2 says "joy every day" is Doppio's and joy alone is not ownable; and "crafted daily" is a claim, true per the fact sheet (made fresh daily in the Lab) and to be kept true. As a reply to a person it would fail "talk past", like the other.
 - "Small wins count." — passes as a farewell (said to her, after her answer); would fail if used to push a guest who said "nothing" into finding something.
 
 ## Revision log

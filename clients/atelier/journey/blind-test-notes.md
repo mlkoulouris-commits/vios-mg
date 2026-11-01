@@ -116,6 +116,10 @@ All 31 pages exist. 13 writes, 5 edits, 1 message to the skill-fix session (item
 31. **The close's sixth question has no partial answer.** "Could a trainer train from it" is yes for behaviour and no for facts; the skill's yes/no form forces a NO on a design that is otherwise complete. A third answer, "trainable except the facts listed", would be more honest and is what a founder needs to see.
 32. **The harvest instruction's time estimate.** "Half a day to a day" for the harvest assumes a human pulling patterns from memory; generated in sequence, the harvest took half an hour because every candidate was already flagged on the pages as it was written. Worth saying in the skill: flag harvest candidates on the page footer as you go.
 
+## Addendum, same day: the tagline decision (item 13 closed)
+
+The owner decided, in the skill-fix session: "Happiness is an attitude." stays as the lock-up tagline; "Italian joy crafted daily." is added as the editorial, story-facing line. Both are outside the filter test and judged by the brand book; the scope line in `brand-book.md` › Filter test already says so, and the batches file now lists both as boundary cases. One thing for the brand book's judgement, raised and not decided here: v3 §2.2 names "joy every day" as Doppio's and says joy alone is not ownable; the editorial line uses "joy" and "daily". The skill fixes for items 1–25 are merged on main as vios-journey 0.4.3 and vios-core 0.5.1. Items 26–32 are not yet sent to any session.
+
 ## Not done
 
 - BG redrafts of the map, note and handoff.

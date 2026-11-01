@@ -40,7 +40,7 @@ The deliverable of Stage 1: the strategy organised for use, not a stack of works
 - The designer selection table, if in scope.
 - The harvest note.
 
-End with: edition, what changed, what is "to confirm" and who confirms it, and the next stage (`vios-journey` when it exists; until then the journey table is completed by the account manager by hand).
+End with: edition, what changed, what is "to confirm" and who confirms it, and the next stage (`vios-journey:vios-journey-map`).
 
 ## Checks before issue
 

@@ -21,7 +21,7 @@ Everything here is portable: clone this repo in any Claude account, enable the V
 | `setup/` | ClickUp structure, scheduled-task prompts, plugins and connectors to enable |
 | `CLAUDE.md` | How Claude works in this repo (skills, files, hard lines) |
 
-## Pipeline (owned by the Vios plugin skills: `vios-brand` for stages 1–3, `vios-marketing` from stage 4, `vios-core` throughout)
+## Pipeline (owned by the Vios plugin skills: `vios-brand` for stages 1–3, `vios-journey` for the map, design and training, `vios-marketing` from stage 4, `vios-core` throughout)
 
 diagnosis → persona → calendar → copy / video → QA → publish → engage → ads → report
 

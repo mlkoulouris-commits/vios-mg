@@ -12,4 +12,4 @@ Stage 1 of the Vios Practice: the fourteen interrogations, the brand persona and
 
 `references/` holds the manuscript chapter verbatim (`stage-1-brand-strategy.md`) and the house book structure (`brand-book-structure.md`); the diagnosis skill carries the worksheets, the twelve archetypes and the competitor-audit template in its own `references/`. Skills read these before working; nothing is answered from memory.
 
-Client folder convention: `vios-core:vios-guardrails` › client file. Next stage: `vios-journey` (journey map and design). Daily use: `vios-marketing`.
+Client folder convention: `vios-core:vios-guardrails` › client file. Next stage: `vios-journey` (journey map, journey design, training programme). Daily use: `vios-marketing`.

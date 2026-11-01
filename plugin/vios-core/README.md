@@ -5,5 +5,6 @@ The rules every Vios plugin quotes. Enable this first; `vios-brand`, `vios-journ
 - **vios-guardrails** — the 12 hard lines, the five-line behavioural-economics rule, shared numbers (reporting n, benchmarks), the client file convention, messages and micro-stories, stand-ins when something is missing
 - **vios-be-lens** — behavioural-economics review of any copy, script, flow or reply
 - **vios-nonverbal-lens** — face, gaze, pacing and closing-frame review of persona video
+- **vios-filter-test** — derive and apply the brand's single yes/no character question (VIOS Practice section 3.4, in `references/`)
 
 Changes here move slowly and are versioned; a downstream plugin never redefines a rule that lives here.

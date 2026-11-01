@@ -4,14 +4,14 @@
     "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"
   },
   "metadata": {
-    "description": "Vios plugins for F&B clients: shared rules, brand strategy, customer journey, marketing operations. Enable vios-core first."
+    "description": "Vios plugins for F&B clients: shared rules, brand strategy (Stage 1), customer journey (Stages 2-4), marketing operations. Enable vios-core first."
   },
   "plugins": [
     {
       "name": "vios-core",
       "source": "./plugin/vios-core",
-      "description": "Shared rules every Vios plugin loads: guardrails, BE lens, non-verbal lens. Enable first.",
-      "version": "0.1.0",
+      "description": "Shared rules every Vios plugin loads: guardrails, BE lens, non-verbal lens, the filter test. Enable first.",
+      "version": "0.2.0",
       "category": "productivity"
     },
     {
@@ -19,6 +19,13 @@
       "source": "./plugin/vios-brand",
       "description": "Stage 1 end to end: diagnosis, messages and story, persona, name and tagline, brand book. Requires vios-core.",
       "version": "0.2.0",
+      "category": "productivity"
+    },
+    {
+      "name": "vios-journey",
+      "source": "./plugin/vios-journey",
+      "description": "Stages 2 to 4: journey map, journey design, training programme. Requires vios-core and vios-brand.",
+      "version": "0.1.0",
       "category": "productivity"
     },
     {

@@ -15,7 +15,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 PLUGIN_DIR = REPO / "plugin"
 MARKET = REPO / ".claude-plugin" / "marketplace.json"
-PLUGINS = ["vios-core", "vios-brand", "vios-marketing"]
+PLUGINS = ["vios-core", "vios-brand", "vios-journey", "vios-marketing"]
 HOME = Path.home()
 CACHE_ROOT = Path(os.environ.get("APPDATA", HOME / "AppData" / "Roaming")) / "Claude" / "rpm"
 TASK_ROOT = HOME / ".claude" / "scheduled-tasks"

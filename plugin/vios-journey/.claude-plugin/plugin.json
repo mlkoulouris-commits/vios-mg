@@ -1,0 +1,16 @@
+{
+  "name": "vios-journey",
+  "version": "0.1.0",
+  "description": "Vios Practice Stages 2 to 4 for F&B clients: the customer journey map (arc, moments, weight, peak, silent moments, Reasoning Note), the journey design (one design page per moment, scripts in the floor register, choreography, recovery, operations and layout briefs) and the training programme (two-stack document architecture, cadence, coaching infrastructure, handoffs). Manuscript chapters included. Requires vios-core and a brand book from vios-brand.",
+  "author": {
+    "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"
+  },
+  "keywords": [
+    "vios",
+    "f&b",
+    "hospitality",
+    "customer journey",
+    "service design",
+    "training"
+  ]
+}

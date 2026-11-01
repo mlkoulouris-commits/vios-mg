@@ -22,6 +22,8 @@ A pass has to be earned. Facts are checked against the fact sheet; no source →
 
 ## The checklist
 
+Other skills cite a check by its name in the Check column (e.g. "Pressure / scarcity", "Message anchor"), never by its number, so rows can be added or reordered without breaking those pointers. Keep the names stable.
+
 | # | Check | Pass looks like | If failed |
 | --- | --- | --- | --- |
 | 1 | Meaning | Expresses the purpose or a pillar; not noise | fix |

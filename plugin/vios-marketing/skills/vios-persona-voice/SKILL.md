@@ -47,11 +47,11 @@ Touchpoint copy (greeting, host lines, menu talk, booking messages, departure an
 | --- | --- | --- | --- |
 | Instagram / Facebook caption | Place + moment in the first line, one idea, sign-off in persona | 1–3 short paragraphs | One, soft, or none |
 | Story text | One line, present tense, now (read in under 5 s) | ≤ 12 words | Sticker or none |
-| Reel / TikTok on-screen text | Word-for-word captions + ≤ 3 emphasis cards (rule owned by `vios-video-script`) | — | Last card only |
+| Reel / TikTok on-screen text | Word-for-word captions + emphasis cards within the cap `vios-video-script` sets | — | Last card only |
 | Paid ad primary text | Offer and place in the first line, reason to come this week | 1–2 lines + optional 2nd paragraph | Exactly one |
 | Comment / DM reply | Answer first, warmth second, persona phrase last | 1–3 sentences | Only if they asked |
 | Review reply (positive) | Thank by the specific detail they named, no template | 2–3 sentences | None |
-| Review reply (negative) | Unless it touches illness, allergy, injury, a legal threat or a named staff member (guardrails 11: no draft, hand the facts to the approver). Otherwise one apology, one fact, one direct line. Never argue in public, never offer a discount in public (it teaches guests to complain for rewards), never ask for the review to be changed | 3–4 sentences | Invite to continue privately |
+| Review reply (negative) | Unless it touches an escalation topic (the list is guardrails 11: no draft, hand the facts to the approver). Otherwise one apology, one fact, one direct line. Never argue in public, never offer a discount in public (it teaches guests to complain for rewards), never ask for the review to be changed | 3–4 sentences | Invite to continue privately |
 | Booking confirmation / reminder | Restate date, time, people (restating the plan is a commitment device; it cuts no-shows), one warm line, how to change. Formal register | 3 lines | Change/cancel link |
 | Google Business post | What, when, why this week | ≤ 60 words | One |
 | Review request (QR after the bill) | Per guardrails 2 | 1 line | Link |

@@ -42,7 +42,7 @@ Purpose, vision, mission, and **one message per value** (ONE Gallery: Welcome, R
 
 Then a **tone-by-moment** table: the voice stays one, the tone is calibrated to the moment (morning, afternoon, golden hour, evening for a day-long venue; arrival, the evening, departure for a dinner venue), one line of direction and one example each.
 
-**Integrity rule**, written into the output: before communicating anything, does it reinforce at least one primary or secondary message without contradicting another? If not, it does not belong. `vios-consistency-qa` row 23 enforces it.
+**Integrity rule**, written into the output: before communicating anything, does it reinforce at least one primary or secondary message without contradicting another? If not, it does not belong. The `vios-consistency-qa` check "Message anchor" enforces it.
 
 ## Step 3 — Story framework (7 blocks)
 
@@ -60,7 +60,7 @@ Write the arc in the client's languages when the audience persona is local-langu
 
 ## Step 4 — Micro-message blocks (per touchpoint)
 
-One block per journey touchpoint (guardrails › Journey: discovery · profile check · booking · reminder · arrival · ordering · making · the evening · departure · after-visit · review; drop what the venue does not have). For each: **Anchors** (which core messages and story block) · **Touchpoint** · **Customer state** · **Tension to resolve** · **Understanding we must create** · **Non-verbal expression** · **Verbal expression** · **Success signal** · **Failure modes**. The verbal line is a register and an example, still not copy. Mark the peak touchpoint; if the journey is not on file, mark it provisional (Stage 2 sets it).
+One block per journey touchpoint, using the canonical touchpoint names in guardrails › Journey (drop what the venue does not have; never invent a new name without saying so). For each: **Anchors** (which core messages and story block) · **Touchpoint** · **Customer state** · **Tension to resolve** · **Understanding we must create** · **Non-verbal expression** · **Verbal expression** · **Success signal** · **Failure modes**. The verbal line is a register and an example, still not copy. Mark the peak touchpoint; if the journey is not on file, mark it provisional (Stage 2 sets it).
 
 ## Step 5 — The closing test (from the manuscript)
 

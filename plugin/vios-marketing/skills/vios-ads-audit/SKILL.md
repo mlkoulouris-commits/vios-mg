@@ -106,4 +106,4 @@ Then stop. Apply only the numbers the named approver replies with (Meta via conn
 
 ## Schedule
 
-Weekly scheduled task, Tuesday morning (Monday's data is still attributing). Launch week: daily pacing, disapprovals, tracking and billing only; fatigue is read weekly.
+Weekly, on the scheduled task `vios-weekly-ads-audit` (the weekday is set in the repo's scheduled-task table, not here). Whatever the run day, read a 7-day window that ends a full day before the run: the last day is still attributing. Launch week: daily pacing, disapprovals, tracking and billing only; fatigue is read weekly.

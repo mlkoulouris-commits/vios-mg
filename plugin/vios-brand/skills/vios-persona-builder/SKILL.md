@@ -5,9 +5,7 @@ description: "Build a Vios Marketing Brand Persona (Persona Bible, character she
 
 # Vios Persona Builder
 
-Turns a client's brand foundation into a Brand Persona: the brand as a character that can appear on camera, speak and post every day without drifting. Module 1 of Vios Marketing (Brand Persona Studio). Hard lines: `vios-guardrails` 1–12. Output lands in `[client]/persona-bible.md` per the guardrails client-file convention.
-
-Version 2 (Oct 2026) added the sections a best-practice benchmark found missing (Mailchimp voice and tone guide, strategic persona templates, AI virtual-ambassador disclosure rules, mascot guidelines). They are now default deliverables, not options.
+Turns a client's brand foundation into a Brand Persona: the brand as a character that can appear on camera, speak and post every day without drifting. Hard lines: `vios-guardrails` 1–12. Output lands in `[client]/persona-bible.md` per the guardrails client-file convention. The brand book's Part 5 (How we sound) is assembled from this file, so every Part 5 element is built here, not by the assembler.
 
 ## Principles
 
@@ -55,6 +53,15 @@ Recommend one with a reason. Client decides. If AI is chosen, state the three ru
 
 Voice stays fixed; tone follows the person addressed. One row each, with an example line EN | BG: unsure first-timer, regular, VIP/collector/high-spender (same welcome, different route), excited group, upset guest (calm, short, hands over to a named person). Add client-specific rows if the diagnosis names other audiences.
 
+## Step 4b — Persona in Practice: sliders, word rules, hard moments, checklist
+
+These are what the brand book's Part 5 carries and what a writer reaches for at speed, so they are built here with the client, not improvised by the assembler:
+
+- **Tone sliders**: for each of the eight expression dimensions (from `diagnosis.md`), a 1–5 position with one line on what a notch lower and higher would sound like. Voice stays fixed; the sliders show where this brand sits.
+- **Word rules (lexicon)**: "it is" adjectives, "it has" nouns, the verbs the brand uses; house terms (what we call the room, the dish, the guest); never-words. 5–10 entries per list, EN | BG.
+- **Hard moments**: the 4–6 situations where the voice is most likely to slip (full house, a no-show, a price question, a bad review, an allergy question, closing time), each with the line the persona says and the line it never says. Escalation topics (guardrails 11) are handed over, not scripted.
+- **The ten-line checklist**: ten yes/no lines a writer runs on any draft in under a minute, drawn from the is/is-not pairs, the never-list and the word rules. `vios-persona-voice` and `vios-consistency-qa` use it as the fast pre-check.
+
 ## Step 5 — Behaviour matrix and journey placement
 
 Channels (Reel/TikTok, story, feed post, paid ad, comment reply, bad-review reply, Google Business post) × moments (launch, slow weekday, event night, holiday, complaint). One line per cell. Client corrects what feels off. Default for AI personas: bad reviews are never answered by the AI; a named person signs.
@@ -77,22 +84,11 @@ One sentence: the persona's job for the brand. Then 4–6 KPIs tied to the clien
 
 ## Step 9 — Disclosure, full set (default for AI or AI-scaled personas)
 
-Table, EN | BG lines:
-
-- Account bio line on every platform the persona appears on, permanent ("X is our AI host. The food/drinks/room are real.")
-- Video: on-screen label from the first frame + platform AI label
-- Caption hashtag on every persona post (#AIcreated / #AIсъздадено / Greek equivalent)
-- Paid partnerships: dual disclosure, paid label + AI label
-- Contracts: every agency, freelancer or voice-actor contract carries the disclosure duty and liability if missed
-- If the scheduler can't set the platform label: post natively or verify live after publish (guardrails 6)
+Copy the disclosure set (a) to (e) from `vios-guardrails` hard line 6 into the Bible as a table with EN | BG lines, naming the account, platform or contract each item applies to for this client. Guardrails 6 is the only source for the wording, the label rule and the fallback when a scheduler cannot set the platform label; the Bible instances it, it does not restate it.
 
 ## Step 10 — Error protocol and retirement (default)
 
-1. Pull: the approver hides or removes the post within 2 hours of spotting it
-2. Correct: short correction signed by a named person, not the persona
-3. Log in `qa-log.csv`
-4. Fix the source: update the Bible or the prompt
-5. Pause: two serious errors in a month pause persona content until the approver reviews
+The error protocol (pull, correct, log, fix the source, pause) and its timings live in guardrails 6. In the Bible, name who does each step for this client: the approver who pulls, the person who signs corrections, where the log lives (`qa-log.csv`), who edits the Bible or the prompt.
 
 Retirement rule: no KPI movement after two content cycles, a bad guest reaction to the format, or a rule change. The approver decides; old content stays labelled.
 
@@ -108,7 +104,7 @@ One doc (Docs artifact when available), saved as `[client]/persona-bible.md`. Fr
 2. Story & point of view — EN | BG (no invented biography for AI)
 3. Objective and KPIs
 4. Traits: is / is-not table, never-trait, never-list
-5. Voice & tone rules with 5 do/don't lines — EN | BG
+5. Voice & tone rules: tone sliders per expression dimension, 5 do/don't lines, word rules (lexicon, house terms, never-words), hard moments, the ten-line checklist — EN | BG
 6. Tone by guest mood — EN | BG
 7. Signature phrases and on-camera habits — EN | BG
 8. Behaviour matrix and journey placement (speaks / present / silent per touchpoint)
@@ -116,8 +112,8 @@ One doc (Docs artifact when available), saved as `[client]/persona-bible.md`. Fr
 10. Character sheet brief + negative list
 11. Voice spec per language + consent
 12. Content pillars (3–5) tied to the purpose, with who speaks for each
-13. Disclosure, full set
-14. Error protocol and retirement
+13. Disclosure, full set (instanced from guardrails 6)
+14. Error protocol (names per guardrails 6) and retirement
 15. Pilot before scaling
 16. Guardrails that apply (link `vios-guardrails` 1–12)
 

@@ -9,7 +9,7 @@ Clients don't pay for reach. They pay for covers, bookings and guests who come b
 
 ## When
 
-Working day 3–5 (attribution windows are still filling on day 1). Quarterly: same structure, three monthly columns; Structure section 7 becomes 90-day priorities.
+The scheduled task `vios-monthly-client-report` pulls the data and builds the draft early in the month (the 2nd); the report is finalised and sent on working day 3–5, once attribution windows have filled. A draft sent before then is labelled "draft, attribution still filling". Quarterly: same structure, three monthly columns; Structure section 7 becomes 90-day priorities.
 
 ## Data (`vios-guardrails` › client file)
 
@@ -29,7 +29,7 @@ The client's own history: trailing 3-month median, and same month last year when
 
 ## Numbers and attribution language
 
-- *n* beside every percentage; under 30 per side → raw numbers and "too small to call" (guardrails › Shared numbers). An owner will act on "doubled" when it's 3 vs 6.
+- Reporting *n*, the small-sample threshold and early-read labelling: guardrails › Shared numbers, applied to every percentage in this report.
 - Ad results are "bookings that used the code", not "bookings the ads brought", unless an offer-day lift against baseline supports causation. Early reads are labelled.
 - Cost per cover is **blended** (marketing spend ÷ all covers, not incremental). Spend = ad spend + paid tools + production; agency fee excluded and stated.
 

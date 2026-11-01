@@ -26,7 +26,7 @@ HIGH first, and within HIGH the peak and the end first. Then MEDIUM, then LOW, t
 
 ## The design page (one per moment)
 
-The manuscript's fields, rendered in the house layout the practice ships (ONE Gallery, 28 pages). Header: M-code · tier label · moment name · descriptor line (type · phase · mode, e.g. "Digital touchpoint · Pre-visit · Self-led", "Environmental · 2–10 min · Approach") · markers. Tier labels: **CRITICAL IMPACT** (HIGH), **HIGH IMPACT** (MEDIUM), **STANDARD** (LOW), **SILENT**. Body blocks, in this order:
+The manuscript's fields, rendered in the house layout the practice ships (ONE Gallery, 28 pages). Header: M-code · tier label · moment name · descriptor line (type · phase · mode, e.g. "Digital touchpoint · Pre-visit · Self-led", "Environmental · 2–10 min · Approach"; type is one of In-room · Digital · Environmental · Object · B2B · Operational) · markers. Tier labels: **CRITICAL IMPACT** (HIGH), **HIGH IMPACT** (MEDIUM), **STANDARD** (LOW), **SILENT**. Body blocks, in this order:
 
 | House block | Holds (manuscript fields) |
 | --- | --- |
@@ -34,7 +34,7 @@ The manuscript's fields, rendered in the house layout the practice ships (ONE Ga
 | DO | the action as a numbered list: who, from where, places what where; the sensory frame and the room's work appear here as numbered items when the room is doing specific work |
 | SAY | the script, marked **LOCKED** where the words are exact; floor register; filter-tested; the caption voice for digital moments |
 | DON'T | the failure modes and the tempting defaults, as short prohibitions |
-| NON-VERBAL | body, geometry, silence, tone, volume, timing (omitted on digital and silent pages) |
+| NON-VERBAL | body, geometry, silence, tone, volume, timing (omitted on digital, object and silent pages; kept on environmental pages, where it is the room's work) |
 | BEHAVIORAL ECONOMICS | the principle at work, cited as "BE n name" (the numbered principles of section 3.1.5, e.g. BE 17 thin-slicing) and what it does to the decision here; non-verbal entries cited as "NV letter.number" (e.g. NV C.2 eye behaviour) |
 | RECOVERY | "If … → …": trigger, what is done and said, who takes over; references the recovery document |
 | state arc | one line: before → during → after ("Curious → Visualising → Decided") |
@@ -56,7 +56,9 @@ The manuscript's eleven questions, for completeness, map onto the blocks as foll
 10. **Success metric**: an observable signal ("sat without asking which table"), never a sentiment.
 11. **Failure mode** and the recovery reference.
 
-HIGH pages add: the brand-coherence test for this moment (does it hold the Role and the Connection statement), the story-framework block it plays, operational dependencies. MEDIUM pages carry the same blocks, shorter. LOW pages: CURRENT STATE, DO, DON'T, the metric line. SILENT pages: DO is "Nothing" with what M-before did the work, and DON'T lists what would break the silence. Footer: brand-book sections, BE and NV entries, dependencies. Every page is one rendered page; uniform layout across the set. A two-moment end (end-1 and end-2 designed as one on the map) is two pages, one per moment, each with the same header note naming the pair and cross-referencing the other; the shared design lives in the choreography's cluster, not in a merged page.
+**Facts on a page.** An allergen line quotes the fact sheet and carries its verification date, and is relocked when the fact sheet changes (guardrails 9). A legal fact (serving age, licence condition) is sourced and dated the same way, never written from memory; until it is sourced it is marked CONFIRM and the page cannot lock.
+
+HIGH pages add: the brand-coherence test for this moment (does it hold the Role and the Connection statement), the story-framework block it plays, operational dependencies. MEDIUM pages carry the same blocks, none longer than five items, about half a HIGH page. LOW pages: CURRENT STATE, DO, DON'T, the metric line, and SAY only where a line is locked. SILENT pages: DO is "Nothing" with what M-before did the work, and DON'T lists what would break the silence. A moment owned by a third party (a partner's table, a platform's screen) gets a **brief page**, not a design page: what the partner is asked to hold, the brand's one check, and a periodic check date (quarterly by default); no DO/SAY/DON'T. Footer: brand-book sections, BE and NV entries, dependencies. Every page is one rendered page; uniform layout across the set. A two-moment end (end-1 and end-2 designed as one on the map) is two pages, one per moment, each with the same header note naming the pair and cross-referencing the other; the shared design lives in the choreography's cluster, not in a merged page.
 
 ## Choreography (§ 2.3.2.5)
 
@@ -68,7 +70,7 @@ By failure scenario, not by moment: wrong order, wait exceeded, guest visibly un
 
 ## Patterns to apply by default
 
-S3-08 threshold thin-slice + S3-01 locked greeting + S3-02 silent walk as one composition · S3-03 non-visible information rule · S3-04 one decision anchor at ordering, defended, not drifting · S3-05 peak placement test ("if the evening ended here, would it feel complete?") · S3-06 bookended end that echoes the threshold · S3-07 recovery within character. **Counter formats** (no host, no walk): one guest's end (S3-06) and the next guest's threshold (S3-08) land on the same team member in the same seconds; no chapter pattern covers it, so design the pair as one composition with an explicit split rule (body to the leaver, eyes to the newcomer, or the brand's equivalent) and record it as a harvest candidate, the counter variant of S3-06/S3-08. Record a pattern the engagement used that is not in the chapter, in the standard form.
+S3-08 threshold thin-slice + S3-01 locked greeting + S3-02 silent walk as one composition (where the brand book forbids a greeting line, the threshold lock is a behaviour, e.g. eyes before words within ten seconds, and the first locked line sits one moment later; S3-01 is met by the lock, not the line) · S3-03 non-visible information rule · S3-04 one decision anchor at ordering, defended, not drifting · S3-05 peak placement test ("if the evening ended here, would it feel complete?") · S3-06 bookended end that echoes the threshold · S3-07 recovery within character. **Counter formats** (no host, no walk): one guest's end (S3-06) and the next guest's threshold (S3-08) land on the same team member in the same seconds; no chapter pattern covers it, so design the pair as one composition with an explicit split rule (body to the leaver, eyes to the newcomer, or the brand's equivalent) and record it as a harvest candidate, the counter variant of S3-06/S3-08. Record a pattern the engagement used that is not in the chapter, in the standard form.
 
 ## Close the design (§ 2.3.2.7)
 

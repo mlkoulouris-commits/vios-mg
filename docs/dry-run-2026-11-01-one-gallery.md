@@ -56,6 +56,12 @@ Candidate patterns, each used once (threshold for recording), none yet confirmed
 
 Framework revision suggested: § 2.1.3 can now be specified from Format A. Instrument 6 (Persona in Practice) was not exercised here; it stays provisional.
 
+**Framework revisions adopted 2026-11-01** (owner's decision, commit 7391d3e; to carry into the manuscript's next version):
+
+- Stage 2, Move 2b: observe before weighing. Two shadowed services and a review read go into `journey/observation.md` before weights are assigned; observation is the fifth weighting source; a HIGH with no observation behind it is marked "brand-led"; every map carries a re-weighting date 30–60 days after go-live.
+- `vios-ads-audit` winner rule: 50 results per cell, not ~15, with the reason stated; `vios-ad-factory` says up front whether the budget can reach it, otherwise round 1 is labelled a bet.
+- Guardrails "Evidence and house doctrine": every rule is tiered as evidence, contested or house doctrine, and the non-verbal lens frames face-reading as a contested heuristic.
+
 ## Blind generation test (2026-11-01, Atelier del Gelato, fresh session)
 
 A fresh session ran `vios-journey-map`, `vios-filter-test` and one `vios-journey-design` page on Atelier from Brand Book v3 and the client folder, with every ONE Gallery file withheld. Output in `clients/atelier/journey/` and `archive/`; its own notes in `clients/atelier/journey/blind-test-notes.md`.

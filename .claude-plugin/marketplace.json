@@ -25,7 +25,7 @@
       "name": "vios-journey",
       "source": "./plugin/vios-journey",
       "description": "Stages 2 to 4: journey map, journey design, training programme. Requires vios-core and vios-brand.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "category": "productivity"
     },
     {

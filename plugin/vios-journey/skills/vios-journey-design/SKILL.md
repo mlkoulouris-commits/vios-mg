@@ -48,7 +48,7 @@ The manuscript's eleven questions, for completeness, map onto the blocks as foll
 2. **Customer state**: where on the arc, what they just had, what comes next.
 3. **Brand intention** (from band 4).
 4. **Action**: who approaches from where, says what, places what where. Precise enough for two people to do it identically.
-5. **Script**: only where exact words are required; one or two locked lines; floor register; passes the filter test. "Welcome" is not a script; "Welcome — sit anywhere" is.
+5. **Script**: only where exact words are required; one or two locked lines; floor register; passes the filter test. "Welcome" is not a script; "Welcome — sit anywhere" is. Where the moment changes with the daypart or the occasion, give the line in **registers** (default · evening · private event) rather than variations.
 6. **Non-verbal frame**: body, geometry, silence, tone, volume, timing. Usually larger than the script.
 7. **Sensory frame**: light, sound, scent, surface, temperature; or "inherits the room".
 8. **BE design**: the decisions the guest makes here and how the design shapes them; empty for low-decision moments.
@@ -76,8 +76,8 @@ Six questions, yes/no with the fix: every map moment has a page · every page na
 
 ## Briefs (§ 2.3.6)
 
-- **Operations brief** (10–20 pages): staffing by phase and tier, who owns which moments, how many tables a server can hold while executing the design, the assumptions the design makes of operations, stated plainly.
-- **Equipment and layout brief** (6–12 pages): each requirement with the moment it serves and the reason; goes to operations and, where needed, back to the architect or interior designer.
+- **Operations brief** (10–20 pages), in the house form (ONE Gallery, Oct 2026 revision), eight sections: 1 team structure and the operating principle (named roles, who is not on the floor, position assigns the role in the moment); 2 coverage by daypart as a minimum-staffing table (daypart · hours and mode · minimum on floor · composition), with the rule that a band that cannot be staffed is discussed, never silently degraded; 3 role responsibilities at each HIGH moment (primary actor, coordination, backstop, knowledge requirement); 4 the service-flow assumptions the design makes, each boxed with its reason and the moment it protects (tables per server at the dwell, bar seats per bartender, prep time per signature drink, pass-to-table time, the bandwidth the deliberate pause needs); 5 equipment and layout dependencies, each with the moments it serves and the source (the equipment brief lives here, not as a separate document, unless the build is large); 6 training assumptions (the locked scripts every team member learns, knowledge requirements, drills, the pre-shift briefing); 7 standards and observable metrics as a table (standard · observable behaviour · target frequency), sampled not exhaustive, diagnostic not punitive; 8 management review cadence (daily pre-shift, weekly team review, monthly design review with the founder off the floor) and the rule that small revisions over the first 6–12 months are expected.
+- **Equipment and layout brief** as a separate document (6–12 pages) only when the build is large enough to go back to the architect or interior designer; otherwise section 5 of the operations brief.
 - Revisions to Stage 1 briefs, versioned and reissued, when the design surfaces a sightline, a graphic element or a material they did not anticipate.
 
 ## Output

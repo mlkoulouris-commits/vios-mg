@@ -28,12 +28,16 @@ Purpose: test the Stage 2 and 3 skills, written from the manuscript on 2026-11-0
 | 11 | journey-design | Choreography opens with continuities as titled rules and names the moment cluster around the peak (M13–M21). | Choreography section rewritten in the house order; cluster named. |
 | 12 | guardrails | The canonical touchpoint list is restaurant-shaped; ONE Gallery has an exhibition phase, Atelier is walk-in retail with a B2B line. | Variants added; the table maps touchpoints to moment codes and does not replace the map. |
 
+| 13 | training-programme | The real programme is one Journey Training Plan for onboarding one person at a time in a running venue: five sessions ordered by weight (foundations, HIGH, MEDIUM, LOW + full arc, silences + drills), shadow shifts, floor-ready sign-off. The skill prescribed the manuscript's week-by-week pre-opening cadence only. | House form added as the default for a running venue; pre-opening cadence kept for openings. |
+| 14 | training-programme | Five training principles, the three drills (retreat, silent-moment under a clock, welcome-symmetry), the knowledge block with rotation, the sign-off checklist signed by both, registers for scripts. | All added. |
+| 15 | training-programme | For a small team the shipped set is the plan, the design pages as script source and the Ops Brief, not the full two-stack architecture. | Minimum set defined; omissions recorded. |
+| 16 | journey-design | The real Operations Brief has eight sections including a daypart staffing table, five boxed service-flow assumptions, equipment dependencies inside it, a standards-and-metrics table and a daily/weekly/monthly review cadence. The skill prescribed a thinner ops brief plus a separate equipment brief. | Eight-section house form adopted; equipment brief separate only for a large build. |
+
 ## Not compared yet
 
-- `vios-training-programme` against `ONE_Gallery_Journey_Training_Plan_v2` (onboarding for every new team member) and the Operations Brief (Oct 2026 revision).
 - `vios-messages-and-story` and `vios-brand-book` against Brand Book v2.2 (33 pages, art-led revision).
 - The Exhibition Workflow v2 has no counterpart skill: a two-week exhibition sprint is venue-specific operations, outside the Practice's four stages.
 
 ## Next
 
-Run `vios-training-programme` against the Training Plan v2 and the Operations Brief, then close the dry run with a harvest entry for the manuscript (patterns: the signature marker, the DO/SAY/DON'T page, the end as two moments, the peak cluster).
+Compare `vios-messages-and-story` and `vios-brand-book` against Brand Book v2.2, then close the dry run with a harvest entry for the manuscript (patterns: the signature marker, the DO/SAY/DON'T page, the end as two moments, the peak cluster, the by-weight onboarding plan, the three drills, the eight-section operations brief).

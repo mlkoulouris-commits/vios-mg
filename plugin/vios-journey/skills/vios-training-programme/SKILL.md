@@ -14,6 +14,20 @@ Stage 4. The design is true on paper and useless on the floor until the people c
 - `vios-core:vios-filter-test`: built into the floor playbook, the wall chart and the operating handbook so staff who improvise can self-check.
 - `[client]/journey/design/` in full: pages, choreography, recovery, briefs; plus the brand book and the journey map, so materials stay anchored to strategy, not only to pages; plus the operating concept (menu, beverage programme, systems), which staff must know at least as deeply as the brand.
 
+## House form (from the ONE Gallery Journey Training Plan v2 and Operations Brief, Oct 2026)
+
+For a venue that is already open, the practice ships one **Journey Training Plan**: an onboarding programme that takes one new team member at a time through the whole journey, trainer named on the cover, aligned to the brand-book edition. Its shape:
+
+- **Five training principles**, stated first: foundations before moments · say it, then walk it (words first, then words + geometry + retreat in the real room) · the retreat is the lesson (as much time on what not to do) · drill the counter-intuitive (restraint is trained in, the instinct to help trained out) · floor-ready is a checklist, not a feeling.
+- **Order by weight, not by sequence.** Session 1 foundations: the non-negotiables (three, from the handoff) and the continuities (from the choreography), learned once so they are not re-taught per moment. Session 2 the HIGH moments, each as what it is → the locked script → the geometry → the retreat; the end pair rehearsed together. Session 3 the MEDIUM moments as a table (moment · what the trainee does · target state). Session 4 the LOW moments as standards, then the full arc walked once in the room, narrated. Session 5 the silences and the three drills. Session 1 always first and alone; Session 5 always last and never skipped; shadow shifts only after Session 4.
+- **The three drills**: the retreat drill (step back 2–3 m, no glance back; the glance is the tell) · the silent-moment drill (a seated stand-in and a clock; the 20-minute floor should feel uncomfortable before it feels normal) · the welcome-symmetry drill (greeting and farewell back to back).
+- **Knowledge the trainee must hold**: the rotating content (current exhibition or menu, the signature drinks or dishes with their one-line cue, the three-noun positioning and the one-line differentiator), who holds deeper knowledge and the defer rule, where prices live. Refreshed on the rotation cycle.
+- **Floor-ready sign-off**: a checklist grouped foundations · HIGH moments (every register) · service moments · silences (verified under a clock) · knowledge · shadow shifts, signed and dated by trainer and trainee. Sign-off is against the list.
+- **Pre-shift briefing** as the ongoing carrier: 10–15 minutes, today's rotating content, reservations and events, notes from the last shift, then one role-play of a locked moment, rotating daily.
+- Scripts are quoted from the design pages, in their **registers** (default · evening · private event), and the plan says to pull the final wording from the pages before each session.
+
+The manuscript's full two-stack architecture and the four-to-six-week pre-opening cadence apply to an opening. For a running venue with a small team the minimum set is the Journey Training Plan, the floor playbook (the locked scripts in journey order) and the sign-off checklist; everything else in the architecture is added when the team size justifies it, and each omission is recorded.
+
 ## Move 1 — Intake and translation checklist
 
 Every moment, recovery and operational element that must reach the floor, listed with its source page. The checklist is the stage's table of contents.
@@ -43,7 +57,7 @@ Founder and operations team approve the architecture before writing starts.
 
 ## Move 4 — Cadence
 
-**Pre-opening**, four to six weeks (S4-01), sequenced brand → arc → design → execution → integration: week 1 brand and audience · week 2 the arc and the moments, wall chart up · week 3 the moments of truth, pairs practice, role cards out · week 4 recovery and choreography, group practice · weeks 5–6 full rehearsals with friends-and-family service, certification; failed certification gets targeted coaching, not a pass. Ten to fourteen days available: the compressed sequence (S4-02), recoveries earlier, heavier self-study, and a written acknowledgement that choreography and recovery will be rough for the first four to six weeks.
+**Onboarding** (running venue): the five-session plan above, one trainee at a time, then shadow shifts, then sign-off. **Pre-opening**, four to six weeks (S4-01), sequenced brand → arc → design → execution → integration: week 1 brand and audience · week 2 the arc and the moments, wall chart up · week 3 the moments of truth, pairs practice, role cards out · week 4 recovery and choreography, group practice · weeks 5–6 full rehearsals with friends-and-family service, certification; failed certification gets targeted coaching, not a pass. Ten to fourteen days available: the compressed sequence (S4-02), recoveries earlier, heavier self-study, and a written acknowledgement that choreography and recovery will be rough for the first four to six weeks.
 
 **Post-opening**: pre-shift daily 15–20 min as a ritual, brand point first, operations after, readiness check last (S4-06) · weekly coaching 15–30 min per direct report on the standing rotation · monthly refresher 30–60 min, one module, accelerated where assessment shows gaps · the first-thirty-days plan with the practice still engaged (S4-03); Stage 4 closes thirty days after opening, not on opening night.
 
@@ -71,7 +85,7 @@ New Stage 4 patterns, template refinements, library entries (coaching-ready trea
 
 `[client]/training/` with `architecture.md`, `registers.md`, `cadence-calendar.md`, `staff/` (workbooks by role, role-cards, wall-charts, floor-playbook, reader if any), `management/` (facilitator-guides by module, operating-handbook, coaching-guides, assessment), `handoffs.md`, `first-thirty-days.md`. Claude Docs for anything the founder reviews.
 
-End with: documents produced per stack, cadence chosen (standard or compressed) and why, certification criteria, the three handoff dates, and the thirty-day review date.
+End with: documents produced per stack (or the minimum set, with omissions recorded), cadence chosen (onboarding, standard or compressed) and why, the sign-off criteria, the three handoff dates, and the thirty-day review date.
 
 ## Example (one idea in three registers; brewery; placeholders)
 

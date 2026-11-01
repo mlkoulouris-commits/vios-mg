@@ -1,0 +1,16 @@
+{
+  "name": "vios-brand",
+  "version": "0.1.0",
+  "description": "Vios Practice Stage 1 for F&B clients: brand diagnosis (purpose, audience, competitors, differentiator, archetype, positioning) and the Brand Persona / Persona Bible. Requires vios-core.",
+  "author": {
+    "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"
+  },
+  "keywords": [
+    "vios",
+    "f&b",
+    "hospitality",
+    "brand strategy",
+    "persona",
+    "archetype"
+  ]
+}

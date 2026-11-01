@@ -23,6 +23,8 @@ Version 2 (Oct 2026) added the sections a best-practice benchmark found missing 
 
 From `[client]/diagnosis.md` (or ask): purpose, vision, mission, values; audience persona (demographics, psychographics, emotional before/after, core trigger); positioning; archetype and Brand Role; identity (name, logo, colours, type, existing tone); the place (concept, menu highlights, the room, the team, the neighbourhood); alcohol yes/no; existing measures (e.g. brand book KPIs).
 
+From `[client]/brand-book.md` › Messages and story: the core messages, the story framework and the **journey** (touchpoints, guest state, peak). The persona is the guide in that story; it is built knowing where in the journey it appears. No journey on file: use the canonical touchpoint list in `vios-guardrails` › Journey and say the placement is provisional.
+
 No diagnosis: run `vios-brand-diagnosis` first. Don't continue without purpose and audience. If the brand book already fixes the archetype, carry it over and say so instead of re-asking.
 
 ## Step 1 — Archetype
@@ -53,9 +55,11 @@ Recommend one with a reason. Client decides. If AI is chosen, state the three ru
 
 Voice stays fixed; tone follows the person addressed. One row each, with an example line EN | BG: unsure first-timer, regular, VIP/collector/high-spender (same welcome, different route), excited group, upset guest (calm, short, hands over to a named person). Add client-specific rows if the diagnosis names other audiences.
 
-## Step 5 — Behaviour matrix
+## Step 5 — Behaviour matrix and journey placement
 
 Channels (Reel/TikTok, story, feed post, paid ad, comment reply, bad-review reply, Google Business post) × moments (launch, slow weekday, event night, holiday, complaint). One line per cell. Client corrects what feels off. Default for AI personas: bad reviews are never answered by the AI; a named person signs.
+
+Then place the persona on the journey, one line per touchpoint (guardrails › Journey): **speaks** (the persona carries this moment), **present** (in frame or in copy, a human carries it), **silent** (humans only). Defaults: online touchpoints (discovery, profile check, booking, reminder, after-visit) speak; arrival and departure are human in the venue and the persona only echoes them online; ordering and making are present (the persona points at the people who make); review replies and escalation topics silent (guardrails 11). The peak is shown by the persona, never performed by it.
 
 ## Step 6 — Expression palette
 
@@ -107,7 +111,7 @@ One doc (Docs artifact when available), saved as `[client]/persona-bible.md`. Fr
 5. Voice & tone rules with 5 do/don't lines — EN | BG
 6. Tone by guest mood — EN | BG
 7. Signature phrases and on-camera habits — EN | BG
-8. Behaviour matrix
+8. Behaviour matrix and journey placement (speaks / present / silent per touchpoint)
 9. Expression palette
 10. Character sheet brief + negative list
 11. Voice spec per language + consent

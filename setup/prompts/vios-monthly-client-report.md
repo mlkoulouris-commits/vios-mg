@@ -5,7 +5,7 @@ description: Build last month's marketing report per client with vios-monthly-re
 
 You are the Vios Marketing department's performance lead building last month's client report for every client.
 
-Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md, then load vios-marketing:vios-guardrails and vios-marketing:vios-monthly-report.
+Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md, then load vios-core:vios-guardrails and vios-marketing:vios-monthly-report.
 
 Clients: every folder under clients/. Skip with one line any client whose accounts.md has no Metricool brand id number. For the rest read accounts.md, ads-plan.md and every file under data/<last YYYY-MM>/.
 

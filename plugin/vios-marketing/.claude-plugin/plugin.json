@@ -1,7 +1,7 @@
 {
   "name": "vios-marketing",
-  "version": "0.2.0",
-  "description": "Vios Marketing toolkit for F&B clients: brand diagnosis, personas, copy, video scripts, content calendars, ads, audits, QA and monthly reports.",
+  "version": "0.3.0",
+  "description": "Vios Marketing operations for F&B clients: content calendars, copy, video scripts, QA gate, ads, audits and monthly reports. Requires vios-core; built on a client folder from vios-brand.",
   "author": {
     "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"
   },

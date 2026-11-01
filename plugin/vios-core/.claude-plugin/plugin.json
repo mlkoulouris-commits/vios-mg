@@ -1,0 +1,15 @@
+{
+  "name": "vios-core",
+  "version": "0.1.0",
+  "description": "Vios shared rules every other Vios plugin loads: guardrails (hard lines, shared numbers, client file convention, messages and micro-stories), the behavioural-economics lens and the non-verbal lens.",
+  "author": {
+    "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"
+  },
+  "keywords": [
+    "vios",
+    "f&b",
+    "hospitality",
+    "guardrails",
+    "behavioural economics"
+  ]
+}

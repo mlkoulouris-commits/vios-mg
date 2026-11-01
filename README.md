@@ -4,8 +4,8 @@ The operating system of the Vios Marketing department. One repo, one client fold
 one tool per pipeline stage, one named human approver for anything that publishes, spends or
 reaches a client.
 
-Everything here is portable: clone this repo in any Claude account, enable the `vios-marketing`
-plugin, re-run `setup/` and the department is up. See `docs/migration.md`.
+Everything here is portable: clone this repo in any Claude account, enable the Vios plugins
+(`vios-core`, `vios-brand`, `vios-marketing`), re-run `setup/` and the department is up. See `docs/migration.md`.
 
 ## Layout
 
@@ -21,7 +21,7 @@ plugin, re-run `setup/` and the department is up. See `docs/migration.md`.
 | `setup/` | ClickUp structure, scheduled-task prompts, plugins and connectors to enable |
 | `CLAUDE.md` | How Claude works in this repo (skills, files, hard lines) |
 
-## Pipeline (owned by the `vios-marketing` plugin skills)
+## Pipeline (owned by the Vios plugin skills: `vios-brand` for stages 1–3, `vios-marketing` from stage 4, `vios-core` throughout)
 
 diagnosis → persona → calendar → copy / video → QA → publish → engage → ads → report
 

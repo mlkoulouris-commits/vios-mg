@@ -31,7 +31,7 @@ truth; everything else reads from it or writes to it.
 
 | Need | Tool | Status in personal account (2026-10-29) | Corporate account |
 | --- | --- | --- | --- |
-| Method | `vios-marketing` plugin | enabled | enable from the same marketplace |
+| Method | `vios-core` + `vios-brand` + `vios-marketing` plugins (`vios-journey` planned) | marketing 0.2.0 enabled; split into three in the repo 2026-11-01, packaged files in `plugin/`, to upload | enable all from the repo marketplace, core first |
 | Documents for clients | Claude Docs | connected | connected by default |
 | Client files | this repo + Google Drive | repo created; Drive connected | clone repo; connect Drive |
 | Tasks and approvals | ClickUp | connected; structure created from `setup/clickup.json` | recreate from `setup/clickup.json` |

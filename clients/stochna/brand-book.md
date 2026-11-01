@@ -37,6 +37,21 @@ Integrity rule: a piece reinforces at least one, contradicts none.
 | 6 Transformation | Brewing and cooking as one system, proper choices, pacing for the table, warm equal hosting, a room for conversation |
 | 7 New world | Well-fed, well-watered, socially energised, back with different friends: "You have to try this place." |
 
+### Journey (guest order; owner = marketing or floor; peak = block 4 of the brand book, the evening unfolds)
+| # | Touchpoint | Guest state and tension | Designed moment to show | Owner | Peak |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Discovery | Choosing where to spend an evening with friends; most places are fine, not special | A full table mid-evening, beer and food together, the making visible behind it | marketing | |
+| 2 | Profile check | Thin-slicing the grid: is this a brewery, a restaurant, a scene? | Consistent proof the two are one system; people, not product shots | marketing | |
+| 3 | Booking | Is it worth the 2 km? Will there be room for the group? | Table for the group restated plainly; formal register; no pressure | marketing | |
+| 4 | Reminder | Plan check the day before | Date, time, people restated; one warm line; how to change | marketing | |
+| 5 | Arrival | Made the trip, checking it was worth it | Warm greeting without ceremony; smell of food and beer; visible production | floor | |
+| 6 | Ordering | Is the short menu care or limitation? | Confident guidance, "this goes with that"; no upsell | floor | |
+| 7 | Making | Real making or performance? | Calm practiced handling; spent grain from this morning's brew in the bread | floor | |
+| 8 | The evening | Stay or move on? | Another round arrives when the table is ready; conversation uninterrupted | floor | **peak** |
+| 9 | Departure | One-time thing or my new place? | "See you next time" as a prediction; no rushed bill, nothing requested | floor | |
+| 10 | After-visit | Telling friends: "you have to try this place" | Guest's own photo reposted with permission; the next brew announced as fact | marketing | |
+| 11 | Review | Writing it up, good or bad | Every review answered by the specific detail named; escalation topics to the approver | marketing | |
+
 ### Micro-message blocks (per touchpoint)
 | Block | Touchpoint | Anchors | Understanding to create | Verbal expression | Failure modes |
 | --- | --- | --- | --- | --- | --- |
@@ -45,4 +60,5 @@ Integrity rule: a piece reinforces at least one, contradicts none.
 | 3 | Making and explanation | Made together + the way | What you're drinking and eating was made here, together, on purpose | Speaks from experience, plain words; depth follows interest | Explanations become lectures; integration feels performed |
 | 4 | The evening unfolds | Table is the centre + transformation | Stay; no rush, and the next round goes with what's coming | Suggests without pushing; "there's a darker one that goes with what's next, want to try it?" | Too-frequent check-ins; managed energy; implied urgency |
 | 5 | Departure and memory | Worth the trip + new world | Come back, bring someone; there's always something new from the brewery | "See you next time" as a prediction, not a script | Procedural exit; loyalty or reviews requested; transactional ending |
-| 6 | Online: discovery, booking, after-visit | Worth the trip + table is the centre | Same as blocks 1, 4 and 5 carried into the feed, the booking message and the thank-you | Per `persona-bible.md` register: informal social, formal booking | Pressure devices, superlatives, selling the menu instead of the evening |
+| 6 | Online: discovery, profile check, booking, reminder | Worth the trip + table is the centre | The evening is worth the trip and there is room for your table | Informal on social, formal in booking messages (`persona-bible.md`) | Pressure devices, superlatives, selling the menu instead of the evening |
+| 7 | Online: after-visit, review | Worth the trip + new world | Come back, bring someone; we heard what you said | Thank by the detail named; escalation topics to the approver (guardrails 11) | Templates, discounts in public, asking for the review to change |

@@ -1,10 +1,11 @@
 # Working in vios-ops
 
-This repo is the Vios Marketing department's system of record. The `vios-marketing` plugin must be
-enabled; its skills do the work, this repo holds the inputs and outputs.
+This repo is the Vios Marketing department's system of record. The Vios plugins must be enabled
+(`vios-core` first, then `vios-brand` and `vios-marketing`; source in `plugin/`, marketplace in
+`.claude-plugin/marketplace.json`); their skills do the work, this repo holds the inputs and outputs.
 
 ## Before any client work
-1. Load `vios-marketing:vios-guardrails`.
+1. Load `vios-core:vios-guardrails`.
 2. Open `clients/<slug>/` and read the `persona-bible.md` front page (approver, register, emoji policy,
    alcohol, AI disclosure, version) and `fact-sheet.md`. If a file is missing, say so and use the
    guardrails stand-in; never improvise facts.

@@ -1,19 +1,16 @@
 # Vios Marketing
 
-All Vios Marketing skills for F&B clients in one plugin.
+The monthly operations loop for F&B clients. Requires `vios-core`; expects a client folder filled by `vios-brand` (diagnosis, Persona Bible, brand book with messages, story and journey). Until those exist the skills run on the guardrails stand-ins and say so.
 
-## Workflow order
-1. **vios-brand-diagnosis** — entry gate: business, meaning, audience, competitors
-2. **vios-persona-builder** — Brand Persona / Persona Bible (EN/BG)
-3. **vios-persona-voice** — any client copy in the persona's voice (BG/GR/EN)
-4. **vios-content-calendar** — monthly social calendar, Metricool-ready
-5. **vios-video-script** — Reels/TikTok/persona clips
-6. **vios-ad-factory** — Meta + Google ad concepts and test design
-7. **vios-ads-audit** — weekly ads health check
-8. **vios-monthly-report** — monthly/quarterly client report
+## Monthly loop
+1. **vios-content-calendar** — month plan: pillars, story-block and journey coverage, capacity-matched cadence, Metricool-ready
+2. **vios-persona-voice** — any client copy in the persona's voice (BG/GR/EN), each piece a micro-story anchored to a core message
+3. **vios-video-script** — Reels/TikTok/persona clips, beats mapped to story blocks
+4. **vios-consistency-qa** — final SHIP / FIX / HOLD / BLOCK gate, logs to `qa-log.csv`
 
-## Review lenses & gates
-- **vios-be-lens** — behavioural-economics review
-- **vios-nonverbal-lens** — persona video expression/gaze review
-- **vios-consistency-qa** — final SHIP / FIX / HOLD / BLOCK gate
-- **vios-guardrails** — shared hard lines and definitions every skill loads
+## Ongoing
+- **vios-ad-factory** — Meta + Google ad concepts and test design
+- **vios-ads-audit** — weekly ads health check; owns the sample, learning-phase, winner and fatigue rules
+- **vios-monthly-report** — monthly/quarterly client report with n beside every percentage
+
+Scheduled tasks (`setup/scheduled-tasks.md`) run this plugin: daily engagement triage, weekly ads audit, monthly calendar and report, quarterly review. Skills draft; a named approver publishes.

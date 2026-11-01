@@ -1,0 +1,32 @@
+{
+  "name": "vios",
+  "owner": {
+    "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"
+  },
+  "metadata": {
+    "description": "Vios plugins for F&B clients: shared rules, brand strategy, customer journey, marketing operations. Enable vios-core first."
+  },
+  "plugins": [
+    {
+      "name": "vios-core",
+      "source": "./plugin/vios-core",
+      "description": "Shared rules every Vios plugin loads: guardrails, BE lens, non-verbal lens. Enable first.",
+      "version": "0.1.0",
+      "category": "productivity"
+    },
+    {
+      "name": "vios-brand",
+      "source": "./plugin/vios-brand",
+      "description": "Stage 1: brand diagnosis and the brand persona. Requires vios-core.",
+      "version": "0.1.0",
+      "category": "productivity"
+    },
+    {
+      "name": "vios-marketing",
+      "source": "./plugin/vios-marketing",
+      "description": "Monthly operations: calendar, copy, video, QA, ads, report. Requires vios-core.",
+      "version": "0.3.0",
+      "category": "productivity"
+    }
+  ]
+}

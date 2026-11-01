@@ -34,6 +34,21 @@ Integrity rule: a piece reinforces at least one, contradicts none.
 | 6 Transformation | |
 | 7 New world | |
 
+### Journey (guest order; owner = marketing or floor; mark one row peak)
+| # | Touchpoint | Guest state and tension | Designed moment to show | Owner | Peak |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Discovery | | | marketing | |
+| 2 | Profile check | | | marketing | |
+| 3 | Booking | | | marketing | |
+| 4 | Reminder | | | marketing | |
+| 5 | Arrival | | | floor | |
+| 6 | Ordering | | | floor | |
+| 7 | Making | | | floor | |
+| 8 | The evening | | | floor | |
+| 9 | Departure | | | floor | |
+| 10 | After-visit | | | marketing | |
+| 11 | Review | | | marketing | |
+
 ### Micro-message blocks (per touchpoint)
 | Block | Touchpoint | Anchors | Understanding to create | Verbal expression | Failure modes |
 | --- | --- | --- | --- | --- | --- |
@@ -42,4 +57,5 @@ Integrity rule: a piece reinforces at least one, contradicts none.
 | 3 | Making | | | | |
 | 4 | The evening | | | | |
 | 5 | Departure | | | | |
-| 6 | Online: discovery, booking, after-visit | | | | |
+| 6 | Online: discovery, profile check, booking, reminder | | | | |
+| 7 | Online: after-visit, review | | | | |

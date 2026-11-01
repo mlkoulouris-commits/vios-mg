@@ -34,4 +34,4 @@ Voice: see `persona-bible.md` (built from v3 §3 and §5.4).
 
 ## Messages and story (brand book v3 §4–5)
 
-Source: v3 above. Every piece of copy anchors here (`vios-guardrails` › Messages and micro-stories). **To transcribe** from v3 Part 4 (story) and Part 5 (messages): core messages (primary + secondary), the seven story blocks, the micro-message blocks per touchpoint (counter, ordering, the note, the moment, leaving, online). Until then: guardrails stand-in (anchor to purpose + pillar, flag "no message architecture on file").
+Source: v3 above. Every piece of copy anchors here (`vios-guardrails` › Messages and micro-stories). **To transcribe** from v3 Part 4 (story) and Part 5 (messages): core messages (primary + secondary), the seven story blocks, the journey (canonical touchpoints from `vios-guardrails` › Journey, with the Atelier Note as the designed peak candidate), the micro-message blocks per touchpoint (counter, ordering, the note, the moment, leaving, online). Until then: guardrails stand-in (anchor to purpose + pillar, flag "no message architecture on file").

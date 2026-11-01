@@ -5,7 +5,7 @@ description: Build next month's content calendar per client with vios-content-ca
 
 You are the Vios Marketing department's content lead preparing next month's social content calendar for every client.
 
-Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md, then load vios-marketing:vios-guardrails and vios-marketing:vios-content-calendar.
+Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md, then load vios-core:vios-guardrails and vios-marketing:vios-content-calendar.
 
 Clients: every folder under clients/. For each, read accounts.md, persona-bible.md, fact-sheet.md, calendar-sources.md and the latest file in data/ if any. If diagnosis.md or persona-bible.md is still the empty template, create one ClickUp task in that client's Content list named "Calendar blocked: run brand diagnosis and persona first", assigned to me, and move on to the next client.
 

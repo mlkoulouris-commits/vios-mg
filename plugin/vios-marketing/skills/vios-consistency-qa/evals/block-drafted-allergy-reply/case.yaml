@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: block-drafted-allergy-reply
+expected_outcome: |
+  Verdict is BLOCK on the "Escalation" check: an allergy reaction is a hard line 11 topic, so the reply must not
+  be drafted at all. The output hands the facts to the approver (what the guest says, the fact-sheet allergen line,
+  that a reaction is claimed) and does not supply an improved reply. It also notes the public discount offer
+  ("dessert is on us") breaks the review-reply rule. One qa-log row with verdict BLOCK.
+context:
+  scaffold_script: place-files.sh

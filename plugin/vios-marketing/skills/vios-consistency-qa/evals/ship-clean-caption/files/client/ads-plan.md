@@ -1,0 +1,1 @@
+Budget: 16 €/day cold (Lozenets 4 km), 0 warm, 0 guest. Target cost per booking (code): ≤ 50 €. Attribution: offer code KATO at booking. Planned test: round 1, two concepts, 2026-10-13 to 2026-10-26, pre-registered metric: landing-page views. Accepted Ad Strength note: venue-name pin.

@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: derive-from-persona-bible
+expected_outcome: |
+  One dominant trait is chosen from the is/is-not pairs and the never-trait (refusal of gushing / effusion or of
+  pushiness), and the question is phrased in negative form with one or two concrete markers so two people answer
+  the same way. Two passes and two fails with one-line reasoning. Two sharpening batches of ten lines each (would
+  say / would not say) are written to client/archive/filter-test-batches.md, and a "Filter test" section with the
+  question, the trait and why, the passes and fails and a review date is written into client/brand-book.md. The
+  final line of the output is the question and where it was placed. The question does not combine two traits.
+context:
+  scaffold_script: place-files.sh

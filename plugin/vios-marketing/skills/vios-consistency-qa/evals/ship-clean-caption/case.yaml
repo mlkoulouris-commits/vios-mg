@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: ship-clean-caption
+expected_outcome: |
+  Verdict is SHIP. Every row passes or is N/A; the video-only rows (Face & voice, Character lock, AI disclosure)
+  are N/A, not pass. The consent row passes because Ivan P.'s release is in client/consents/ and in date. The
+  verdict is addressed to Maria D. and one qa-log row with verdict SHIP and attempt 1 is appended.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,5 @@
+ad,campaign,cell,start_date,days_live,window,impressions,reach,frequency,clicks,ctr,cpc_eur,spend_eur,results,result_type,cost_per_result_eur
+Moment-A,Cold Lozenets,A,2026-10-13,14,last7,1050,610,1.7,34,3.2%,1.65,56,13,landing_page_view,4.31
+Moment-A,Cold Lozenets,A,2026-10-13,14,prev7,980,590,1.7,31,3.2%,1.70,53,9,landing_page_view,5.89
+Craft-B,Cold Lozenets,B,2026-10-13,14,last7,1010,600,1.7,29,2.9%,1.90,55,8,landing_page_view,6.88
+Craft-B,Cold Lozenets,B,2026-10-13,14,prev7,940,570,1.6,26,2.8%,2.00,52,7,landing_page_view,7.43

@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: fix-pressure-wording-on-true-fact
+expected_outcome: |
+  Verdict is FIX, not BLOCK: the fact (menu runs 14–20 Nov, 38 €) is on the fact sheet, so the pressure wording
+  "Hurry" and "ends ... !" is rewritten as the plain fact. A corrected caption is supplied with no pressure word
+  and no softer nudge. The output cites the check "Pressure / scarcity" by name, addresses the approver Maria D.,
+  and appends one row with attempt 1 and verdict FIX to client/qa-log.csv.
+context:
+  scaffold_script: place-files.sh

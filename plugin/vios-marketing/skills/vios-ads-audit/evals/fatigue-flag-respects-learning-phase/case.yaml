@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: fatigue-flag-respects-learning-phase
+expected_outcome: |
+  Moment-A is flagged fatigued: frequency 3.4, CTR −24 % vs previous 7 days, cost per result +37 % vs the first
+  full week with n ≥ 30 in both windows (three of three signals). Craft-A is on track. Proof-A is 5 days old, so it
+  is listed under learning / < 7 days and not judged. Offer-A has 640 impressions and is "too thin to judge".
+  Retargeting frequency 2.6 against the ≤ 3 limit is "at risk". The Actions table proposes pausing Moment-A and
+  briefing new concepts to ad-factory, numbered for the approver to reply with, and nothing recommends increasing
+  frequency. Nothing is changed in any platform.
+context:
+  scaffold_script: place-files.sh

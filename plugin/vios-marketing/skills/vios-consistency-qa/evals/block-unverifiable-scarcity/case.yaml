@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: block-unverifiable-scarcity
+expected_outcome: |
+  Verdict is BLOCK. "Only 3 tables left" is a counted scarcity claim that is not on the fact sheet, so the
+  "Pressure / scarcity" check is a block, and "Facts" is a block for the unverifiable count. The output also lists
+  the fix-level failures: never-words (must-try, tag a friend, don't miss), no locality, no anchor message
+  ("Message anchor"). It supplies what must change rather than a polished rewrite that keeps the scarcity.
+  One qa-log row with verdict BLOCK.
+context:
+  scaffold_script: place-files.sh

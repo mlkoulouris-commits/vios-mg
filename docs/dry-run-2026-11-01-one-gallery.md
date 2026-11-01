@@ -38,7 +38,7 @@ Purpose: test the Stage 2 and 3 skills, written from the manuscript on 2026-11-0
 | 19 | brand-book | "The positioning as a working tool": the statement followed by the proposals it rejects (VIP area, closing 3–6 pm, reservations-only, a lecture series). | Added to the assembly step. |
 | 20 | messages-and-story | Secondary core has one message per value, not one for "values"; a tone-by-moment table sits under the messages; the brand belief is held separately and deployed under the story, at the peak and in the email voice. | All three added. |
 | 21 | name-and-tagline | A two-line tagline system: lockup (three nouns) and editorial (story-facing). | Added to the tagline step. |
-| 22 | diagnosis | v2.2 carries a Brand Affinity Audit and a second audience section; the diagnosis skill has the worksheets but names neither. | Noted; diagnosis skill to be checked in a later pass. |
+| 22 | diagnosis | v2.2 carries a Brand Affinity Audit and a second audience section; the diagnosis skill has the worksheets but names neither. | Both added to Step 4 and the output; the audit is marked speculative until ground-truthed. |
 
 ## Harvest entry for the manuscript (Stage 1–4, from this dry run)
 
@@ -62,4 +62,4 @@ Framework revision suggested: § 2.1.3 can now be specified from Format A. Instr
 
 ## Next
 
-Dry run closed on the skill side. Open: the diagnosis skill against v2.2 §2 (Brand Affinity Audit, second audience); the house decision on which brand-book format is the standard; running one skill blind on a new client to test generation, not only shape.
+Dry run closed on the skill side. Open: the house decision on which brand-book format is the standard; running one skill blind on a new client to test generation, not only shape.

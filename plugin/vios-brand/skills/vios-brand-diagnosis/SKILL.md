@@ -57,6 +57,10 @@ Gate: if purpose is empty or performed, stop here and report it.
 
 Build the primary persona from 10–20 competitor profiles, review mining and interviews: demographics, psychographics, emotional before/after, pain, needs, beliefs, a quote. Assign archetype(s), 70/30 rule, max two.
 
+Then the **Brand Affinity Audit** (Reference Tool; ONE Gallery v2.2 §2.4): five or six brands the persona already loves, as a table brand · years · alternatives · why they stay beyond features, in the persona's own words; then the patterns across the affinities (restraint as a signal, an ambient cultural reference, belonging without performing, curated over comprehensive …). The patterns govern the positioning, the messages and the operating foundations: the brand must sit naturally next to those brands in the persona's life. Mark the audit **speculative until ground-truthed** in real audience conversations (pilot or post-opening) and say so in the output.
+
+Where the business serves a **second audience** (collectors and the art community for a gallery, B2B partners for a producer, event hosts for a venue), name it as its own short section: who · what they need · where they are served (channels, programme, direct relationship) · what does not change (one welcome on the floor; the second audience is served through channels, not through a different door). The primary persona stays the calibration point for the room.
+
 ## Step 5 — Competitors (W6)
 
 Score each on Brand Message, Positioning, Personality, Identity, Web/UX, Reviews: 1–10; 8+ green, 7 yellow, under 7 red. Output two lists: IDEAS (their strengths worth adopting) and OPPORTUNITIES (their gaps).
@@ -75,7 +79,7 @@ Three steps, in order: audience archetype → what they want in the context of t
 1. One-line verdict: meaning present / meaning to build / no meaning (decline)
 2. The real business in numbers
 3. Purpose, vision, mission, values (draft or confirmed)
-4. Primary audience persona + archetype
+4. Primary audience persona + archetype, the Brand Affinity Audit with its patterns, a second audience where one exists
 5. Competitor map: ideas and opportunities
 6. Differentiator and positioning statement
 7. Brand archetype (core + influencer) and Brand Role

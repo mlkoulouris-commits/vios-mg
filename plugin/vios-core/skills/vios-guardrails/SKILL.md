@@ -81,6 +81,7 @@ Every client has a folder (`[client]/`) with:
 | `data/YYYY-MM/` | Raw pulls with source and pulled-at in the filename |
 | `journey/` | Stage 2 and 3 outputs (`vios-journey`): `intake-stage-2.md`, `observation.md` (shadowed services and review read, dated; the re-weighting date), `journey-map.md`, `reasoning-note.md`, `handoff-to-design.md`, `design/` (pages, choreography, recovery, briefs) |
 | `training/` | Stage 4 outputs (`vios-journey:vios-training-programme`): architecture, registers, cadence calendar, staff and management stacks, handoffs |
+| `open-facts.md` | The engagement's chase list: every "to confirm" from any stage as a row (fact · what it blocks · who holds it · asked on · due); worked by the account manager |
 | `archive/` | Stage 1–4 working documents that stay out of the deliverable: filled worksheets, `deep-interrogation.md` (the interrogation answers, from `vios-name-and-tagline`), `naming.md` (long list, scores), `filter-test-batches.md` (the pass/fail batches from `vios-filter-test`), `harvest-stage-1.md` |
 | `brand-book-vN.md` | The assembled brand book per edition (`vios-brand-book`); `brand-book.md` stays the live summary the operating skills read |
 

@@ -1,7 +1,7 @@
 # Working in vios-ops
 
 This repo is the Vios Marketing department's system of record. The Vios plugins must be enabled
-(`vios-core` first, then `vios-brand`, `vios-journey` and `vios-marketing`; source in `plugin/`, marketplace in
+(`vios-core` first, then `vios-brand`, `vios-journey`, `vios-engage` and `vios-marketing`; source in `plugin/`, marketplace in
 `.claude-plugin/marketplace.json`); their skills do the work, this repo holds the inputs and outputs.
 
 ## Before any client work

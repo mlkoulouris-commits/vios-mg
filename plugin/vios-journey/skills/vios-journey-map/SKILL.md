@@ -85,6 +85,8 @@ Five questions, each yes or no with the fix: arc specific to this customer · al
 4. **Bridge to marketing**: update `[client]/brand-book.md` › Journey so the canonical touchpoints (`vios-core:vios-guardrails` › Journey) point at their moment codes, the peak and the signature are marked, the guest state per touchpoint is copied from the placement table, and the owner column is derived from the phase (pre-arrival and post-visit phases are marketing, in-venue phases are floor, unless the fact sheet says otherwise). `vios-content-calendar`, `vios-persona-voice` and `vios-persona-builder` read that table; the full map stays in `journey/`.
 5. Brief revisions, if the map constrains the room: architect or interior-designer brief revision, versioned and dated (§ 2.2.6).
 6. Harvest note (§ 2.2.7): arc patterns, moment patterns, template refinements, peak-end placements, in `[client]/archive/harvest-stage-2.md`.
+- **Chase list**: `[client]/open-facts.md`, one table for the whole engagement, appended at every stage: fact needed · which moment, page or section it blocks · who holds it · asked on · due. Every "to confirm" in the deliverable points at a row here; the account manager works the list, nobody else. Say in the final line how many rows are open and which one blocks the stage from closing.
+
 
 End with: phase count, moment count, the HIGH/MEDIUM/LOW split, the signature, the peak and the end named, the silences, and the next step (`vios-journey-design`). The founder signs the Reasoning Note before design starts.
 

@@ -29,6 +29,13 @@
       "category": "productivity"
     },
     {
+      "name": "vios-engage",
+      "source": "./plugin/vios-engage",
+      "description": "The engagement wrapper: intake, proposal, workspace setup, harvest. Parts IV and V. Requires vios-core.",
+      "version": "0.1.0",
+      "category": "productivity"
+    },
+    {
       "name": "vios-marketing",
       "source": "./plugin/vios-marketing",
       "description": "Monthly operations: calendar, copy, video, QA, ads, report. Requires vios-core.",

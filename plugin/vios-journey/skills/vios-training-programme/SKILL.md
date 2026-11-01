@@ -86,6 +86,8 @@ New Stage 4 patterns, template refinements, library entries (coaching-ready trea
 `[client]/training/` with `architecture.md`, `registers.md`, `cadence-calendar.md`, `staff/` (workbooks by role, role-cards, wall-charts, floor-playbook, reader if any), `management/` (facilitator-guides by module, operating-handbook, coaching-guides, assessment), `handoffs.md`, `first-thirty-days.md`. Claude Docs for anything the founder reviews.
 
 End with: documents produced per stack (or the minimum set, with omissions recorded), cadence chosen (onboarding, standard or compressed) and why, the sign-off criteria, the three handoff dates, and the thirty-day review date.
+- **Chase list**: `[client]/open-facts.md`, one table for the whole engagement, appended at every stage: fact needed · which moment, page or section it blocks · who holds it · asked on · due. Every "to confirm" in the deliverable points at a row here; the account manager works the list, nobody else. Say in the final line how many rows are open and which one blocks the stage from closing.
+
 
 ## Example (one idea in three registers; brewery; placeholders)
 

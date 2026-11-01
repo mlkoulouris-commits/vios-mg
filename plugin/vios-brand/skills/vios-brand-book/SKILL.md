@@ -41,7 +41,7 @@ The deliverable of Stage 1: the strategy organised for use, not a stack of works
 - The designer selection table, if in scope.
 - The harvest note.
 
-End with: edition, what changed, what is "to confirm" and who confirms it, and the next stage (`vios-journey:vios-journey-map`).
+End with: edition, what changed, what is "to confirm" and who confirms it (every one a row in `[client]/open-facts.md`, the engagement's chase list: fact · what it blocks · who holds it · asked on · due), and the next stage (`vios-journey:vios-journey-map`).
 
 ## Checks before issue
 

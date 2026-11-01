@@ -8,7 +8,7 @@ What `vios-brand-book` assembles. Built from three sources: the manuscript's rul
 
 **Format B, Why → Who → Soul → Story → Voice → Look → Use → Govern** (Atelier del Gelato v3, 20 pages; Stochna V2): the same content re-cut for the founder and the team, with a "brand at a glance" page, the guest journey and sensory identity in Use, do's and don'ts and approvals in Govern. Register: neutral, with the manifesto in the brand's voice. Readers: the founder, the team, the designer.
 
-Rule: Format A is the engagement deliverable the practice signs off, because it carries the coherence test and the open-items ledger; Format B is derived from it when a team-facing edition is wanted. A client does not get Format B without a Format A behind it. Both carry the Brand Wheel page.
+Rule (house standard, set 2026-11-01): **Format A is the brand book.** It is the engagement deliverable the practice signs off, because it carries the coherence test and the open-items ledger. Format B is a derived team edition, produced on request after A exists and never instead of it. Atelier v3 and Stochna V2, written in Format B, get a Format A edition at their next revision pass. Both formats carry the Brand Wheel page.
 
 Voice of the book: neutral descriptive register throughout, except the one-paragraph manifesto that opens Part 1, which is written in the brand's own voice. Length: 25–45 pages for a venue; shorter when sections are marked "to confirm".
 

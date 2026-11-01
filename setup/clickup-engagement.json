@@ -1,0 +1,86 @@
+{
+  "description": "ClickUp structure for one VIOS Practice engagement, created by vios-engage:vios-engagement-setup under the client's folder. Lists are made only for the stages in scope.",
+  "statuses": [
+    {
+      "status": "Draft",
+      "type": "open",
+      "color": "#d3d3d3"
+    },
+    {
+      "status": "Review",
+      "type": "custom",
+      "color": "#6647f0"
+    },
+    {
+      "status": "Signed",
+      "type": "custom",
+      "color": "#1bbc9c"
+    },
+    {
+      "status": "Done",
+      "type": "closed",
+      "color": "#008844"
+    }
+  ],
+  "lists": [
+    {
+      "name": "Stage 1 — Brand",
+      "tasks": [
+        "Diagnosis",
+        "Messages and story",
+        "Persona Bible",
+        "Name and tagline",
+        "Brand book (Format A)",
+        "Designer brief",
+        "Stage 1 sign-off"
+      ]
+    },
+    {
+      "name": "Stage 2 — Map",
+      "tasks": [
+        "Intake summary",
+        "Observation (two services)",
+        "Journey map",
+        "Reasoning Note",
+        "Handoff to design",
+        "Stage 2 sign-off"
+      ]
+    },
+    {
+      "name": "Stage 3 — Design",
+      "tasks": [
+        "Design schedule",
+        "HIGH pages",
+        "MEDIUM pages",
+        "LOW and silent pages",
+        "Choreography",
+        "Recovery",
+        "Operations brief",
+        "Stage 3 close"
+      ]
+    },
+    {
+      "name": "Stage 4 — Training",
+      "tasks": [
+        "Architecture",
+        "Registers",
+        "Materials",
+        "Cadence calendar",
+        "Sessions 1–5",
+        "Sign-offs",
+        "Handoffs",
+        "Thirty-day review",
+        "Retrospective"
+      ]
+    },
+    {
+      "name": "Engagement",
+      "tasks": [
+        "Proposal — awaiting signature",
+        "Chase list (open-facts.md)",
+        "Harvest",
+        "Case recommendation"
+      ]
+    }
+  ]
+}

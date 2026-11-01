@@ -26,7 +26,23 @@ HIGH first, and within HIGH the peak and the end first. Then MEDIUM, then LOW, t
 
 ## The design page (one per moment)
 
-Header: M-code · phase · name · tier · peak/end marker. Body, in order:
+The manuscript's fields, rendered in the house layout the practice ships (ONE Gallery, 28 pages). Header: M-code · tier label · moment name · descriptor line (type · phase · mode, e.g. "Digital touchpoint · Pre-visit · Self-led", "Environmental · 2–10 min · Approach") · markers. Tier labels: **CRITICAL IMPACT** (HIGH), **HIGH IMPACT** (MEDIUM), **STANDARD** (LOW), **SILENT**. Body blocks, in this order:
+
+| House block | Holds (manuscript fields) |
+| --- | --- |
+| CURRENT STATE | the moment in one sentence and the customer state: where on the arc, what they just had, what comes next |
+| DO | the action as a numbered list: who, from where, places what where; the sensory frame and the room's work appear here as numbered items when the room is doing specific work |
+| SAY | the script, marked **LOCKED** where the words are exact; floor register; filter-tested; the caption voice for digital moments |
+| DON'T | the failure modes and the tempting defaults, as short prohibitions |
+| NON-VERBAL | body, geometry, silence, tone, volume, timing (omitted on digital and silent pages) |
+| BEHAVIORAL ECONOMICS | the principle at work, named from section 3.1, and what it does to the decision here |
+| RECOVERY | "If … → …": trigger, what is done and said, who takes over; references the recovery document |
+| state arc | one line: before → during → after ("Curious → Visualising → Decided") |
+| Success metric | an observable signal, never a sentiment |
+| Target emotion | one word or two |
+| Brand pillar | the core message or pillar the moment serves (welcome, discovery, differentiator, quality) |
+
+The manuscript's eleven questions, for completeness, map onto the blocks as follows:
 
 1. **The moment**, one sentence (from the map).
 2. **Customer state**: where on the arc, what they just had, what comes next.
@@ -40,11 +56,11 @@ Header: M-code · phase · name · tier · peak/end marker. Body, in order:
 10. **Success metric**: an observable signal ("sat without asking which table"), never a sentiment.
 11. **Failure mode** and the recovery reference.
 
-HIGH pages add: the brand-coherence test for this moment (does it hold the Role and the Connection statement), the story-framework block it plays, operational dependencies. MEDIUM pages: fields 1–6 and 10. LOW pages: moment, action, dominant dimension. Footer: brand-book sections, BE and NV entries, dependencies.
+HIGH pages add: the brand-coherence test for this moment (does it hold the Role and the Connection statement), the story-framework block it plays, operational dependencies. MEDIUM pages carry the same blocks, shorter. LOW pages: CURRENT STATE, DO, DON'T, the metric line. SILENT pages: DO is "Nothing" with what M-before did the work, and DON'T lists what would break the silence. Footer: brand-book sections, BE and NV entries, dependencies. Every page is one rendered page; uniform layout across the set.
 
 ## Choreography (§ 2.3.2.5)
 
-A separate document by phase: **transitions** (duration intended, what fills it, sensory continuity), **handoffs** (who passes the guest to whom, what is said and shown, what the guest does not see), **continuities** listed at the front (the brand's tone across moments, approach geometry, placing-objects gesture, exit-from-table, the silences).
+A separate document, "Choreography & continuities", in three sections, **continuities first**: section 1 the continuities as titled rules (the voice is the same from the caption to the farewell · approach angle and distance · step back after every locked gesture · where the team stands when not at a table · the signature leads, every guest, every daypart · the **moment cluster** around the peak designed as one, every moment serving it · the silences as design); section 2 the transitions as moment pairs (M8 → M9 …) with what the transition does and why it matters, duration and what fills it; section 3 the handoffs (who passes the guest to whom, what is said and shown, what the guest does not see). Name the cluster explicitly (ONE Gallery: M13–M21 protects the peak at M18).
 
 ## Recovery (§ 2.3.2.6)
 
@@ -72,4 +88,4 @@ End with: pages written by tier, HIGH recoveries done, the threshold sequence an
 
 ## Example (one HIGH page compressed; brewery; placeholders)
 
-**M02 Threshold crossed** · arrival · HIGH · state: made the trip, checking it was worth it · intention: you're in the right place, relax · action: host at the stand two metres inside the door, turns before the guest reaches it, one beat, greeting, then leads · script: "Welcome — sit anywhere." (filter test: not performed ✓) · NV: lens-level eye contact for the line only, open palm toward the room, moderate pace, lead slightly ahead · sensory: door handle warm wood, 62–66 dB room, bread and wort in the air · BE: thin-slice, cognitive ease; nothing to decide yet · room: the tanks visible from the door, kitchen pass lit · metric: guest moves into the room without a question within ten seconds · failure: guest hovers → recovery R01 "the second welcome".
+**M02 · CRITICAL IMPACT · Threshold crossed** · In-room · ~30 sec · Arrival. CURRENT STATE: made the trip, checking it was worth it; the room speaks before anyone does. DO: 1. host at the stand two metres inside the door, turns before the guest reaches it; 2. one beat, then the greeting, then lead; 3. tanks visible from the door, kitchen pass lit, room at 62–66 dB, bread and wort in the air. SAY (LOCKED): "Welcome — sit anywhere." (filter test: not performed ✓). DON'T: no reservation question inside the greeting; no tour on the walk. NON-VERBAL: lens-level eye contact for the line only, open palm toward the room, moderate pace, lead slightly ahead. BEHAVIORAL ECONOMICS: thin-slicing (§3.1.17), cognitive ease (§3.1.1); nothing to decide yet. RECOVERY: if the guest hovers → the second welcome (R01). Checking → Settling → In. Success metric: moves into the room without a question within ten seconds. Target emotion: at ease. Brand pillar: welcome.

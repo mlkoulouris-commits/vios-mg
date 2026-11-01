@@ -21,6 +21,38 @@ Regression set for the yearly review. Every line in batch A must pass; every lin
 | 11 | "Every delivery arrives with story cards for your tables." (B2B, Вие) | no | no | no: to the owner | pass |
 | 12 | "I'm sorry. Menelaos will write to you today." (complaint) | no | no | no | pass |
 
+Lines added at Stage 3 (design pages M07, M15, M22, M23; new floor-register copy, for Menelaos to read as new lines):
+
+| # | Line | Hurry | Sell | Talk past | Verdict |
+| --- | --- | --- | --- | --- | --- |
+| 13 | "Then let's just choose something good." (M07, after "nothing") | no | no | no | pass |
+| 14 | "Pistachio it is." (M07, irritated guest) | no | no | no | pass |
+| 15 | "I'm sorry. Let's choose something good for today." (M07, painful answer) | no | no | no | pass |
+| 16 | "The note's inside, for whoever opens it." (M15, box to give away) | no | no | no | pass |
+| 17 | "A note for today. It goes with every order." (M15, first-timer) | no | no | no | pass |
+| 18 | "They're drawn by chance. This one's yours." (M15, asks to pick) | no | no | no | pass |
+| 19 | "Thanks for waiting." (M05, wait past five minutes; a fact, not an apology) | no | no | no | pass |
+| 20 | "Taste the new one?" (M11, regular wavering) | no | no | no | pass |
+| 21 | "If you're not sure, the [flavour]. It's the one for a day like that." (M11, anchor after a shared moment) | no | no: one named flavour, once | no | pass |
+| 22 | "If you're not sure, the [flavour]. Made this morning." (M11, anchor, no moment shared; only when true) | no | no | no | pass |
+| 23 | "No hurry." (M11, anchor declined) | no | no | no | pass |
+| 24 | "The gelato and the tiramisu are gluten-free; the Lab checks cross-contact." (M11, allergen fact from the fact sheet) | no | no | no | pass |
+| 25 | "No added sugar in the Mindful line." (M11, fact only) | no | no | no | pass |
+| 26 | "Then let's just choose something good." / „Тогава просто да изберем нещо хубаво." (M09, BG form) | no | no | no | pass |
+| 27 | "I'm sorry. Let's choose something good for today." / „Съжалявам. Да изберем нещо хубаво за днес." (M09, BG form) | no | no | no | pass |
+| 28 | "Good to see your note made it home, [name]." (M25, reply) | no | no | no | pass |
+| 29 | "May we share your photo on our page, in your words? A yes here is enough; we keep it on file." (M25, permission ask; one ask, no reward) | no | no | no | pass |
+| 30 | "We only supply venues that serve the story with it. If that changes, write to us." (M29, declining a venue) | no | no | no: a fact to the owner | pass |
+| 31 | "Fresh this morning. The cards are on top." (M30, at the door; only when true) | no | no | no | pass |
+| 32 | "The tiramisu collection is here too: L'Originale, pistachio, hazelnut, blueberry, mango." (M12, one offer as a fact) | no | no: what is there, not a question | no | pass |
+| 33 | "That one has limoncello in it." / „В този има лимончело." (M13) | no | no | no | pass |
+| 34 | "That line is 18 and over." (M13, if asked) | no | no | no | pass |
+| 35 | "If you'd like to tell others about today, our Google page is here." (M26, review ask, no reward) | no | no | no | pass |
+| 36 | "That's not yours. One moment." / „Това не е твоето. Един момент." (R-WRONG-ORDER) | no | no | no | pass |
+| 37 | "That's the price on the list." / „Това е цената от листата." (R-BILL) | no | no | no | pass |
+| 38 | "The till was wrong. It's [price]." (R-BILL) | no | no | no | pass |
+| 39 | "The cards are part of the delivery; that's what we agreed. Can they be on the tables by [date]?" (R-PARTNER, to the owner, Вие) | no | no | no | pass |
+
 Line 8 was the false-negative risk: a product fact says nothing about the person. The "talk past" marker was sharpened to *a line for the crowd rather than this person* so that a plain fact offered to someone choosing passes and hype fails.
 
 ## Batch B — lines the brand would not say (all fail)

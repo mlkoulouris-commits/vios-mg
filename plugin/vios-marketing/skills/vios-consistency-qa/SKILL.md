@@ -10,7 +10,7 @@ Nothing goes out without a named human sign-off, and nothing reaches that human 
 ## Load first (`vios-guardrails` › client file)
 
 - `persona-bible.md` (traits, is/is-not pairs, never-list, tone by guest mood, signature phrases, Expression palette, register, emoji policy, disclosure set, **approver**, alcohol yes/no, **version and review date**). If the review date has passed, say so in the verdict header.
-- `brand-book.md` (colours, type, logo rules, image style)
+- `brand-book.md` (colours, type, logo rules, image style; Messages and story: core messages, story blocks, micro-message blocks)
 - `character-sheet/` (locked stills, expression stills, voice spec)
 - `consents/` (releases, UGC permissions, expiry dates)
 - `fact-sheet.md` (the only source for facts)
@@ -46,6 +46,7 @@ A pass has to be earned. Facts are checked against the fact sheet; no source →
 | 20 | Escalation | A reply on an escalation topic (guardrails 11) was drafted instead of handed to the approver | block |
 | 21 | Other hard lines | Guardrails 3, 4, 12 | block |
 | 22 | Persona error history | No open correction for this persona; fewer than two serious errors this month (guardrails 6 error rule) | hold |
+| 23 | Message anchor | Names one core message and reinforces it, contradicts none (brand book integrity rule); plays one story block with the guest as hero, not the brand; touchpoint copy matches its micro-message block and hits none of its failure modes (guardrails › Messages and micro-stories). No message architecture on file → "needs human check" | fix |
 
 ## Verdicts
 
@@ -97,4 +98,4 @@ Approver: [name] — nothing publishes without this sign-off.
 ## Batch and report modes
 
 - **Batch** (a week's calendar): one summary table (asset, verdict, top issue), then details only for FIX, HOLD and BLOCK. Three assets failing the same check = a brief problem, say so.
-- **Report** (a client memo or dashboard): row 13 against the saved data files (re-compute at least the 5 headline numbers), every percentage carries n, no estimates; rows 14–16 N/A; row 21: dashboard private, recipient named by the account manager. Log as asset "monthly report".
+- **Report** (a client memo or dashboard): row 13 against the saved data files (re-compute at least the 5 headline numbers), every percentage carries n, no estimates; rows 14–16 and 23 N/A; row 21: dashboard private, recipient named by the account manager. Log as asset "monthly report".

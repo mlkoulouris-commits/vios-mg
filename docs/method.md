@@ -31,7 +31,7 @@ Every client diagnosis, persona and brand book cites these files and no others. 
 | 6 Competitor Audit | `vios-brand-diagnosis` step 5 (spreadsheet) | `diagnosis.md` §6 + audit xlsx in Drive |
 | 7 Differentiator · 9 Positioning Statement | `vios-brand-diagnosis` step 6 | `diagnosis.md` §7 |
 | 8 Brand Personality (archetype, role) | `vios-brand-diagnosis` step 7, then `vios-persona-builder` | `diagnosis.md` §8, `persona-bible.md` |
-| 10 Core Message Blocks · 11 Story Framework | brand book (M3 structure); `vios-persona-voice` reads them | `brand-book.md` link to the PDF |
+| 10 Core Message Blocks · 11 Story Framework | brand book (M3 structure); transcribed into `brand-book.md` › Messages and story; `vios-guardrails` › Messages and micro-stories defines the micro-story rule that `vios-persona-voice`, `vios-content-calendar`, `vios-video-script` and `vios-consistency-qa` (row 23) apply | `brand-book.md` › Messages and story |
 | 12 Brand Name · 13 Tagline · 14 Designer Selection | brand book; designer brief | `brand-book.md` |
 | Expression in daily use | `vios-content-calendar`, `vios-persona-voice`, `vios-video-script`, `vios-consistency-qa`, `vios-ad-factory`, `vios-ads-audit`, `vios-monthly-report` | `content/`, `qa-log.csv`, `ads-plan.md` |
 

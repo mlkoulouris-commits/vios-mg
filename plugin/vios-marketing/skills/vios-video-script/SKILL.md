@@ -12,6 +12,7 @@ A script is a sequence of moments, not a list of features. This skill writes the
 - `persona-bible.md` (voice, traits, never-list, Expression palette, register, approver, alcohol yes/no)
 - `character-sheet/` (locked stills, expression stills, voice spec) and `consents/` (releases, UGC permissions). No character sheet or consent on file: write the script **filmed-only**, no persona, no AI prompts, and say so.
 - `fact-sheet.md` (hours, prices, dish names, location)
+- `brand-book.md` › Messages and story: the anchor core message and the story block this video plays (guardrails › Messages and micro-stories); the calendar row usually names both
 - The brief: goal, the one offer or moment, platform, language(s), length, organic or paid
 
 ## What we follow, and why
@@ -31,6 +32,8 @@ A script is a sequence of moments, not a list of features. This skill writes the
 | 3. Proof | 25–75 % of runtime | 2–4 shots that deliver it | The moment people would want to remember (Two Selves) |
 | 4. Peak | at ~80 % | The single best second | Designed on purpose; this is what gets remembered |
 | 5. End | last 2–3 s | Settled warm frame + plain invitation | Peak-end; one CTA or none |
+
+A video is a micro-story: one anchor message, one story block, the guest as hero. The beats map onto the frame: the hook shows the hero's world or obstacle (blocks 1–2), the promise is the call to action (3), the proof is the guide at work (4) or the challenge surfacing (5), the peak is the transformation (6), the end is the new world (7). The brand never narrates its own story; the persona is the guide in frame, not the subject.
 
 ## Hook types (write 3 options, pick one)
 
@@ -68,7 +71,7 @@ ALWAYS deliver, in this order:
 ```
 # [Working title] — [platform] — [length]s — [language(s)]
 
-Goal: … | Organic / Paid (concept: …) | One message: …
+Goal: … | Organic / Paid (concept: …) | One message: … | Anchor: [core message] | Block: [1–7]
 
 ## Hook options (3)
 
@@ -89,12 +92,12 @@ Audio: licensed or commercial-library only (guardrails 9).
 Caption in persona voice (`vios-persona-voice`). Cover text ≤ 6 words.
 
 ## Checks
-Hook: motion frame 1, ≤ 10 words by 3 s, card ≤ 6 words ✓ | locality ✓ | one message ✓ | peak designed ✓ | end warm, one CTA or none ✓ | never-list ✓ | captions word-for-word ✓ | AI label from persona's first frame + platform toggle ✓ | consent per real face/voice ✓ | food/room/exterior filmed ✓ | alcohol rules if applicable ✓
+Hook: motion frame 1, ≤ 10 words by 3 s, card ≤ 6 words ✓ | locality ✓ | one message ✓ | anchor reinforced, no core message contradicted, guest is the hero ✓ | peak designed ✓ | end warm, one CTA or none ✓ | never-list ✓ | captions word-for-word ✓ | AI label from persona's first frame + platform toggle ✓ | consent per real face/voice ✓ | food/room/exterior filmed ✓ | alcohol rules if applicable ✓
 ```
 
 ## Workflow
 
-1. Pin the one moment. Three moments = three videos.
+1. Pin the one moment, its anchor message and its story block. Three moments = three videos.
 2. Hook options first; choose one; everything else serves it.
 3. Script, then shot list, then prompts. Lines short enough for captions.
 4. Run Checks. Fix before delivering.
@@ -102,7 +105,7 @@ Hook: motion frame 1, ≤ 10 words by 3 s, card ≤ 6 words ✓ | locality ✓ |
 
 Before publish: `vios-consistency-qa` → named approver. This skill drafts; it never publishes.
 
-## Example (taverna, Sunday lunch, 20 s Reel, organic, AI persona; GR with EN captions; placeholders)
+## Example (taverna, Sunday lunch, 20 s Reel, organic, AI persona; GR with EN captions; placeholders; anchor "the table is the centre", block 6 transformation)
 
 | # | Time | Shot | Spoken (GR) | Caption GR / EN | Emphasis card | Persona cue + AI label |
 | --- | --- | --- | --- | --- | --- | --- |

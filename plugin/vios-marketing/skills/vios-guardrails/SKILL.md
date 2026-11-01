@@ -26,6 +26,16 @@ One place for the lines we don't cross and the numbers we share, so every skill 
 
 one message · one CTA or none · no pressure device · no persuasion after a "no" · plain words, no superlatives. The full library (Two Selves, peak-end, thin-slicing, cognitive ease, proper choices, tone ladder neutral/suggestive/directive, commitment devices, system output not guest tendency, accepted trade-offs) is in the VIOS Practice manuscript, held by the account manager; the five lines above are enough to run any skill.
 
+## Messages and micro-stories (owned here)
+
+The brand book's message architecture (VIOS Practice, Stage 1 §2.1.2.10–11) is the source every piece of copy, video, calendar slot and reply draws from. It has three layers, and `brand-book.md` carries them per client:
+
+1. **Core messages.** Primary (why should I care: audience, pain, key benefit, alternative, differentiator) and secondary (why it matters: purpose, vision, mission, values). Each is a statement of what the guest should understand, never finished copy. **Integrity rule:** a piece reinforces at least one core message and contradicts none; otherwise it does not belong.
+2. **Story framework.** Seven blocks, guest as hero, brand as guide: existing world · obstacle · call to action · meeting the guide · the challenge · the transformation · the new world. The brand is never the hero.
+3. **Micro-message blocks.** One per guest touchpoint (arrival, ordering, making, the evening, departure, and online equivalents such as discovery, booking, after-visit). Each states the guest's state and tension, the understanding to create, verbal and non-verbal expression, success signal and failure modes.
+
+**Micro-story rule.** Every post, story, caption, script, ad, reply and booking message is a micro-instance of the frame: it names its anchor core message and the story block it plays (most social content sits in blocks 1–4 and 6; departure and after-visit copy in 7). Touchpoint copy is written from the matching micro-message block's "understanding to create" and "verbal expression", and is checked against its failure modes. One piece plays one block; the arc is covered across the month (`vios-content-calendar`), never inside one post. A micro-story shows the hero's moment; it does not narrate the brand's story.
+
 ## Shared numbers (owned here)
 
 - **Reporting n**: show *n* beside every percentage. If either side is < 30, show raw numbers and say "too small to call". An owner will act on "doubled" when it's 3 vs 6.
@@ -41,7 +51,7 @@ Every client has a folder (`[client]/`) with:
 | --- | --- |
 | `diagnosis.md` | Output of `vios-brand-diagnosis`: purpose, audience persona, positioning, archetype, Brand Role |
 | `persona-bible.md` | From `vios-persona-builder`; front page names the **approver**, the **address register** (BG ти/Вие, GR εσύ/εσείς, per channel; default informal on social, formal in booking messages), **emoji policy**, **alcohol: yes/no**, **AI disclosure rule**, **version number and next review date**; sections include is/is-not pairs, tone by guest mood, objective and KPIs, error protocol and pilot |
-| `brand-book.md` | Colours, type, logo rules, image style (or a link to the design system) |
+| `brand-book.md` | Colours, type, logo rules, image style (or a link to the design system); **Messages and story**: core messages (primary + secondary), the seven story blocks, the micro-message blocks per touchpoint, with the brand book version they come from |
 | `fact-sheet.md` | Hours, address, prices, menu names, allergens, claims we may make, booking channels, venue rhythm (open days, slow days, peak days, events) |
 | `accounts.md` | Meta ad account / page / pixel ids, Google Ads customer id, Metricool brand id, POS and booking system |
 | `ads-plan.md` | Monthly budget by cold/warm/guest, target cost per booking, offline attribution method, planned test dates, accepted Ad Strength notes (e.g. venue-name pin) |
@@ -59,6 +69,7 @@ Skills' "Load first" sections point here. If a file is missing, say so and use t
 | --- | --- |
 | `vios-be-lens` | The five-line BE version above |
 | `vios-nonverbal-lens` | Smile reaches the eyes · face matches the words · lens on invitations · resting face between lines · warm last frame |
+| Messages and story section in `brand-book.md` | Anchor every piece to the purpose and one pillar from `diagnosis.md`, mark the output line "no message architecture on file", and raise it with the account manager: the brand book's Part 5 (or Stage 1 §2.1.2.10–11) has to be transcribed before persona content scales |
 | `vios-persona-builder` / Persona Bible | Fact-only copy (hours, address, thank-you) in plain neutral register, marked "DRAFT, no persona"; then run `vios-brand-diagnosis`; if `vios-persona-builder` is not installed, the account manager writes `persona-bible.md` by hand with the front-page fields listed above |
 | Character sheet or consent | Filmed-only work, no persona, no AI shots; say so |
 | `ads-plan.md` | Report actuals only, mark targets "not set", ask the account manager before proposing pauses |

@@ -11,7 +11,8 @@ The Brand Persona is a character. This skill makes it speak the same way every t
 
 1. `persona-bible.md`: traits, never-trait, point of view, signature phrases, humour level, do/don't lines, behaviour matrix, address register, emoji policy, approver.
 2. `fact-sheet.md`: hours, prices, dish names, claims we may make.
-3. The channel, the moment (launch, slow Tuesday, event, complaint, holiday), the language(s).
+3. `brand-book.md` › Messages and story: the core messages, the seven story blocks, the micro-message block for the touchpoint (guardrails › Messages and micro-stories). Missing: guardrails stand-in, flagged in the output line.
+4. The channel, the moment (launch, slow Tuesday, event, complaint, holiday), the language(s).
 
 No Persona Bible: use the guardrails stand-in (fact-only copy, "DRAFT, no persona"); a guessed voice is the fastest way to drift.
 
@@ -28,6 +29,17 @@ No Persona Bible: use the guardrails stand-in (fact-only copy, "DRAFT, no person
 - A real date or limit once, as fact; never as pressure (guardrails 1).
 
 BE check on every piece with a CTA: guardrails five-line version. Fail one, fix before delivering.
+
+## Micro-stories: every piece is an instance of the frame
+
+The brand book's story framework is the only story; each piece of copy is a micro-story drawn from it (guardrails › Messages and micro-stories). Before drafting, name two things and keep them in the output line:
+
+- **Anchor message.** One core message the piece reinforces (integrity rule: contradicts none). A piece that reinforces nothing is noise, however well written.
+- **Story block.** The one block the piece plays, from the guest's side: existing world (a recognisable Tuesday), obstacle (the evening that stays ordinary), call to action (the moment that sparks the visit), meeting the guide (the persona or venue appears, calm, credible), the challenge (what the guest actually wants under the practical ask), transformation (the table at its best), new world (the guest's week with the place in it). The guest is the hero in every block; the persona is the guide, present but never the subject.
+
+Touchpoint copy (greeting, host lines, menu talk, booking messages, departure and after-visit notes, DM replies) is written from that touchpoint's **micro-message block**: open with the block's "understanding to create", use its "verbal expression" register, and read the draft against its failure modes (rushed, ceremonial, lecturing, transactional). A micro-story is one moment, one block, one message: the arc belongs to the month, not to the post.
+
+**Example (brewery, Instagram caption, anchor "beer and food, made together", block 4 meeting the guide; placeholders):** "The bread on your table is this morning's brew. Spent grain from the pale, baked at four. Ask for the pairing when you sit." (neutral; the guest's table is the scene, the making is the proof, the guide speaks once)
 
 ## Per channel
 
@@ -57,18 +69,19 @@ Default response targets (override in `persona-bible.md`): comments same day; DM
 ## Workflow
 
 1. Confirm channel, moment, goal, language(s), register. Infer when obvious; ask only if a wrong guess would waste the client's time.
-2. Draft in the persona. Mark the tone used.
-3. Self-check against the Persona Bible: traits present, never-trait absent, signature phrase natural, one message, local detail, plain words, register right.
-4. BE check on anything with a CTA.
-5. Flag anything off-brand in the brief itself ("limited time only!!!") and offer the on-brand version.
+2. Name the anchor core message and the story block; for touchpoint copy, the micro-message block.
+3. Draft in the persona. Mark the tone used.
+4. Self-check against the Persona Bible: traits present, never-trait absent, signature phrase natural, one message, local detail, plain words, register right; anchor reinforced, no core message contradicted, guest still the hero.
+5. BE check on anything with a CTA.
+6. Flag anything off-brand in the brief itself ("limited time only!!!") and offer the on-brand version.
 
 ## Output
 
-The copy, per language (two columns when side by side), marked DRAFT. Below it, one line: tone used + register used + anything flagged. No preamble.
+The copy, per language (two columns when side by side), marked DRAFT. Below it, one line: anchor message + story block (+ micro-message block for touchpoint copy) + tone used + register used + anything flagged. No preamble.
 
 Before publish: `vios-consistency-qa` → named approver. This skill drafts; it never publishes.
 
 **Example (bad → good, gelato shop, first strawberry batch, Instagram; facts and place are placeholders, never reuse):**
 
 - Bad: "Our AMAZING strawberry gelato is BACK! 🍓🔥 Limited batch — get it before it's gone! Tag a friend who needs this!!!"
-- Good: "Strawberry is on the counter in [Neighbourhood] from today. First of the season, from the Thursday market, churned by eleven." (neutral; informal register; a fact stated once; locality in the first line)
+- Good: "Strawberry is on the counter in [Neighbourhood] from today. First of the season, from the Thursday market, churned by eleven." (neutral; informal register; a fact stated once; locality in the first line; anchor "made today, here"; block 3 call to action)

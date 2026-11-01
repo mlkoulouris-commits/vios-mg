@@ -61,6 +61,8 @@ Every client has a folder (`[client]/`) with:
 | `calendar-sources.md` | Where holiday / name-day / event dates come from (dated sources, never memory) |
 | `qa-log.csv` | `date, client, asset, platform, language, attempt, verdict, failed_checks (joined with ;), approver, signed_off_by, signed_off_at` — scheduling and upload require `signed_off_at` filled |
 | `data/YYYY-MM/` | Raw pulls with source and pulled-at in the filename |
+| `archive/` | Stage 1 working documents that stay out of the deliverable: filled worksheets, the deep interrogation answers, `naming.md` (long list, scores), `harvest-stage-1.md` |
+| `brand-book-vN.md` | The assembled brand book per edition (`vios-brand-book`); `brand-book.md` stays the live summary the operating skills read |
 
 Skills' "Load first" sections point here. If a file is missing, say so and use the stand-in below; don't improvise.
 

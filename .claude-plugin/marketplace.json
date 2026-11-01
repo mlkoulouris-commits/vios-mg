@@ -17,8 +17,8 @@
     {
       "name": "vios-brand",
       "source": "./plugin/vios-brand",
-      "description": "Stage 1: brand diagnosis and the brand persona. Requires vios-core.",
-      "version": "0.1.0",
+      "description": "Stage 1 end to end: diagnosis, messages and story, persona, name and tagline, brand book. Requires vios-core.",
+      "version": "0.2.0",
       "category": "productivity"
     },
     {

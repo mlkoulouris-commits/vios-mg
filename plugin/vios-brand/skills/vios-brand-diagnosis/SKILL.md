@@ -80,6 +80,6 @@ Three steps, in order: audience archetype → what they want in the context of t
 6. Differentiator and positioning statement
 7. Brand archetype (core + influencer) and Brand Role
 8. Contradictions found and what must change upstream
-9. Recommended next step: Brand Persona Studio (`vios-persona-builder`) or branding work first
+9. Recommended next step: `vios-messages-and-story` (steps 10–11) when the positioning reads as one claim; then `vios-persona-builder`, `vios-name-and-tagline`, `vios-brand-book`; or branding work upstream first
 
 End with the verdict in one sentence and the next step.

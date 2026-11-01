@@ -101,12 +101,13 @@ def cmd_sync(args):
             print(f"{name}: not installed, upload the .plugin file first")
             continue
         n = 0
-        for skill in (PLUGIN_DIR / name / "skills").iterdir():
-            if not skill.is_dir():
+        for folder in ("skills", "references"):
+            root = PLUGIN_DIR / name / folder
+            if not root.exists():
                 continue
-            for src in skill.rglob("*"):
+            for src in root.rglob("*"):
                 if src.is_file():
-                    dst = cache / "skills" / src.relative_to(PLUGIN_DIR / name / "skills")
+                    dst = cache / folder / src.relative_to(root)
                     dst.parent.mkdir(parents=True, exist_ok=True)
                     if not dst.exists() or dst.read_bytes().replace(b"\r\n", b"\n") != src.read_bytes().replace(b"\r\n", b"\n"):
                         shutil.copyfile(src, dst)

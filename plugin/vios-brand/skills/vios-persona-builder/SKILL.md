@@ -23,7 +23,7 @@ Version 2 (Oct 2026) added the sections a best-practice benchmark found missing 
 
 From `[client]/diagnosis.md` (or ask): purpose, vision, mission, values; audience persona (demographics, psychographics, emotional before/after, core trigger); positioning; archetype and Brand Role; identity (name, logo, colours, type, existing tone); the place (concept, menu highlights, the room, the team, the neighbourhood); alcohol yes/no; existing measures (e.g. brand book KPIs).
 
-From `[client]/brand-book.md` › Messages and story: the core messages, the story framework and the **journey** (touchpoints, guest state, peak). The persona is the guide in that story; it is built knowing where in the journey it appears. No journey on file: use the canonical touchpoint list in `vios-guardrails` › Journey and say the placement is provisional.
+From `[client]/brand-book.md` › Messages and story (written by `vios-messages-and-story`): the core messages, the story framework and the **journey** (touchpoints, guest state, peak). The persona is the guide in that story; it is built knowing where in the journey it appears. No journey on file: use the canonical touchpoint list in `vios-guardrails` › Journey and say the placement is provisional.
 
 No diagnosis: run `vios-brand-diagnosis` first. Don't continue without purpose and audience. If the brand book already fixes the archetype, carry it over and say so instead of re-asking.
 

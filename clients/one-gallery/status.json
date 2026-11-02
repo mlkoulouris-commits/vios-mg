@@ -2,19 +2,20 @@
   "$schema": "../../setup/status.schema.json",
   "client": "one-gallery",
   "name": "ONE Gallery",
-  "approver": "to confirm",
+  "approver": "Menelaos Koulouris (interim, until ONE Gallery names one)",
   "account_manager": "Menelaos Koulouris",
   "proposal": {
-    "version": 0,
-    "status": "not sent",
+    "version": 1,
+    "status": "signed",
     "doc": "",
-    "pdf": ""
+    "pdf": "",
+    "note": "signed per the user 2026-11-02; date and file to confirm"
   },
   "marketing_loop": "in",
   "current_stage": "1 Brand",
   "stages": {
     "1 Brand": {
-      "scope": "in",
+      "scope": "revision",
       "status": "in progress",
       "deliverables": {
         "Diagnosis": {
@@ -46,8 +47,8 @@
       }
     },
     "2 Map": {
-      "scope": "in",
-      "status": "done",
+      "scope": "revision",
+      "status": "not started",
       "deliverables": {
         "Journey Map v2.2 EN/BG": {
           "status": "done",
@@ -70,8 +71,8 @@
       }
     },
     "3 Design": {
-      "scope": "in",
-      "status": "done",
+      "scope": "revision",
+      "status": "not started",
       "deliverables": {
         "Journey Design v2": {
           "status": "done",
@@ -100,8 +101,8 @@
       }
     },
     "4 Training": {
-      "scope": "in",
-      "status": "done",
+      "scope": "revision",
+      "status": "not started",
       "deliverables": {
         "Journey Training Plan v2": {
           "status": "done",
@@ -170,9 +171,9 @@
   },
   "blockers": [
     {
-      "what": "Approver named by ONE Gallery (interim: mkoulouris, Vios, since 2026-11-01)",
-      "holds": "ONE Gallery",
-      "blocks": "Persona Bible sign-off, every publication"
+      "what": "Signed proposal: date and file",
+      "holds": "Menelaos",
+      "blocks": "proposal record"
     },
     {
       "what": "Barsy export (12 months): covers, average spend, peak days, top sellers",
@@ -186,8 +187,8 @@
     }
   ],
   "next_action": {
-    "skill": "vios-engage:vios-engagement-setup",
-    "what": "Get ONE Gallery to name the approver, open open-facts.md from the open items in diagnosis.md, fact-sheet.md and accounts.md, and confirm the engagement scope: Persona Bible sign-off only, or a Stage 1–4 revision pass"
+    "skill": "vios-brand:vios-brand-diagnosis",
+    "what": "Start the Stage 1 revision pass: diagnosis on the new method, Brand Book v2.2 as the prior"
   },
   "updated": "2026-11-02"
 }

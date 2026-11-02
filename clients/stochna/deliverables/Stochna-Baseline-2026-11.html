@@ -1,0 +1,394 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Baseline — Stochna Kitchen Brewery — measured 2026-11-02</title><link rel='preconnect' href='https://fonts.googleapis.com'><link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' rel='stylesheet'><style>
+@page { size: A4; margin: 14mm 18mm 12mm 18mm; }
+@page :first { margin: 0; }
+html { -webkit-print-color-adjust: exact; }
+body { font-family: Roboto, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #333; margin: 0; }
+.cover { position: relative; width: 210mm; height: 297mm; margin: 0; padding: 26mm 22mm; box-sizing: border-box; background: #503629; color: #fff; page-break-after: always; }
+.cover img { width: 52mm; display: block; }
+.cover .kind { margin-top: 48mm; font-size: 11pt; letter-spacing: 0.18em; text-transform: uppercase; color: #d9cbb8; font-weight: 400; }
+.cover h1 { font-size: 30pt; font-weight: 300; line-height: 1.15; margin: 6mm 0 0; color: #fff; max-width: 140mm; }
+.cover .sub { margin-top: 8mm; font-size: 12pt; font-weight: 300; color: #e8dfd3; max-width: 140mm; }
+.cover .foot { position: absolute; left: 22mm; right: 22mm; bottom: 22mm; font-size: 9.5pt; color: #d9cbb8; border-top: 1px solid #7a6150; padding-top: 4mm; display: flex; justify-content: space-between; }
+.page { width: 100%; border-collapse: collapse; margin: 0; } .page > thead > tr > td, .page > tfoot > tr > td, .page > tbody > tr > td { padding: 0; border: 0; background: none; }
+.hdr { height: 8mm; margin-bottom: 8mm; border-bottom: 1px solid #e6ddd1; display: flex; justify-content: space-between; align-items: center; font-size: 8pt; color: #88704f; letter-spacing: 0.08em; text-transform: uppercase; }
+.hdr img { height: 6.5mm; }
+.ftr { margin-top: 6mm; font-size: 8pt; color: #88704f; border-top: 1px solid #e6ddd1; padding-top: 2mm; display: flex; justify-content: space-between; }
+h1 { font-size: 20pt; font-weight: 300; color: #503629; margin: 0 0 6mm; }
+h2 { font-size: 15pt; font-weight: 400; color: #503629; margin: 10mm 0 3mm; padding-bottom: 1.5mm; border-bottom: 1.5px solid #88704f; page-break-before: always; page-break-after: avoid; }
+h2.first, .compact h2 { page-break-before: auto; } h2.first { margin-top: 0; }
+h3 { font-size: 12pt; font-weight: 500; color: #503629; margin: 7mm 0 2mm; page-break-after: avoid; }
+h4 { font-size: 10.5pt; font-weight: 700; color: #503629; margin: 5mm 0 1.5mm; }
+p { margin: 0 0 2.6mm; }
+table { border-collapse: collapse; width: 100%; margin: 2mm 0 5mm; font-size: 9.5pt; }
+th { background: #503629; color: #fff; font-weight: 500; text-align: left; padding: 2.2mm 2.5mm; border: 0; }
+td { padding: 2mm 2.5mm; border-bottom: 1px solid #e6ddd1; vertical-align: top; }
+tr:nth-child(even) td { background: #f7f4ef; }
+tr { page-break-inside: avoid; }
+em { color: #6b5c4e; } strong { color: #503629; }
+code { font-family: Consolas, monospace; font-size: 8.8pt; color: #503629; background: #f3efe9; padding: 0 1mm; }
+blockquote { border-left: 3px solid #88704f; background: #f7f4ef; margin: 3mm 0; padding: 2.5mm 4mm; color: #4a4038; }
+hr { border: 0; border-top: 1px solid #e6ddd1; margin: 6mm 0; }
+ul, ol { margin: 0 0 3mm; padding-left: 5mm; } li { margin-bottom: 1mm; }
+a { color: #88704f; text-decoration: none; }
+</style></head><body><div class='cover'><img src='file:///C:/Users/mkoul/Documents/GitHub/vios-ops/setup/brand/vios-logo-inverted-crop.png' alt='Vios'><div class='kind'>Deliverable · Stochna</div><h1>Baseline — Stochna Kitchen Brewery — measured 2026-11-02</h1><div class='sub'>One page, measured before the Stage 1 revision and before the marketing loop&#x27;s first full month under Vios, so every later report shows change against it. Written by `vios-engage:vios-engagement-setup` step 7 (run by hand, 2 Nov 2026); read by `vios-marketing:vios-monthly-report` (column &quot;Baseline&quot;) and by the proposal&#x27;s KPI table. Every row names its source and its n; a row that cannot be filled reads &quot;to confirm&quot; with a row in `open-facts.md`. Nothing is estimated.</div><div class='foot'><span>VIOS Practice · Meaningful Gastronomy</span><span>02 November 2026</span></div></div><table class='page'><thead><tr><td><div class='hdr'><img src='file:///C:/Users/mkoul/Documents/GitHub/vios-ops/setup/brand/vios-logo-crop.png' alt=''><span>Stochna · Baseline — Stochna Kitchen Brewery — measured 2026-11-02</span></div></td></tr></thead><tfoot><tr><td><div class='ftr'><span>VIOS Meaningful Gastronomy · vios-mg.com</span><span>Prepared for Stochna · 02 November 2026 · confidential</span></div></td></tr></tfoot><tbody><tr><td><div class='body'><p>Period measured: 2026-08-01 to 2026-10-31 (3 fiscal months, fiscal day cut at 06:45 Sofia) · same period last year: <strong>no history</strong> (venue data starts 29 Apr 2026)
+Revenue basis: <strong>net of VAT</strong> unless marked gross · currency EUR as stored · one location (Memento location 10)
+Raw pulls: <code>data/2026-11/pos-labour-bookings_source-memento-supabase_pulled-2026-11-02.{json,md}</code>, <code>data/2026-11/google-reviews_source-google-maps_pulled-2026-11-02.md</code>, <code>data/2026-11/ads-audit_2026-11-02.md</code></p>
+<h2 class="first">1. Venue (POS)</h2>
+<p>Source: Memento Supabase, <code>barsy_orders</code> lines × price, <code>barsy_accounts.guest_count</code>, <code>barsy_categories</code> rollup; pulled 2026-11-02 over HTTPS, service role, read-only. Voids netted as the P&amp;L does; tips and waste lines out; account-level discounts not deducted (same as the P&amp;L's revenue total).</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>3-mo avg per month</th>
+<th>n</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revenue net of VAT</td>
+<td>119,944</td>
+<td>116,220</td>
+<td>109,624</td>
+<td><strong>115,263</strong></td>
+<td>63,454 lines</td>
+<td>gross 143,929 / 139,461 / 131,529 (avg 138,306)</td>
+</tr>
+<tr>
+<td>Bills</td>
+<td>1,583</td>
+<td>1,509</td>
+<td>2,020</td>
+<td>1,704</td>
+<td></td>
+<td>Oct +431 quick bills without guest count (gyros / bar)</td>
+</tr>
+<tr>
+<td>Covers (guests on bills)</td>
+<td>5,012</td>
+<td>4,692</td>
+<td>4,486</td>
+<td><strong>4,730</strong></td>
+<td>4,662 bills with guest count</td>
+<td></td>
+</tr>
+<tr>
+<td>Average check per cover (gross)</td>
+<td>28.83</td>
+<td>29.84</td>
+<td>28.33</td>
+<td><strong>29.00</strong></td>
+<td></td>
+<td>per bill: 90.92 / 92.42 / 65.11 (Oct mix shift)</td>
+</tr>
+<tr>
+<td>Items per cover</td>
+<td>4.09</td>
+<td>4.25</td>
+<td>3.93</td>
+<td>4.09</td>
+<td>58,475 priced qty</td>
+<td>free lines excluded (tasting shot 8,802 qty, tasting board 3,610)</td>
+</tr>
+<tr>
+<td>Void lines, share of gross + voids</td>
+<td>9.9 %</td>
+<td>10.0 %</td>
+<td>13.0 %</td>
+<td></td>
+<td>15.8k / 15.6k / 19.6k €</td>
+<td>to confirm: re-rings and table splits, or real cancellations</td>
+</tr>
+<tr>
+<td>Labour cost % of net revenue</td>
+<td>45.7 %</td>
+<td>51.7 %</td>
+<td>44.2 %</td>
+<td><strong>47.2 %</strong></td>
+<td>294 payroll rows + 8 labour bills</td>
+<td>54,796 / 60,037 / 48,439 €; Oct has 74 payroll rows vs 103–117: to confirm October is fully entered</td>
+</tr>
+<tr>
+<td>COGS % of net revenue (purchases basis)</td>
+<td>32.8 %</td>
+<td>36.0 %</td>
+<td>32.0 %</td>
+<td><strong>33.6 %</strong></td>
+<td>2,086 bill lines on COGS accounts</td>
+<td>39,310 / 41,840 / 35,113 €; theoretical basis not usable (recipe costs above selling price on ~1,650 qty/month)</td>
+</tr>
+<tr>
+<td>Prime cost % of net</td>
+<td>78.5 %</td>
+<td>87.7 %</td>
+<td>76.2 %</td>
+<td><strong>80.8 %</strong></td>
+<td></td>
+<td>labour + purchases COGS</td>
+</tr>
+</tbody>
+</table>
+<p>Revenue mix, 3 months, gross 414,919 €: food 62.2 % (menu food + gyros) · drinks alcohol 30.7 % (beer 21–24 %, wine ~3 %, rakia ~2 %, spirits ~2 %, cocktails ~1.5 %) · drinks non-alcohol 6.5 % · other 0.5 %.</p>
+<p>Covers by daypart (bill open hour, 3 months, 14,190 covers): lunch 11–16 <strong>7.3 %</strong> (grew 114 → 417 → 503 covers with the gyros menu from October) · afternoon 16–18 4.7 % · dinner 18–22 <strong>84.0 %</strong> (86.8 % of gross) · late 22–06:45 4.0 %.
+By weekday, covers share: Mon 8.6 · Tue 10.5 · Wed 11.6 · Thu 13.4 · Fri 19.0 · <strong>Sat 23.2</strong> · Sun 13.7.</p>
+<p>Top 10 items by units (3 months): Lager 8,469 · Weiss 3,792 · NEIPA 3,235 · IPA 2,680 · Red Ale 2,447 · mineral water 0.75 2,205 · Traditional salad 1,735 · Coca-Cola 1,556 · Beer-a-misu 1,225 · Black Angus burger 1,173. Top by contribution (net − cost, recipe-cost caveat): Lager, beer platter, Black Angus burger, Weiss, fisherman's platter, NEIPA, IPA, crispy platter, Josper platter, Red Ale. Bottom 10 among items sold ≥ 12 times: mostly single spirits and bottled wines (Codigo Blanco 12, Kamenitza 13, prosecco by the glass 13 …).</p>
+<h2>2. Bookings</h2>
+<p>Source: Memento <code>floor_reservations</code>, location 10, by service date; pulled 2026-11-02.</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Aug</th>
+<th>Sep</th>
+<th>Oct</th>
+<th>3-mo avg per month</th>
+<th>n</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reservations</td>
+<td>734</td>
+<td>703</td>
+<td>669</td>
+<td><strong>702</strong></td>
+<td>2,106</td>
+<td>cancelled 171 (8.1 %)</td>
+</tr>
+<tr>
+<td>Booked covers (non-cancelled) vs POS covers</td>
+<td>3,397 / 5,012</td>
+<td>3,520 / 4,692</td>
+<td>3,221 / 4,486</td>
+<td><strong>~70 % of covers arrive on a booking</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>By source, 3 months</td>
+<td></td>
+<td></td>
+<td></td>
+<td>host stand 655 · Google 484 · website 475 · legacy portal import 462 (Aug-heavy, retired) · Instagram 28 · event 2</td>
+<td>2,106</td>
+<td></td>
+</tr>
+<tr>
+<td>No-show rate</td>
+<td>1.0 %</td>
+<td>0.8 %</td>
+<td>1.8 %</td>
+<td><strong>1.2 %</strong></td>
+<td>23 of 1,935 non-cancelled</td>
+<td></td>
+</tr>
+<tr>
+<td>Average party size</td>
+<td>5.00</td>
+<td>5.45</td>
+<td>5.28</td>
+<td><strong>5.24</strong></td>
+<td>1,935</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>3. Reviews</h2>
+<p>Source: Google Maps place page, read 2026-11-02 (limited view). TripAdvisor and Facebook: not read (TripAdvisor returns empty in the built-in browser).</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Value</th>
+<th>n</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google rating · review count</td>
+<td><strong>4.9 · 1,299</strong></td>
+<td>1,299</td>
+<td>5★ 1,200 · 4★ 55 · 3★ 12 · 2★ 13 · 1★ 19; ≤ 2★ = 2.5 %</td>
+</tr>
+<tr>
+<td>TripAdvisor rating · count</td>
+<td>to confirm</td>
+<td></td>
+<td>page not readable; account manager to read by hand</td>
+</tr>
+<tr>
+<td>Reviews in the last 90 days (velocity)</td>
+<td>to confirm</td>
+<td></td>
+<td>GBP Insights, access mkoulouris@gmail.com</td>
+</tr>
+<tr>
+<td>Share answered · median response time</td>
+<td>to confirm</td>
+<td>3, too small to call</td>
+<td>owner replies on 2 of 3 visible; <code>accounts.md</code> 2026-10-29: 50 unanswered</td>
+</tr>
+<tr>
+<td>Top praise themes</td>
+<td>to confirm (review mining not done)</td>
+<td></td>
+<td>Google's own topic chips: beer 263, rakia 37; 3 visible reviews: atmosphere, food, named waiter, free tasting, kids and large groups</td>
+</tr>
+<tr>
+<td>Top complaint themes</td>
+<td>to confirm (review mining not done)</td>
+<td></td>
+<td>one public Facebook-group post (Aug 2026) says the beer disappoints against the concept; n = 1</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Social and local</h2>
+<p>Source: public pages read by the weekly ads audit 2026-11-02 (Meta Ad Library advertiser pages) and Bing. No Metricool brand for Stochna yet; the agency holds the accounts.</p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Followers</th>
+<th>Reach per month</th>
+<th>Engagement rate</th>
+<th>Posts per month</th>
+<th>n</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instagram</td>
+<td>~1.6 K</td>
+<td>to confirm</td>
+<td>to confirm</td>
+<td>to confirm</td>
+<td></td>
+<td>handle to confirm: ads show @stochna.brewery, Bing lists instagram.com/stochna.kitchen.brewery</td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td>~1.8 K</td>
+<td>to confirm</td>
+<td>to confirm</td>
+<td>to confirm</td>
+<td></td>
+<td>@stochna.kitchen.brewery</td>
+</tr>
+<tr>
+<td>TikTok</td>
+<td>to confirm</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Google Business (views · directions · calls)</td>
+<td>to confirm</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>GBP Insights; listing managed, no posts, no menu (2026-10-29)</td>
+</tr>
+<tr>
+<td>GA4 (site)</td>
+<td>live since 2026-10-24</td>
+<td>to confirm</td>
+<td></td>
+<td></td>
+<td></td>
+<td>G-4L1J6JXDB7, Vios holds it; too new for a 3-month baseline</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Paid</h2>
+<p>Source: Meta Ad Library and Google Ads Transparency, public, 2026-11-02 (<code>data/2026-11/ads-audit_2026-11-02.md</code>). No ad-account access.</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>3-mo total</th>
+<th>n</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spend per month</td>
+<td>to confirm</td>
+<td></td>
+<td>agency holds Meta and Google; no Windsor connection</td>
+</tr>
+<tr>
+<td>Cost per result · result type</td>
+<td>to confirm</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Creatives live</td>
+<td>3 Meta creatives (8 ad versions, started 28 Aug / 9 Sep, Sofia 25–54) · 4 Google ads served in the last 30 days</td>
+<td></td>
+<td>one creative shows EU reach 3,303 accounts since 28 Aug</td>
+</tr>
+</tbody>
+</table>
+<h2>6. Not measured and why</h2>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>Who holds it</th>
+<th>Open-facts row</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TripAdvisor rating and count; 90-day review velocity; share answered</td>
+<td>account manager (GBP access)</td>
+<td>to add</td>
+</tr>
+<tr>
+<td>Praise and complaint themes (review mining, last 200)</td>
+<td>account manager; WS2 guest research pack</td>
+<td>to add</td>
+</tr>
+<tr>
+<td>Social reach, engagement, posts; Instagram handle; TikTok</td>
+<td>agency → Metricool brand for Stochna</td>
+<td>existing row (Metricool brand)</td>
+</tr>
+<tr>
+<td>Ad spend, cost per result</td>
+<td>agency (Meta Business, Google Ads access)</td>
+<td>existing row (ad account access)</td>
+</tr>
+<tr>
+<td>October payroll completeness; void share meaning; service revenue (<code>service_invoices</code>, not included)</td>
+<td>Memento / founder</td>
+<td>to add</td>
+</tr>
+<tr>
+<td>Theoretical COGS</td>
+<td>Memento recipe costs (items costed above selling price)</td>
+<td>to add</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Reading (five lines)</h2>
+<ol>
+<li>A dinner house: 84 % of covers between 18:00 and 22:00, Saturday the peak day; the October gyros lunch is the only daypart that moved (114 → 503 covers).</li>
+<li>Beer is the volume (five house beers are the top five items; drinks alcohol 31 % of revenue) but food carries the money (62 %); the beer platter and the Black Angus burger are the top food contributors.</li>
+<li>Prime cost ran 76–88 % of net revenue over the three months, labour 44–52 % on its own; the September peak is a labour peak, not a sales one.</li>
+<li>Seven in ten guests arrive on a booking (702 a month, party of five, 1 % no-shows); Google and the website each bring about a quarter of bookings, Instagram 1 %.</li>
+<li>Guests rate it 4.9 from 1,299 reviews and talk about the beer; what they say beyond that, and what the agency's ads cost, is not on file.</li>
+</ol>
+<p>Measured by: Vios (Claude) with Memento data · reviewed by: to confirm (account manager re-reads the five headline numbers) · date: 2026-11-02</p></div></td></tr></tbody></table></body></html>

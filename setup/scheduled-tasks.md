@@ -8,14 +8,14 @@ Claude scheduled tasks created in the personal account on 2026-10-29. They run w
 | `vios-weekly-content` | Mon 09:00 | persona-voice, consistency-qa, scripts/creative.py (text cards → PNG + Express) | each client's Content list; `content/YYYY-MM/week-<n>_*.md` + pack PDF in `deliverables/` | a calendar for the month; persona bible filled; posting by hand until the Metricool brand exists |
 | `vios-weekly-ads-audit` | Mon 08:00 | ads-audit | each client's Ads list; `data/YYYY-MM/ads-audit_*.md` | Windsor.ai plugin (public Ad Library fallback works without) |
 | `vios-monthly-content-calendar` | 20th 09:00 | content-calendar | `content/YYYY-MM/calendar.md`; one ClickUp task per post | diagnosis + persona bible filled; calendar-sources dated |
-| `vios-monthly-client-report` | 2nd 09:00 | monthly-report | Claude Doc; `data/YYYY-MM/*_pulled-*`; ClickUp review task | Metricool connected; bookings-by-source pasted from Memento |
+| `vios-monthly-client-report` | 2nd 09:00 | monthly-report | Claude Doc; `data/YYYY-MM/*_pulled-*`; ClickUp review task (id to `status.json` › `stages.Engagement.deliverables`) | Metricool connected; bookings-by-source pasted from Memento |
 | `vios-quarterly-review` | 1 Jan/Apr/Jul/Oct 09:00 | guardrails | ClickUp "Department — Setup & SOP" | — |
 
-All five run over every folder in `clients/` and read ids from each client's `accounts.md` (since 2026-10-30). All five: draft only, never publish, send, spend, commit or push.
+All six run over every folder in `clients/` that has `status.json`, skipping folders whose README says ARCHIVED or DEMO, and read ids from each client's `accounts.md` (since 2026-10-30). All six: draft only, never publish, send, spend, commit or push.
 
 ## ClickUp Review
 
-Since 2026-11-02 every run ends in ClickUp, not in chat: the approver approves there (build order step 5, `docs/operating-system.md`). The pattern, shared by all five prompts:
+Since 2026-11-02 every run ends in ClickUp, not in chat: the approver approves there (build order step 5, `docs/operating-system.md`). The pattern, shared by the five loop prompts and the quarterly review:
 
 - After the run writes its files under `clients/<slug>/data/<YYYY-MM>/` as before, it creates tasks with `clickup_execute_operator` (model `task`, operator `create_many`), **one call per list**. List id from the client's `accounts.md` ("ClickUp lists" row); the report task goes to the client's Deliverables list (Stage = Marketing, so `/vios` sees it); only the quarterly review goes to "Department — Setup & SOP" (`1500500000053389`).
 - Every task: `status_label: "review"`, assigned to the account manager, Stage field = "Marketing", Approver field = the client's approver from `status.json` matched to an option in `setup/clickup.json` › `folder_fields` ("To confirm" when unmatched; the quarterly review uses "Menelaos Koulouris").

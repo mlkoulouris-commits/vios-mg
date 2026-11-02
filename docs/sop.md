@@ -4,10 +4,10 @@ Every item names the role, the skill, the tool and the proof that it happened.
 
 ## Onboarding a client (once)
 
-1. Account manager copies `templates/client/` to `clients/<slug>/` and fills `accounts.md` and `fact-sheet.md` from the client, never from memory.
+1. Account manager runs `python scripts/clients.py new <slug> "<Name>"` (the folder from `templates/client/` plus `status.json`) and fills `accounts.md` and `fact-sheet.md` from the client, never from memory.
 2. Run `vios-brand-diagnosis` → `diagnosis.md`. Client owner signs the positioning.
 3. Run `vios-persona-builder` → `persona-bible.md` with front page complete (approver, register, emoji, alcohol, AI disclosure, version, next review). Consents filed in Drive before any likeness or voice is used.
-4. Brand book and Canva brand kit. Metricool brand connected (Instagram, Facebook, TikTok, Google Business). ClickUp list created from `setup/clickup.json`.
+4. Brand book and Canva brand kit. Metricool brand connected (Instagram, Facebook, TikTok, Google Business). ClickUp: the client's five lists and the Approver option, as `vios-engagement-setup` step 2 makes them (ids into `accounts.md` and `setup/clickup.json`); without the option, every scheduled run's tasks stay "To confirm".
 5. `calendar-sources.md` filled with dated holiday and event sources for BG/GR/EN as relevant.
 
 ## Daily (content lead, 20 min)

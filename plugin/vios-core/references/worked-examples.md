@@ -12,7 +12,7 @@ House reference (2026-11-02, quality plan item 5). The general skills describe h
 
 ## Engagement (intake, status, harvest)
 
-**E1 — The status card.** The `vios` front-door card example is the Gradina (DEMO) card as `python scripts/clients.py status demo-gradina` printed it on 2026-11-02: intake done, proposal v2 not sent, baseline partial, two KPIs promised, three blockers. The point: at most nine plain lines, no file paths, no fact numbers; a demo client, so nothing in the example is a real venue's number. Source: `clients/demo-gradina/status.json`, `clients/demo-gradina/open-facts.md`.
+**E1 — The status card.** The `vios` front-door card example is the Gradina (DEMO) card as `python scripts/clients.py status demo-gradina` printed it on 2026-11-02: intake done, proposal v2 not sent, baseline not trading (the venue opens April 2027; its first full month of trading is the baseline), two KPIs promised with "measured in month 1 after opening", one blocker. The point: at most nine plain lines, no file paths, no fact numbers; a demo client, so nothing in the example is a real venue's number. Source: `clients/demo-gradina/status.json`, `clients/demo-gradina/open-facts.md`.
 
 **E2 — The intake record.** The `vios-intake` example (a second counter-format gelato shop plus a B2B line; Stage 1 revision, Stages 2–3 for the new shop, Stage 4 onboarding; three unanswered rows) is the Atelier del Gelato intake of 2026-11-01. The point: scope against the four stages, pull the starting set from the pattern library, log what the founder could not answer. Source: `clients/atelier/README.md` › Intake record, `clients/atelier/open-facts.md`.
 

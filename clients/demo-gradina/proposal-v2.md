@@ -33,8 +33,8 @@ Out of scope: interior design (folded into the architect brief), the menu (the c
 
 | KPI | Today | In 90 days | How we measure it |
 | --- | --- | --- | --- |
-| Covers per Friday and Saturday evening, garden | measured in week 1 after opening (the venue does not trade yet) | 80 (your number) | POS covers-by-day export, monthly; n = evenings in the month |
-| Tables that book their next visit before leaving | measured in week 1 after opening | set at baseline: we propose a step after the first month, labelled as ours | booking system, bookings flagged "made on site", monthly; n = tables served |
+| Covers per Friday and Saturday evening, garden | measured in month 1 after opening (the venue does not trade yet) | 80 (your number) | POS covers-by-day export, monthly; n = evenings in the month |
+| Tables that book their next visit before leaving | measured in month 1 after opening | set at baseline: we propose a step after the first month, labelled as ours | booking system, bookings flagged "made on site", monthly; n = tables served |
 
 We report these every month against the baseline, with the sample size beside each figure; we say where we contributed and we do not claim to have caused a number on our own.
 

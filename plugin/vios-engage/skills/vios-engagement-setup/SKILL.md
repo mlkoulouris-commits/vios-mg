@@ -37,7 +37,7 @@ No client PDF for the setup; the baseline ships as `clients.py pdf <slug> data/b
 ## Read first
 
 - `../../references/parts-4-5-examples-and-production.md` § 5.2 (Layer 3) and § 5.3 move 4.
-- `vios-core:vios-guardrails` › client file convention (the folder), `templates/client/` (the files), `setup/clickup-engagement.json` (the lists and statuses per stage), `setup/clickup.json` (the account's ids), `setup/plugins-and-connectors.md` (which connectors this account has).
+- `vios-core:vios-guardrails` › client file convention (the folder), `templates/client/` (the files), `setup/clickup-engagement.json` (the seed tasks per stage), `setup/clickup.json` (the account's ids), `setup/plugins-and-connectors.md` (which connectors this account has).
 - `[client]/README.md` › Intake record, `[client]/status.json` (`python scripts/clients.py status <slug>`) and the signed proposal: which stages are in scope decides which lists and folders are made.
 
 ## The steps in full

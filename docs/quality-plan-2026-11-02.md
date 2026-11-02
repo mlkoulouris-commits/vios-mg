@@ -120,7 +120,7 @@ Done when: one case PDF exists in `clients/one-gallery/deliverables/` and the hy
 State 2026-11-02: case draft v0.1 written in the Part IV seven-section form (`clients/one-gallery/deliverables/case-one-gallery-v0.1.md` + PDF), a method case with every number on file and the result numbers named "to confirm"; `docs/cases.md` row; `docs/sop.md` gains "Capacity and handoff" (one account manager per three loop clients, the five-file handoff, the board-only run). Baselines for Stochna and Atelier still to measure (WS1 "done when").
 
 Hygiene list (user-only, blocking the plan's "done"):
-- [ ] Upload the five packaged plugins: engage 0.5.0, marketing 0.5.0, brand 0.5.0, journey 0.7.0, core 0.8.0 (`plugin/*.plugin`; the versions in `.claude-plugin/marketplace.json`).
+- [ ] Upload the five packaged plugins (`plugin/*.plugin`; versions: see `.claude-plugin/marketplace.json`; `python scripts/release.py status` shows which installs are behind).
 - [ ] Delete the 12 stale standalone skill copies on claude.ai (benchmark 2026-11-01).
 - [ ] Reconnect the Instagram connector (failed to connect 2026-11-02).
 - [ ] Confirm or strike on the rate card: prices (all), guest research pack 900, diagnostic sprint 1,500, quarterly service audit 600.

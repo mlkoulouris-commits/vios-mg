@@ -11,20 +11,20 @@ One screen, one question. The user should never need to remember which skill com
 
 - `python scripts/release.py status` once per session: when an installed plugin is behind the repo version, say so in one line before the card ("engage installed 0.2.3, repo 0.4.0: the new steps load after the upload") and go on; for the steps the install lacks, follow the repo's `SKILL.md` text read from disk.
 - `scripts/clients.py status <slug>` (run it; it renders the card from `clients/<slug>/status.json` and counts open rows in `open-facts.md`). No `status.json` → say so and offer `clients.py new <slug> "<Name>"` or, for an existing folder, write one from the README's intake record.
-- `setup/clickup.json` › the client's Deliverables and Open facts list ids; `clickup_filter_tasks` on the Deliverables list for anything in **review** (awaiting the user's sign-off).
+- `setup/clickup.json` › the client's Deliverables and Open facts list ids; `clickup_filter_tasks` on the Deliverables list for anything in **review** (awaiting the user's sign-off) and, while `stages.Engagement.deliverables` holds an id for a task not yet moved by setup step 2 (the intake or the proposal awaiting signature), "Department — Setup & SOP" filtered by the client's name.
 - `vios-core:vios-guardrails` stays loaded for any client work that follows.
 
 ## The card (at most nine lines, plain words, no file paths, no fact numbers)
 
 ```
 **Gradina (DEMO)** — 0 intake · approver: Nadia Petrova (founder, DEMO) · updated 2026-11-02
-Proposal: not sent (v2) · marketing loop: in · baseline: partial 2026-11-02, 4 to confirm
+Proposal: not sent (v2) · marketing loop: in · baseline: not trading
 Stages: Brand in/not started · Map in/not started · Design in/not started · Training in/not started
 Engagement: no tasks yet
-KPIs: covers per Friday and Saturday evening, garden measured in week 1 after opening → 80 · tables that book their next visit before leaving measured in week 1 after opening → set at baseline
+KPIs: covers per Friday and Saturday evening, garden measured in month 1 after opening → 80 · tables that book their next visit before leaving measured in month 1 after opening → set at baseline
 Blocked by: Budget and target spend per head (founder)
 Open facts: 10, 0 overdue
-Next: Send the v2 PDF (with the KPI table) to Nadia; on signature run vios-engagement-setup steps 1-6, then re-measure the baseline in May 2027  →  vios-engage:vios-proposal
+Next: Send the v2 PDF (with the KPI table) to Nadia; on signature run vios-engagement-setup steps 1-6; the venue is not trading, so the first full month of trading (May 2027, opening 15 April 2027) becomes the baseline  →  vios-engage:vios-proposal
 ```
 
 The card above is `python scripts/clients.py status demo-gradina` as run on 2026-11-02 (the DEMO client; `plugin/vios-core/references/worked-examples.md` › E1). "Engagement" lists the tasks no stage owns (intake, proposal, setup, baseline, harvest, reports) with their status; a "Training proof" line appears when Stage 4 has an audit block; "Awaiting your sign-off" comes from the ClickUp review filter. A target longer than the card allows is cut at a word and the sentence lives in `target_note`.

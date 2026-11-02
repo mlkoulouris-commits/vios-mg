@@ -75,11 +75,14 @@
     },
     {
       "name": "Engagement",
+      "note": "The six keys of status.json > stages.Engagement.deliverables (docs/skill-contract.md); ClickUp task names carry the client: 'Intake <Client>', 'Proposal <Client> vN', 'Setup <Client>', 'Baseline <Client>', 'Harvest <Client>', 'Report <Client> <Month YYYY>'. Intake and Proposal are moved in from 'Department - Setup & SOP' at setup step 2, not re-created; the chase list is the Open facts list; the case recommendation is harvest step 4.",
       "tasks": [
-        "Proposal — awaiting signature",
-        "Chase list (open-facts.md)",
+        "Intake",
+        "Proposal vN",
+        "Setup",
+        "Baseline",
         "Harvest",
-        "Case recommendation"
+        "Report YYYY-MM"
       ]
     }
   ]

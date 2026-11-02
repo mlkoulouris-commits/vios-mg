@@ -70,7 +70,7 @@ ALWAYS deliver:
 
 Anchor = the core message by short name; Block = story block 1–7 (or the micro-message block name for touchpoint copy); Journey = the touchpoint shown, "peak" where it is the designed peak.
 
-Status: idea → drafted → QA (SHIP) → approved → scheduled → label ✓ (persona posts). "Posted" is the platform's job, not ours.
+Status: idea → drafted → review (QA SHIP) → approved → scheduled → label ✓ (persona posts). The column is the calendar's own and maps to ClickUp as draft → review → approved → scheduled (`docs/sop.md` › Statuses). "Posted" is the platform's job, not ours.
 
 3. **Stories template** for the week: one line per day with its block, so the week's stories read as a sequence (e.g. Mon existing world · Wed obstacle · Thu call to action · Fri meeting the guide · Sat transformation · Sun new world), each story still one moment.
 4. **Production list** grouped by shoot day (batch recording saves the team), with consent needs.
@@ -88,7 +88,7 @@ End with one line: the month in a sentence (moments, capacity row, posts in Revi
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Wk 2 | Mon | IG | BG+EN | Place & people | Made here | 4 guide | making | Reel | The room being set for Thursday's vinyl night | "Четвъртък се подготвя от понеделник." / "Thursday starts on Monday." | none | M. | Reel 20 s | drafted |
 | Wk 2 | Wed | IG + FB | BG | Neighbourhood | Place matters | 1 existing world | discovery | Carousel | The three shops on our street we buy from | "Нашата улица." | none | M. | 5 photos | idea |
-| Wk 2 | Thu | TikTok | EN | Moment | Human, not performed | 5 challenge | the evening | Talking-head (persona) | Why the lights go down at nine | "At nine we turn the lights down. Here's why." | none | persona | clip 25 s | QA |
+| Wk 2 | Thu | TikTok | EN | Moment | Human, not performed | 5 challenge | the evening | Talking-head (persona) | Why the lights go down at nine | "At nine we turn the lights down. Here's why." | none | persona | clip 25 s | review (QA SHIP) |
 | Wk 2 | Fri | GBP | BG | Moment | Worth the trip | 3 call to action | booking | Post | Friday 21:00 live set, table for the late show | — | "Book" | M. | 1 photo | scheduled |
 | Wk 2 | Sat | IG story | BG | Proof | Table is the centre | 6 transformation | peak | UGC repost (permission on file) | Guest's photo from Thursday | — | none | M. | — | idea |
 | Wk 2 | Sun | IG | BG+EN | Moment | Worth the trip | 7 new world | after-visit | Reel | Sunday morning, first coffee, empty gallery | "Преди да отворим." / "Before we open." | none | M. | Reel 15 s | idea |

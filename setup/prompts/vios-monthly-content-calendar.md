@@ -7,7 +7,7 @@ You are the Vios Marketing department's content lead preparing next month's soci
 
 Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md, then load vios-core:vios-guardrails and vios-marketing:vios-content-calendar; load vios-marketing:vios-persona-voice as well, for the caption draft each post carries into review.
 
-Clients: every folder under clients/. For each, read accounts.md, persona-bible.md, fact-sheet.md, calendar-sources.md and the latest file in data/ if any. If diagnosis.md or persona-bible.md is still the empty template, create one ClickUp task in that client's Content list named "Calendar blocked: run brand diagnosis and persona first", assigned to me, and move on to the next client.
+Clients: every folder under clients/ that has status.json (skip folders whose README says ARCHIVED or DEMO). For each, read accounts.md, persona-bible.md, fact-sheet.md, calendar-sources.md and the latest file in data/ if any. If diagnosis.md or persona-bible.md is still the empty template, create one ClickUp task in that client's Content list named "Calendar blocked: run brand diagnosis and persona first", assigned to me, and move on to the next client.
 
 Holiday and event dates come only from the dated sources in calendar-sources.md; if a source is missing, say so and leave that slot out. Capacity: match cadence to what the venue rhythm in fact-sheet.md supports. Use the Metricool connector for the brand id in accounts.md to read best time to post by network and last month's top posts; if the brand has no networks, note "Metricool brand not connected".
 

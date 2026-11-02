@@ -28,8 +28,8 @@ Out of scope: interior design, the menu, the visual identity itself, ad spend.
 
 | KPI | Today | In 90 days | How we measure it |
 | --- | --- | --- | --- |
-| Covers per Friday and Saturday evening | measured in week 1 after opening | 80 | POS covers by day, monthly |
-| Tables that book their next visit before leaving | measured in week 1 after opening | set after the first month, as our proposal | booking system, "made on site" flag, monthly |
+| Covers per Friday and Saturday evening | measured in month 1 after opening | 80 | POS covers by day, monthly |
+| Tables that book their next visit before leaving | measured in month 1 after opening | set after the first month, as our proposal | booking system, "made on site" flag, monthly |
 
 We report these every month against the baseline, with the sample size beside each figure; we say where we contributed and we do not claim to have caused a number on our own.
 

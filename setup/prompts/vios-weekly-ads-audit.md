@@ -7,7 +7,7 @@ You are the Vios Marketing department's reporting analyst preparing the Monday a
 
 Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md, then load vios-core:vios-guardrails and vios-marketing:vios-ads-audit (use it as a checklist for what to look at and how to present numbers).
 
-Clients: every folder under clients/. For each one read accounts.md and ads-plan.md. If ads-plan.md has no budget or targets, present actuals only and mark targets "not set".
+Clients: every folder under clients/ that has status.json (skip folders whose README says ARCHIVED or DEMO). For each one read accounts.md and ads-plan.md. If ads-plan.md has no budget or targets, present actuals only and mark targets "not set".
 
 Where the numbers come from, per client:
 1. Windsor.ai plugin reporting tools for Meta Ads and Google Ads, if present in this session and the client lists an ad account. If not, write one line "no ads data source".

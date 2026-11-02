@@ -12,20 +12,15 @@
   },
   "marketing_loop": "in",
   "baseline": {
-    "status": "partial",
-    "date": "2026-11-02",
-    "file": "clients/demo-gradina/data/baseline-2026-11.md",
-    "missing": [
-      "1 Venue: covers, revenue, average check, items per cover, daypart, category mix, labour %, COGS % (no trading; POS not chosen, open fact 6)",
-      "2 Bookings: per month, by source, no-show, party size (no trading; booking system not chosen, open fact 7)",
-      "3 Reviews: Google, TripAdvisor, velocity, answered, themes (no profile or listing, open fact 9)",
-      "4 Social: Instagram, Facebook, TikTok, Google Business (no accounts, open fact 9)"
-    ]
+    "status": "not trading",
+    "date": "",
+    "file": "",
+    "missing": []
   },
   "kpis": [
     {
       "name": "covers per Friday and Saturday evening, garden",
-      "baseline": "measured in week 1 after opening",
+      "baseline": "measured in month 1 after opening",
       "target": 80,
       "due": "2027-07-14",
       "how_measured": "POS covers-by-day export, monthly; n = evenings in the month",
@@ -33,7 +28,7 @@
     },
     {
       "name": "tables that book their next visit before leaving",
-      "baseline": "measured in week 1 after opening",
+      "baseline": "measured in month 1 after opening",
       "target": "set at baseline",
       "target_note": "practice proposes one step after May 2027, labelled as ours",
       "due": "2027-07-14",
@@ -79,7 +74,7 @@
   ],
   "next_action": {
     "skill": "vios-engage:vios-proposal",
-    "what": "Send the v2 PDF (with the KPI table) to Nadia; on signature run vios-engagement-setup steps 1-6, then re-measure the baseline in May 2027"
+    "what": "Send the v2 PDF (with the KPI table) to Nadia; on signature run vios-engagement-setup steps 1-6; the venue is not trading, so the first full month of trading (May 2027, opening 15 April 2027) becomes the baseline"
   },
   "updated": "2026-11-02"
 }

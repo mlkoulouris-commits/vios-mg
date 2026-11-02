@@ -32,7 +32,7 @@
       "name": "vios-engage",
       "source": "./plugin/vios-engage",
       "description": "The engagement wrapper: intake, proposal, workspace setup, harvest. Parts IV and V. Requires vios-core.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "category": "productivity"
     },
     {

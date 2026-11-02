@@ -33,7 +33,7 @@
         "ads_accounts": "no pull; no access yet",
         "user_paste": "none"
       },
-      "expected": "Venue and reviews rows are filled; bookings reads 'to confirm' (no reservations pull in the fixture) with source, pulled-at and n. Social and paid rows read 'to confirm' with holder (A. for Metricool access, R. for the ads account); each gets a row in open-facts.md. status.json › baseline = {status: 'partial', date: '2026-11', file: local path, missing: [social, paid]}. The task 'Baseline Gradina' is in review with the missing rows in its description. The step asks whether the user can paste what is missing, then the output line names the first stage's skill as next step: the engagement is not held.",
+      "expected": "Venue and reviews rows are filled; bookings reads 'to confirm' (no reservations pull in the fixture) with source, pulled-at and n. Social and paid rows read 'to confirm' with holder (A. for Metricool access, R. for the ads account); each gets a row in open-facts.md. status.json › baseline = {status: 'partial', date: '2026-11', file: local path, missing: [bookings, social, paid]}. The task 'Baseline Gradina' is in review with the missing rows in its description. The step asks whether the user can paste what is missing, then the output line names the first stage's skill as next step: the engagement is not held.",
       "fail_if": [
         "a social or paid figure appears",
         "baseline.status is 'measured'",

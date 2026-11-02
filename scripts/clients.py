@@ -5,6 +5,7 @@
   python scripts/clients.py check [slug]         validate status.json against setup/status.schema.json (light, no jsonschema dependency)
   python scripts/clients.py facts <slug>         ClickUp task.create_many body for the open rows of open-facts.md (paste into the connector)
   python scripts/clients.py new <slug> "<Name>"  create clients/<slug>/ from templates/client/ with status.json filled in
+  python scripts/clients.py pdf <slug> <file.md> [Title]   render a client deliverable to clients/<slug>/deliverables/<Title>.pdf (headless Edge; pip install markdown)
 
 Skills call `status` at the start of a step and update status.json at the end; /vios <client> is the front door.
 """
@@ -125,6 +126,48 @@ def new_client(slug: str, name: str) -> None:
     print(f"created {dest}")
 
 
+PDF_CSS = """
+@page { size: A4; margin: 20mm 18mm; }
+body { font-family: Georgia, 'Times New Roman', serif; font-size: 10.5pt; line-height: 1.45; color: #222; }
+h1 { font-size: 20pt; margin-top: 0; }
+h2 { font-size: 15pt; margin-top: 28pt; border-bottom: 1px solid #999; padding-bottom: 3pt; page-break-before: always; }
+h3 { font-size: 12pt; margin-top: 16pt; } h4 { font-size: 11pt; }
+table { border-collapse: collapse; width: 100%; margin: 8pt 0; font-size: 9.5pt; }
+th, td { border: 1px solid #bbb; padding: 4pt 6pt; vertical-align: top; text-align: left; }
+th { background: #f0f0f0; } tr { page-break-inside: avoid; }
+em { color: #555; } code { font-family: Consolas, monospace; font-size: 9pt; background: #f5f5f5; }
+blockquote { border-left: 3px solid #ccc; margin: 8pt 0; padding-left: 10pt; color: #444; }
+hr { border: 0; border-top: 1px solid #ccc; margin: 14pt 0; }
+"""
+
+EDGE = [Path(r"C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"), Path(r"C:/Program Files/Microsoft/Edge/Application/msedge.exe")]
+
+
+def pdf(slug: str, md_file: str, title: str | None = None) -> Path:
+    """Markdown → HTML (python-markdown) → PDF (headless Edge). The HTML is kept beside the PDF for a re-render."""
+    import subprocess
+    try:
+        import markdown
+    except ImportError:
+        sys.exit("pip install markdown")
+    src = Path(md_file) if Path(md_file).is_absolute() else CLIENTS / slug / md_file
+    out_dir = CLIENTS / slug / "deliverables"
+    out_dir.mkdir(exist_ok=True)
+    name = title or src.stem
+    text = read(src)
+    heading = next((l[2:].strip() for l in text.splitlines() if l.startswith("# ")), name)
+    body = markdown.markdown(text, extensions=["tables", "fenced_code"])
+    html_path = out_dir / f"{name}.html"
+    html_path.write_text(f"<!doctype html><html><head><meta charset='utf-8'><title>{heading}</title><style>{PDF_CSS}</style></head><body>{body}</body></html>", encoding="utf-8")
+    edge = next((e for e in EDGE if e.exists()), None)
+    if not edge:
+        sys.exit(f"Edge not found; open {html_path} and print to PDF")
+    pdf_path = out_dir / f"{name}.pdf"
+    subprocess.run([str(edge), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={pdf_path}", html_path.resolve().as_uri()], check=True, capture_output=True, timeout=120)
+    print(pdf_path)
+    return pdf_path
+
+
 def slugs() -> list[str]:
     return sorted(d.name for d in CLIENTS.iterdir() if (d / "status.json").exists())
 
@@ -146,6 +189,8 @@ def main(argv: list[str]) -> None:
         print(json.dumps(facts_payload(argv[2]), ensure_ascii=False))
     elif cmd == "new":
         new_client(argv[2], argv[3])
+    elif cmd == "pdf":
+        pdf(argv[2], argv[3], argv[4] if len(argv) > 4 else None)
     else:
         sys.exit(__doc__)
 

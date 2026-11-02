@@ -16,7 +16,7 @@
         "Messages and story": { "status": "draft", "file": "brand-book.md", "clickup": "1amp9gr23ph", "due": "2026-11-20" },
         "Persona Bible": { "status": "draft", "file": "persona-bible.md", "clickup": "1amp9gr23pj", "due": "2026-11-20" },
         "Name and tagline check": { "status": "draft", "file": "archive/naming.md", "clickup": "1amp9gr23pk", "due": "2026-11-20" },
-        "Brand book (Format A)": { "status": "draft", "file": "brand-book-v1.md", "clickup": "1amp9gr23pm", "due": "2026-11-20" },
+        "Brand book (Format A)": { "status": "review", "file": "brand-book-v1.md", "pdf": "deliverables/Atelier-Brand-Book-v1.0-draft.pdf", "clickup": "1amp9gr23pm", "due": "2026-11-20" },
         "Identity designer brief": { "status": "not started", "clickup": "1amp9gr23pn", "due": "2026-11-20" }
       }
     },

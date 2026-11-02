@@ -24,7 +24,7 @@ Six things at a glance: approver, proposal status, current stage, each stage's s
 1. Short screens: at most ten plain lines and one question per step. No open-fact numbers, no section refs in chat; those go in the file.
 2. Ask, never guess: a missing fact is one question to the user, or a row in `open-facts.md` and a blocker in `status.json`.
 3. Every step writes its file, then updates `status.json` and moves the ClickUp task.
-4. Every client-facing deliverable also ships as a PDF in `clients/<slug>/deliverables/` (Adobe `markdown_to_pdf`); the user forwards it, the practice never emails a client.
+4. Every client-facing deliverable also ships as a PDF in `clients/<slug>/deliverables/` (`scripts/clients.py pdf <slug> <file.md> <Title>`; headless Edge); the user forwards it, the practice never emails a client.
 5. Writes nothing to disk before the user has seen the plan of the step.
 
 ## Daily use

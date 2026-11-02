@@ -1,6 +1,6 @@
 {
   "name": "vios-engage",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "The engagement wrapper around the VIOS Practice: intake (the six moves), the proposal with pricing from the practice's rate card, the engagement workspace setup (client folder, ClickUp lists per stage, Drive, reviews), and the harvest that closes an engagement with the retrospective, the case recommendation and the manuscript change-log entry. VIOS Practice Parts IV and V included. Requires vios-core.",
   "author": {
     "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"

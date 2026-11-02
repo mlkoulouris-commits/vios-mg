@@ -19,6 +19,17 @@
       }
     },
     "marketing_loop": { "enum": ["in", "out", "to confirm"] },
+    "baseline": {
+      "type": "object",
+      "description": "The month-0 measurement (templates/client/data/baseline.md), made by vios-engagement-setup step 7 before any deliverable; the monthly report compares against it.",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["not started", "in progress", "measured", "partial"] },
+        "date": { "type": "string", "description": "measurement date YYYY-MM-DD; the period is the three full months before it" },
+        "file": { "type": "string", "description": "repo path, clients/<slug>/data/baseline-YYYY-MM.md" },
+        "missing": { "type": "array", "items": { "type": "string" }, "description": "rows that read 'to confirm'" }
+      }
+    },
     "current_stage": { "enum": ["0 intake", "1 Brand", "2 Map", "3 Design", "4 Training", "closed"] },
     "stages": {
       "type": "object",

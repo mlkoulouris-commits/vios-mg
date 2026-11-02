@@ -79,6 +79,7 @@ Every client has a folder (`[client]/`) with:
 | `calendar-sources.md` | Where holiday / name-day / event dates come from (dated sources, never memory) |
 | `qa-log.csv` | `date, client, asset, platform, language, attempt, verdict, failed_checks (joined with ;), approver, signed_off_by, signed_off_at` — scheduling and upload require `signed_off_at` filled |
 | `data/YYYY-MM/` | Raw pulls with source and pulled-at in the filename |
+| `data/baseline-YYYY-MM.md` | The month-0 measurement (`vios-engage:vios-engagement-setup` step 7, template `templates/client/data/baseline.md`): venue, bookings, reviews, social, paid, each row with source and n, the three months before the practice started; made once, never recomputed; every monthly report carries a "Baseline" column from it; `status.json` › `baseline` says measured or partial |
 | `journey/` | Stage 2 and 3 outputs (`vios-journey`): `intake-stage-2.md`, `observation.md` (shadowed services and review read, dated; the re-weighting date), `journey-map.md`, `reasoning-note.md`, `handoff-to-design.md`, `design/` (pages, choreography, recovery, briefs) |
 | `training/` | Stage 4 outputs (`vios-journey:vios-training-programme`): architecture, registers, cadence calendar, staff and management stacks, handoffs |
 | `open-facts.md` | The engagement's chase list: every "to confirm" from any stage as a row (fact · what it blocks · who holds it · asked on · due); worked by the account manager |

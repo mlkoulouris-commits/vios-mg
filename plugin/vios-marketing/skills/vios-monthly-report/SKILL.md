@@ -11,7 +11,7 @@ Clients don't pay for reach. They pay for covers, bookings and guests who come b
 
 ## Steps
 
-1. **Data** (D1–D7): what was pulled from where, what is missing, the benchmark available. Ask: *"Anything missing you can paste now?"*
+1. **Data** (D0–D7): the baseline on file (or not), what was pulled from where, what is missing, the benchmark available. Ask: *"Anything missing you can paste now?"*
 2. **The scoreboards** (Structure 1–3): the one sentence, the venue scoreboard, the marketing scoreboard. Ask: *"Numbers right?"*
 3. **The reading** (Structure 4–6): what else moved the month, the link, what worked and what didn't, persona and brand health. Ask: *"Agree with the reading?"*
 4. **Three priorities** (Structure 7): what, why, owner, how we'll know, owning skill, plus one test. Ask: *"These three?"*
@@ -29,6 +29,7 @@ The scheduled task `vios-monthly-client-report` pulls the data and builds the dr
 
 Save raw pulls to `[client]/data/YYYY-MM/` with source and pulled-at in the filename; compute in code; note what's missing rather than estimating. Use the metric names the current exports show (GBP renames them).
 
+D0. **Baseline** — `[client]/data/baseline-YYYY-MM.md` (made by `vios-engage:vios-engagement-setup` step 7; `status.json` › `baseline`). Its rows become the "Baseline" column of both scoreboards. No baseline on file: the column reads "no baseline" and priority #1 of section 7 is to measure one (owning skill `vios-engage:vios-engagement-setup`, step 7); **partial**: the missing rows read "to confirm" and are listed in the appendix with who holds them. The baseline is never recomputed by this skill; a wrong baseline is a row in `open-facts.md` for the account manager.
 D1. **Venue truth** — Barsy POS export: covers, revenue, average spend, by day; bookings; offer-day covers vs same-weekday baseline; same month last year. Bulgarian clients: convert pre-2026 BGN figures at the fixed 1.95583 and label "converted" (the euro replaced the lev on 1 Jan 2026). State revenue and spend once as net or gross of VAT in the appendix, same basis both sides. No POS data: guardrails stand-in (marketing-only report, priority #1 = get access).
 D2. **Paid** — Meta Ads connector, Google Ads MCP (or Windsor.ai): spend, results, cost per result, frequency, top ads; the reconciliation ratio from `vios-ads-audit`.
 D3. **Organic** — Metricool: reach, saves, sends/DM shares, tags, profile visits, link clicks, follower change, best posts, best times, competitor benchmarks.
@@ -39,7 +40,7 @@ D7. Last month's three priorities and what happened.
 
 ## Benchmarks
 
-The client's own history: trailing 3-month median, and same month last year when it exists. Seasonal venues: weight same-month-last-year over the median (three quiet months make a normal peak look like a win). Under 3 months: no benchmark, column "building baseline". Industry numbers only when sourced and dated.
+Two fixed reference points, always both: the **baseline** (D0: the three months before the practice started, the "before") and the client's own history (trailing 3-month median, and same month last year when it exists, the "normal"). Seasonal venues: weight same-month-last-year over the median (three quiet months make a normal peak look like a win); a baseline measured in a quiet season is compared to the same season, never to the peak. Under 3 months of history after the baseline: the median column reads "building history". Industry numbers only when sourced and dated.
 
 ## Numbers and attribution language
 
@@ -52,14 +53,14 @@ The client's own history: trailing 3-month median, and same month last year when
 ALWAYS use this exact structure. Numbers first, interpretation second, decisions last.
 
 ### 1. The one sentence
-"Covers 2,910 (+9 % vs Sep, n 2,670; +4 % vs Oct last year, n 2,800); Tuesday bookings 11 vs 6 (too small to call); organic sends at a 6-month high."
+"Covers 2,910 (+9 % vs Sep, n 2,670; +4 % vs Oct last year, n 2,800; +12 % vs baseline Jun–Aug avg 2,600); Tuesday bookings 11 vs 6 (too small to call); organic sends at a 6-month high."
 
 ### 2. Venue scoreboard
-| Metric | This month | Last month | Same month last year | 3-mo median | Note |
-Covers · revenue · avg spend · bookings · repeat-guest share (if trackable) · offer-day covers vs baseline · blended cost per cover · marketing spend as % of revenue
+| Metric | Baseline | This month | Last month | Same month last year | 3-mo median | Note |
+Covers · revenue · avg spend · bookings · repeat-guest share (if trackable) · offer-day covers vs baseline · blended cost per cover · marketing spend as % of revenue. "Baseline" = the D0 page's 3-month monthly average; "vs baseline" is stated once per row, with the baseline's season named when it differs from this month's.
 
 ### 3. Marketing scoreboard
-| Channel | Key metric | This month | Last month | 3-mo median | Cost |
+| Channel | Key metric | Baseline | This month | Last month | 3-mo median | Cost |
 Paid (cost per code booking, spend) · Organic (reach, saves, sends, tags) · GBP (directions, calls) · Community (reviews answered, response time)
 
 ### 4. The link between the two
@@ -75,7 +76,7 @@ Persona video count, best persona clip, QA first-attempt pass rate, drift caught
 Exactly three. What, why (tied to a number above), owner, how we'll know, **owning skill** (content → `vios-content-calendar`, ads → `vios-ad-factory`, tracking → `vios-ads-audit`, voice/replies → `vios-persona-voice`, video → `vios-video-script`, missing client files → `vios-brand-diagnosis` for `diagnosis.md` / `vios-persona-builder` for `persona-bible.md`, gate failures → `vios-consistency-qa`). Plus one test.
 
 ### 8. Appendix
-Full tables, post list, ad list, sources, as-of date. Followers live here.
+Full tables, post list, ad list, sources, as-of date, the baseline's measurement date and period, its rows still "to confirm" and who holds them. Followers live here.
 
 ## Vios rules
 

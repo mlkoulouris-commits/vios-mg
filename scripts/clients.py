@@ -58,9 +58,11 @@ def card(slug: str) -> str:
         f"{k.split(' ', 1)[-1]} {v['scope']}/{v['status']}" for k, v in s["stages"].items() if v["scope"] != "out"
     )
     blockers = s.get("blockers") or []
+    base = s.get("baseline") or {"status": "not started"}
+    baseline = base["status"] + (f" {base['date']}" if base.get("date") else "") + (f", {len(base['missing'])} to confirm" if base.get("missing") else "")
     lines = [
         f"**{s['name']}** — {s['current_stage']} · approver: {s['approver']} · updated {s['updated']}",
-        f"Proposal: {s['proposal']['status']}" + (f" (v{s['proposal']['version']})" if s['proposal'].get('version') else "") + f" · marketing loop: {s['marketing_loop']}",
+        f"Proposal: {s['proposal']['status']}" + (f" (v{s['proposal']['version']})" if s['proposal'].get('version') else "") + f" · marketing loop: {s['marketing_loop']} · baseline: {baseline}",
         f"Stages: {stages}",
         f"Blocked by: " + ("; ".join(f"{b['what']} ({b['holds']})" for b in blockers[:3]) if blockers else "nothing") + (f" +{len(blockers)-3} more" if len(blockers) > 3 else ""),
         f"Open facts: {len(facts)}" + (f", {sum(1 for f in facts if f['due'] and f['due'] <= date.today().isoformat())} overdue" if facts else ""),
@@ -91,6 +93,8 @@ def check(slug: str) -> list[str]:
                 errs.append(f"stages.{name}.deliverables.{d}.status={dv.get('status')!r}")
     if s.get("proposal", {}).get("status") not in schema["properties"]["proposal"]["properties"]["status"]["enum"]:
         errs.append(f"proposal.status={s.get('proposal', {}).get('status')!r}")
+    if "baseline" in s and s["baseline"].get("status") not in schema["properties"]["baseline"]["properties"]["status"]["enum"]:
+        errs.append(f"baseline.status={s['baseline'].get('status')!r}")
     for b in s.get("blockers", []):
         if "what" not in b or "holds" not in b:
             errs.append(f"blocker without what/holds: {b}")

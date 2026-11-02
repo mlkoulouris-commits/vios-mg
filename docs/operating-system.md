@@ -43,6 +43,7 @@ ClickUp → what is awaiting your sign-off → approve or comment. Claude → `/
 | 6 | ONE Gallery on the system; `atelier-2026-10` archived | 2026-11-02 |
 | 7 | Marketing skills (calendar, voice, video, ads, report) to the contract; QA + ads-audit stay verdict skills | 2026-11-02 |
 | 8 | Core lenses stay as review passes (no steps); guardrails unchanged | n/a |
+| 9 | Month-0 baseline: setup step 7, `data/baseline-YYYY-MM.md`, "Baseline" column in the monthly report, `status.json` › `baseline` (`docs/quality-plan-2026-11-02.md` WS1) | 2026-11-02 |
 
 ## Not in scope
 

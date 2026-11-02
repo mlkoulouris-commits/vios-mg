@@ -1,6 +1,6 @@
 ---
 name: "vios"
-description: "The front door to a Vios client: one status card (stage, approver, proposal, blockers, open facts, next action) from clients/<slug>/status.json and ClickUp, then the next action offered as a single question. Use for '/vios' followed by a client name, 'where are we with a client', 'what is next for a client', 'status', or when the user names a client without naming a skill."
+description: "The front door to a Vios client: one status card (stage, approver, proposal, blockers, open facts, next action) from the client status file and ClickUp, then the next action offered as a single question. Use for '/vios' followed by a client name, 'where are we with a client', 'what is next for a client', 'status', or when the user names a client without naming a skill."
 ---
 
 # Vios — front door

@@ -7,6 +7,18 @@ description: "Write any client-facing text in a Vios Marketing client's Brand Pe
 
 The Brand Persona is a character. This skill makes it speak the same way every time, on every channel, in every language, so guests recognise it before they read the logo. Hard lines: `vios-guardrails` 1–12.
 
+**Work in three steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a two-column table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. A single caption or reply is brief → draft → done; a batch (a week's captions, a day's replies) repeats step 2 per piece. Nothing is written to disk before step 3 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+
+## Steps
+
+1. **Brief.** Confirm channel, moment, goal, language(s), register. Infer when obvious; ask only if a wrong guess would waste the client's time. Name the anchor core message and the story block; for touchpoint copy, the micro-message block. Ask: *"Right brief?"* (when everything was inferred from the request, go straight to step 2.)
+2. **Draft.** Draft in the persona. Mark the tone used. Self-check against the Persona Bible: traits present, never-trait absent, signature phrase natural, one message, local detail, plain words, register right; anchor reinforced, no core message contradicted, guest still the hero. BE check on anything with a CTA. Flag anything off-brand in the brief itself ("limited time only!!!") and offer the on-brand version. Ask: *"Change anything before it goes to Review?"*
+3. **Done.** Now write the file and the ClickUp task, then the end line.
+
+**Ask only when necessary; never invent.** Hours, prices, dish names, dates, claims and the register come only from `fact-sheet.md`, `persona-bible.md` or the user, never from memory. A fact the piece needs and the user can give now is one question; otherwise the line reads "to confirm" (never a placeholder number), with a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`, and the draft goes on. No Persona Bible: the guardrails stand-in, "DRAFT, no persona", flagged. No approver on file: a blocker, never a placeholder name. Hard-line 11 topics (allergy, illness, injury, legal, press, named staff, discrimination) are never drafted: the facts go to the approver.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed) → at step 3: captions, stories, Google posts and ad copy to `clients/<slug>/content/YYYY-MM/captions_<scope>_draft-<date>.md`, replies to `clients/<slug>/content/YYYY-MM/replies_<date>.md`; then the ClickUp task for the piece in the client's Content list (replies: the Engagement list; ids in `accounts.md`), status **review**, the draft in the description, Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review). A blocked client gets the blocker in `status.json` and no task. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`.
+
 ## Load first (`vios-guardrails` › client file)
 
 1. `persona-bible.md`: traits, never-trait, point of view, signature phrases, humour level, do/don't lines, behaviour matrix, address register, emoji policy, approver.
@@ -66,20 +78,13 @@ Default response targets (override in `persona-bible.md`): comments same day; DM
 - Escalation topics (guardrails 11): hand to the approver with the facts; don't write the reply.
 - Never invent a fact. Check the fact sheet or ask.
 
-## Workflow
-
-1. Confirm channel, moment, goal, language(s), register. Infer when obvious; ask only if a wrong guess would waste the client's time.
-2. Name the anchor core message and the story block; for touchpoint copy, the micro-message block.
-3. Draft in the persona. Mark the tone used.
-4. Self-check against the Persona Bible: traits present, never-trait absent, signature phrase natural, one message, local detail, plain words, register right; anchor reinforced, no core message contradicted, guest still the hero.
-5. BE check on anything with a CTA.
-6. Flag anything off-brand in the brief itself ("limited time only!!!") and offer the on-brand version.
-
 ## Output
 
 The copy, per language (two columns when side by side), marked DRAFT. Below it, one line: anchor message + story block (+ micro-message block for touchpoint copy) + tone used + register used + anything flagged. No preamble.
 
 Before publish: `vios-consistency-qa` → named approver. This skill drafts; it never publishes.
+
+End with one line: what is drafted and in Review, what is "to confirm" and who confirms it, and the next step (`vios-consistency-qa` before publish). Then stop.
 
 **Example (bad → good, gelato shop, first strawberry batch, Instagram; facts and place are placeholders, never reuse):**
 

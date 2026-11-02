@@ -7,6 +7,20 @@ description: "Build the monthly (or quarterly) client report for a Vios Marketin
 
 Clients don't pay for reach. They pay for covers, bookings and guests who come back. This report puts the venue's own numbers next to the marketing numbers so the connection is visible, and it ends with decisions, not charts. Measurement rules: guardrails › Shared numbers.
 
+**Work in five steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a scoreboard counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before step 5 except the raw pulls, which step 1 saves as the method says (and status.json and open-facts.md bookkeeping). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+
+## Steps
+
+1. **Data** (D1–D7): what was pulled from where, what is missing, the benchmark available. Ask: *"Anything missing you can paste now?"*
+2. **The scoreboards** (Structure 1–3): the one sentence, the venue scoreboard, the marketing scoreboard. Ask: *"Numbers right?"*
+3. **The reading** (Structure 4–6): what else moved the month, the link, what worked and what didn't, persona and brand health. Ask: *"Agree with the reading?"*
+4. **Three priorities** (Structure 7): what, why, owner, how we'll know, owning skill, plus one test. Ask: *"These three?"*
+5. **The report** (Deliverables and sign-off): now write the memo, the dashboard, the WhatsApp summary, the file and the PDF, and the ClickUp task. Ask: *"Read it. Change anything before the reviewer re-computes?"*
+
+**Ask only when necessary; never invent.** Every number comes from the saved pulls in `data/YYYY-MM/` or from the user (bookings by source pasted from Memento); covers and revenue from the POS export; holiday and closure dates from `calendar-sources.md` and `fact-sheet.md`; never from memory, never estimated. A missing pull the user can paste now is one question; otherwise the cell reads "to confirm" or "missing" with a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`, and the report goes on with what is on file. No POS data: the guardrails stand-in (marketing-only report, priority #1 = get access). Under 3 months of history: "building baseline", not a benchmark. No approver on file: a blocker, never a placeholder name. Hard-line 11 topics in reviews (allergy, illness, injury, legal, press, named staff, discrimination) are reported as facts to the approver, never quoted or interpreted in the memo.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed, `next_action` = the first priority's skill) → at step 5: the memo copy to `clients/<slug>/data/<YYYY-MM>/report_<date>.md`; the ClickUp task `Report <Client> <Month YYYY> — review before sending` in "Department — Setup & SOP" (id in `setup/clickup.json`), status **review**, the three priorities and the memo link in the description, Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review); then `python scripts/clients.py pdf <slug> data/<YYYY-MM>/report_<date>.md "<Client>-Report-<YYYY-MM>"` → `clients/<slug>/deliverables/`, sent to the user. The user forwards it; the practice never emails a client. A blocked client (no accounts, no Metricool brand) gets the blocker in `status.json` and no task. The QA gate stays: nothing moves past Review without the reviewer's re-computation, `vios-consistency-qa` (report mode) and a `qa-log.csv` row with `signed_off_at`.
+
 ## When
 
 The scheduled task `vios-monthly-client-report` pulls the data and builds the draft early in the month (the 2nd); the report is finalised and sent on working day 3–5, once attribution windows have filled. A draft sent before then is labelled "draft, attribution still filling". Quarterly: same structure, three monthly columns; Structure section 7 becomes 90-day priorities.
@@ -79,3 +93,5 @@ Full tables, post list, ad list, sources, as-of date. Followers live here.
    November: the Sunday-lunch concept goes to round 2, and we start the booking-source field."
 
 Before anything is shared: a named Vios reviewer re-computes every figure from the saved data files (at least the 5 headline numbers), checks n beside each percentage, and signs (`vios-consistency-qa`, report mode; logged as asset "monthly report"). The account manager decides who gets the dashboard link: this is the client's revenue data.
+
+End with one line: the month in a sentence (the one sentence from the memo), what is "to confirm" and who confirms it, and the next step (the reviewer's sign-off, then the first priority's skill). Then stop.

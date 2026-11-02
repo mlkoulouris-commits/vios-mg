@@ -7,6 +7,20 @@ description: "Produce paid ad concepts and variants for a Vios Marketing F&B cli
 
 Creative is the targeting now. Meta's and Google's systems find the audience; what we control is a varied, on-brand creative library and a clean test a venue budget can afford. Hard lines: `vios-guardrails` 1–12, apply all. Minimum-sample and refresh rules: `vios-ads-audit`.
 
+**Work in five steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a short table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before step 5 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+
+## Steps
+
+1. **Brief recap** (Output format 1): goal, offer, one CTA, radius, budget and cells, structure, dates, languages, attribution method or proxy, alcohol yes/no, tracking check. Ask: *"Budget, dates, radius and attribution right?"*
+2. **Concept board** (Output format 2): 3–5 concepts, one line each. Ask: *"Which 2–3 go to round 1?"*
+3. **Variant sheet** (Output format 3): the round-1 ads, one per concept, passed through `vios-persona-voice` rules. Ask: *"Change a line?"*
+4. **Test plan and checks** (Output format 5–6): cells, budget per cell, duration, delivery event, decision metric, winner rule; test or bet, said plainly. Ask: *"Anything to fix before the files are written?"*
+5. **The files** (Output format 4): now write `clients/<slug>/ads-plan.md` (test plan, attribution, Ad Strength note), the upload sheets to `clients/<slug>/data/YYYY-MM/`, and the ClickUp task. Ask: *"Read it. Change anything before it goes to Review?"*
+
+**Ask only when necessary; never invent.** Prices, dish names, hours, claims and the neighbourhood come only from `fact-sheet.md` or the user; budget, target cost per booking, attribution method and test dates only from `ads-plan.md` or the user; holiday and event dates only from `calendar-sources.md`; never from memory. A budget or offer date the test cannot be sized without, that the user can give now, is one question; otherwise "to confirm", a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`, and the plan goes on with the cells the known budget supports. No attribution method: the stated proxy, every result "unjudged on bookings" (the method's rule), plus the row. No approver on file: a blocker, never a placeholder name. Hard-line 11 topics (allergy, illness, injury, legal, press, named staff, discrimination) are never put in an ad: the facts go to the approver.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed) → at step 5 the ClickUp task in the client's Ads list (id in `accounts.md`), status **review**, named `<dates> ads: <concept(s)> — round 1`, the variant sheet and test plan in the description (budget changes and anything live flagged "needs client owner"), Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review). A blocked client (no accounts, no ad account, empty persona) gets the blocker in `status.json` and no task. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`; nothing is uploaded or spent by this skill.
+
 ## Load first (`vios-guardrails` › client file)
 
 - `persona-bible.md` (voice, never-list, register, approver, alcohol yes/no), `diagnosis.md` (positioning, audience)
@@ -64,6 +78,8 @@ ALWAYS deliver, in this order:
 Pass every variant through `vios-persona-voice` rules. Hand video concepts to `vios-video-script`.
 
 Before upload: `vios-consistency-qa` → named approver. This skill drafts; it never publishes or spends.
+
+End with one line: the test in a sentence (concepts, cells, budget per cell, test or bet), what is "to confirm" and who confirms it, and the next step (`vios-video-script` for video concepts, `vios-consistency-qa` before upload, `vios-ads-audit` once live). Then stop.
 
 ## Example (taverna, goal: Sunday-lunch bookings, €16/day → 2 cells, cold 4 km; placeholders)
 

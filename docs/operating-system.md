@@ -41,7 +41,7 @@ ClickUp → what is awaiting your sign-off → approve or comment. Claude → `/
 | 4 | Brand (5) + journey (3) skills to the contract, each with a client PDF | 2026-11-02 |
 | 5 | Marketing loop: the five scheduled tasks drop drafts as ClickUp tasks in Review | 2026-11-02 |
 | 6 | ONE Gallery on the system; `atelier-2026-10` archived | 2026-11-02 |
-| 7 | Marketing skills (calendar, voice, video, QA, ads, report) to the contract | open |
+| 7 | Marketing skills (calendar, voice, video, ads, report) to the contract; QA + ads-audit stay verdict skills | 2026-11-02 |
 | 8 | Core lenses stay as review passes (no steps); guardrails unchanged | n/a |
 
 ## Not in scope

@@ -39,7 +39,7 @@
       "name": "vios-marketing",
       "source": "./plugin/vios-marketing",
       "description": "Monthly operations: calendar, copy, video, QA, ads, report. Requires vios-core.",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "category": "productivity"
     }
   ]

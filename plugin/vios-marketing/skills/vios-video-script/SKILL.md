@@ -7,6 +7,20 @@ description: "Write hook-first short-form video scripts (Reels, TikTok, Shorts, 
 
 A script is a sequence of moments, not a list of features. This skill writes the first two seconds first, protects the peak and the ending, and hands production an exact plan the persona can perform without drifting. Hard lines: `vios-guardrails` 1–12.
 
+**Work in five steps. Stop after each and ask one question.** Each step shows at most ten plain lines (the script table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before step 5 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+
+## Steps
+
+1. **The moment.** Pin the one moment, its anchor message and its story block. Three moments = three videos. Ask: *"This moment?"*
+2. **Hooks.** Hook options first; choose one; everything else serves it. Ask: *"Which hook?"*
+3. **Script, shot list, prompts.** Script, then shot list, then prompts. Lines short enough for captions. Ask: *"Any line or shot to change?"*
+4. **Checks and measures.** Run Checks. Fix before delivering. Say what to measure: hook rate, completion, sends per reach, saves, profile visits, bookings. Ask: *"Anything to fix before the file is written?"*
+5. **The script file** (Output format): now write `clients/<slug>/content/YYYY-MM/video_<working-title>_<date>.md` with the caption from `vios-persona-voice`, and the ClickUp task. Ask: *"Read it. Change anything before it goes to Review?"*
+
+**Ask only when necessary; never invent.** Hours, prices, dish names, dates and the neighbourhood come only from `fact-sheet.md` or the user; holiday dates only from `calendar-sources.md`; the persona's cues, register and never-list only from `persona-bible.md`; never from memory. A fact the script needs and the user can give now is one question; otherwise the line reads "to confirm", with a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`, and the script goes on. No character sheet or consent on file: filmed-only, said in the output line, and the missing consent is a row, never assumed. No approver on file: a blocker, never a placeholder name. Hard-line 11 topics (allergy, illness, injury, legal, press, named staff, discrimination) are never scripted: the facts go to the approver.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed) → at step 5 the ClickUp task for the video in the client's Content list (id in `accounts.md`), status **review**, named `<date> · <platform> · <pillar> · <working title>`, the script and caption draft in the description with the consent and AI-label notes, Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review). A blocked client gets the blocker in `status.json` and no task. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`.
+
 ## Load first (`vios-guardrails` › client file)
 
 - `persona-bible.md` (voice, traits, never-list, Expression palette, register, approver, alcohol yes/no)
@@ -95,15 +109,9 @@ Caption in persona voice (`vios-persona-voice`). Cover text ≤ 6 words.
 Hook: motion frame 1, ≤ 10 words by 3 s, card ≤ 6 words ✓ | locality ✓ | one message ✓ | anchor reinforced, no core message contradicted, guest is the hero ✓ | peak designed ✓ | end warm, one CTA or none ✓ | never-list ✓ | captions word-for-word ✓ | AI label from persona's first frame + platform toggle ✓ | consent per real face/voice ✓ | food/room/exterior filmed ✓ | alcohol rules if applicable ✓
 ```
 
-## Workflow
-
-1. Pin the one moment, its anchor message and its story block. Three moments = three videos.
-2. Hook options first; choose one; everything else serves it.
-3. Script, then shot list, then prompts. Lines short enough for captions.
-4. Run Checks. Fix before delivering.
-5. Say what to measure: hook rate, completion, sends per reach, saves, profile visits, bookings.
-
 Before publish: `vios-consistency-qa` → named approver. This skill drafts; it never publishes.
+
+End with one line: the video in a sentence (platform, length, hook chosen, filmed-only or persona), what is "to confirm" and who confirms it, and the next step (`vios-consistency-qa` before publish; the shoot day from `vios-content-calendar`). Then stop.
 
 ## Example (taverna, Sunday lunch, 20 s Reel, organic, AI persona; GR with EN captions; placeholders; anchor "the table is the centre", block 6 transformation)
 

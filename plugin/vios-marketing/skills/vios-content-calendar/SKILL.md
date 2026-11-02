@@ -7,6 +7,20 @@ description: "Build the monthly social content calendar for a Vios Marketing F&B
 
 A venue's calendar is a logistics tool, not a gallery. It respects the kitchen, the slow days, the perishable moments and the meaning the brand stands for. Hard lines: `vios-guardrails` 1–12.
 
+**Work in five steps. Stop after each and ask one question.** Each step shows at most ten plain lines (one week of the calendar at a time; a short table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before step 5 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+
+## Steps
+
+1. **Map the month.** Days open, slow days, events, sourced holidays, menu changes. Mark the 2–3 moments the month is built around. Ask: *"Are these the month's moments?"*
+2. **Assign pillars by week**, rotating. **Fill slots.** Date, platform, language, pillar, anchor message, story block, journey touchpoint, format, the one idea, hook, CTA or none, owner, asset, status. Touchpoint-shaped slots (booking reminders, GBP posts about arrival or parking, after-visit thank-yous) name their micro-message block in the brief. Ask: *"Any week or slot to change?"*
+3. **Offers on slow days**, where the venue needs covers. A real date once; no pressure devices. **Persona cadence.** Scripts from `vios-video-script`. **Community block.** Daily on the calendar: comments, DMs, tags, reviews (`vios-persona-voice`). **Perishable slots** with "from the floor" briefs the staff can shoot on a phone. Ask: *"Offer days, persona cadence and open slots right?"*
+4. **Feed the loop.** Top organic posts (saves, sends, shares) go to `vios-ad-factory` as existing-post ad concepts. **Check** every slot: BE five-line · locality · never-list · alcohol rules if applicable · anchor message named and not contradicted · story blocks covered across the month, none repeated back to back · peak shown weekly. Ask: *"Anything to fix before the file is written?"*
+5. **The calendar file** (Output format): now write `clients/<slug>/content/YYYY-MM/calendar_<date>.md` and the ClickUp tasks, one per post. Ask: *"Read it. Change anything before it goes to Review?"*
+
+**Ask only when necessary; never invent.** Holidays, name days, school holidays and festivals come only from `calendar-sources.md`; venue rhythm, events, menu changes, hours and prices only from `fact-sheet.md` or the user; never from memory. A date not on file is "to confirm" in the slot, never a guess (a wrong date in a public post is a block-level fact error). Team capacity (who shoots, hours per week) and the approver are a question when the user can answer now; otherwise "to confirm", a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`, and the month is planned at the capacity row the file supports. No Persona Bible: the guardrails stand-in, flagged. Hard-line 11 topics (allergy, illness, injury, legal, press, named staff, discrimination) get no slot and no draft; the facts go to the approver.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed, `next_action`) → at step 5 the ClickUp tasks: one per post in the client's Content list (id in `accounts.md`), status **review**, named `<date> · <platform> · <pillar> · <working title>`, due = publish date, description = caption draft + asset note + Anchor/Block, Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review). A blocked client (no accounts, no Metricool brand, empty persona) gets the blocker in `status.json` and no tasks. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`.
+
 ## Load first (`vios-guardrails` › client file)
 
 - `diagnosis.md` + `persona-bible.md`: purpose, pillars, audience, archetype, never-list, approver, alcohol yes/no
@@ -43,18 +57,6 @@ Persona videos count inside the Reel/TikTok numbers; they are the costliest asse
 
 Posting times: Metricool best-time data when connected. Until it exists, schedule around the venue's own decision moments (guests choose dinner at lunchtime, the weekend on Thursday); treat as a hypothesis, test in month one. No invented benchmarks (guardrails › Shared numbers).
 
-## Workflow
-
-1. **Map the month.** Days open, slow days, events, sourced holidays, menu changes. Mark the 2–3 moments the month is built around.
-2. **Assign pillars by week**, rotating.
-3. **Fill slots.** Date, platform, language, pillar, anchor message, story block, journey touchpoint, format, the one idea, hook, CTA or none, owner, asset, status. Touchpoint-shaped slots (booking reminders, GBP posts about arrival or parking, after-visit thank-yous) name their micro-message block in the brief.
-4. **Offers on slow days**, where the venue needs covers. A real date once; no pressure devices.
-5. **Persona cadence.** Scripts from `vios-video-script`.
-6. **Community block.** Daily on the calendar: comments, DMs, tags, reviews (`vios-persona-voice`).
-7. **Perishable slots** with "from the floor" briefs the staff can shoot on a phone.
-8. **Feed the loop.** Top organic posts (saves, sends, shares) go to `vios-ad-factory` as existing-post ad concepts.
-9. **Check** every slot: BE five-line · locality · never-list · alcohol rules if applicable · anchor message named and not contradicted · story blocks covered across the month, none repeated back to back · peak shown weekly.
-
 ## Output format
 
 ALWAYS deliver:
@@ -75,6 +77,8 @@ Status: idea → drafted → QA (SHIP) → approved → scheduled → label ✓ 
 7. **What we'll measure** — sends per reach, saves, tags, profile visits, bookings, covers on offer days vs the same-weekday baseline.
 
 Before scheduling: `vios-consistency-qa` → named approver. This skill plans; it never publishes.
+
+End with one line: the month in a sentence (moments, capacity row, posts in Review), what is "to confirm" and who confirms it, and the next step (`vios-video-script` for the persona slots, `vios-persona-voice` for the captions, `vios-consistency-qa` before anything is scheduled). Then stop.
 
 ## Example week (events café, October; pillars place & people / moment / neighbourhood / proof; dates shown as week labels because real dates come from the sourced calendar; capacity row: Standard; TikTok shown 1 of 2–3, Facebook 1 of 2–3)
 

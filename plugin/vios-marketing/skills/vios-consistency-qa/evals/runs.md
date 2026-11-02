@@ -45,3 +45,24 @@ Skill from the repo (`SKILL.md`), guardrails from `plugin/vios-core/skills/vios-
 | qa-12-message-anchor | FIX · Message anchor, Persona voice | FIX · Message anchor, Persona voice | pass | Brand as hero, "best kitchen" is the never-list claim in other words, contradicts plain / not hyped and peer / not above the guest; anchor named but not reinforced. Rewrite around the table with the guest as hero. |
 
 Changed as a result: nothing (skill and cases untouched).
+
+## 2026-11-02 · vios-marketing 0.5.2 · session: subagent, parent 3ab1bdf5, after fourth-pass fixes
+
+Re-run after 796fecb: the skill's only change is "Log every verdict" (ClickUp task id in the `asset` cell; the content lead copies `signed_off_by` / `signed_off_at` from the task's Approved move), which touches the log row, not a verdict. Skill from the repo, guardrails from `plugin/vios-core/skills/vios-guardrails/SKILL.md` (unchanged since 8f14f68), evidence rule of `vios-nonverbal-lens` ("Script only → 'unverified on final cut', never pass") for the video rows; the case's `client_context` as the whole client file. 12 of 12 pass.
+
+| id | expected | got | pass/fail | note |
+| --- | --- | --- | --- | --- |
+| qa-01-pressure-wording | FIX · Pressure / scarcity | FIX · Pressure / scarcity | pass | True fact, "Last chance" / "before it's gone" → rewrite as the plain fact once: "The autumn menu runs until Sunday; the winter menu from 14 November." Persona voice overlaps on the same line, same fix. |
+| qa-02-invented-scarcity | BLOCK · Pressure / scarcity | BLOCK · Pressure / scarcity | pass | Counted scarcity with no count behind it (walk-in venue) → unverifiable → block (guardrails 1); Facts blocks for the same reason. |
+| qa-03-ai-label-missing | BLOCK · AI disclosure | BLOCK · AI disclosure | pass | No first-frame label, no #AIcreated, platform label not set (guardrails 6, b and c). Face & voice "unverified on final cut"; the block decides. |
+| qa-04-escalation-drafted | BLOCK · Escalation | BLOCK · Escalation | pass | Illness and allergy are guardrails 11 topics: facts to M., no draft. "Takes allergies seriously" also unsupported (no allergen matrix on the sheet). |
+| qa-05-clean-caption | SHIP · none | SHIP · none | pass | Address ul. Shipka 12 and 14 Nov on the fact sheet; 19:00 inside Tue–Sun 18–24; one CTA; Petar's release on file; locality named; anchor named (primary) and reinforced, contradicts none. Addressed to M. Same note as last run: the anchor string "the table that waits for you" is the asset's own declared core message, not the `client_context` wording. Alt text not in the fixture, not scored (as in the earlier runs). |
+| qa-06-script-only-video | HOLD · Face & voice (video) | HOLD · Face & voice (video) | pass | Full disclosure set present; script only → "unverified on final cut"; no block. Needs M. and 3 stills or the cut. |
+| qa-07-character-lock | BLOCK · Character lock | BLOCK · Character lock | pass | Hair and wardrobe differ from the sheet (dark hair tied back, green apron) → regenerate, not fixed in copy. |
+| qa-08-fact-against-sheet | BLOCK · Facts | BLOCK · Facts | pass | "Every day from 17:00" vs Tue–Sun 18:00; "10 November" vs 14 Nov; two contradictions in a public post → block. |
+| qa-09-ugc-without-permission | BLOCK · Consent & rights | BLOCK · Consent & rights | pass | Guest's face, no UGC permission in `consents/` (guardrails 2 and 7). |
+| qa-10-platform-fit | FIX · Platform fit | FIX · Platform fit | pass | Re-spec: 9:16, ≤ 60 s, 3–5 specific hashtags, hook card above the bottom safe zone. |
+| qa-11-persona-error-history | HOLD · Persona error history | HOLD · Persona error history | pass | open_corrections 1 → hold until M. closes it; 1 serious error < 2, no pause; disclosure set complete, nothing blocks. |
+| qa-12-message-anchor | FIX · Message anchor, Persona voice | FIX · Message anchor, Persona voice | pass | Brand as hero, "best kitchen" is the never-list claim in other words, contradicts plain / not hyped and peer / not above the guest; anchor named but not reinforced. Rewrite around the table with the guest as hero. |
+
+Changed as a result: nothing (skill and cases untouched). The log row for each verdict now carries "<asset> · <task id>" and waits for the content lead's `signed_off_at` copy; no case checks the log row.

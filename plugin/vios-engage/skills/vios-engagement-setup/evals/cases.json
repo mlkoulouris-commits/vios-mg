@@ -103,7 +103,7 @@
         "existing_baseline": {
           "file": "data/baseline-2026-06.md",
           "status": "measured",
-          "date": "2026-06"
+          "date": "2026-06-02"
         },
         "signed_proposal": "Stage 1 full and Stage 2 added 2026-11-01",
         "user_says": "Shall we re-measure now that the practice work starts?"

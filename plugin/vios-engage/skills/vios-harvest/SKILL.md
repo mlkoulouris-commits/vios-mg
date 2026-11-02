@@ -32,7 +32,7 @@ Write the step's table into `[client]/archive/harvest-engagement.md` (steps 1–
 ## Read first
 
 - `../../references/parts-4-5-examples-and-production.md` § 5.4 (harvest protocol), § 5.5 (version control: major.minor, the three triggers, who may revise, the change log, the second-instance rule), § 4.3 (the criterion for a case).
-- `[client]/archive/harvest-stage-*.md` (the four stage harvests), `retrospective.md` if Stage 4 wrote one, `docs/dry-run-*.md` harvest entries, and the manuscript's current version from `docs/method.md` (M1). `python scripts/clients.py status <slug>` for what is still open.
+- `[client]/archive/harvest-stage-*.md` (the four stage harvests), `retrospective.md` if Stage 4 wrote one, `docs/dry-run-*.md` harvest entries, and the manuscript's current version from `docs/method.md` (M1). `python scripts/clients.py status <slug>` for what is still open; `[client]/README.md` › Sign-offs (the approver's pulse lines), read at step 4 beside the KPIs and at step 6 beside the practitioner's view.
 
 ## The five moves
 

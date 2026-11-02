@@ -37,6 +37,20 @@
       "expected_flag": "planned test, protected until 2026-11-20",
       "expected_action": "not paused even though cost per result is above target; note it; only disapproval or overspend ends it early",
       "rule": "Planned tests: don't pause before the end date"
+    },
+    {
+      "id": "ads-06-retargeting-frequency-and-exclusions",
+      "fixture": {"ad_set": "Warm retargeting", "audience_size": 1800, "window_7d": {"impressions": 6100, "clicks": 92, "frequency": 3.6, "results": 14}, "exclusions": ["staff"], "age_days": 21},
+      "expected_flag": "retargeting frequency over 3; exclusions missing (14-day visitors, converters, people who messaged a no)",
+      "expected_action": "propose a lower budget or a wider audience to bring 7-day frequency to 3 or under, and the three missing exclusions, for human approval; results n 14 shown as too small to call",
+      "rule": "Retargeting: 7-day frequency <= 3 by audience size vs budget; exclude 14-day visitors, converters, staff, and people who messaged a no"
+    },
+    {
+      "id": "ads-07-spend-concentration",
+      "fixture": {"ad_sets": {"Cold A": {"share_of_spend": 0.68, "cost_per_result": 9.5, "results": 41}, "Cold B": {"share_of_spend": 0.22, "cost_per_result": 6.2, "results": 33}, "Warm": {"share_of_spend": 0.10, "cost_per_result": 7.1, "results": 12}}},
+      "expected_flag": "concentration: Cold A at 68 % of spend without the best cost per result",
+      "expected_action": "propose a rebalance toward Cold B for human approval, with n beside each cost per result; Warm's 12 results are too small to call and are not part of the comparison",
+      "rule": "Concentration: one ad set over 60 % of spend without the best cost per result starves the others of learning"
     }
   ]
 }

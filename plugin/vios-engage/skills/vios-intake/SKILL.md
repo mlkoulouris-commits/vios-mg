@@ -15,7 +15,7 @@ The six moves at the start of an engagement, from the first conversation to the 
 2. **Scope** (move 2): stages in / out / part, briefs, partners, marketing loop, as a checklist; under it the founder's answer to *"what should be different in 90 days, in numbers?"* as up to four lines (measure · today's number or "to measure" · wanted). Ask: *"Is this the scope, and are these the numbers the founder named?"*
 3. **Starting set** (move 3): patterns, library entries, templates, closest prior case. Ask: *"Keep, add or drop any?"*
 4. **The intake record** (move 4): the record's lines and the open-facts rows as they will be written, approver named. Ask: *"Is this the record, with this approver?"*
-5. **Timeline** (move 5): the dates as one short table. Ask: *"Dates right? Set any 'to confirm' now, or leave for the founder."*
+5. **Timeline** (move 5): the dates as one short table; a "to confirm" the user does not set here stays for the founder. Ask: *"Dates right?"*
 6. **Confirm and begin** (move 6): what the founder has confirmed in writing, and where. Ask: *"Confirmed on the record, or does it wait for the proposal?"*
 
 ## Ask only when necessary; never invent

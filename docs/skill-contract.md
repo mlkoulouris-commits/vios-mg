@@ -22,8 +22,9 @@ Every Vios skill that talks to the user follows this. It changes how a skill *ta
 
 1. Write the deliverable file where the method says.
 2. Update `clients/<slug>/status.json`: the deliverable's `status` (`not started` → `draft` → `review` → `approved` → `done`), `file`, blockers added or removed, `next_action`, `updated`.
-3. Move the ClickUp task (id in `status.json` › `clickup`; lists and field ids in `setup/clickup.json`): draft while writing, **review** when it waits for the approver, **approved** on sign-off, **done** when delivered.
+3. Move the ClickUp task (id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`; lists and field ids in `setup/clickup.json`): draft while writing, **review** when it waits for the approver, **approved** on sign-off, **done** when delivered.
 4. At the step that finishes a client-facing deliverable: `python scripts/clients.py pdf <slug> <file.md> "<Client>-<Deliverable>-vN"` → `clients/<slug>/deliverables/`, and send the PDF to the user. The user forwards it; the practice never emails a client.
+5. **Pulse line.** At a sign-off (the proposal's signature, each stage's close) the skill that takes it asks the approver for one sentence, what worked and what to change, and writes it dated to `clients/<slug>/README.md` › Sign-offs; the harvest reads those lines beside the KPIs. Never drafted for the approver; not given is "not given".
 
 ## 4. The end line
 

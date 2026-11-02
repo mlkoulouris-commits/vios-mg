@@ -7,7 +7,7 @@ description: "Write any client-facing text in a Vios Marketing client's Brand Pe
 
 The Brand Persona is a character. This skill makes it speak the same way every time, on every channel, in every language, so guests recognise it before they read the logo. Hard lines: `vios-guardrails` 1–12.
 
-**Work in three steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a two-column table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. A single caption or reply is brief → draft → done; a batch (a week's captions, a day's replies) repeats step 2 per piece. Nothing is written to disk before step 3 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+**Work in three steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a two-column table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. A single caption or reply is brief → draft → done; a batch (a week's captions, a day's replies) repeats step 2 per piece. Each step writes its file and `status.json` as it goes; the ClickUp task only at step 3. Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
 
 ## Steps
 

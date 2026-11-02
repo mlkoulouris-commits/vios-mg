@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Vios client status helper. Reads clients/<slug>/status.json and open-facts.md; never writes ClickUp itself.
 
-  python scripts/clients.py status [slug]        the six-line status card (all clients if no slug)
+  python scripts/clients.py status [slug]        the status card, at most nine lines (all clients if no slug)
   python scripts/clients.py check [slug]         validate status.json against setup/status.schema.json (light, no jsonschema dependency)
   python scripts/clients.py facts <slug>         ClickUp task.create_many body for the open rows of open-facts.md (paste into the connector)
   python scripts/clients.py new <slug> "<Name>"  create clients/<slug>/ from templates/client/ with status.json filled in
@@ -67,11 +67,17 @@ def card(slug: str) -> str:
             for k in kpis[:4]
         ) + (f" +{len(kpis)-4} more" if len(kpis) > 4 else "")
     ) if kpis else "KPIs: none promised yet"
+    audit = (s["stages"].get("4 Training") or {}).get("audit")
+    audit_line = (
+        f"Training proof: certified {audit.get('certified') or '0 of ?'} · audit {audit.get('date') or 'date to confirm'} {audit.get('status') or 'planned'}"
+        + (f" {audit['score']}" if audit.get("score") else "")
+    ) if audit else None
     lines = [
         f"**{s['name']}** — {s['current_stage']} · approver: {s['approver']} · updated {s['updated']}",
         f"Proposal: {s['proposal']['status']}" + (f" (v{s['proposal']['version']})" if s['proposal'].get('version') else "") + f" · marketing loop: {s['marketing_loop']} · baseline: {baseline}",
         f"Stages: {stages}",
         kpi_line,
+        *([audit_line] if audit_line else []),
         f"Blocked by: " + ("; ".join(f"{b['what']} ({b['holds']})" for b in blockers[:3]) if blockers else "nothing") + (f" +{len(blockers)-3} more" if len(blockers) > 3 else ""),
         f"Open facts: {len(facts)}" + (f", {sum(1 for f in facts if f['due'] and f['due'] <= date.today().isoformat())} overdue" if facts else ""),
         f"Next: {s['next_action']['what']}  →  {s['next_action']['skill']}",

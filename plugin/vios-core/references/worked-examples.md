@@ -12,11 +12,11 @@ House reference (2026-11-02, quality plan item 5). The general skills describe h
 
 ## Engagement (intake, status, harvest)
 
-**E1 — The status card.** The `vios` front-door card example is the Stochna card as it stood on 2026-11-01: Stage 2 (journey map), approver to confirm, proposal not sent, two sign-offs waiting. The point: eight plain lines, no file paths, no fact numbers. Source: `clients/stochna/status.json`, `clients/stochna/open-facts.md`.
+**E1 — The status card.** The `vios` front-door card example is the Gradina (DEMO) card as `python scripts/clients.py status demo-gradina` printed it on 2026-11-02: intake done, proposal v2 not sent, baseline partial, two KPIs promised, three blockers. The point: at most nine plain lines, no file paths, no fact numbers; a demo client, so nothing in the example is a real venue's number. Source: `clients/demo-gradina/status.json`, `clients/demo-gradina/open-facts.md`.
 
 **E2 — The intake record.** The `vios-intake` example (a second counter-format gelato shop plus a B2B line; Stage 1 revision, Stages 2–3 for the new shop, Stage 4 onboarding; three unanswered rows) is the Atelier del Gelato intake of 2026-11-01. The point: scope against the four stages, pull the starting set from the pattern library, log what the founder could not answer. Source: `clients/atelier/README.md` › Intake record, `clients/atelier/open-facts.md`.
 
-**E3 — The harvest line.** The `vios-harvest` example (first use of the small-format page, counter collision held, "the signature can precede the peak", 1.3 → 1.4 minor) is the Atelier del Gelato blind test of 2026-11-01. The point: one engagement promotes nothing on its own; it holds, and the second engagement decides. Source: `docs/changelog-proposals.md` (1.3 → 1.4), `docs/dry-run-2026-11-01-one-gallery.md` § blind test, `clients/atelier/journey/blind-test-notes.md`.
+**E3 — The harvest line.** The `vios-harvest` example (first use of the small-format page, counter collision held, "the signature can precede the peak", 1.3 → 1.4 minor) is the Atelier del Gelato blind test of 2026-11-01. The point: one engagement promotes nothing on its own; it holds, and the second engagement decides. Source: `docs/changelog-proposals.md` (1.3 → 1.4), `docs/dry-run-2026-11-01-one-gallery.md` § blind test, `clients/atelier-2026-10/journey/blind-test-notes.md` (archived folder).
 
 ## Stage 1 — brand
 

@@ -20,6 +20,7 @@ Every item names the role, the skill, the tool and the proof that it happened.
 - Performance lead: `vios-ads-audit` runs by schedule; action list lands in ClickUp "Ads"; owner approves pauses and budget changes.
 - Content lead: next week's posts pass `vios-consistency-qa`; each gets a `qa-log.csv` row; approver fills `signed_off_at`; only then scheduled in Metricool.
 - Account manager: 15-minute client check-in with the Metricool weekly view.
+- Account manager, every second Friday during an engagement: a three-line note to the founder, what was done, what is next, what we need (the card turned into prose; nothing waits for a sign-off meeting to be heard).
 
 ## Monthly
 

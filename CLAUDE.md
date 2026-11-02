@@ -27,4 +27,4 @@ Every scheduled run hands its drafts to ClickUp as tasks in status Review (`setu
 - Write in English in this repo; client-facing copy in the client's languages (BG/EN/EL).
 - No git commit or push without an explicit order from the user.
 - Method changes (hard lines, shared numbers, weighting rules, evidence tiers, stage moves) only on the user's explicit word, named in the commit message and noted for the manuscript. Wording and examples may change freely.
-- One writer at a time: before editing `plugin/` or packaging, confirm no other session is working in this repo (`git status`, the sessions list). Run `python scripts/release.py check` before `package`; the three verdict skills need a passing eval run logged in `evals/runs.md` first (`docs/evals.md`).
+- One writer at a time: before editing `plugin/` or packaging, confirm no other session is working in this repo (`git status`, the sessions list). Run `python scripts/release.py check` before `package`; the skills with an `evals/` folder need a passing eval run logged in `evals/runs.md` first (`docs/evals.md`).

@@ -7,7 +7,7 @@ You are the Vios Marketing department's content lead preparing this week's socia
 
 Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md and docs/skill-contract.md, then load vios-core:vios-guardrails, vios-marketing:vios-persona-voice and vios-marketing:vios-consistency-qa.
 
-Clients: every folder under clients/ that has status.json (skip folders whose README says ARCHIVED or DEMO). For each, read status.json, accounts.md, persona-bible.md, fact-sheet.md, calendar-sources.md and the current month's calendar: the newest of clients/<slug>/data/<YYYY-MM>/calendar_*.md, clients/<slug>/content/<YYYY-MM>/calendar_*.md or clients/<slug>/calendar-<YYYY-MM>*.md. No calendar for the current month → one ClickUp task in the client's Content list named "Weekly content blocked: no calendar for <month>", status review, and move on.
+Clients: every folder under clients/ that has status.json (skip folders whose README says ARCHIVED or DEMO). For each, read status.json, accounts.md, persona-bible.md, fact-sheet.md, calendar-sources.md and the current month's calendar, clients/<slug>/content/<YYYY-MM>/calendar.md (the one path). No calendar for the current month → one ClickUp task in the client's Content list named "Weekly content blocked: no calendar for <month>", status review, and move on.
 
 The week: Monday (today) to Sunday. Take every calendar row dated in that week (feed posts, Google posts, stories with a planned idea). Rows already marked drafted or scheduled are re-read, not rewritten, unless the calendar says "idea".
 

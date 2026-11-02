@@ -7,7 +7,7 @@ description: "Build a Vios Marketing Brand Persona (Persona Bible, character she
 
 Turns a client's brand foundation into a Brand Persona: the brand as a character that can appear on camera, speak and post every day without drifting. Hard lines: `vios-guardrails` 1–12. Output lands in `[client]/persona-bible.md` per the guardrails client-file convention. The brand book's Part 5 (How we sound) is assembled from this file, so every Part 5 element is built here, not by the assembler.
 
-**Work in seven steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a short table counts as its rows); no open-fact numbers, section references or file paths on screen. The method's own one-question-at-a-time inside a step stays as it is. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before step 7 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+**Work in seven steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a short table counts as its rows); no open-fact numbers, section references or file paths on screen. The method's own one-question-at-a-time inside a step stays as it is. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Each step writes its file and `status.json` as it goes; the client-facing render (the PDF) only at step 7. Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
 
 ## Steps
 
@@ -21,7 +21,7 @@ Turns a client's brand foundation into a Brand Persona: the brand as a character
 
 **Ask only when necessary; never invent.** The client's choices (archetype pair, format, traits, never-list), the approver, the consent signatories and the KPI baselines are never drafted by the practice: when the client is not in the room the step records the recommendation and writes *to confirm* with the question, a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and, when it blocks the next action or the stage from closing, a blocker in `status.json`. Alcohol yes/no, the address register, the name and the signature phrases come only from the files or the client; a baseline not on file is "open". No approver on file is a blocker on the front page, never a placeholder name. A gap that stops a step and that the user can answer now is one question; any other gap is a row and the step goes on.
 
-**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Persona Bible": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> persona-bible.md "<Client>-Persona-Bible-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
+**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Persona Bible": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> persona-bible.md "<Client>-Persona-Bible-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
 
 ## Principles
 
@@ -73,7 +73,7 @@ Voice stays fixed; tone follows the person addressed. One row each, with an exam
 
 These are what the brand book's Part 5 carries and what a writer reaches for at speed, so they are built here with the client, not improvised by the assembler:
 
-- **Tone sliders**: for each of the eight expression dimensions (from `diagnosis.md`), a 1–5 position with one line on what a notch lower and higher would sound like. Voice stays fixed; the sliders show where this brand sits.
+- **Tone sliders**: the five scales of `../../references/stage-1-brand-strategy.md` › Instrument 6, Layer 3 (home position and permitted range on each), with one line on what a notch lower and higher would sound like. Voice stays fixed; the eight expression dimensions belong to the map's Move 4, not here.
 - **Word rules (lexicon)**: "it is" adjectives, "it has" nouns, the verbs the brand uses; house terms (what we call the room, the dish, the guest); never-words. 5–10 entries per list, EN | BG.
 - **Hard moments**: the 4–6 situations where the voice is most likely to slip (full house, a no-show, a price question, a bad review, an allergy question, closing time), each with the line the persona says and the line it never says. Escalation topics (guardrails 11) are handed over, not scripted.
 - **The ten-line checklist**: ten yes/no lines a writer runs on any draft in under a minute, drawn from the is/is-not pairs, the never-list and the word rules. `vios-persona-voice` and `vios-consistency-qa` use it as the fast pre-check.
@@ -120,7 +120,7 @@ One doc (Docs artifact when available), saved as `[client]/persona-bible.md`. Fr
 2. Story & point of view — EN | BG (no invented biography for AI)
 3. Objective and KPIs
 4. Traits: is / is-not table, never-trait, never-list
-5. Voice & tone rules: tone sliders per expression dimension, 5 do/don't lines, word rules (lexicon, house terms, never-words), hard moments, the ten-line checklist — EN | BG
+5. Voice & tone rules: tone sliders on the five scales, 5 do/don't lines, word rules (lexicon, house terms, never-words), hard moments, the ten-line checklist — EN | BG
 6. Tone by guest mood — EN | BG
 7. Signature phrases and on-camera habits — EN | BG
 8. Behaviour matrix and journey placement (speaks / present / silent per touchpoint)

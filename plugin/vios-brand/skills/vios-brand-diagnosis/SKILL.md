@@ -14,7 +14,7 @@ Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality 
 ## Steps
 
 1. **Inputs and the real business** (Inputs, Step 1): what is on file of the five inputs, and the numbers page as its eight rows (size, mix, daypart, cost lines, quadrant, bookings, to confirm, reading), with the rows that read "to confirm" and who holds them. Ask: *"Anything to add to the inputs, or a number you can paste now, before I read them as the real business?"*
-2. **Owner interview** (Step 2): the ten questions, answered by the owner only. Show which answers are on file and which are open. Ask: *"Can you answer the open ones now, or do they go to the owner?"*
+2. **Owner interview** (Step 2): the eleven questions, answered by the owner only. Show which answers are on file and which are open. Ask: *"Can you answer the open ones now, or do they go to the owner?"*
 3. **Meaning check** (Step 3): purpose, vision, mission, values as drafted or confirmed; the gate verdict. Ask: *"Does the purpose read as the owner's own, or does it need building?"*
 4. **Audience** (Step 4): first the guest evidence on file (review themes with counts, interview themes, the mystery visit's three things; what is missing), then the persona, archetype mix, the Brand Affinity Audit patterns, a second audience where one exists. **Gate:** no review mining on file → the step stops here with a blocker; the persona is not drafted from the owner's picture alone. Ask: *"Is this the guest the reviews and the room show?"*
 5. **Competitors** (Step 5): the scored table, IDEAS and OPPORTUNITIES. Ask: *"Any competitor missing or misjudged?"*
@@ -23,7 +23,7 @@ Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality 
 
 **Ask only when necessary; never invent.** The owner's interview answers (step 2), the purpose in the owner's words and the verdict's sign-off are never drafted by the practice: an open one is written *to confirm* with the question, a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and, when it blocks the next action or the stage from closing, a blocker in `status.json`. POS numbers, covers, spend, review counts and competitor names come only from the files or the user; no POS export means the numbers page says so, not an estimate. A gap that stops a step and that the user can answer now is one question; any other gap is a row and the step goes on.
 
-**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Diagnosis": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> diagnosis.md "<Client>-Diagnosis-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
+**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Diagnosis": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> diagnosis.md "<Client>-Diagnosis-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
 
 ## Principles
 
@@ -37,28 +37,33 @@ Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality 
 ## Inputs to gather first
 
 1. Existing brand materials (brand book, menu, website, socials)
-2. 12 months of POS data if available (Barsy export): covers, average spend, peak days, top sellers
+2. 12 months of POS data if available (Memento, otherwise the POS export): covers, average spend, peak days, top sellers
 3. Guest evidence, three pieces (templates in `templates/client/data/`, filled files in `[client]/data/`): **review mining** (`review-mining.md`, the last 200 reviews coded into praise and complaint themes with counts; required), **guest interviews** (`guest-interviews.md`, 8–10 fixed-question conversations, anonymised summary; consents in Drive), **mystery visit** (`mystery-visit-YYYY-MM-DD.md`, one unannounced scored visit). A venue not yet open: review mining of the two closest comparable venues, named as such, and no interviews or visit; say so.
-4. An owner interview (the 10 questions below)
+4. An owner interview (the eleven questions below)
 5. Competitor list: 10 minimum, 20 ideal, found by searching the client's own description + location
 
 ## Step 1 — The real business (facts before feelings)
 
-From POS and observation: what sells, when, to whom, at what spend. Where the money and the empty seats are. One page, numbers only: **the numbers page**, `[client]/data/numbers-page.md` from `templates/client/data/numbers-page.md`, definitions and the Memento page (or export) for each row in `plugin/vios-core/references/numbers-page.md`. Fixed rows, in this order: size and shape (revenue, covers, average check, items per cover, 12 months by month) · revenue mix by category · covers by daypart and weekday · cost lines (labour %, COGS %, prime cost %, loaded labour minute rate) · menu engineering (top 10 by volume, top 10 by margin, the quadrant with the three Stars and three Dogs named) · bookings · to confirm · what the numbers say (five lines, read back, never recommended). A client on Memento: fill from the pages the reference names, one location, exports saved to `data/YYYY-MM/`; otherwise from the POS export and the accountant, each row labelled with its basis. Recipes not costed → the margin rows and the quadrant read "to confirm" and a row goes to `open-facts.md`; the page still ships. The page's last section is the first finding of the diagnosis: what the venue actually sells, when and at what margin, set beside what the owner says it is in step 2.
+From POS and observation: what sells, when, to whom, at what spend. Where the money and the empty seats are. One page, numbers only: **the numbers page**, `[client]/data/numbers-page.md` from `templates/client/data/numbers-page.md`, definitions and the Memento page (or export) for each row in `plugin/vios-core/references/numbers-page.md`. Fixed rows, in this order: size and shape (revenue, covers, average check, items per cover: 12-month total or average, best and worst month) · revenue mix by category · covers by daypart and weekday · cost lines (labour %, COGS %, prime cost %, loaded labour minute rate) · menu engineering (top 10 by volume, top 10 by margin, the quadrant with the three Stars and three Dogs named) · bookings · to confirm · what the numbers say (five lines, read back, never recommended).
+
+A client on Memento: fill from the pages the reference names, one location, exports saved to `data/YYYY-MM/`; otherwise from the POS export and the accountant, each row labelled with its basis.
+
+Recipes not costed → the margin rows and the quadrant read "to confirm" and a row goes to `open-facts.md`; the page still ships. The page's last section is the first finding of the diagnosis: what the venue actually sells, when and at what margin, set beside what the owner says it is in step 2.
 
 ## Step 2 — Owner interview: brand voice excavation
 
-Ask one at a time (from the Brand Personality Questionnaire):
-1. What do you love and hate about this business?
-2. What value do you give your guests, beyond the plate?
-3. If you could change one thing about this industry, what?
-4. Why is this market great?
-5. Your view on social media?
-6. Aside from money, why do you do this? (seeds W1 Purpose)
-7. How do you do business, in a sentence?
-8. What do your guests need protecting from?
-9. What matters to you in the world right now?
-10. What are you passionate about?
+Ask one at a time, numbered as the worksheet (Brand Personality Questionnaire, `references/worksheets.md`):
+1. What do you love about this business, and why?
+2. What do you dislike or hate, and why?
+3. Where do you bring the most value to your guests, beyond the plate?
+4. If you could change one thing about this industry, what?
+5. Why is this market great?
+6. What has social media brought, good and bad?
+7. Aside from money, why do you do this? (seeds W1 Purpose)
+8. How do you do business, in a sentence?
+9. What do your guests need protecting from?
+10. What matters to you in the world right now?
+11. What are you passionate about?
 
 ## Step 3 — Meaning check (W1–W4)
 
@@ -71,7 +76,9 @@ Gate: if purpose is empty or performed, stop here and report it.
 
 ## Step 4 — Audience (W5)
 
-**Guest evidence first.** Before any persona line is written, show what the guests themselves put on file: the top five praise and top five complaint themes with counts and n (`data/review-mining.md`); the top answers per interview question with counts (`data/guest-interviews.md`); the mystery visit's three things (`data/mystery-visit-*.md`); and the three strongest guest quotes, one sentence each, platform or initials and month, no names. Mark where the guests contradict the owner's picture from step 2; the contradiction goes into the diagnosis as a finding, not smoothed over. **Gate:** no review mining on file → stop at this step: a blocker in `status.json` ("review mining not done", holder the account manager), a row in `open-facts.md`, the ClickUp task stays draft, and the persona is not written; a persona built from the owner alone is the thing this gate exists to prevent. Interviews or the visit missing → the persona is marked **"review-based; interviews / visit pending"** and the two go to `open-facts.md`. The limits of asking (section 3.1) apply: what guests remember is evidence, what they say they would do is not.
+**Guest evidence first.** Before any persona line is written, show what the guests themselves put on file: the top five praise and top five complaint themes with counts and n (`data/review-mining.md`); the top answers per interview question with counts (`data/guest-interviews.md`); the mystery visit's three things (`data/mystery-visit-*.md`); and the three strongest guest quotes, one sentence each, platform or initials and month, no names. Mark where the guests contradict the owner's picture from step 2; the contradiction goes into the diagnosis as a finding, not smoothed over.
+
+**Gate:** no review mining on file → stop at this step: a blocker in `status.json` ("review mining not done", holder the account manager), a row in `open-facts.md`, the ClickUp task stays draft, and the persona is not written; a persona built from the owner alone is the thing this gate exists to prevent. Interviews or the visit missing → the persona is marked **"review-based; interviews / visit pending"** and the two go to `open-facts.md`. The limits of asking (section 3.1) apply: what guests remember is evidence, what they say they would do is not.
 
 Build the primary persona from 10–20 competitor profiles, the guest evidence above and the owner interview: demographics, psychographics, emotional before/after, pain, needs, beliefs, a quote (a real one from the evidence, attributed as above, never composed). Assign archetype(s), 70/30 rule, max two.
 

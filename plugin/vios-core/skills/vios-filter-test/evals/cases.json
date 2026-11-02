@@ -1,26 +1,20 @@
 {
   "skill": "vios-filter-test",
-  "how": "Two parts. Part A: given the brand character below, derive the test; the derived question must name the same trait (wording may differ). Part B: apply the stated test to each line; compare pass/fail. Record the run in runs.md.",
-  "part_a_derive": {
-    "character": "The Quiet Refuser: restraint, presence, considered confidence. Refuses the hospitality default of effusive welcome. Vocabulary: plain, quiet, real.",
-    "expected_trait": "refusal of effusion",
-    "accepted_questions": ["Is this effusive?", "Is this gushing?", "Is this performed warmth?"]
-  },
-  "part_b_apply": {
-    "test": "Is this effusive? (markers: exclamation marks, self-praise of the venue, performed warmth)",
-    "lines": [
-      {"id": "ft-01", "line": "Welcome — sit anywhere.", "expected": "pass"},
-      {"id": "ft-02", "line": "Welcome to our wonderful restaurant! We're so excited to have you here this evening!!", "expected": "fail"},
-      {"id": "ft-03", "line": "Lamb shoulder, slow-cooked, served with the broth.", "expected": "pass"},
-      {"id": "ft-04", "line": "Our master chef's signature lamb, lovingly hand-prepared over twelve hours.", "expected": "fail"},
-      {"id": "ft-05", "line": "Tomorrow's lamb is delayed by a day. We'll run the duck through Friday lunch.", "expected": "pass"},
-      {"id": "ft-06", "line": "Hi team, sorry to bother you but unfortunately we have a small issue with the lamb tomorrow!!", "expected": "fail"},
-      {"id": "ft-07", "line": "That's not yours — I'll fix it.", "expected": "pass"},
-      {"id": "ft-08", "line": "Oh my goodness I am SO sorry, let me make this right for you right away, anything you need!", "expected": "fail"}
-    ]
-  },
-  "scope_check": {
-    "line": "Happiness is an attitude.",
-    "expected": "out of scope: a tagline is judged by the brand book, not the filter test; the skill must say so rather than fail it"
-  }
+  "how": "A fresh session loads the skill. Case ft-00 (derive): given the character below, derive the test; the derived question must name the same trait (wording may differ). Cases ft-01 to ft-08 (apply): apply the stated test to the line; compare pass/fail. ft-09 (scope) and ft-10, ft-11 (failure modes at review) check what the skill says, not a pass/fail on a line. Record the run in runs.md.",
+  "character": "The Quiet Refuser: restraint, presence, considered confidence. Refuses the hospitality default of effusive welcome. Vocabulary: plain, quiet, real.",
+  "test": "Is this effusive? (markers: exclamation marks, self-praise of the venue, performed warmth)",
+  "cases": [
+    {"id": "ft-00-derive", "part": "derive", "input": "the character above", "expected_trait": "refusal of effusion", "accepted_questions": ["Is this effusive?", "Is this gushing?", "Is this performed warmth?"], "rule": "Derive: one dominant trait, usually a refusal, phrased in the brand's own vocabulary with markers"},
+    {"id": "ft-01", "part": "apply", "line": "Welcome — sit anywhere.", "expected": "pass"},
+    {"id": "ft-02", "part": "apply", "line": "Welcome to our wonderful restaurant! We're so excited to have you here this evening!!", "expected": "fail"},
+    {"id": "ft-03", "part": "apply", "line": "Lamb shoulder, slow-cooked, served with the broth.", "expected": "pass"},
+    {"id": "ft-04", "part": "apply", "line": "Our master chef's signature lamb, lovingly hand-prepared over twelve hours.", "expected": "fail"},
+    {"id": "ft-05", "part": "apply", "line": "Tomorrow's lamb is delayed by a day. We'll run the duck through Friday lunch.", "expected": "pass"},
+    {"id": "ft-06", "part": "apply", "line": "Hi team, sorry to bother you but unfortunately we have a small issue with the lamb tomorrow!!", "expected": "fail"},
+    {"id": "ft-07", "part": "apply", "line": "That's not yours — I'll fix it.", "expected": "pass"},
+    {"id": "ft-08", "part": "apply", "line": "Oh my goodness I am SO sorry, let me make this right for you right away, anything you need!", "expected": "fail"},
+    {"id": "ft-09-scope", "part": "scope", "line": "Happiness is an attitude.", "expected": "out of scope: a tagline is judged by the brand book, not the filter test; the skill must say so rather than fail it", "rule": "Scope: the name, the tagline and the lockup are judged by vios-name-and-tagline, not the filter test"},
+    {"id": "ft-10-too-lenient", "part": "review", "proposed_question": "Is this friendly?", "expected": "rejected as too lenient: friendliness is a trait the whole category shares, so the question passes competitor copy; the skill names the failure mode and returns to the dominant trait (refusal of effusion)", "fail_if": ["the question is accepted", "the failure mode is not named"], "rule": "Failure mode: too lenient (names a trait the category shares)"},
+    {"id": "ft-11-too-strict", "part": "review", "proposed_question": "Does this contain an exclamation mark?", "expected": "rejected as too strict: it tests a mark, not the trait, so 'Our master chef's signature lamb, lovingly hand-prepared' would pass; the skill names the failure mode and keeps the exclamation mark as one marker under the trait question", "fail_if": ["the question is accepted", "ft-04 would pass under it and the skill does not say so"], "rule": "Failure mode: too strict (tests a word, not the trait)"}
+  ]
 }

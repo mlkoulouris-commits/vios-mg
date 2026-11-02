@@ -14,19 +14,19 @@ One screen, one question. The user should never need to remember which skill com
 - `setup/clickup.json` › the client's Deliverables and Open facts list ids; `clickup_filter_tasks` on the Deliverables list for anything in **review** (awaiting the user's sign-off).
 - `vios-core:vios-guardrails` stays loaded for any client work that follows.
 
-## The card (at most eight lines, plain words, no file paths, no fact numbers)
+## The card (at most nine lines, plain words, no file paths, no fact numbers)
 
 ```
-<Client> — Stage 2 (journey map) · approver: to confirm
-Proposal: not sent · marketing loop: in
-Stages: 1 revision/in progress · 2 in/review · 3 in/not started · 4 to confirm
-Awaiting your sign-off: Journey map, Reasoning Note
-Blocked by: two observed services (account manager); approver name (founder)
-Open facts: 32, 4 overdue
-Next: send the proposal
+**Gradina (DEMO)** — 0 intake · approver: Nadia Petrova (founder, DEMO) · updated 2026-11-02
+Proposal: not sent (v2) · marketing loop: in · baseline: partial 2026-11-02, 4 to confirm
+Stages: Brand in/not started · Map in/not started · Design in/not started · Training in/not started
+KPIs: covers per Friday and Saturday evening, garden measured in week 1 after opening → 80 · tables that book their next visit before leaving measured in week 1 after opening → set at baseline (practic
+Blocked by: Budget and target spend per head (founder); POS system and a covers-by-day export (founder); Booking system that records a rebooking made on site (founder) +1 more
+Open facts: 10, 0 overdue
+Next: Send the v2 PDF (with the KPI table) to Nadia; on signature run vios-engagement-setup steps 1-6, then re-measure the baseline in May 2027  →  vios-engage:vios-proposal
 ```
 
-The card above is a real one with the name removed (`plugin/vios-core/references/worked-examples.md` › E1).
+The card above is `python scripts/clients.py status demo-gradina` as run on 2026-11-02 (the DEMO client; `plugin/vios-core/references/worked-examples.md` › E1); a "Training proof" line appears when Stage 4 has an audit block, and "Awaiting your sign-off" comes from the ClickUp review filter.
 
 Then **one question** with at most four choices, the recommended one first:
 
@@ -44,7 +44,7 @@ Then **one question** with at most four choices, the recommended one first:
 | Marketing loop | `vios-marketing:*` by task (calendar, voice, QA, ads, report) |
 | Close | `vios-engage:vios-harvest` |
 | Chase the open facts | list the open rows due soonest, five at a time, each as "ask <holder>: <fact>"; the user says what was answered; write the answer and date into `open-facts.md`, close the ClickUp task, drop the blocker from `status.json`. |
-| Sign off what's waiting | show each **review** task as one line; on the user's yes set it to **approved** in ClickUp and in `status.json`; on changes, reopen the owning skill at its last step. |
+| Sign off what's waiting | show each **review** task as one line; on the user's yes set it to **approved** in ClickUp and in `status.json`, and for a stage or proposal sign-off write the approver's pulse line (one sentence: what worked, what to change) dated into `README.md` › Sign-offs; on changes, reopen the owning skill at its last step. |
 
 Every routed skill follows the contract in `docs/operating-system.md`: short screens, one question per step, never guess, write the file then update `status.json` and move the ClickUp task, client deliverables also as PDF.
 

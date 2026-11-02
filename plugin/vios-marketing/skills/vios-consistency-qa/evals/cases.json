@@ -9,7 +9,9 @@
     "register": "BG ти on social, Вие in booking messages",
     "fact_sheet": {"hours": "Tue-Sun 18:00-24:00", "menu_change": "winter menu from 14 Nov", "allergen_policy": "ask the kitchen; no written allergen matrix yet", "alcohol": "yes"},
     "ai_persona": {"exists": true, "name": "Nia", "bio_line_live": true, "open_corrections": 0, "serious_errors_this_month": 0},
-    "consents_on_file": ["staff release: Petar, 2026-09-01 to 2027-09-01"]
+    "consents_on_file": ["staff release: Petar, 2026-09-01 to 2027-09-01"],
+    "core_messages": ["The table is the centre", "Made here", "Plain, not performed"],
+    "character_sheet": "Nia: dark hair tied back, the brand's green apron, anchor detail a brass pin; settings: the real room and the street"
   },
   "cases": [
     {
@@ -53,6 +55,49 @@
       "expected_verdict": "HOLD",
       "expected_failed_checks": ["Face & voice (video)"],
       "note": "Nothing blocks; the face check is unverified until stills or the cut exist."
+    },
+    {
+      "id": "qa-07-character-lock",
+      "asset": "Persona still for a feed post: Nia with a different hairstyle and a red jacket; the character sheet locks dark hair tied back and the brand's green apron; setting is the real room.",
+      "expected_verdict": "BLOCK",
+      "expected_failed_checks": ["Character lock"],
+      "note": "Face, wardrobe, anchor detail and setting must match the character sheet; a mismatch is regenerated, not fixed in copy."
+    },
+    {
+      "id": "qa-08-fact-against-sheet",
+      "asset": "Google Business post: 'Open every day from 17:00, winter menu from 10 November.' Fact sheet: Tue-Sun 18:00-24:00, winter menu from 14 Nov.",
+      "expected_verdict": "BLOCK",
+      "expected_failed_checks": ["Facts"],
+      "note": "Two facts contradict the fact sheet; a fact error in a public post is block-level."
+    },
+    {
+      "id": "qa-09-ugc-without-permission",
+      "asset": "Instagram story: repost of a guest's photo of the room with the guest's face visible, caption 'Thank you for this one'. consents/ holds only the staff release for Petar; no UGC permission for this guest.",
+      "expected_verdict": "BLOCK",
+      "expected_failed_checks": ["Consent & rights"],
+      "note": "UGC needs written permission in consents/ (guardrails 2 and 7)."
+    },
+    {
+      "id": "qa-10-platform-fit",
+      "asset": "TikTok clip delivered as a 16:9 landscape file, 95 seconds, caption with 14 hashtags and the hook card inside the bottom safe zone; copy itself is clean and on-brand.",
+      "expected_verdict": "FIX",
+      "expected_failed_checks": ["Platform fit"],
+      "note": "Ratio, length, hashtag count and safe zones are fix-level; the corrected spec is supplied."
+    },
+    {
+      "id": "qa-11-persona-error-history",
+      "context_override": {"ai_persona": {"exists": true, "name": "Nia", "bio_line_live": true, "open_corrections": 1, "serious_errors_this_month": 1}},
+      "asset": "Persona feed post, label from frame 1, #AIcreated in caption, platform label noted, facts match the sheet; one correction for Nia is still open from last week.",
+      "expected_verdict": "HOLD",
+      "expected_failed_checks": ["Persona error history"],
+      "note": "An open correction holds persona content until the approver closes it (guardrails 6 error rule); nothing blocks."
+    },
+    {
+      "id": "qa-12-message-anchor",
+      "asset": "Instagram caption: 'We are the best kitchen on Shipka street and we know it. Come and see what we can do.' Anchor named: 'The table is the centre'. Hours and street match the fact sheet; no pressure device.",
+      "expected_verdict": "FIX",
+      "expected_failed_checks": ["Message anchor", "Persona voice"],
+      "note": "The brand is the hero and the copy contradicts the plain / not hyped pair; the named anchor is not reinforced. Rewrite with the guest as hero around the table."
     }
   ]
 }

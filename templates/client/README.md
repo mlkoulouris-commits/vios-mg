@@ -1,9 +1,20 @@
-# Client folder template
+# <Client> — client workspace
 
-Copy this folder to `clients/<slug>/`. Files follow the `vios-guardrails` client file convention.
+Files follow the `vios-guardrails` client file convention. `consents/`, `data/` and media in `character-sheet/` are gitignored (Drive, linked from `accounts.md`); `content/YYYY-MM/` holds drafts, the month's `calendar.md` and QA verdicts (tracked); `qa-log.csv` is one row per QA attempt, scheduling requires `signed_off_at`.
 
-- `consents/`, `data/` and media in `character-sheet/` are gitignored. Keep them in the client's Google Drive folder and link it from `accounts.md`.
-- `data/YYYY-MM/` holds raw pulls named `<source>_<pulled-at>.csv`.
-- `qa-log.csv`: one row per QA attempt. Scheduling requires `signed_off_at`.
+## Intake record (<YYYY-MM-DD>, `vios-engage:vios-intake`)
 
-- `content/YYYY-MM/` holds drafts and QA verdicts (tracked); `data/YYYY-MM/` holds raw pulls (gitignored).
+### Move 1 — The conversation
+### Move 2 — Scope (and the 90-day numbers)
+### Move 3 — Starting set
+### Move 4 — Workspace
+### Move 5 — Timeline
+### Move 6 — Confirmed
+
+## Reviews on the calendar
+
+## Keys
+
+## Sign-offs
+
+One dated line per sign-off (proposal, Stages 1–4): approver · what worked · what to change, in their words.

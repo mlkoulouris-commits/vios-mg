@@ -7,7 +7,7 @@ Revenue basis: <net / gross> of VAT · currency EUR (pre-2026 BGN converted at 1
 
 ## 1. Venue (POS)
 
-Source: <Memento P&L / Barsy export / client POS export>, pulled <date>, file `data/<YYYY-MM>/<file>`.
+Source: <Memento P&L / POS export>, pulled <date>, file `data/<YYYY-MM>/<file>`. When `data/numbers-page.md` exists, these rows are its trailing 3 months and the numbers page wins on a disagreement.
 
 | Measure | 3-mo total or avg | Same period last year | n | Note |
 | --- | --- | --- | --- | --- |
@@ -41,8 +41,8 @@ Source: Google Business Profile, TripAdvisor, Facebook; pulled <date>.
 | TripAdvisor rating · review count | | | |
 | Reviews in the last 90 days (velocity) | | | |
 | Share answered · median response time | | | |
-| Top 5 praise themes (count each) | | | from review mining when on file |
-| Top 5 complaint themes (count each) | | | |
+| Top 5 praise themes (count each) | | | from review mining when on file; otherwise count and rating only (filled at diagnosis step 4; does not make the baseline partial) |
+| Top 5 complaint themes (count each) | | | same |
 
 ## 4. Social and local
 

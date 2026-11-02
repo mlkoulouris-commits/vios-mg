@@ -7,7 +7,7 @@ description: "Write hook-first short-form video scripts (Reels, TikTok, Shorts, 
 
 A script is a sequence of moments, not a list of features. This skill writes the first two seconds first, protects the peak and the ending, and hands production an exact plan the persona can perform without drifting. Hard lines: `vios-guardrails` 1–12.
 
-**Work in five steps. Stop after each and ask one question.** Each step shows at most ten plain lines (the script table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before step 5 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+**Work in five steps. Stop after each and ask one question.** Each step shows at most ten plain lines (the script table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Each step writes its file and `status.json` as it goes; the ClickUp task only at step 5. Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
 
 ## Steps
 

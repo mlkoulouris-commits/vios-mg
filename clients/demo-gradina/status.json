@@ -5,12 +5,41 @@
   "approver": "Nadia Petrova (founder, DEMO)",
   "account_manager": "Menelaos Koulouris",
   "proposal": {
-    "version": 1,
+    "version": 2,
     "status": "not sent",
-    "doc": "proposal-v1.md",
-    "pdf": "deliverables/Gradina-DEMO-What-you-get-v1.pdf"
+    "doc": "proposal-v2.md",
+    "pdf": "deliverables/Gradina-DEMO-What-you-get-v2.pdf"
   },
   "marketing_loop": "in",
+  "baseline": {
+    "status": "partial",
+    "date": "2026-11-02",
+    "file": "clients/demo-gradina/data/baseline-2026-11.md",
+    "missing": [
+      "1 Venue: covers, revenue, average check, items per cover, daypart, category mix, labour %, COGS % (no trading; POS not chosen, open fact 6)",
+      "2 Bookings: per month, by source, no-show, party size (no trading; booking system not chosen, open fact 7)",
+      "3 Reviews: Google, TripAdvisor, velocity, answered, themes (no profile or listing, open fact 9)",
+      "4 Social: Instagram, Facebook, TikTok, Google Business (no accounts, open fact 9)"
+    ]
+  },
+  "kpis": [
+    {
+      "name": "covers per Friday and Saturday evening, garden",
+      "baseline": "measured in week 1 after opening",
+      "target": 80,
+      "due": "2027-07-14",
+      "how_measured": "POS covers-by-day export, monthly; n = evenings in the month",
+      "attribution": "contribution"
+    },
+    {
+      "name": "tables that book their next visit before leaving",
+      "baseline": "measured in week 1 after opening",
+      "target": "set at baseline (practice proposes one step after May 2027, labelled as ours)",
+      "due": "2027-07-14",
+      "how_measured": "booking system, bookings flagged 'made on site', monthly; n = tables served",
+      "attribution": "contribution"
+    }
+  ],
   "current_stage": "0 intake",
   "stages": {
     "1 Brand": {
@@ -40,11 +69,29 @@
       "holds": "founder",
       "open_fact": 5,
       "blocks": "proposal"
+    },
+    {
+      "what": "POS system and a covers-by-day export",
+      "holds": "founder",
+      "open_fact": 6,
+      "blocks": "KPI 1 measurement; baseline venue rows"
+    },
+    {
+      "what": "Booking system that records a rebooking made on site",
+      "holds": "founder",
+      "open_fact": 7,
+      "blocks": "KPI 2 measurement; baseline bookings rows"
+    },
+    {
+      "what": "Google Business Profile and social accounts",
+      "holds": "founder",
+      "open_fact": 9,
+      "blocks": "baseline reviews and social rows; marketing loop"
     }
   ],
   "next_action": {
     "skill": "vios-engage:vios-proposal",
-    "what": "Send the proposal PDF to Nadia; on signature run vios-engagement-setup"
+    "what": "Send the v2 PDF (with the KPI table) to Nadia; on signature run vios-engagement-setup steps 1-6, then re-measure the baseline in May 2027"
   },
   "updated": "2026-11-02"
 }

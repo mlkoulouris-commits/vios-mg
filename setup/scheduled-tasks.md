@@ -5,7 +5,7 @@ Claude scheduled tasks created in the personal account on 2026-10-29. They run w
 | taskId | Schedule (local) | Skill | Writes to | Needs |
 | --- | --- | --- | --- | --- |
 | `vios-daily-engagement-triage` | daily 10:00 | persona-voice, guardrails 11 | each client's Engagement list | `instagram` plugin (enabled); Metricool brand in accounts.md |
-| `vios-weekly-content` | Mon 09:00 | persona-voice, consistency-qa | each client's Content list; `content/YYYY-MM/week-<n>_*.md` + pack PDF in `deliverables/` | a calendar for the month; persona bible filled; posting by hand until the Metricool brand exists |
+| `vios-weekly-content` | Mon 09:00 | persona-voice, consistency-qa, scripts/creative.py (text cards → PNG + Express) | each client's Content list; `content/YYYY-MM/week-<n>_*.md` + pack PDF in `deliverables/` | a calendar for the month; persona bible filled; posting by hand until the Metricool brand exists |
 | `vios-weekly-ads-audit` | Mon 08:00 | ads-audit | each client's Ads list; `data/YYYY-MM/ads-audit_*.md` | Windsor.ai plugin (public Ad Library fallback works without) |
 | `vios-monthly-content-calendar` | 20th 09:00 | content-calendar | `data/YYYY-MM/calendar_*.md`; one ClickUp task per post | diagnosis + persona bible filled; calendar-sources dated |
 | `vios-monthly-client-report` | 2nd 09:00 | monthly-report | Claude Doc; `data/YYYY-MM/*_pulled-*`; ClickUp review task | Metricool connected; bookings-by-source pasted from Memento |

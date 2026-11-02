@@ -1,0 +1,66 @@
+{
+  "skill": "vios-journey-map",
+  "how": "A fresh session loads the skill, treats each case's fixture as the whole client file for the placeholder venue Gradina (never a real client's data), runs only the step the case names (step 3, Moves 2 and 2b), and returns what the step shows on screen, what it writes (journey/observation.md or the provisional note, the cover line, open-facts.md rows, status.json blockers) and what it refuses. Compare with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "account_manager": "A.",
+    "brand_book": "on file, edition 1.0, with Brand Role and Connection statement",
+    "inventory": "archive/journey-inventory.md on file: 28 moments M01–M28 across six phases"
+  },
+  "cases": [
+    {
+      "id": "jm-01-weights-before-observation",
+      "rule": "Move 2b: no weight is assigned before observation; weights issued without it are 'provisional' and the cover says so",
+      "step": 3,
+      "fixture": {
+        "observation_on_file": "none: no mystery visit, no shadowed service, no review read",
+        "venue_trades": true,
+        "user_says": "We know this room, just weight the moments from the brand book and move on."
+      },
+      "expected": "The step does not write journey/observation.md. It writes the provisional note: the map's cover carries 'provisional, unobserved', every HIGH is marked brand-led, and the re-weighting date is anchored to the observation ('observation + 14 days'). The two shadowed services become the first row of open-facts.md (holder A., the account manager) and the mystery visit a second row. The step asks once whether the user issues provisional or waits; it does not refuse to go on.",
+      "fail_if": [
+        "a weight table without 'provisional' on the cover",
+        "observation.md written from the brand book",
+        "no open-facts row for the shadowed services",
+        "the step blocks the stage until the observation exists"
+      ]
+    },
+    {
+      "id": "jm-02-mystery-visit-first",
+      "rule": "Move 2b (0): the mystery visit from the diagnosis is the first observation, copied in with its timeline mapped to the moment codes; a visit older than ninety days gets a second visit",
+      "step": 3,
+      "fixture": {
+        "mystery_visit": "data/mystery-visit-2026-10-20.md on file, scored moment by moment by a visitor the floor did not know, 13 days old",
+        "shadowed_services": "two on file (Thursday dinner, Sunday lunch), dated 2026-10-27 and 2026-11-01",
+        "review_read": "data/review-mining.md on file, 2026-10-18, tagged by theme"
+      },
+      "expected": "journey/observation.md opens with the mystery visit as observation (0), its timeline mapped onto M01–M28 with the visit's scores, then the two services as (1) and the review read as (2) re-tagged to moment codes. No second visit is requested (13 days old, same concept). The step reports which weights the observation changed as candidates for the Reasoning Note (a moment guests mention unprompted → candidate HIGH; a moment the book calls important that no guest noticed → candidate MEDIUM).",
+      "fail_if": [
+        "the mystery visit is left out or listed after the services",
+        "a second visit is requested",
+        "weights are set in this step from the brand book alone"
+      ]
+    },
+    {
+      "id": "jm-03-venue-not-yet-open",
+      "rule": "Move 2b (1): for a venue not yet open the two services are observed at the closest comparable venue, named as such on the cover, and the weights stay 'provisional, unobserved' until the venue's own observation at the re-weighting date",
+      "step": 3,
+      "fixture": {
+        "venue_trades": false,
+        "opening": "2027-05-15 (fact-sheet.md)",
+        "comparable_venue": "the user names a garden restaurant in Lozenets as the closest comparable",
+        "mystery_visit": "none (no venue)",
+        "review_read": "none (no reviews yet)"
+      },
+      "expected": "The step plans the two services at the comparable venue and writes them into observation.md named as comparable-venue observations, with the venue named. The cover says 'provisional, unobserved' and names the comparable venue; the re-weighting date is thirty to sixty days after opening and is a condition of the map. The mystery visit and the review read are rows in open-facts.md dated after opening, not 'to confirm' forever. The step does not say 'no observation possible'.",
+      "fail_if": [
+        "the comparable-venue services are presented as Gradina's own observation",
+        "weights are issued as observed",
+        "the step treats the case as 'remote engagement, no observation possible'",
+        "the re-weighting date is missing"
+      ]
+    }
+  ]
+}

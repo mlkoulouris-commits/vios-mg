@@ -20,17 +20,18 @@ One screen, one question. The user should never need to remember which skill com
 **Gradina (DEMO)** — 0 intake · approver: Nadia Petrova (founder, DEMO) · updated 2026-11-02
 Proposal: not sent (v2) · marketing loop: in · baseline: partial 2026-11-02, 4 to confirm
 Stages: Brand in/not started · Map in/not started · Design in/not started · Training in/not started
-KPIs: covers per Friday and Saturday evening, garden measured in week 1 after opening → 80 · tables that book their next visit before leaving measured in week 1 after opening → set at baseline (practic
-Blocked by: Budget and target spend per head (founder); POS system and a covers-by-day export (founder); Booking system that records a rebooking made on site (founder) +1 more
+Engagement: no tasks yet
+KPIs: covers per Friday and Saturday evening, garden measured in week 1 after opening → 80 · tables that book their next visit before leaving measured in week 1 after opening → set at baseline
+Blocked by: Budget and target spend per head (founder)
 Open facts: 10, 0 overdue
 Next: Send the v2 PDF (with the KPI table) to Nadia; on signature run vios-engagement-setup steps 1-6, then re-measure the baseline in May 2027  →  vios-engage:vios-proposal
 ```
 
-The card above is `python scripts/clients.py status demo-gradina` as run on 2026-11-02 (the DEMO client; `plugin/vios-core/references/worked-examples.md` › E1); a "Training proof" line appears when Stage 4 has an audit block, and "Awaiting your sign-off" comes from the ClickUp review filter.
+The card above is `python scripts/clients.py status demo-gradina` as run on 2026-11-02 (the DEMO client; `plugin/vios-core/references/worked-examples.md` › E1). "Engagement" lists the tasks no stage owns (intake, proposal, setup, baseline, harvest, reports) with their status; a "Training proof" line appears when Stage 4 has an audit block; "Awaiting your sign-off" comes from the ClickUp review filter. A target longer than the card allows is cut at a word and the sentence lives in `target_note`.
 
 Then **one question** with at most four choices, the recommended one first:
 
-*What do you want to do?* — **Proposal** · Chase the open facts · Sign off what's waiting · Status only
+*What do you want to do?* — **Proposal** · Chase the open facts · Sign off what's waiting · Founder note
 
 ## Routing
 
@@ -44,9 +45,10 @@ Then **one question** with at most four choices, the recommended one first:
 | Marketing loop | `vios-marketing:*` by task (calendar, voice, QA, ads, report) |
 | Close | `vios-engage:vios-harvest` |
 | Chase the open facts | list the open rows due soonest, five at a time, each as "ask <holder>: <fact>"; the user says what was answered; write the answer and date into `open-facts.md`, close the ClickUp task, drop the blocker from `status.json`. |
-| Sign off what's waiting | show each **review** task as one line; on the user's yes set it to **approved** in ClickUp and in `status.json`, and for a stage or proposal sign-off write the approver's pulse line (one sentence: what worked, what to change) dated into `README.md` › Sign-offs; on changes, reopen the owning skill at its last step. |
+| Sign off what's waiting | show each **review** task as one line; on the user's yes set the deliverable to **approved** in ClickUp and in `status.json` (a stage closes as **signed** in `stages.<stage>.status`), and for a stage or proposal sign-off write the approver's pulse line (one sentence: what worked, what to change) dated into `README.md` › Sign-offs (create the heading when missing); on changes, reopen the owning skill at its last step. |
+| Founder note (every second Friday during an engagement) | three lines from the card, in prose: done since the last note · waiting on you (the open facts the founder holds) · next date (the next review or sign-off). Written dated into `README.md` › Notes to the founder (create the heading when missing) and shown to the user, who sends it; the practice never emails a client. |
 
-Every routed skill follows the contract in `docs/operating-system.md`: short screens, one question per step, never guess, write the file then update `status.json` and move the ClickUp task, client deliverables also as PDF.
+Every routed skill follows the contract in `docs/skill-contract.md`: short screens, one question per step, never guess, write the file then update `status.json` and move the ClickUp task, client deliverables also as PDF, the pulse line at a sign-off.
 
 ## Output
 

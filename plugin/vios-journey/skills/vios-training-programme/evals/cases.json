@@ -57,8 +57,8 @@
         "mystery_visit_sheet": "no data/mystery-visit-*.md on file after 2026-11-10",
         "user_says": "V.T. says the floor is fine, can we mark the audit done?"
       },
-      "expected": "status.json › stages › '4 Training' › audit = {date: '2026-12-10', status: 'overdue', score: '', sheet: ''} (strings, empty; this exact shape). next_action names re-booking the visit with someone the floor does not know. The step declines to mark it done or to record a score from the manager's word.",
-      "fail_if": ["status 'done' or 'passed'", "a score", "a sheet path that does not exist", "the manager named as the visitor"]
+      "expected": "status.json › stages › '4 Training' › audit = {date: '2026-12-10', status: 'overdue', score: '', sheet: '', certified: <the 'n of m' string already in the block, unchanged>} (score and sheet are empty strings; this exact shape, no other key added or removed). next_action names re-booking the visit with someone the floor does not know. The step declines to mark it done or to record a score from the manager's word.",
+      "fail_if": ["status 'done' or 'passed'", "a score", "a sheet path that does not exist", "the manager named as the visitor", "certified dropped or changed", "a key other than date, status, score, sheet, certified"]
     },
     {
       "id": "tp-05-initials-only",

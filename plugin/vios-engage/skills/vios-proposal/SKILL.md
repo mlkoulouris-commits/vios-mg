@@ -9,7 +9,7 @@ The scope summary from the intake, turned into the document the founder signs an
 
 **Work in five steps. Stop after each and ask one question.** Each step writes its section of the draft and `status.json`; the client PDF only at step 5. "All good" or "skip" moves to the next step; "all good to the end" runs the rest without stopping.
 
-**After every step:** write the step's tables into `[client]/proposal-vN.md` (step 4 turns them into the doc) → update `status.json` (`proposal.status` not sent until step 5, blockers added or removed, `next_action`, `updated`) → the ClickUp task "Proposal <Client> vN" in the client's Deliverables list (Stage = Engagement, Approver = the founder; id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`): **draft** while writing, **review** at step 5 until signed. The PDF and the send happen at step 5 only.
+**After every step:** write the step's tables into `[client]/proposal-vN.md` (step 4 turns them into the doc) → update `status.json` (`proposal.status` not sent until step 5, blockers added or removed, `next_action`, `updated`) → the ClickUp task "Proposal <Client> vN" (Stage = Engagement, Approver = the founder) in "Department — Setup & SOP" until setup step 2 makes the client's lists and moves it to Deliverables (ids in `setup/clickup.json`; the task id at `stages.Engagement.deliverables.Proposal vN.clickup` in `status.json`): **draft** while writing, **review** at step 5 until signed. The PDF and the send happen at step 5 only.
 
 ## Read first
 
@@ -70,7 +70,7 @@ Show the three tables; a "to confirm" the user does not set here stays for the o
 
 ## Step 4 — The proposal doc
 
-Now write the Claude Doc "<Client> — Proposal v1 (date)" via the docs connector (or `[client]/proposal-v1.md`), 4–8 pages:
+Now write the Claude Doc "<Client> — Proposal vN (date)" via the docs connector (or `[client]/proposal-vN.md`), 4–8 pages:
 
 1. **What you told us** (one paragraph in the founder's words, from move 1 of the intake).
 2. **What we propose**: the stages from step 1, deliverables from step 2, approver per stage. Out of scope named.

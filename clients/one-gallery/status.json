@@ -177,6 +177,11 @@
           "where": "https://new.express.adobe.com/id/urn:aaid:sc:EU:190940c3-7dc6-4835-8704-f6c72336b33e"
         }
       }
+    },
+    "Engagement": {
+      "scope": "in",
+      "status": "in progress",
+      "deliverables": {}
     }
   },
   "blockers": [

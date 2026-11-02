@@ -27,7 +27,9 @@ The five moves at the close of an engagement, one to three days of practitioner 
 
 ## After every step
 
-Write the step's table into `[client]/archive/harvest-engagement.md` (steps 1–5), `[client]/archive/retrospective.md` (step 6), `docs/cases.md` (step 4), `docs/changelog-proposals.md` (step 7). Then `status.json`: the harvest deliverable's `status` (draft → review → approved → done) and `file`, `current_stage` "closed" at step 5, blockers added or removed, `next_action`, `updated`. Then the ClickUp task "Harvest <Client>" in the client's Deliverables list (ids in `setup/clickup.json`): **draft** while writing, **review** at step 7 when it waits for the owner, **approved** on the owner's word, **done** when the increment is logged. No client PDF by default, the harvest is the practice's; when the user wants the retrospective to go to the founder, `python scripts/clients.py pdf <slug> archive/retrospective.md "<Client>-Retrospective-v1"` at step 6 and hand the PDF to the user.
+Write the step's table into `[client]/archive/harvest-engagement.md` (steps 1–5), `[client]/archive/retrospective.md` (step 6), `docs/cases.md` (step 4), `docs/changelog-proposals.md` (step 7). Then `status.json`: the harvest deliverable's `status` (draft → review → approved → done) and `file`, `current_stage` "closed" at step 5, blockers added or removed, `next_action`, `updated`. Then the ClickUp task "Harvest <Client>" in the client's Deliverables list (list id in `setup/clickup.json`; task id at `stages.Engagement.deliverables.Harvest.clickup`): **draft** while writing, **review** at step 7 when it waits for the owner, **approved** on the owner's word, **done** when the increment is logged.
+
+No client PDF by default, the harvest is the practice's; when the user wants the retrospective to go to the founder, `python scripts/clients.py pdf <slug> archive/retrospective.md "<Client>-Retrospective-v1"` at step 6 and hand the PDF to the user.
 
 ## Read first
 

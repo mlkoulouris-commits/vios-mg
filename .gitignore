@@ -13,3 +13,4 @@ __pycache__/
 
 # Baseline and report renders carry revenue: stay on disk and in Drive, never in git (guardrails 12)
 clients/*/deliverables/*-Baseline-*
+clients/*/deliverables/*-Report-*

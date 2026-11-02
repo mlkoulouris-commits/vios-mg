@@ -37,7 +37,7 @@
     "lists": [
       {
         "name": "Department — Setup & SOP",
-        "content": "Department build tasks, onboarding checklists, quarterly reviews."
+        "content": "Department build tasks, onboarding checklists, quarterly reviews; the intake and proposal tasks of a client whose lists do not exist yet (named 'Intake <Client>', 'Proposal <Client> vN'; setup step 2 moves them)."
       },
       {
         "name": "<Client> — Deliverables",
@@ -88,7 +88,7 @@
       "updated": "2026-11-02: statuses renamed QA→Review, Reported→Done; Stage + Approver folder fields; Deliverables + Open facts lists per client; 2026-11-02: ONE Gallery five lists"
     }
   },
-  "per_client_rule": "Each client's accounts.md lists its three ClickUp list ids; scheduled tasks read them from there.",
+  "per_client_rule": "Each client's accounts.md lists its five ClickUp list ids; scheduled tasks read them from there.",
   "status_use": {
     "engagement deliverables": "Draft → Review → Approved (= signed) → Done (= delivered as PDF)",
     "marketing posts": "Draft → Review → Approved (qa-log signed) → Scheduled → Published → Done (reported)",
@@ -110,6 +110,7 @@
     "Approver": {
       "id": "3abffe08-5d64-4ed6-a2ea-69b1bb3d80b5",
       "type": "drop_down",
+      "rule": "This option list is the record: a new client's approver is added as an option at setup step 2 (field_option update_many on this field) and its returned id written here; tasks carry 'To confirm' until then.",
       "options": {
         "To confirm": "97af1952-1452-443f-af29-61b654022377",
         "Menelaos Koulouris": "0da6d3e0-818f-4e37-a6bb-516911ae010e",

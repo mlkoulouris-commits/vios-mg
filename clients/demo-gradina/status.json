@@ -34,7 +34,8 @@
     {
       "name": "tables that book their next visit before leaving",
       "baseline": "measured in week 1 after opening",
-      "target": "set at baseline (practice proposes one step after May 2027, labelled as ours)",
+      "target": "set at baseline",
+      "target_note": "practice proposes one step after May 2027, labelled as ours",
       "due": "2027-07-14",
       "how_measured": "booking system, bookings flagged 'made on site', monthly; n = tables served",
       "attribution": "contribution"
@@ -61,6 +62,11 @@
       "scope": "in",
       "status": "not started",
       "deliverables": {}
+    },
+    "Engagement": {
+      "scope": "in",
+      "status": "in progress",
+      "deliverables": {}
     }
   },
   "blockers": [
@@ -69,24 +75,6 @@
       "holds": "founder",
       "open_fact": 5,
       "blocks": "proposal"
-    },
-    {
-      "what": "POS system and a covers-by-day export",
-      "holds": "founder",
-      "open_fact": 6,
-      "blocks": "KPI 1 measurement; baseline venue rows"
-    },
-    {
-      "what": "Booking system that records a rebooking made on site",
-      "holds": "founder",
-      "open_fact": 7,
-      "blocks": "KPI 2 measurement; baseline bookings rows"
-    },
-    {
-      "what": "Google Business Profile and social accounts",
-      "holds": "founder",
-      "open_fact": 9,
-      "blocks": "baseline reviews and social rows; marketing loop"
     }
   ],
   "next_action": {

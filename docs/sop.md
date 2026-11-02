@@ -13,18 +13,18 @@ Every item names the role, the skill, the tool and the proof that it happened.
 ## Daily (content lead, 20 min)
 
 - Engagement triage runs by schedule (see `setup/scheduled-tasks.md`): drafts replies in persona voice, escalates hard-line 11 cases. Content lead reviews the batch, approver signs, replies go out from the platform.
-- Check ClickUp: anything in QA older than 24 h gets a decision.
+- Check ClickUp: anything in Review older than 24 h gets a decision.
 
 ## Weekly (Monday)
 
 - Performance lead: `vios-ads-audit` runs by schedule; action list lands in ClickUp "Ads"; owner approves pauses and budget changes.
 - Content lead: next week's posts pass `vios-consistency-qa`; each gets a `qa-log.csv` row; approver fills `signed_off_at`; only then scheduled in Metricool.
 - Account manager: 15-minute client check-in with the Metricool weekly view.
-- Account manager, every second Friday during an engagement: a three-line note to the founder, what was done, what is next, what we need (the card turned into prose; nothing waits for a sign-off meeting to be heard).
+- Account manager, every second Friday during an engagement: the founder note, `/vios <client>` › Founder note (three lines from the card: done · waiting on you · next date, written dated to `README.md` › Notes to the founder; the user sends it). Nothing waits for a sign-off meeting to be heard.
 
 ## Monthly
 
-- Day 20: `vios-content-calendar` for next month → ClickUp tasks, one per post, status Draft.
+- Day 20: `vios-content-calendar` for next month → ClickUp tasks, one per post, status Review.
 - Day 1–3: `vios-monthly-report` from Metricool, Windsor.ai, Memento and GBP pulls saved in `data/YYYY-MM/`. Delivered as a Claude Doc; three priorities routed to the owning skill.
 
 ## Quarterly

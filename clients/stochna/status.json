@@ -64,7 +64,7 @@
       "status": "in progress",
       "deliverables": {
         "Proposal v1": { "status": "not started", "clickup": "1amp9gr23p0" },
-        "Harvest + case recommendation": { "status": "not started", "clickup": "1amp9gr23pe" }
+        "Harvest": { "status": "not started", "clickup": "1amp9gr23pe" }
       }
     }
   },

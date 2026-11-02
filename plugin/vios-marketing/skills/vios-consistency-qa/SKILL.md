@@ -100,4 +100,4 @@ Approver: [name] — nothing publishes without this sign-off.
 ## Batch and report modes
 
 - **Batch** (a week's calendar): one summary table (asset, verdict, top issue), then details only for FIX, HOLD and BLOCK. Three assets failing the same check = a brief problem, say so.
-- **Report** (a client memo or dashboard): row 13 against the saved data files (re-compute at least the 5 headline numbers), every percentage carries n, no estimates; rows 14–16 and 23 N/A; row 21: dashboard private, recipient named by the account manager. Log as asset "monthly report".
+- **Report** (a client memo or dashboard): Facts against the saved data files (re-compute at least the 5 headline numbers), every percentage carries n, no estimates; AI disclosure, Consent & rights, Alcohol / allergen / claims and Message anchor N/A; Other hard lines: dashboard private, recipient named by the account manager. Log as asset "monthly report".

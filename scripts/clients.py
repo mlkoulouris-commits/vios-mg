@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Vios client status helper. Reads clients/<slug>/status.json and open-facts.md; never writes ClickUp itself.
 
-  python scripts/clients.py status [slug]        the status card, at most nine lines (all clients if no slug)
+  python scripts/clients.py status [slug]        the status card, at most nine lines (all clients if no slug); the Engagement row prints after the stages
   python scripts/clients.py check [slug]         validate status.json against setup/status.schema.json (light, no jsonschema dependency)
   python scripts/clients.py facts <slug>         ClickUp task.create_many body for the open rows of open-facts.md (paste into the connector)
   python scripts/clients.py new <slug> "<Name>"  create clients/<slug>/ from templates/client/ with status.json filled in
@@ -51,19 +51,30 @@ def open_facts(slug: str) -> list[dict]:
     return rows
 
 
+def short(value, n: int = 24) -> str:
+    """A target for the card: whole words up to n characters, then an ellipsis (the sentence lives in target_note)."""
+    t = str(value)
+    if len(t) <= n:
+        return t
+    cut = t.rfind(" ", 0, n + 1)
+    return t[: cut if cut > 0 else n].rstrip() + "…"
+
+
 def card(slug: str) -> str:
     s = load_status(slug)
     facts = open_facts(slug)
     stages = " · ".join(
-        f"{k.split(' ', 1)[-1]} {v['scope']}/{v['status']}" for k, v in s["stages"].items() if v["scope"] != "out"
+        f"{k.split(' ', 1)[-1]} {v['scope']}/{v['status']}" for k, v in s["stages"].items() if v["scope"] != "out" and k != "Engagement"
     )
+    eng = (s["stages"].get("Engagement") or {}).get("deliverables") or {}
+    engagement = " · ".join(f"{k} {v.get('status', '?')}" for k, v in eng.items()) or "no tasks yet"
     blockers = s.get("blockers") or []
     base = s.get("baseline") or {"status": "not started"}
     baseline = base["status"] + (f" {base['date']}" if base.get("date") else "") + (f", {len(base['missing'])} to confirm" if base.get("missing") else "")
     kpis = s.get("kpis") or []
     kpi_line = (
         "KPIs: " + " · ".join(
-            f"{k['name']} {k.get('baseline', '?')} → {str(k['target'])[:24]}" + (f" (now {k['latest']})" if k.get("latest") not in (None, "") else "")
+            f"{k['name']} {k.get('baseline', '?')} → {short(k['target'])}" + (f" (now {k['latest']})" if k.get("latest") not in (None, "") else "")
             for k in kpis[:4]
         ) + (f" +{len(kpis)-4} more" if len(kpis) > 4 else "")
     ) if kpis else "KPIs: none promised yet"
@@ -76,6 +87,7 @@ def card(slug: str) -> str:
         f"**{s['name']}** — {s['current_stage']} · approver: {s['approver']} · updated {s['updated']}",
         f"Proposal: {s['proposal']['status']}" + (f" (v{s['proposal']['version']})" if s['proposal'].get('version') else "") + f" · marketing loop: {s['marketing_loop']} · baseline: {baseline}",
         f"Stages: {stages}",
+        f"Engagement: {engagement}",
         kpi_line,
         *([audit_line] if audit_line else []),
         f"Blocked by: " + ("; ".join(f"{b['what']} ({b['holds']})" for b in blockers[:3]) if blockers else "nothing") + (f" +{len(blockers)-3} more" if len(blockers) > 3 else ""),
@@ -97,6 +109,7 @@ def check(slug: str) -> list[str]:
         if s.get(k) not in allowed:
             errs.append(f"{k}={s.get(k)!r} not in {allowed}")
     st = schema["properties"]["stages"]["additionalProperties"]["properties"]
+    errs += [f"missing stages.{k}" for k in schema["properties"]["stages"]["required"] if k not in s.get("stages", {})]
     for name, v in s.get("stages", {}).items():
         if v.get("scope") not in st["scope"]["enum"]:
             errs.append(f"stages.{name}.scope={v.get('scope')!r}")

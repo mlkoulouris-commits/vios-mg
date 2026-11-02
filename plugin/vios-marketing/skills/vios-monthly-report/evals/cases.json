@@ -1,0 +1,107 @@
+{
+  "skill": "vios-monthly-report",
+  "how": "A fresh session loads the skill, treats each case's fixture as the whole client file for the placeholder venue Gradina (never a real client's data), runs only the step the case names (step 1 for D0, step 2 for the promise), and returns what the step shows on screen, what it writes (the Baseline column, the promise rows, status.json › kpis, open-facts.md rows) and what it refuses. Compare with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "account_manager": "A.",
+    "month": "2026-10",
+    "pulls_in_data_2026_10": [
+      "memento-covers-2026-11-02.csv (covers by day, Oct 2026: 2,410; Sep 2,180)",
+      "metricool-2026-11-02.csv",
+      "gbp-2026-11-02.csv"
+    ]
+  },
+  "cases": [
+    {
+      "id": "mr-01-no-baseline-on-file",
+      "rule": "D0: no baseline on file → the Baseline column reads 'no baseline' and priority #1 of section 7 is to measure one (owning skill vios-engagement-setup, step 7); the baseline is never computed by this skill",
+      "step": 1,
+      "fixture": {
+        "status_baseline": {
+          "status": "not started"
+        },
+        "baseline_file": "none",
+        "user_says": "Just use June–August as the baseline, you have the covers."
+      },
+      "expected": "Both scoreboards get a Baseline column reading 'no baseline'. The step declines to build one from the June–August covers in one line (the baseline is made by setup step 7, never here) and records priority #1 for section 7 as 'measure the month-0 baseline' with the owning skill vios-engage:vios-engagement-setup. One row in open-facts.md for the account manager. The report goes on with the client's own history columns.",
+      "fail_if": [
+        "a Baseline figure computed from the pulls",
+        "the column is left blank or omitted",
+        "priority #1 is anything else",
+        "the report stops"
+      ]
+    },
+    {
+      "id": "mr-02-promise-first-latest-written-back",
+      "rule": "Section 2 opens with the promise when kpis is not empty: one row per KPI (today at signature · target · due · this month · n · attribution), and this month's value is written back to kpis[].latest and latest_date",
+      "step": 2,
+      "fixture": {
+        "status_kpis": [
+          {
+            "name": "covers per month",
+            "baseline": 2050,
+            "target": 2300,
+            "due": "2027-01-31",
+            "how_measured": "Memento covers by day, monthly; n = days open",
+            "attribution": "contribution"
+          }
+        ],
+        "status_baseline": {
+          "status": "measured",
+          "date": "2026-08-01",
+          "file": "clients/gradina/data/baseline-2026-08.md"
+        },
+        "covers_this_month": "2,410 (n 27 days open)"
+      },
+      "expected": "The venue scoreboard begins with the promise row: covers per month · 2,050 at signature · 2,300 · 2027-01-31 · 2,410 (n 27) · contribution, before the metric table. status.json › kpis[0].latest = 2410 and latest_date = the report date. The due date has not passed, so no met / not met reading; the attribution word is 'contribution', not 'caused'.",
+      "fail_if": [
+        "the promise row comes after the metric table or is missing",
+        "latest or latest_date not written",
+        "'caused by' or 'because of our' wording",
+        "the target is restated or changed"
+      ]
+    },
+    {
+      "id": "mr-03-not-trading",
+      "rule": "D0: baseline.status 'not trading' → the column reads 'no baseline yet: venue opened <date>'; the first full month of trading is the baseline (setup step 7) and measuring it is not one of this report's priorities",
+      "step": 1,
+      "fixture": {
+        "status_baseline": {
+          "status": "not trading"
+        },
+        "opened": "2026-10-12 (fact-sheet.md)",
+        "pulls": "19 days of covers (12–31 Oct), Metricool, GBP",
+        "user_says": "Make October the baseline, we have the numbers now."
+      },
+      "expected": "The Baseline column reads 'no baseline yet: venue opened 2026-10-12'. The step says the first full month of trading (November 2026) becomes the baseline through setup step 7 and that the account manager books it; it is not written into section 7's three priorities and no baseline page is written here. The 19 days are reported as this month with n 19 and labelled 'building baseline'.",
+      "fail_if": [
+        "October is used as the baseline",
+        "the column reads 'no baseline' without the opening date",
+        "a priority 'measure the baseline' appears",
+        "19 days are scaled to a full month"
+      ]
+    },
+    {
+      "id": "mr-04-no-kpis-promised",
+      "rule": "No KPIs on file: one line, 'no outcome KPIs promised; see the proposal', then the scoreboard; nothing is promised retroactively",
+      "step": 2,
+      "fixture": {
+        "status_kpis": [],
+        "status_baseline": {
+          "status": "measured",
+          "date": "2026-08-01",
+          "file": "clients/gradina/data/baseline-2026-08.md"
+        },
+        "user_says": "Put a covers target in, the owner will like seeing one."
+      },
+      "expected": "Section 2 opens with the one line 'no outcome KPIs promised; see the proposal' and goes to the scoreboard. No target is written; the step says a target comes from the proposal's 'What we aim to move' table (vios-proposal step 3) and offers that as a route, not as a number.",
+      "fail_if": [
+        "a target figure appears",
+        "kpis is written in status.json",
+        "the line is omitted"
+      ]
+    }
+  ]
+}

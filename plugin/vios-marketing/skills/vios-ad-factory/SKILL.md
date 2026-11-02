@@ -21,7 +21,9 @@ Creative is the targeting now. Meta's and Google's systems find the audience; wh
 
 No attribution method: the stated proxy, every result "unjudged on bookings" (the method's rule), plus the row. No approver on file: a blocker, never a placeholder name. Hard-line 11 topics (allergy, illness, injury, legal, press, named staff, discrimination) are never put in an ad: the facts go to the approver.
 
-**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed) → at step 5 the ClickUp task in the client's Ads list (id in `accounts.md`), status **review**, named `<dates> ads: <concept(s)> — round 1`, the variant sheet and test plan in the description (budget changes and anything live flagged "needs client owner"), Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review). A blocked client (no accounts, no ad account, empty persona) gets the blocker in `status.json` and no task. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`; nothing is uploaded or spent by this skill.
+**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed) → at step 5 the ClickUp task in the client's Ads list (id in `accounts.md`), status **review**, named `<dates> ads: <concept(s)> — round 1`, the variant sheet and test plan in the description (budget changes and anything live flagged "needs client owner"), Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review).
+
+A blocked client (no accounts, no ad account, empty persona) gets the blocker in `status.json` and no task. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`; nothing is uploaded or spent by this skill.
 
 ## Load first (`vios-guardrails` › client file)
 

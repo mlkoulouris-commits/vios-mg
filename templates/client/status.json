@@ -13,7 +13,8 @@
     "1 Brand":    { "scope": "to confirm", "status": "not started", "deliverables": {} },
     "2 Map":      { "scope": "to confirm", "status": "not started", "deliverables": {} },
     "3 Design":   { "scope": "to confirm", "status": "not started", "deliverables": {} },
-    "4 Training": { "scope": "to confirm", "status": "not started", "deliverables": {} }
+    "4 Training": { "scope": "to confirm", "status": "not started", "deliverables": {} },
+    "Engagement": { "scope": "in", "status": "in progress", "deliverables": {} }
   },
   "blockers": [],
   "next_action": { "skill": "vios-engage:vios-intake", "what": "Hold the four-question conversation with the founder" },

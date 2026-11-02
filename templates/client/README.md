@@ -18,3 +18,7 @@ Files follow the `vios-guardrails` client file convention. `consents/`, `data/` 
 ## Sign-offs
 
 One dated line per sign-off (proposal, Stages 1–4): approver · what worked · what to change, in their words.
+
+## Notes to the founder
+
+The fortnightly three-line note (`vios` › Founder note), dated: done · waiting on you · next date. The user sends it; the practice never emails a client.

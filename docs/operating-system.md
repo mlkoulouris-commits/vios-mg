@@ -17,15 +17,11 @@ Bottom line: no new app. Three pieces you already have, glued together, with one
 
 ## status.json (schema `setup/status.schema.json`, template `templates/client/status.json`)
 
-Six things at a glance: approver, proposal status, current stage, each stage's scope and status, blockers, next action. Every skill updates it at the end of a step. `/vios <client>` reads it.
+Six things at a glance: approver, proposal status, current stage, each stage's scope and status (plus the `Engagement` row for the tasks no stage owns), blockers, next action. Every skill updates it at the end of a step. `/vios <client>` reads it.
 
-## The skill contract (every Vios skill, from `vios-proposal` onward)
+## The skill contract
 
-1. Short screens: at most ten plain lines and one question per step. No open-fact numbers, no section refs in chat; those go in the file.
-2. Ask, never guess: a missing fact is one question to the user, or a row in `open-facts.md` and a blocker in `status.json`.
-3. Every step writes its file, then updates `status.json` and moves the ClickUp task.
-4. Every client-facing deliverable also ships as a PDF in `clients/<slug>/deliverables/` (`scripts/clients.py pdf <slug> <file.md> <Title>`; headless Edge); the user forwards it, the practice never emails a client.
-5. Writes nothing to disk before the user has seen the plan of the step.
+Every Vios skill that talks to the user follows `docs/skill-contract.md` (short screens, ask never guess, after every step, the pulse line, the end line). That file is the one text; nothing is restated here.
 
 ## Daily use
 

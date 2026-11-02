@@ -1,8 +1,6 @@
 # Eval runs
 
-One block per run: date · plugin version · session id · table (case id · expected · got · pass/fail) · what was changed as a result.
-
-No run yet.
+One block per run, headed `## <date> · <plugin> <version> · session: <id or 'subagent, parent <id>'>`: the table (case id · expected · got · pass/fail) and what was changed as a result.
 
 ## 2026-11-02 · vios-core 0.7.1 · session: eval run after benchmark fixes 11ec378
 

@@ -25,7 +25,9 @@ The six moves at the start of an engagement, from the first conversation to the 
 
 ## After every step
 
-Write the step's lines into `[client]/README.md` › Intake record (new client: `python scripts/clients.py new <slug> "<Name>"` once, after step 1, which creates the folder, `status.json` and `open-facts.md`; an existing folder is updated). Then `status.json`: `current_stage` "0 intake", approver, `marketing_loop`, each stage's scope, blockers, `next_action`, `updated`. Then the ClickUp task "Intake <Client>" in the client's Deliverables list (ids in `setup/clickup.json`): **draft** while writing, **review** at step 6, **approved** on the founder's confirmation. No client PDF by default; when the founder confirms from the record itself rather than the proposal, `python scripts/clients.py pdf <slug> README.md "<Client>-Intake-v1"` at step 6 and hand the PDF to the user.
+Write the step's lines into `[client]/README.md` › Intake record (new client: `python scripts/clients.py new <slug> "<Name>"` once, after step 1, which creates the folder, `status.json` and `open-facts.md`; an existing folder is updated). Then `status.json`: `current_stage` "0 intake", approver, `marketing_loop`, each stage's scope, blockers, `next_action`, `updated`.
+
+Then the ClickUp task "Intake <Client>" (Stage = Engagement) in "Department — Setup & SOP" (id in `setup/clickup.json`), since the client's lists do not exist until setup step 2, which moves it to the Deliverables list; its id at `stages.Engagement.deliverables.Intake.clickup`: **draft** while writing, **review** at step 6, **approved** on the founder's confirmation. No client PDF by default; when the founder confirms from the record itself rather than the proposal, `python scripts/clients.py pdf <slug> README.md "<Client>-Intake-v1"` at step 6 and hand the PDF to the user.
 
 ## Read first
 

@@ -1,0 +1,62 @@
+{
+  "skill": "vios-journey-design",
+  "how": "A fresh session loads the skill, treats each case's fixture as the whole client file for the placeholder venue Gradina (never a real client's data), writes only the 'Cost of the moment' line of the HIGH page the case names (step 2, the moment's one line: code · locked line · recovery code · cost), and returns the line, any open-facts.md row and what it refuses. Compare with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "account_manager": "A.",
+    "journey_map": "signed; HIGH moments M02 Threshold crossed (greeting, locked line), M11 First plate (a shared starter brought by the cook), M24 Farewell at the gate",
+    "cost_rule": "plugin/vios-core/references/numbers-page.md › Cost of a moment: staff minutes × the loaded labour minute rate + item cost, per guest or per table, assumption named"
+  },
+  "cases": [
+    {
+      "id": "jd-01-greeting-no-marginal-cost",
+      "rule": "A greeting or a silence has no marginal cost: the line reads 'no marginal cost', never a labour figure computed for a moment the staff are already paid to be present for",
+      "moment": "M02 Threshold crossed",
+      "fixture": {
+        "numbers_page": "data/numbers-page.md on file: loaded labour minute rate 0.42 EUR, from Memento labor report 2026-10",
+        "user_says": "Cost the greeting too, it's 20 seconds of the host."
+      },
+      "expected": "The line reads 'Cost of the moment: no marginal cost (the host is at the stand in any case)'. No 0.14 EUR or similar figure appears. The step says in one line why (the rule names greetings and silences), and goes on.",
+      "fail_if": [
+        "a labour figure for the greeting",
+        "the line is left empty",
+        "the rate is questioned or re-derived"
+      ]
+    },
+    {
+      "id": "jd-02-no-numbers-page-rate-to-confirm",
+      "rule": "No numbers page on file → 'rate to confirm' with an open-facts row; the rate is never estimated from a typical figure",
+      "moment": "M11 First plate",
+      "fixture": {
+        "numbers_page": "not on file (diagnosis step 1 not run for Gradina)",
+        "item_cost": "the shared starter's recipe cost is not on file either",
+        "user_says": "Use 0.40 a minute, that's what places like this pay."
+      },
+      "expected": "The line reads 'Cost of the moment: 4 cook minutes + one shared starter per table; rate to confirm, item cost to confirm'. One row in open-facts.md: the loaded labour minute rate and the starter's cost, holder R. via the accountant, blocking the M11 page's cost line. The 0.40 figure is declined in one line; the page is written with the minutes and the assumption named.",
+      "fail_if": [
+        "0.40 or any rate appears",
+        "an item cost is estimated",
+        "no open-facts row",
+        "the page is held back until the rate exists"
+      ]
+    },
+    {
+      "id": "jd-03-cost-never-drops-a-high",
+      "rule": "The cost line is read at step 2 so the founder locks the signature and the peak knowing their price; it is never the reason to drop a HIGH on its own",
+      "moment": "M24 Farewell at the gate",
+      "fixture": {
+        "numbers_page": "on file: loaded labour minute rate 0.42 EUR; a small jar of jam handed at the gate, item cost 1.10 EUR",
+        "cost_line": "3 host minutes × 0.42 + 1.10 = 2.36 EUR per table",
+        "user_says": "2.36 a table is too much, drop the farewell to MEDIUM."
+      },
+      "expected": "The line stands as computed with the assumption named. The step does not change the weight: a weight change goes back to the map and its Reasoning Note (Stage 2), and the step says so in one line, offering the founder the choice at step 2 with the price visible. It may note the item is the variable part (1.10 of 2.36).",
+      "fail_if": [
+        "the moment is re-weighted in this skill",
+        "the cost line is softened or removed",
+        "the step refuses to show the figure"
+      ]
+    }
+  ]
+}

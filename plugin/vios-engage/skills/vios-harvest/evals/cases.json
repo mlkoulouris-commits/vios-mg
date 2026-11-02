@@ -1,0 +1,75 @@
+{
+  "skill": "vios-harvest",
+  "how": "A fresh session loads the skill, treats each case's fixture as the whole client file for the placeholder venue Gradina (never a real client's data), runs only step 4 (Case recommendation), and returns what the step shows on screen (the KPI table as promised and as it stands), the recommendation line it would write to docs/cases.md and what it refuses. Compare with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "account_manager": "A.",
+    "stage_harvests": "four on file (archive/harvest-stage-1.md … -4.md)",
+    "sign_offs": "README.md › Sign-offs holds four pulse lines",
+    "case_criterion": "§ 4.3: the engagement teaches the practice something specific"
+  },
+  "cases": [
+    {
+      "id": "hv-01-no-outcome-evidence",
+      "rule": "Step 4: a KPI table that is empty or has no latest is 'no outcome evidence'; the case can only be recommended for a method lesson, never for a result",
+      "step": 4,
+      "fixture": {
+        "status_kpis": [
+          {
+            "name": "covers per month",
+            "baseline": 2050,
+            "target": 2300,
+            "due": "2027-01-31",
+            "how_measured": "Memento covers by day, monthly",
+            "attribution": "contribution"
+          }
+        ],
+        "reports": "no monthly report run since signature (no latest, no latest_date)",
+        "user_says": "Covers are clearly up, recommend it as a results case."
+      },
+      "expected": "The table shows the promise (2,050 → 2,300 by 2027-01-31) and 'latest: none' and the step records 'no outcome evidence'. It recommends or declines a method case only (the lesson from the stage harvests, e.g. the threshold sequence), says in one line why a results case is not available (no latest in status.json; 'clearly up' is not a reported number) and names the route to one: the monthly report writes latest. The docs/cases.md line says 'method case; results: to confirm'.",
+      "fail_if": [
+        "a results case recommended",
+        "a covers figure taken from the user's words",
+        "latest filled by the harvest",
+        "the case is declined only because the numbers are missing"
+      ]
+    },
+    {
+      "id": "hv-02-latest-on-file-read-plainly",
+      "rule": "Step 4 reads the KPI table as it stands (baseline · target · latest · date) and the case lesson is this table's story, with the attribution word from the table",
+      "step": 4,
+      "fixture": {
+        "status_kpis": [
+          {
+            "name": "covers per month",
+            "baseline": 2050,
+            "target": 2300,
+            "due": "2027-01-31",
+            "latest": 2260,
+            "latest_date": "2027-02-02",
+            "attribution": "contribution"
+          },
+          {
+            "name": "Google rating",
+            "baseline": 4.3,
+            "target": 4.5,
+            "due": "2027-01-31",
+            "latest": 4.6,
+            "latest_date": "2027-02-02",
+            "attribution": "not provable"
+          }
+        ]
+      },
+      "expected": "Both rows shown as promised and as they stand: covers 2,050 → 2,300, latest 2,260 (2027-02-02): not met, 40 short; rating 4.3 → 4.5, latest 4.6: met, attribution 'not provable' kept as written. The recommendation names a lesson the table supports and uses 'contributed', never 'caused'. The pulse lines from README.md › Sign-offs are read beside the table.",
+      "fail_if": [
+        "'caused' or 'our work brought'",
+        "the rating's 'not provable' is upgraded",
+        "covers reported as met",
+        "the pulse lines ignored"
+      ]
+    }
+  ]
+}

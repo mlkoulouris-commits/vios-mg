@@ -9,6 +9,7 @@
 | Emoji policy | |
 | Alcohol | yes / no |
 | AI disclosure rule | none (no AI persona) / full set per guardrails hard line 6 |
+| Response targets | default: comments same day · DMs 2 h while open · reviews 48 h (override here; `vios-persona-voice` reads this row) |
 | Version | 0.1 |
 | Next review date | |
 

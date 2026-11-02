@@ -30,4 +30,4 @@ Scoring: 8+ green, 7 yellow, under 7 red. The scoring is not the point; the noti
 ## Sources sheet
 `Source | Used for`, every source dated. Review mining counts as a source; name the platform and the date pulled.
 
-Minimum 5 competitors (the course), 10 recommended and 20 ideal (the manuscript), found by searching the client's own description plus location.
+10 competitors minimum (5 only when the category has fewer; the course's floor), 20 ideal (the manuscript), found by searching the client's own description plus location.

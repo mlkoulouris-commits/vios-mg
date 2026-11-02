@@ -1,16 +1,16 @@
 # Plugins and connectors
 
-What the department needs enabled in a Claude account, and why. Status column is the personal account on 2026-10-29.
+What the department needs enabled in a Claude account, and why. Versions are not kept here: `python scripts/release.py status` shows repo, packaged and installed versions; the plugin list is `.claude-plugin/marketplace.json`. Status column is the personal account on 2026-10-29 for the connectors.
 
 ## Plugins (Anthropic Directory)
 
 | Plugin | Why | Status |
 | --- | --- | --- |
-| `vios-core` | guardrails, BE lens, non-verbal lens, filter test, Part III references; every other Vios plugin loads it | **upload 0.3.0** |
-| `vios-brand` | Stage 1: brand diagnosis, persona builder | **upload 0.1.0** |
-| `vios-marketing` | operations: calendar, voice, video, QA, ads, audit, report | enabled 0.2.0; **upload 0.3.0** |
-| `vios-journey` | Stages 2–4: journey map, journey design, training programme | installed |
-| `vios-engage` | intake, proposal, engagement setup, harvest; Parts IV–V | **upload 0.1.0** |
+| `vios-core` | guardrails, BE lens, non-verbal lens, filter test, Part III references; every other Vios plugin loads it | enable first; version per `release.py status` |
+| `vios-brand` | Stage 1: brand diagnosis, messages and story, persona builder, name and tagline, brand book | enable; version per `release.py status` |
+| `vios-marketing` | operations: calendar, voice, video, QA, ads, audit, report | enable; version per `release.py status` |
+| `vios-journey` | Stages 2–4: journey map, journey design, training programme | enable; version per `release.py status` |
+| `vios-engage` | front door, intake, proposal, engagement setup, harvest; Parts IV–V | enable; version per `release.py status` |
 | `instagram` | comments + DMs through the official Graph API, tokens stay with us | **enable** |
 | Windsor.ai Ads and Marketing Data | Meta + Google Ads data for `vios-ads-audit` and the monthly report | **enable** |
 

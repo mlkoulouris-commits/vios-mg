@@ -5,7 +5,8 @@
   python scripts/clients.py check [slug]         validate status.json against setup/status.schema.json (light, no jsonschema dependency)
   python scripts/clients.py facts <slug>         ClickUp task.create_many body for the open rows of open-facts.md (paste into the connector)
   python scripts/clients.py new <slug> "<Name>"  create clients/<slug>/ from templates/client/ with status.json filled in
-  python scripts/clients.py pdf <slug> <file.md> [Title] [Kind]   render a client deliverable, Vios-branded, to clients/<slug>/deliverables/<Title>.pdf (headless Edge; pip install markdown). Kind = cover label (Proposal, Brand Book, Report)
+  python scripts/clients.py pdf <slug> <file.md> [Title] [Kind]   render a client deliverable, Vios-branded, to clients/<slug>/deliverables/<Title>.pdf (headless Edge; pip install markdown). Kind = cover label (Proposal, Baseline, Diagnosis, Brand book, Journey map, Design, Training plan, Report, Case); every skill passes it, else the cover reads "Deliverable"
+  python scripts/clients.py load "<account manager>"   the manager's load against docs/sop.md > Capacity (vios-proposal step 1 runs this; it never counts by hand)
 
 Skills call `status` at the start of a step and update status.json at the end; /vios <client> is the front door.
 """
@@ -45,7 +46,7 @@ def open_facts(slug: str) -> list[dict]:
         if len(cells) < 6:
             continue
         fact, blocks, holds, asked, due, answer = cells[:6]
-        if answer:
+        if answer or not fact:  # closed, or the template's empty row
             continue
         rows.append({"n": int(m.group(1)), "fact": fact, "blocks": blocks, "holds": holds, "asked": asked, "due": due})
     return rows
@@ -149,6 +150,46 @@ def facts_payload(slug: str) -> dict:
             t["due_date_time"] = False
         (dept if re.search(r"practice|vios", f["holds"], re.I) else tasks).append(t)
     return {"tasks": tasks, "department_tasks": dept}
+
+
+ENGAGEMENT_STAGES = ("1 Brand", "2 Map", "3 Design", "4 Training")
+ACTIVE = ("in progress", "review")
+
+
+def skipped(slug: str) -> bool:
+    """A DEMO (name contains DEMO) or an ARCHIVED folder (README's first lines say so) is never counted as load."""
+    s = load_status(slug)
+    if "DEMO" in s.get("name", ""):
+        return True
+    readme = CLIENTS / slug / "README.md"
+    return readme.exists() and "ARCHIVED" in "\n".join(read(readme).splitlines()[:3])
+
+
+def load(account_manager: str) -> dict:
+    """The manager's load, the rule of docs/sop.md > Capacity: a loop client is marketing_loop == "in"; an engagement is any of
+    stages 1 Brand .. 4 Training "in progress" or "review" (never the Engagement row, which every client has "in progress").
+    A client that is both counts once, as an engagement. Within load: no engagement and at most three loop clients, or one
+    engagement plus at most one loop-only client. vios-proposal step 1 reads this; it never counts by hand."""
+    loop, engagements = [], []
+    for slug in slugs():
+        s = load_status(slug)
+        if s.get("account_manager", "") != account_manager or skipped(slug):
+            continue
+        stages = s.get("stages", {})
+        if any(stages.get(k, {}).get("status") in ACTIVE for k in ENGAGEMENT_STAGES):
+            engagements.append(slug)
+        elif s.get("marketing_loop") == "in":
+            loop.append(slug)
+    within = (not engagements and len(loop) <= 3) or (len(engagements) == 1 and len(loop) <= 1)
+    return {"account_manager": account_manager, "engagements": engagements, "loop": loop, "within_load": within}
+
+
+def load_line(account_manager: str) -> str:
+    r = load(account_manager)
+    eng = ", ".join(r["engagements"]) or "none"
+    lp = ", ".join(r["loop"]) or "none"
+    verdict = "within load" if r["within_load"] else "over capacity: the next start date is the first the load allows"
+    return f"{account_manager}: engagements {len(r['engagements'])} ({eng}) · loop-only {len(r['loop'])} ({lp}) · {verdict} (rule: docs/sop.md › Capacity; DEMO and ARCHIVED skipped)"
 
 
 def new_client(slug: str, name: str) -> None:
@@ -294,6 +335,8 @@ def main(argv: list[str]) -> None:
         print(json.dumps(facts_payload(argv[2]), ensure_ascii=False))
     elif cmd == "new":
         new_client(argv[2], argv[3])
+    elif cmd == "load":
+        print(load_line(argv[2]))
     elif cmd == "pdf":
         pdf(argv[2], argv[3], argv[4] if len(argv) > 4 else None, argv[5] if len(argv) > 5 else None)
     else:

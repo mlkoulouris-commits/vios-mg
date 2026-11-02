@@ -60,7 +60,7 @@ Other skills cite a check by its name in the Check column (e.g. "Pressure / scar
 
 ## Log every verdict
 
-Append a row per the guardrails `qa-log.csv` schema; `signed_off_by` and `signed_off_at` are filled by the approver's reply, and nothing schedules without them.
+Append a row per the guardrails `qa-log.csv` schema, with the ClickUp task id in the `asset` cell beside the asset name ("<asset> · <task id>") so the row and the task can be joined. The approver approves in ClickUp, not in the CSV: when they move the task to Approved, the content lead copies the approver's name and the task's status-change time into the row's `signed_off_by` and `signed_off_at` before anything is scheduled. Nothing schedules without them.
 
 ## Output format
 

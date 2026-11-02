@@ -23,7 +23,7 @@ Turns a client's brand foundation into a Brand Persona: the brand as a character
 
 Alcohol yes/no, the address register, the name and the signature phrases come only from the files or the client; a baseline not on file is "open". No approver on file is a blocker on the front page, never a placeholder name. A gap that stops a step and that the user can answer now is one question; any other gap is a row and the step goes on.
 
-**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Persona Bible": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> persona-bible.md "<Client>-Persona-Bible-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
+**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Persona Bible": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> persona-bible.md "<Client>-Persona-Bible-vN" "Persona Bible"` and send the PDF to the user. The user forwards it; the practice never emails a client.
 
 ## Principles
 
@@ -116,7 +116,7 @@ Retirement rule: no KPI movement after two content cycles, a bad guest reaction 
 
 ## Output — the Persona Bible
 
-One doc (Docs artifact when available), saved as `[client]/persona-bible.md`. Front page: **approver**, **address register per channel**, **emoji policy**, **alcohol yes/no**, **AI disclosure rule**, **version number and next review date** (quarterly and at each content-cycle close). Then:
+One doc (Docs artifact when available), saved as `[client]/persona-bible.md`. Front page: **approver**, **address register per channel**, **emoji policy**, **alcohol yes/no**, **AI disclosure rule**, **response targets** (default comments same day · DMs 2 h while open · reviews 48 h, or what the venue can staff), **version number and next review date** (quarterly and at each content-cycle close). Then:
 
 1. Persona at a glance (name, archetype, format, one-line essence, speaks for / never speaks for) — EN | BG
 2. Story & point of view — EN | BG (no invented biography for AI)

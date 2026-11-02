@@ -8,7 +8,7 @@ Count on 2026-11-02: **69 cases** across the eleven sets, counted as the length 
 
 ## When
 
-Before every `release.py package` of the plugin that holds the skill, and after any edit to the skill or to the guardrails it quotes. `release.py check` verifies the structure (frontmatter, reference paths, eval files present and parseable); it cannot run the skill. The run itself is done by a session.
+Before every `release.py package` of the plugin that holds the skill, and after any edit to the skill or to the guardrails it quotes. A package whose only changes under `plugin/` are run logs, worked-example text or wording carries a dated line in the plugin's `README.md` or the commit, "no skill behaviour changed; run at <version> stands", naming the run block it rests on. `release.py check` verifies the structure (frontmatter, reference paths, eval files present and parseable); it cannot run the skill. The run itself is done by a session.
 
 ## How to run
 

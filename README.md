@@ -4,8 +4,8 @@ The operating system of the Vios Marketing department. One repo, one client fold
 one tool per pipeline stage, one named human approver for anything that publishes, spends or
 reaches a client.
 
-Everything here is portable: clone this repo in any Claude account, enable the Vios plugins
-(`vios-core`, `vios-brand`, `vios-marketing`), re-run `setup/` and the department is up. See `docs/migration.md`.
+Everything here is portable: clone this repo in any Claude account, enable the five Vios plugins
+(`vios-core`, `vios-brand`, `vios-journey`, `vios-engage`, `vios-marketing`, as `.claude-plugin/marketplace.json` lists them), re-run `setup/` and the department is up. See `docs/migration.md`.
 
 ## Layout
 

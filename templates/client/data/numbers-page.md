@@ -14,6 +14,8 @@ Sources: <Memento pages / POS export / accountant>, pulled <date>, files in `dat
 | Average check | | | | | |
 | Items per cover | | | | | |
 
+n = what the figure is counted over: months for a monthly total or average, bills for a check, covers for items per cover.
+
 ## 2. Revenue mix
 
 | Category | Share of revenue | Share of items | Note |

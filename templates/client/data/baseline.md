@@ -20,6 +20,8 @@ Source: <Memento P&L / POS export>, pulled <date>, file `data/<YYYY-MM>/<file>`.
 | Labour cost % of revenue | | | | Memento labor module; "to confirm" when the client is not on Memento |
 | COGS % of revenue | | | | |
 
+n = what the figure is counted over (months for a monthly average, bills for a check, covers for a mix).
+
 ## 2. Bookings
 
 Source: <Memento reservations / client's book / none>, pulled <date>.
@@ -30,6 +32,8 @@ Source: <Memento reservations / client's book / none>, pulled <date>.
 | Bookings by source (own site / Google / phone / walk-in / partners) | | | |
 | No-show rate | | | |
 | Average party size | | | |
+
+n = bookings for a rate or an average, months for a monthly average.
 
 ## 3. Reviews
 
@@ -44,6 +48,8 @@ Source: Google Business Profile, TripAdvisor, Facebook; pulled <date>.
 | Top 5 praise themes (count each) | | | from review mining when on file; otherwise count and rating only (filled at diagnosis step 4; does not make the baseline partial) |
 | Top 5 complaint themes (count each) | | | same |
 
+n = reviews the figure is counted over (all for a rating, the 90 days for velocity, the mined set for a theme).
+
 ## 4. Social and local
 
 Source: Metricool / Windsor / GBP exports, pulled <date>.
@@ -55,6 +61,8 @@ Source: Metricool / Windsor / GBP exports, pulled <date>.
 | TikTok | | | | | | |
 | Google Business (views · directions · calls) | | | | | | |
 
+n = followers for a rate, posts for a per-post average, months for a monthly average.
+
 ## 5. Paid
 
 Source: Meta Ads / Google Ads, pulled <date>. "none" when the client has never run ads.
@@ -63,6 +71,8 @@ Source: Meta Ads / Google Ads, pulled <date>. "none" when the client has never r
 | --- | --- | --- | --- |
 | Spend per month | | | |
 | Cost per result · result type | | | |
+
+n = results for a cost per result, months for a monthly spend.
 
 ## 6. Not measured and why
 

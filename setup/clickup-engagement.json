@@ -1,5 +1,5 @@
 {
-  "description": "Seed list of deliverable tasks per VIOS Practice stage, used by vios-engage:vios-engagement-setup to fill the client's single '<Client> — Deliverables' list (one list, Stage field per task; statuses from setup/clickup.json). Only the stages in scope are seeded. Since 2026-11-02 there are no lists per stage; the 'statuses' block below is kept for the record of the pre-2026-11-02 layout.",
+  "description": "Seed list of deliverable tasks per VIOS Practice stage, used by vios-engage:vios-engagement-setup to fill the client's single '<Client> — Deliverables' list (one list, Stage field per task; statuses from setup/clickup.json). Only the stages in scope are seeded. Task names are the deliverable keys the stage skills write at stages.<stage>.deliverables.<key> (each skill names its key per step), so the seed follows the skills, never the other way; the 'Stage N sign-off' task of each stage is moved to approved by the front door's 'Sign off what's waiting' route (vios-engage:vios), not by the stage skill. Since 2026-11-02 there are no lists per stage; the 'statuses' block below is kept for the record of the pre-2026-11-02 layout.",
   "statuses": [
     {
       "status": "Draft",
@@ -30,7 +30,7 @@
         "Messages and story",
         "Persona Bible",
         "Name and tagline",
-        "Brand book (Format A)",
+        "Brand book",
         "Designer brief",
         "Stage 1 sign-off"
       ]
@@ -56,7 +56,7 @@
         "Choreography",
         "Recovery",
         "Operations brief",
-        "Stage 3 close"
+        "Stage 3 sign-off"
       ]
     },
     {
@@ -67,10 +67,11 @@
         "Materials",
         "Cadence calendar",
         "Sessions 1–5",
-        "Sign-offs",
+        "Coaching",
         "Handoffs",
         "Thirty-day review",
-        "Retrospective"
+        "Retrospective",
+        "Stage 4 sign-off"
       ]
     },
     {

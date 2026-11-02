@@ -12,7 +12,7 @@ truth; everything else reads from it or writes to it.
 | 2 | Persona | `vios-persona-builder` | `persona-bible.md`, `character-sheet/`, `consents/` (Drive) | Account manager + client owner |
 | 3 | Facts and brand | guardrails convention | `fact-sheet.md`, `brand-book.md`, `accounts.md`, Canva brand kit | Account manager |
 | 4 | Month plan | `vios-content-calendar` | Metricool planner + ClickUp list "Content" (one task per post) | Content lead |
-| 5 | Copy | `vios-persona-voice` | ClickUp task description, status Draft → QA | Content lead |
+| 5 | Copy | `vios-persona-voice` | ClickUp task description, status Draft → Review | Content lead |
 | 6 | Video and visuals | `vios-video-script`, `vios-nonverbal-lens` | ElevenLabs flows (persona only), Canva / Adobe Express for stills | Content lead |
 | 7 | QA gate | `vios-consistency-qa`, `vios-be-lens` | `qa-log.csv` row with `signed_off_at`; ClickUp status Approved | Named approver on Bible front page |
 | 8 | Publish | hard line 10 | Metricool scheduling; ClickUp status Scheduled → Published | Approver clicks |

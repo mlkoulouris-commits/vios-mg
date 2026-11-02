@@ -7,7 +7,7 @@ Every item names the role, the skill, the tool and the proof that it happened.
 1. Account manager runs `python scripts/clients.py new <slug> "<Name>"` (the folder from `templates/client/` plus `status.json`) and fills `accounts.md` and `fact-sheet.md` from the client, never from memory.
 2. Run `vios-brand-diagnosis` → `diagnosis.md`. Client owner signs the positioning.
 3. Run `vios-persona-builder` → `persona-bible.md` with front page complete (approver, register, emoji, alcohol, AI disclosure, version, next review). Consents filed in Drive before any likeness or voice is used.
-4. Brand book and Canva brand kit. Metricool brand connected (Instagram, Facebook, TikTok, Google Business). ClickUp: the client's five lists and the Approver option, as `vios-engagement-setup` step 2 makes them (ids into `accounts.md` and `setup/clickup.json`); without the option, every scheduled run's tasks stay "To confirm".
+4. Brand book and Canva brand kit. Metricool brand connected (Instagram, Facebook, TikTok, Google Business); until it is, the calendar and the weekly pack say "posting by hand" and run anyway. ClickUp: the client's five lists and the Approver option, as `vios-engagement-setup` step 2 makes them (ids into `accounts.md` and `setup/clickup.json`); without the option, every scheduled run's tasks stay "To confirm".
 5. `calendar-sources.md` filled with dated holiday and event sources for BG/GR/EN as relevant.
 
 ## Daily (content lead, 20 min)
@@ -18,7 +18,7 @@ Every item names the role, the skill, the tool and the proof that it happened.
 ## Weekly (Monday)
 
 - Performance lead: `vios-ads-audit` runs by schedule; action list lands in ClickUp "Ads"; owner approves pauses and budget changes.
-- Content lead: next week's posts pass `vios-consistency-qa`; each gets a `qa-log.csv` row; approver fills `signed_off_at`; only then scheduled in Metricool.
+- Content lead: next week's posts pass `vios-consistency-qa`; each gets a `qa-log.csv` row with the ClickUp task id in `asset`; the approver approves the task in ClickUp; the content lead copies the approver's name and the status-change time into the row's `signed_off_by` / `signed_off_at`; only then scheduled in Metricool (at the best time per network from Metricool, or by hand until the brand is connected).
 - Account manager: 15-minute client check-in with the Metricool weekly view.
 - Account manager, every second Friday during an engagement: the founder note, `/vios <client>` › Founder note (three lines from the card: done · waiting on you · next date, written dated to `README.md` › Notes to the founder; the user sends it). Nothing waits for a sign-off meeting to be heard.
 

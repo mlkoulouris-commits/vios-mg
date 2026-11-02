@@ -7,7 +7,7 @@ description: "Run the Vios Marketing brand diagnosis on a new F&B client: the re
 
 The first step of every Vios Marketing engagement. Understand before acting: we sell clarity, then strategy, then execution. Nothing gets produced before this is done and signed off.
 
-Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality Questionnaire). The worksheets are in this skill: read `references/worksheets.md` for the exact questions in order, `references/archetypes.md` for the twelve archetypes (drive, fear, strategy, voice, message) before Step 4 and Step 7, and copy `references/competitor-audit-template.md` into the client folder for Step 5. Ask the worksheet questions in their own words; the steps below are the order and the tests.
+Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality Questionnaire). The worksheets are in this skill: read `references/worksheets.md` for the exact questions in order, `references/archetypes.md` for the twelve archetypes (drive, fear, strategy, voice, message) before Step 4 and Step 7, and, for Step 5, copy the audit spreadsheet into the client's Drive folder as `references/competitor-audit-template.md` says (the md stays the reference, not the instrument). Ask the worksheet questions in their own words; the steps below are the order and the tests.
 
 **Work in seven steps. Stop after each and ask one question.** Each step shows at most ten plain lines; no open-fact numbers, section references or file paths on screen (those go in the file). "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before the user has seen the step that writes it (status.json and open-facts.md bookkeeping aside). Start by reading `clients/<slug>/status.json` and `open-facts.md`: what they already answer is never asked again.
 
@@ -23,7 +23,7 @@ Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality 
 
 **Ask only when necessary; never invent.** The owner's interview answers (step 2), the purpose in the owner's words and the verdict's sign-off are never drafted by the practice: an open one is written *to confirm* with the question, a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and, when it blocks the next action or the stage from closing, a blocker in `status.json`. POS numbers, covers, spend, review counts and competitor names come only from the files or the user; no POS export means the numbers page says so, not an estimate. A gap that stops a step and that the user can answer now is one question; any other gap is a row and the step goes on.
 
-**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Diagnosis": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> diagnosis.md "<Client>-Diagnosis-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
+**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Diagnosis": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id at `stages.<stage>.deliverables.<name>.clickup` in `status.json`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> diagnosis.md "<Client>-Diagnosis-vN" "Diagnosis"` and send the PDF to the user. The user forwards it; the practice never emails a client.
 
 ## Principles
 
@@ -40,7 +40,7 @@ Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality 
 2. 12 months of POS data if available (Memento, otherwise the POS export): covers, average spend, peak days, top sellers
 3. Guest evidence, three pieces (templates in `templates/client/data/`, filled files in `[client]/data/`): **review mining** (`review-mining.md`, the last 200 reviews coded into praise and complaint themes with counts; required), **guest interviews** (`guest-interviews.md`, 8–10 fixed-question conversations, anonymised summary; consents in Drive), **mystery visit** (`mystery-visit-YYYY-MM-DD.md`, one unannounced scored visit). A venue not yet open: review mining of the two closest comparable venues, named as such, and no interviews or visit; say so.
 4. An owner interview (the eleven questions below)
-5. Competitor list: 10 minimum, 20 ideal, found by searching the client's own description + location
+5. Competitor list: 10 minimum (5 only when the category has fewer), 20 ideal, found by searching the client's own description + location
 
 ## Step 1 — The real business (facts before feelings)
 

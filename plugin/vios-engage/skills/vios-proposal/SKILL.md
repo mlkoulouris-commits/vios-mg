@@ -22,7 +22,7 @@ The scope summary from the intake, turned into the document the founder signs an
 
 ## Step 1 — Confirm scope
 
-First, one line on capacity: count the `clients/*/status.json` whose `account_manager` is this engagement's and whose `marketing_loop` is `in` or has a stage `in progress`, against the load rule in `docs/sop.md` › Capacity, and say whether the practice can take it now. Over capacity → step 3's start date is the first date the load allows, and the proposal says so.
+First, one line on capacity: run `python scripts/clients.py load "<account manager>"` (this engagement's, from the intake record) and quote its line; never count by hand. The helper states the rule of `docs/sop.md` › Capacity: a loop client is `marketing_loop` = `in`; an engagement is any of `1 Brand` … `4 Training` `in progress` or `review` (never the Engagement row, which every client carries "in progress"); a client that is both counts once, as an engagement; folders whose name says DEMO or whose README says ARCHIVED are skipped; within load means no engagement and at most three loop clients, or one engagement plus one loop client. Over capacity → step 3's start date is the first date the load allows, and the proposal says so.
 
 Show the intake's scope summary as a checklist, one line per item, in / out:
 
@@ -85,7 +85,7 @@ Ask: *"Read the doc. Change anything before the client PDF?"*
 
 ## Step 5 — The client PDF
 
-"<Client> — What you get" (a cover and up to three pages), from `templates/proposal/deliverables-sheet.md` filled with steps 1–3: deliverables table, what the client supplies, the KPI table with its sentence, timeline, total, signature line. No method prose, no practice history. Write `[client]/proposal-vN-deliverables.md` and render it with `python scripts/clients.py pdf <slug> proposal-vN-deliverables.md "<Client>-What-you-get-vN"` → `[client]/deliverables/`.
+"<Client> — What you get" (a cover and up to three pages), from `templates/proposal/deliverables-sheet.md` filled with steps 1–3: deliverables table, what the client supplies, the KPI table with its sentence, timeline, total, signature line. No method prose, no practice history. Write `[client]/proposal-vN-deliverables.md` and render it with `python scripts/clients.py pdf <slug> proposal-vN-deliverables.md "<Client>-What-you-get-vN" "Proposal"` → `[client]/deliverables/`.
 
 Then: `status.json` › `proposal` (`version` N, `status` sent, `doc`, `pdf`; the previous version moves into `proposal.history[]` as superseded) and `kpis` written from the table (name, baseline, target, target_note where used, due, how_measured, attribution "contribution") so the monthly report and the harvest read the same promise; a line in `[client]/README.md` › Intake record pointing at the doc and the PDF; and the ClickUp task renamed "Proposal <Client> vN — awaiting signature", **review** until signed. The user sends the PDF; the practice never emails a client. On signature: `proposal.status` signed, the task **approved**, and the founder's pulse line (one sentence: what worked, what to change) dated into `[client]/README.md` › Sign-offs.
 

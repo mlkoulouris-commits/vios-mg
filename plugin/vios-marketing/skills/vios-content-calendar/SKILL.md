@@ -19,20 +19,22 @@ A venue's calendar is a logistics tool, not a gallery. It respects the kitchen, 
 
 **Ask only when necessary; never invent.** Holidays, name days, school holidays and festivals come only from `calendar-sources.md`; venue rhythm, events, menu changes, hours and prices only from `fact-sheet.md` or the user; never from memory. A date not on file is "to confirm" in the slot, never a guess (a wrong date in a public post is a block-level fact error).
 
-Team capacity (who shoots, hours per week) and the approver are a question when the user can answer now; otherwise "to confirm", a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and, when it blocks the next action or the stage from closing, a blocker in `status.json`, and the month is planned at the capacity row the file supports. No Persona Bible: the guardrails stand-in, flagged. Hard-line 11 topics (allergy, illness, injury, legal, press, named staff, discrimination) get no slot and no draft; the facts go to the approver.
+Team capacity comes from the "Content capacity" row of `fact-sheet.md` (who shoots · hours per week · posts per week the venue can feed, with photos and staff time); only when that row is empty is it, like the approver, a question when the user can answer now; otherwise "to confirm", a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and, when it blocks the next action or the stage from closing, a blocker in `status.json`, and the month is planned at the capacity row the file supports. No Persona Bible: the guardrails stand-in, flagged. Hard-line 11 topics (allergy, illness, injury, legal, press, named staff, discrimination) get no slot and no draft; the facts go to the approver.
 
-**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed, `next_action`) → at step 5 the ClickUp tasks: one per post in the client's Content list (id in `accounts.md`), status **review**, named `<date> · <platform> · <pillar> · <working title>`, due = publish date, description = caption draft + asset note + Anchor/Block, Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review). A blocked client (no accounts, no Metricool brand, empty persona) gets the blocker in `status.json` and no tasks. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`.
+No Metricool brand is a note, not a blocker: plan the month and put "best times unknown; posting by hand until Metricool is connected" in the month at a glance (the weekly run then posts by hand).
+
+**After every step:** write the file → update `clients/<slug>/status.json` (`updated`, blockers added or removed, `next_action`) → at step 5 the ClickUp tasks: one per post in the client's Content list (id in `accounts.md`), status **review**, named `<date> · <platform> · <pillar> · <working title>`, due = publish date, description = caption draft + asset note + Anchor/Block, Stage = Marketing, Approver = the approver in `status.json` matched to `setup/clickup.json` ("To confirm" when unmatched), one `create_many` call per list (the pattern in `setup/scheduled-tasks.md` › ClickUp Review). A blocked client (no accounts, empty persona) gets the blocker in `status.json` and no tasks. The QA gate stays: nothing moves past Review without `vios-consistency-qa` and a `qa-log.csv` row with `signed_off_at`.
 
 ## Load first (`vios-guardrails` › client file)
 
 - `diagnosis.md` + `persona-bible.md`: purpose, pillars, audience, archetype, never-list, approver, alcohol yes/no
 - `brand-book.md` › Messages and story: core messages, the seven story blocks, the journey (touchpoints, guest state, designed peak), micro-message blocks (guardrails › Messages and micro-stories). Missing: anchor slots to purpose + pillar and flag "no message architecture on file"; no journey: stand-in peak = the evening at its best
-- `fact-sheet.md`: venue rhythm (open days, slow days, peak days, events), seasonal menu changes
-- `accounts.md`: Metricool brand id, platforms, languages
+- `fact-sheet.md`: venue rhythm (open days, slow days, peak days, events), seasonal menu changes, the Content capacity row
+- `accounts.md`: Metricool brand id (missing: a note, not a blocker; see After every step), platforms, languages
 - `calendar-sources.md`: holidays, name days, school holidays, festivals, from dated sources, never memory (a wrong date in a public post is a block-level fact error)
 - Last month's `vios-monthly-report` if it exists (new client: skip and say so)
 - `character-sheet/`: none → persona-video cadence = 0, replaced by team-filmed Reels
-- Team capacity: who can shoot, hours per week
+- Team capacity: the Content capacity row of `fact-sheet.md` (who can shoot, hours per week, posts per week); asked only when the row is empty
 
 ## Principles
 
@@ -68,7 +70,7 @@ ALWAYS deliver:
 
 | Date | Day | Platform | Lang | Pillar | Anchor | Block | Journey | Format | Idea | Hook | CTA | Owner | Asset | Status |
 
-Anchor = the core message by short name; Block = story block 1–7 (or the micro-message block name for touchpoint copy); Journey = the touchpoint shown, "peak" where it is the designed peak.
+Date = `YYYY-MM-DD`, always a real date from the sourced calendar (the Monday run `vios-weekly-content` selects rows by it; a week label cannot be read). Anchor = the core message by short name; Block = story block 1–7 (or the micro-message block name for touchpoint copy); Journey = the touchpoint shown, "peak" where it is the designed peak.
 
 Status: idea → drafted → review (QA SHIP) → approved → scheduled → label ✓ (persona posts). The column is the calendar's own and maps to ClickUp as draft → review → approved → scheduled (`docs/sop.md` › Statuses). "Posted" is the platform's job, not ours.
 
@@ -82,13 +84,13 @@ Before scheduling: `vios-consistency-qa` → named approver. This skill plans; i
 
 End with one line: the month in a sentence (moments, capacity row, posts in Review), what is "to confirm" and who confirms it, and the next step (`vios-video-script` for the persona slots, `vios-persona-voice` for the captions, `vios-consistency-qa` before anything is scheduled). Then stop.
 
-## Example week (events café, October; pillars place & people / moment / neighbourhood / proof; dates shown as week labels because real dates come from the sourced calendar; capacity row: Standard; TikTok shown 1 of 2–3, Facebook 1 of 2–3)
+## Example week (events café, October 2026, week of Mon 12; pillars place & people / moment / neighbourhood / proof; the dates are real `YYYY-MM-DD` dates taken from the sourced calendar, as every calendar's must be; capacity row: Standard; TikTok shown 1 of 2–3, Facebook 1 of 2–3)
 
 | Date | Day | Platform | Lang | Pillar | Anchor | Block | Journey | Format | Idea | Hook | CTA | Owner | Asset | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Wk 2 | Mon | IG | BG+EN | Place & people | Made here | 4 guide | making | Reel | The room being set for Thursday's vinyl night | "Четвъртък се подготвя от понеделник." / "Thursday starts on Monday." | none | M. | Reel 20 s | drafted |
-| Wk 2 | Wed | IG + FB | BG | Neighbourhood | Place matters | 1 existing world | discovery | Carousel | The three shops on our street we buy from | "Нашата улица." | none | M. | 5 photos | idea |
-| Wk 2 | Thu | TikTok | EN | Moment | Human, not performed | 5 challenge | the evening | Talking-head (persona) | Why the lights go down at nine | "At nine we turn the lights down. Here's why." | none | persona | clip 25 s | review (QA SHIP) |
-| Wk 2 | Fri | GBP | BG | Moment | Worth the trip | 3 call to action | booking | Post | Friday 21:00 live set, table for the late show | — | "Book" | M. | 1 photo | scheduled |
-| Wk 2 | Sat | IG story | BG | Proof | Table is the centre | 6 transformation | peak | UGC repost (permission on file) | Guest's photo from Thursday | — | none | M. | — | idea |
-| Wk 2 | Sun | IG | BG+EN | Moment | Worth the trip | 7 new world | after-visit | Reel | Sunday morning, first coffee, empty gallery | "Преди да отворим." / "Before we open." | none | M. | Reel 15 s | idea |
+| 2026-10-12 | Mon | IG | BG+EN | Place & people | Made here | 4 guide | making | Reel | The room being set for Thursday's vinyl night | "Четвъртък се подготвя от понеделник." / "Thursday starts on Monday." | none | M. | Reel 20 s | drafted |
+| 2026-10-14 | Wed | IG + FB | BG | Neighbourhood | Place matters | 1 existing world | discovery | Carousel | The three shops on our street we buy from | "Нашата улица." | none | M. | 5 photos | idea |
+| 2026-10-15 | Thu | TikTok | EN | Moment | Human, not performed | 5 challenge | the evening | Talking-head (persona) | Why the lights go down at nine | "At nine we turn the lights down. Here's why." | none | persona | clip 25 s | review (QA SHIP) |
+| 2026-10-16 | Fri | GBP | BG | Moment | Worth the trip | 3 call to action | booking | Post | Friday 21:00 live set, table for the late show | — | "Book" | M. | 1 photo | scheduled |
+| 2026-10-17 | Sat | IG story | BG | Proof | Table is the centre | 6 transformation | peak | UGC repost (permission on file) | Guest's photo from Thursday | — | none | M. | — | idea |
+| 2026-10-18 | Sun | IG | BG+EN | Moment | Worth the trip | 7 new world | after-visit | Reel | Sunday morning, first coffee, empty gallery | "Преди да отворим." / "Before we open." | none | M. | Reel 15 s | idea |

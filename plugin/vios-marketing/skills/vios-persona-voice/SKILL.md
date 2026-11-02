@@ -70,7 +70,7 @@ Touchpoint copy (greeting, host lines, menu talk, booking messages, departure an
 | Google Business post | What, when, why this week | ≤ 60 words | One |
 | Review request (QR after the bill) | Per guardrails 2 | 1 line | Link |
 
-Default response targets (override in `persona-bible.md`): comments same day; DMs within 2 h while open; reviews within 48 h. Slow replies read as not listening. If the venue can't staff this, say so in the output line rather than draft replies nobody will send.
+Default response targets (the "Response targets" row on the persona bible's front page overrides them): comments same day; DMs within 2 h while open; reviews within 48 h. Slow replies read as not listening. If the venue can't staff this, say so in the output line rather than draft replies nobody will send.
 
 ## Replies: the Vios discipline
 

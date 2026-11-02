@@ -11,7 +11,7 @@ The five moves at the close of an engagement, one to three days of practitioner 
 
 ## Steps
 
-1. **Stage-harvest review** (move 1): each candidate as a row, candidate · promoted · dropped, with the second engagement when promoted. Ask: *"Agree with each status?"*
+1. **Stage-harvest review** (move 1): each candidate as a row, candidate · promoted · dropped, with the second engagement when promoted; the rows are written into `../../references/pattern-index.md` (a new candidate, a promotion, a drop), so `vios-intake` move 3 reads one file. Ask: *"Agree with each status?"*
 2. **Library contributions** (move 2): the proposed sub-entries, one line each, under the principle they join. Ask: *"Keep, add or drop any?"*
 3. **Template refinements** (move 3): held or made, with the engagements behind each. Ask: *"Make these and hold those?"*
 4. **Case recommendation** (move 4): the KPI table as promised (proposal) and as it stands (baseline · target · latest · date, from `status.json` › `kpis`), then recommend or decline, the lesson, the window. A KPI table that is empty or has no `latest` is recorded as "no outcome evidence" and the case can only be recommended for a method lesson, never for a result. Ask: *"Recommend, or decline?"*
@@ -29,7 +29,7 @@ The five moves at the close of an engagement, one to three days of practitioner 
 
 Write the step's table into `[client]/archive/harvest-engagement.md` (steps 1–5), `[client]/archive/retrospective.md` (step 6), `docs/cases.md` (step 4), `docs/changelog-proposals.md` (step 7). Then `status.json`: the harvest deliverable's `status` (draft → review → approved → done) and `file`, `current_stage` "closed" at step 5, blockers added or removed, `next_action`, `updated`. Then the ClickUp task "Harvest <Client>" in the client's Deliverables list (list id in `setup/clickup.json`; task id at `stages.Engagement.deliverables.Harvest.clickup`): **draft** while writing, **review** at step 7 when it waits for the owner, **approved** on the owner's word, **done** when the increment is logged.
 
-No client PDF by default, the harvest is the practice's; when the user wants the retrospective to go to the founder, `python scripts/clients.py pdf <slug> archive/retrospective.md "<Client>-Retrospective-v1"` at step 6 and hand the PDF to the user.
+No client PDF by default, the harvest is the practice's; when the user wants the retrospective to go to the founder, `python scripts/clients.py pdf <slug> archive/retrospective.md "<Client>-Retrospective-v1" "Case"` at step 6 and hand the PDF to the user.
 
 ## Read first
 

@@ -14,7 +14,7 @@ The six moves at the start of an engagement, from the first conversation to the 
 1. **The conversation** (move 1): the four answers in the founder's words, whether the method can serve the brief, and the client's folder name (new or existing). Ask: *"Are these the founder's words as given?"*
 2. **Scope** (move 2): stages in / out / part, briefs, partners, marketing loop, as a checklist; under it the founder's answer to *"what should be different in 90 days, in numbers?"* as up to four lines (measure · today's number or "to measure" · wanted). Ask: *"Is this the scope, and are these the numbers the founder named?"*
 3. **Starting set** (move 3): patterns, library entries, templates, closest prior case. Ask: *"Keep, add or drop any?"*
-4. **The intake record** (move 4): the record's lines and the open-facts rows as they will be written, approver named. Ask: *"Is this the record, with this approver?"*
+4. **The intake record** (move 4): the record's lines and the open-facts rows as they will be written, approver named with e-mail and role (the Approver row of `accounts.md`; no e-mail → "to confirm" and a row). Ask: *"Is this the record, with this approver?"*
 5. **Timeline** (move 5): the dates as one short table; a "to confirm" the user does not set here stays for the founder. Ask: *"Dates right?"*
 6. **Confirm and begin** (move 6): what the founder has confirmed in writing, and where. Ask: *"Confirmed on the record, or does it wait for the proposal?"*
 
@@ -25,9 +25,9 @@ The six moves at the start of an engagement, from the first conversation to the 
 
 ## After every step
 
-Write the step's lines into `[client]/README.md` › Intake record (new client: `python scripts/clients.py new <slug> "<Name>"` once, after step 1, which creates the folder, `status.json` and `open-facts.md`; an existing folder is updated). Then `status.json`: `current_stage` "0 intake", approver, `marketing_loop`, each stage's scope, blockers, `next_action`, `updated`.
+Write the step's lines into `[client]/README.md` › Intake record (new client: `python scripts/clients.py new <slug> "<Name>"` once, after step 1, which creates the folder, `status.json` and `open-facts.md`; an existing folder is updated). Then `status.json`: `current_stage` "0 intake", approver, `marketing_loop`, each stage's scope, blockers, `next_action`, `updated`; at step 4 also the Approver row of `[client]/accounts.md` (name · e-mail · role), which setup step 4 reads for the calendar invites.
 
-Then the ClickUp task "Intake <Client>" (Stage = Engagement) in "Department — Setup & SOP" (id in `setup/clickup.json`), since the client's lists do not exist until setup step 2, which moves it to the Deliverables list; its id at `stages.Engagement.deliverables.Intake.clickup`: **draft** while writing, **review** at step 6, **approved** on the founder's confirmation. No client PDF by default; when the founder confirms from the record itself rather than the proposal, `python scripts/clients.py pdf <slug> README.md "<Client>-Intake-v1"` at step 6 and hand the PDF to the user.
+Then the ClickUp task "Intake <Client>" (Stage = Engagement) in "Department — Setup & SOP" (id in `setup/clickup.json`), since the client's lists do not exist until setup step 2, which moves it to the Deliverables list; its id at `stages.Engagement.deliverables.Intake.clickup`: **draft** while writing, **review** at step 6, **approved** on the founder's confirmation. No client PDF by default; when the founder confirms from the record itself rather than the proposal, `python scripts/clients.py pdf <slug> README.md "<Client>-Intake-v1" "Intake"` at step 6 and hand the PDF to the user.
 
 ## Read first
 
@@ -47,7 +47,7 @@ A fourth question closes the move: **"What should be different in 90 days, in nu
 
 ## Move 3 — Pull from Layer 2
 
-Consult what the practice already holds: the Patterns sections of each stage chapter, the candidate patterns in `docs/dry-run-*.md` harvest entries, the two libraries, the templates, the worked examples. Record a **starting set** for this engagement: the patterns likely to apply, the library entries that match the concept, the templates to reuse, the closest prior case. Not binding; the engagement may deviate and say why.
+Consult what the practice already holds: `../../references/pattern-index.md` (every pattern code the chapters hold, S1-01 to S4-07, one line each with when to use, plus the dry-run candidates marked as such; the chapters' Patterns sections hold the full form), the two libraries, the templates, the worked examples. Record a **starting set** for this engagement: the patterns likely to apply, the library entries that match the concept, the templates to reuse, the closest prior case. Not binding; the engagement may deviate and say why.
 
 ## Move 4 — Open the project workspace
 

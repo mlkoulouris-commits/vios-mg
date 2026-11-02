@@ -11,3 +11,4 @@ The engagement's chase list. Every "to confirm" in any deliverable is a row here
 | 5 | Street number: 1 or 1А (site footer vs Google) | Reel card; fact sheet; Google listing | ONE Gallery | 2026-11-02 | 2026-11-06 | |
 | 6 | Metricool brand for ONE Gallery (Instagram, Facebook, Google Business connected) | scheduling; weekly pack posts by hand until then | Menelaos | 2026-11-02 | 2026-11-13 | |
 | 7 | Signed proposal: date and file | proposal record in status.json | Menelaos | 2026-11-02 | 2026-11-13 | |
+| 8 | ONE logo file and the exact identity values (colours, type) from Brand Book v2.2 §5.5, for the text cards | every branded card; Express brand kit | ONE Gallery / Desi | 2026-11-02 | 2026-11-13 | |

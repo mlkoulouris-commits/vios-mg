@@ -1,0 +1,18 @@
+{
+  "month": "2026-11",
+  "brand": {
+    "mark": "ONE",
+    "bg": "#5a2230",
+    "fg": "#f3e9dd",
+    "accent": "#c2603a",
+    "head_font": "Playfair Display",
+    "text_font": "Inter",
+    "source": "brand-book.md › Palette and type: terracotta, burgundy, warm neutrals; Playfair Display + Inter. Logo file not on file (open fact): wordmark set in Playfair until the identity files arrive."
+  },
+  "cards": [
+    {"kind": "story", "lines": ["Честит имен ден,", "Ангел, Михаил, Ангелина,", "Емил, Милена и Рангел."], "small": "Отворено както винаги · 10:00–00:00", "size": 66},
+    {"kind": "title", "lines": ["Как изкуството", "стига до чашата."], "small": "How the art reaches the glass", "size": 92},
+    {"kind": "title", "lines": ["Gallery Series"], "small": "Дихание · до 19 ноември", "size": 104, "bg": "#c2603a", "fg": "#f8f1e8"},
+    {"kind": "title", "lines": ["ONE"], "small": "Дякон Игнатий · София", "size": 160}
+  ]
+}

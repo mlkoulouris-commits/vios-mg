@@ -170,6 +170,11 @@
           "status": "review",
           "file": "content/2026-11/week-45_2026-11-02.md",
           "pdf": "deliverables/ONE-Gallery-Week-45-posts.pdf"
+        },
+        "Week 45 cards (creative)": {
+          "status": "review",
+          "file": "content/2026-11/creative/week-45-cards.html",
+          "where": "https://new.express.adobe.com/id/urn:aaid:sc:EU:190940c3-7dc6-4835-8704-f6c72336b33e"
         }
       }
     }

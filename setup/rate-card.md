@@ -1,18 +1,20 @@
 # Rate card — VIOS Practice
 
-**Empty on purpose.** `vios-proposal` prices only from this file; until the owner fills it, every price in a proposal reads "to confirm". Fill in EUR, excluding VAT, with the date set.
+Prices in EUR, excluding VAT. `vios-proposal` prices only from this file. **Set by Vios (Claude, with Menelaos) on 2026-11-02 as the practice's working prices; the owner confirms or changes them here.** A price not on this card is "to confirm with the practice owner".
 
 | Item | Price | Unit | Notes |
 | --- | --- | --- | --- |
-| Stage 1 — Brand strategy and book | to confirm | per engagement | includes Persona Bible and designer brief |
-| Stage 1 — Revision pass only | to confirm | per edition | when a book exists |
-| Stage 2 — Journey map | to confirm | per venue | includes Reasoning Note and handoff |
-| Stage 3 — Journey design | to confirm | per venue | pages, choreography, recovery, operations brief |
-| Stage 4 — Training programme | to confirm | per venue | onboarding plan or full programme |
-| Partner brief (architect, interior, designer) | to confirm | each | |
-| Marketing loop | to confirm | per month | the five scheduled tasks, calendar, copy, QA, ads, report |
-| Day rate outside scope | to confirm | per day | |
-| Travel | to confirm | | |
-| Payment terms | to confirm | | deposit; per stage on sign-off |
+| Stage 1 — Brand strategy and book | 7,500 | per engagement | includes Persona Bible and designer brief |
+| Stage 1 — Revision pass only | 3,000 | per edition | when a book exists |
+| Stage 2 — Journey map | 3,500 | per venue | includes Reasoning Note and handoff; observation move included for a trading venue |
+| Stage 3 — Journey design | 6,000 | per venue | pages, choreography, recovery, operations brief |
+| Stage 4 — Training programme | 4,500 | per venue | full stack for an opening; onboarding plan only for a running venue: 2,500 |
+| Partner brief (architect, interior, operations) | 900 | each | designer brief is inside Stage 1 |
+| Marketing loop | 1,500 | per month | the five scheduled tasks, calendar, copy, QA, ads management, monthly report; ad spend not included |
+| Day rate outside scope | 600 | per day | |
+| Travel | at cost | | outside Sofia; none inside Sofia |
+| Payment terms | 30 % deposit on signature; balance per stage on sign-off; marketing loop monthly in advance | | |
 
-Set on: — · by: —
+Reasoning (2026-11-02): a four-stage engagement is ~40 practitioner-days → ~580 €/day, under Sofia agency strategy rates, above freelance; a 40-seat opening carries ~23k € against a 300–400k € build. Review after the first two signed proposals.
+
+Set on: 2026-11-02 · by: Vios (Claude) — owner confirmation pending

@@ -1,0 +1,50 @@
+{
+  "$schema": "../../setup/status.schema.json",
+  "client": "demo-gradina",
+  "name": "Gradina (DEMO)",
+  "approver": "Nadia Petrova (founder, DEMO)",
+  "account_manager": "Menelaos Koulouris",
+  "proposal": {
+    "version": 1,
+    "status": "not sent",
+    "doc": "proposal-v1.md",
+    "pdf": "deliverables/Gradina-DEMO-What-you-get-v1.pdf"
+  },
+  "marketing_loop": "in",
+  "current_stage": "0 intake",
+  "stages": {
+    "1 Brand": {
+      "scope": "in",
+      "status": "not started",
+      "deliverables": {}
+    },
+    "2 Map": {
+      "scope": "in",
+      "status": "not started",
+      "deliverables": {}
+    },
+    "3 Design": {
+      "scope": "in",
+      "status": "not started",
+      "deliverables": {}
+    },
+    "4 Training": {
+      "scope": "in",
+      "status": "not started",
+      "deliverables": {}
+    }
+  },
+  "blockers": [
+    {
+      "what": "Budget and target spend per head",
+      "holds": "founder",
+      "open_fact": 5,
+      "blocks": "proposal"
+    }
+  ],
+  "next_action": {
+    "skill": "vios-engage:vios-proposal",
+    "what": "Send the proposal PDF to Nadia; on signature run vios-engagement-setup"
+  },
+  "updated": "2026-11-02"
+}

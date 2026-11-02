@@ -110,3 +110,12 @@ Status: the map is unsigned and its weights are provisional (no observation). St
 - **What the staff member nearest the door does with their hands** at the threshold: the book says they keep working; Stage 3 decides what work is visible from the door.
 - **Recovery compensation**: none in the moment unless the guest is visibly upset; the manager decides at the bill, if at all (three-registers example 3). The book is silent on compensation; Stage 3 designs it within "We got that wrong. Here's what we're doing instead."
 - **Nothing in the map constrains the room beyond the book's Part 6**, so no architect or interior brief revision is issued at this stage. If observation shows the door and window do not let the room be seen from the street (M06, M07), an interior brief revision follows.
+
+## v1.1 additions (2026-11-01, realignment against Stage 1 and `persona-bible.md` v0.2)
+
+| Constraint | Detail and source |
+| --- | --- |
+| No AI ambassador in the venue | Phases 2–6 (M06–M32) are human only; no screen, voice or image of the ambassador in the room, on the menu or at the bill. Source: `persona-bible.md` § 8; book § 2.2 "not a content backdrop", value 3 "technology fragments attention". |
+| Booking and reminder unsigned | M04, M05 go in brand voice, formal Вие, no persona name. Source: Bible § 8. |
+| Reviews signed by a human | M34: the approver (interim: account manager) signs; never the ambassador. Source: guardrails 6, 11; Bible § 14. |
+| M30 review cards | Stage 3 designs the departure with the Razberry QR card question settled first (`open-facts.md` row 23). |

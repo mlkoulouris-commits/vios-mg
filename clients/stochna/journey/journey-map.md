@@ -6,11 +6,21 @@
 | Descriptor | Kitchen Brewery. "Cook for beer. Brew for food." |
 | Stage | 2, customer journey map (VIOS Practice § 2.2) |
 | Date | 2026-11-01 |
-| Edition | v1.0, built on Stochna Brand Book V2 (23 Feb 2026). First map; no earlier edition to realign against. |
+| Edition | v1.1, 2026-11-01: v1.0 (built blind on Stochna Brand Book V2, 23 Feb 2026) realigned against `diagnosis.md` draft, `brand-book.md` › Messages and story v1 and `persona-bible.md` v0.2, all 2026-11-01. Changed cells carry `[v1.1]`; see "Realignment v1.1" below. |
 | Arc mapped | The evening service (doors 18:00–24:00). Weekend day service is a separate arc, not mapped (see `reasoning-note.md`). |
 | Observation | **None.** No shadowed service, no review read (`observation.md` does not exist). All weights are **provisional, unobserved**; every HIGH is brand-led. Condition of this map: two shadowed services on different dayparts and a read of the last 50 reviews before the founder signs (`open-facts.md` row 9). |
 | Re-weighting date | 45 days after the Stage 3 design goes live. The design has no live date yet, so the date is held as "design live + 45 days", owned by the account manager (`open-facts.md` row 10). |
 | Signs | Founder (name to confirm, `open-facts.md` row 12) signs `reasoning-note.md` before design starts (guardrails 10). |
+
+## Realignment v1.1
+
+**What held:** the arc (7 phases), all 36 moments, every weight, the signature M17 ★, the peak M24 ◉, the end M30 + M31 ⊐, the six silences. Stage 1 added no new brand fact; it confirmed the book.
+
+**What changed** (outside the room, as expected):
+1. **AI ambassador** (`persona-bible.md` § 8). It speaks at M01, M02, M33, M35; it is silent at M04, M05 (booking and reminder go in brand voice, unsigned) and M34 (reviews, a human signs). It never appears in phases 2–6: every in-venue moment stays human.
+2. **Risk at M02.** The target state "It's someone's place, not a concept" is the one an AI host can break: a labelled AI on the profile may read as concept. Not re-weighted; the persona pilot (Bible § 15) tests it, and a fail sends M02 back to people-only.
+3. **M30 conflict named.** The Razberry review QR cards on file vs "nothing is requested" at the bill (`open-facts.md` row 23). The intention holds; the cards are the operational question.
+4. **M17 claim.** The spent-grain sentence stays a candidate until open fact 6 confirms the bread.
 
 ## How to read
 
@@ -52,11 +62,11 @@ Shares are of a 90–120 minute visit (book § 2.1). The peak is in phase 5, the
 
 | Code | Moment | Weight | Brand intention | Role-in-moment | Dominant dimension | Customer target state | Marker |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| M01 | Hearing of it | MEDIUM | A friend's sentence or one honest image lands as a place for an evening, not a product (pillar: worth the trip) | Guide at a distance: says what is happening, sells nothing | language · appearance | "That might be it." | |
-| M02 | Checking the profile | MEDIUM | The grid and the Google profile show one system: people at tables, the making behind them, nothing to decode (pillar: made together) | Guide who lets the room do the talking | appearance · language | "It's someone's place, not a concept." | |
+| M01 | Hearing of it | MEDIUM | A friend's sentence or one honest image lands as a place for an evening, not a product (pillar: worth the trip) | Guide at a distance: says what is happening, sells nothing; [v1.1] the AI ambassador may carry it, labelled, in real footage only | language · appearance | "That might be it." | |
+| M02 | Checking the profile | MEDIUM | The grid and the Google profile show one system: people at tables, the making behind them, nothing to decode (pillar: made together) | Guide who lets the room do the talking; [v1.1] ambassador in the bio and posts, people and the making still lead the grid (risk: see Realignment 2) | appearance · language | "It's someone's place, not a concept." | |
 | M03 | Weighing the trip | MEDIUM | The 2 km is named plainly and never apologised for; the guest decides on purpose (pillar: worth the trip) | Guide who states the distance and lets the guest choose | attitudes · language | "Everyone there came on purpose. So will we." | |
-| M04 | Booking the table | MEDIUM | There is room for the group; the plan restated plainly in the formal register, no pressure device (pillar: table is the centre) | Guide who confirms and steps back | language · tone | "Done. Thursday, six of us." | |
-| M05 | The reminder | LOW | Date, time, people, how to change; one warm line | Guide who repeats the plan | language | "Still on." | |
+| M04 | Booking the table | MEDIUM | There is room for the group; the plan restated plainly in the formal register, no pressure device (pillar: table is the centre) | Guide who confirms and steps back; [v1.1] brand voice, unsigned, ambassador silent | language · tone | "Done. Thursday, six of us." | |
+| M05 | The reminder | LOW | Date, time, people, how to change; one warm line | Guide who repeats the plan; [v1.1] unsigned | language | "Still on." | |
 
 ## Phase 2 — The trip
 
@@ -106,7 +116,7 @@ Shares are of a 90–120 minute visit (book § 2.1). The peak is in phase 5, the
 
 | Code | Moment | Weight | Brand intention | Role-in-moment | Dominant dimension | Customer target state | Marker |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| M30 | The bill, when asked | **HIGH** | The bill comes when asked, never before, and is settled without rush; nothing is requested: no review, no loyalty card, no rating (pillars: worth the trip · new world) | Guide who closes the evening without turning it into a transaction | attitudes · tone | "That was a great evening." | ⊐ end-1 |
+| M30 | The bill, when asked | **HIGH** | The bill comes when asked, never before, and is settled without rush; nothing is requested: no review, no loyalty card, no rating (pillars: worth the trip · new world); [v1.1] Razberry QR cards in conflict, `open-facts.md` row 23 | Guide who closes the evening without turning it into a transaction | attitudes · tone | "That was a great evening." | ⊐ end-1 |
 | M31 | "See you next time" | **HIGH** | The farewell is a prediction, not a script: warm, human, short; "bring friends, there's room" when it fits (pillars: worth the trip · new world) | Guide at the open door | tone · attitudes | "One-time thing or my new place?" → "This is my place." | ⊐ end-2 |
 | M32 | The walk out | ○ | | | | | ○ |
 
@@ -114,9 +124,9 @@ Shares are of a 90–120 minute visit (book § 2.1). The peak is in phase 5, the
 
 | Code | Moment | Weight | Brand intention | Role-in-moment | Dominant dimension | Customer target state | Marker |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| M33 | Telling friends | MEDIUM | "You have to try this place" is the guest's sentence; the brand is findable and the same when the friend checks; the guest's own photo reposted only with permission (pillars: worth the trip · new world) | Guide who is still there, unchanged | language · appearance | "I'm bringing everyone here." | |
-| M34 | The review | MEDIUM | Every review answered by the detail the guest named; nothing asked to change; hard-line topics to the approver with the facts (pillar: human, not performed) | Guide who listens and answers once | language · tone | "They actually read it." | |
-| M35 | The next brew announced | LOW | What is happening, stated; no call to action | Guide who says what's on | language | "There's always something new there." | |
+| M33 | Telling friends | MEDIUM | "You have to try this place" is the guest's sentence; the brand is findable and the same when the friend checks; the guest's own photo reposted only with permission (pillars: worth the trip · new world) | Guide who is still there, unchanged; [v1.1] ambassador may speak | language · appearance | "I'm bringing everyone here." | |
+| M34 | The review | MEDIUM | Every review answered by the detail the guest named; nothing asked to change; hard-line topics to the approver with the facts (pillar: human, not performed) | Guide who listens and answers once; [v1.1] a named human signs, ambassador silent | language · tone | "They actually read it." | |
+| M35 | The next brew announced | LOW | What is happening, stated; no call to action | Guide who says what's on; [v1.1] ambassador speaks; brew cadence open fact 6 | language | "There's always something new there." | |
 | M36 | Coming back with different friends (to confirm) | MEDIUM | The return is the measure; the regular gets the same attention as the first-timer; staff remember how the table thinks, not only the name (pillars: worth the trip · transformation) | Guide who treats the regular as an equal, not a VIP | attitudes · beliefs | "Same as last time. Good." | |
 
 ## What passes to Stage 3
@@ -155,4 +165,4 @@ Shares are of a 90–120 minute visit (book § 2.1). The peak is in phase 5, the
 
 **Weights are provisional.** This map closes the five tests on the book alone. It is signed only after `observation.md` exists (two shadowed services, 50 reviews read) and the Reasoning Note records which weights the observation changed.
 
-Next step: `vios-journey:vios-journey-design`, after the founder signs `reasoning-note.md`.
+Next step: `vios-journey:vios-journey-design`, after the founder signs `reasoning-note.md`. [v1.1] Stage 3 also receives: no AI ambassador in phases 2–6 (`handoff-to-design.md` › v1.1).

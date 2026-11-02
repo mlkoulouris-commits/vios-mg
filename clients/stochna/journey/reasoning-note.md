@@ -1,6 +1,8 @@
-# Reasoning Note — Stochna Kitchen Brewery journey map v1.0
+# Reasoning Note — Stochna Kitchen Brewery journey map v1.0 (holds for v1.1)
 
 Date 2026-11-01 · companion to `journey-map.md` · read once by the founder, then archived. Signed: ________________ (founder, name to confirm, `open-facts.md` row 12) · date: ________
+
+v1.1 note (2026-11-01): the realignment against Stage 1 changed no weight, marker or silence, so this note stands as written; the changes are listed on the `journey-map.md` cover.
 
 Written in the operational register. It explains the map's decisions; it does not contain floor scripts (those are Stage 3). Where a line from the book is quoted as a candidate script, it is a candidate, not a locked line.
 

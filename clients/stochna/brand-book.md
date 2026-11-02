@@ -11,7 +11,7 @@
 
 ## Messages and story (brand book Part 5)
 
-Source: **Stochna Brand Book V2, 23 Feb 2026** (`Stochna_Brand_Book_V2_23_2_2026.docx`, Desktop; add the Drive link). Every piece of copy anchors here (`vios-guardrails` › Messages and micro-stories).
+Source: **Stochna Brand Book V2, 23 Feb 2026** (`Stochna_Brand_Book_V2_23_2_2026.docx`, Desktop; add the Drive link), checked against `diagnosis.md` draft 2026-11-01 by `vios-messages-and-story` (v1, 2026-11-01). Long-form story (EN/BG) and the closing test: `archive/messages-and-story-v1.md`. Every piece of copy anchors here (`vios-guardrails` › Messages and micro-stories).
 
 ### Core messages
 | # | Short name | Tier | What the guest should understand |
@@ -24,18 +24,32 @@ Source: **Stochna Brand Book V2, 23 Feb 2026** (`Stochna_Brand_Book_V2_23_2_2026
 | 6 | Place matters | secondary | The making and the serving happen here; they are the same thing |
 | 7 | Human, not performed | secondary | Warmth, equality and ease over impressing; care shown through behaviour |
 
-Integrity rule: a piece reinforces at least one, contradicts none.
+Integrity rule: before communicating anything, does it reinforce at least one message without contradicting another? If not, it does not belong (`vios-consistency-qa` › Message anchor).
+
+**The five primary blocks behind them** (method check; no new anchor names, the seven above stay the anchors):
+
+| Block | What the guest should understand | Carried by |
+| --- | --- | --- |
+| Audience | Friends in Sofia, roughly 28–42, who choose where to spend an evening the way they choose what to read: it says something about them | 3 Worth the trip (the "For" line) |
+| Pain | Places are good for beer, or food, or hanging out, rarely all three; evenings end as consumption, not connection | 3 Worth the trip; story block 2 |
+| Key benefit | An evening better than what they'd do near home: they stay, talk, and come back with others | 3 Worth the trip; 4 Table is the centre |
+| Alternative | Sofia's craft places optimise for selection, entertainment or production; the social evening is left to chance | 2 Proper choices; 5 Proper is better than more |
+| Differentiator | Beer and food made as one system here, with the evening designed around the table | 1 Made together; 6 Place matters |
+
+Secondary messages trace to the four values (book § 1.4): 4 ← value 3 · 5 ← value 2 · 6 ← value 1 · 7 ← value 4. Purpose and mission are carried by 1 and 4; the vision stays internal (cultural, not a guest takeaway).
 
 ### Story framework (guest = hero, Stochna = guide)
 | Block | One line |
 | --- | --- |
-| 1 Existing world | Beer culture split between anonymous mass product and intimidating craft; the social middle is missing |
-| 2 Obstacle | Nights out built on selection, entertainment or production; people leave having consumed, not connected |
-| 3 Call to action | If nothing changes, evenings stay consumption events; the social heart of beer fades |
-| 4 Meeting the guide | Another kind of brewery: beer and food made together, a proper menu, the evening around the table |
-| 5 The challenge | Stochna creates conditions by design and behaviour, never by explanation; the guest stays without planning to |
-| 6 Transformation | Brewing and cooking as one system, proper choices, pacing for the table, warm equal hosting, a room for conversation |
-| 7 New world | Well-fed, well-watered, socially energised, back with different friends: "You have to try this place." |
+| 1 Existing world | Wednesday, the group chat picks a place for Friday; they've done the bars near home, and where they go says something about them |
+| 2 Obstacle | Every option is good at one thing: taps and no kitchen, food and a distributor's beer, a DJ and no conversation |
+| 3 Call to action | A friend's photo of a full table and "you have to try this place"; the cost of not going is another Friday forgotten by Monday |
+| 4 Meeting the guide | The booking names the 2 km plainly; at the door, "sit anywhere, I'll pour you something"; the making in view, no concept explained |
+| 5 The challenge | The quieter worry: the trip was a mistake, another concept that looks better than it feels, a full room and no real talk |
+| 6 Transformation | First beer and bread together, a short menu nobody minds, the second round their idea: "will it be worth it" becomes "everything here is good" |
+| 7 New world | Back in two weeks with different friends; "You have to try this place. They actually brew there, and the food is made for the beer." |
+
+The belief, deployed: "Beer and food are better when they're made for each other" (book § 4.7). It lives in the experience (the signature M17), never in copy.
 
 ### Journey (guest order; owner = marketing or floor; from `journey/journey-map.md` v1.0, 2026-11-01)
 Moment codes, markers and guest states come from the journey map (36 moments, 7 phases; weights provisional, unobserved). ★ signature M17 · ◉ peak M24 · ⊐ end M30 + M31. Owner derives from the phase: pre-arrival and after are marketing, in-venue is floor; the sign and the window at the trip (M06) are the venue's, so floor. The full map, the silences and the reasons stay in `journey/`; this table is the bridge the marketing skills read.
@@ -55,12 +69,29 @@ Moment codes, markers and guest states come from the journey map (36 moments, 7 
 | 11 | Review | M34 | "They actually read it." | Every review answered by the specific detail named; escalation topics to the approver | marketing | |
 
 ### Micro-message blocks (per touchpoint)
+Blocks 1–5 are the book's § 5.5; blocks 6–11 split the book's online line into one block per canonical touchpoint (v1, 2026-11-01). Claims marked *to confirm* wait on `open-facts.md` row 6.
+
 | Block | Touchpoint | Anchors | Understanding to create | Verbal expression | Failure modes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Arrival and first contact | Worth the trip + meeting the guide | You're in the right place; relax, it's going to be a good evening | Welcomes without ceremony; practical, warm, immediate | Uncertain, rushed, unwelcome; room feels empty or over-designed |
+| 1 | Arrival and first contact | Worth the trip + story 4 | You're in the right place; relax, it's going to be a good evening | Welcomes without ceremony; practical, warm, immediate | Uncertain, rushed, unwelcome; room feels empty or over-designed |
 | 2 | Ordering and choice | Proper choices + made together | Every item earned its place; the beer goes with the food on purpose | Guides without prescribing; "this goes well with that", no lecture | Menu feels incomplete; staff can't say why items were chosen |
-| 3 | Making and explanation | Made together + the way | What you're drinking and eating was made here, together, on purpose | Speaks from experience, plain words; depth follows interest | Explanations become lectures; integration feels performed |
-| 4 | The evening unfolds | Table is the centre + transformation | Stay; no rush, and the next round goes with what's coming | Suggests without pushing; "there's a darker one that goes with what's next, want to try it?" | Too-frequent check-ins; managed energy; implied urgency |
-| 5 | Departure and memory | Worth the trip + new world | Come back, bring someone; there's always something new from the brewery | "See you next time" as a prediction, not a script | Procedural exit; loyalty or reviews requested; transactional ending |
-| 6 | Online: discovery, profile check, booking, reminder | Worth the trip + table is the centre | The evening is worth the trip and there is room for your table | Informal on social, formal in booking messages (`persona-bible.md`) | Pressure devices, superlatives, selling the menu instead of the evening |
-| 7 | Online: after-visit, review | Worth the trip + new world | Come back, bring someone; we heard what you said | Thank by the detail named; escalation topics to the approver (guardrails 11) | Templates, discounts in public, asking for the review to change |
+| 3 | Making and explanation (★ signature) | Made together + story 6 | What you're drinking and eating was made here, together, on purpose (spent-grain detail *to confirm*) | Speaks from experience, plain words; depth follows interest | Explanations become lectures; integration feels performed |
+| 4 | The evening unfolds (◉ peak) | Table is the centre + story 6 | Stay; no rush, and the next round goes with what's coming | Suggests once, without pushing; "there's a darker one that goes with what's next, want to try it?" | Too-frequent check-ins; managed energy; implied urgency |
+| 5 | Departure and memory (⊐ end) | Worth the trip + story 7 | Come back, bring someone (brew cadence *to confirm* before saying "something new") | "See you next time" as a prediction, not a script | Procedural exit; loyalty or reviews requested (see open fact 23); transactional ending |
+| 6 | Discovery | Worth the trip + story 1–3 | This might be the place that does all three | States what's happening, like a text from a friend; informal register | Product shots, superlatives, selling the menu instead of the evening |
+| 7 | Profile check | Made together + human, not performed | It's someone's place, not a concept; the making is real | Plain facts, people mid-evening; bio says what it is in two words | Concept talk, manifesto lines, empty-room photos |
+| 8 | Booking | Worth the trip + table is the centre | Everyone there came on purpose; there's room for your table | Formal Вие; the 2 km named plainly; table restated | Pressure devices, scarcity, upsell at booking |
+| 9 | Reminder | Table is the centre | Still on; nothing to do unless plans changed | Formal; date, time, people; one warm line; how to change | Marketing tacked on; asking for anything |
+| 10 | After-visit | Worth the trip + story 7 | Come back with someone; the place is the same, and that's the point | Next brew stated as fact; reposts credited, with permission; no CTA | Discounts, loyalty mechanics, "we miss you" |
+| 11 | Review | Human, not performed + story 7 | We read what you wrote | Thank by the detail named; escalation topics to the approver (guardrails 11) | Templates, discounts in public, asking for the review to change |
+
+### Tone by moment (one voice, "plain but certain")
+| Moment | Direction | Example (book § 4.5–4.6) |
+| --- | --- | --- |
+| Online, discovery and profile | States what's happening; no CTA | "Bread's in. Beer's cold. Door's open. Tuesday." |
+| Booking and reminder | Formal, facts restated, nothing asked | date · time · six people · how to change |
+| Arrival | Brief, practical, no ceremony | "Sit anywhere. No rush." |
+| Ordering and making | One suggestion, then quiet | "It goes well with the bread." |
+| The evening | Speaks rarely; offers once | "There's a darker one that goes with what's coming next." |
+| Departure | A prediction, not a script | "See you next time." |
+| Review replies | The guest's own detail back to them; no template | — |

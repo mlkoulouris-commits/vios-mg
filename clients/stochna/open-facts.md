@@ -18,5 +18,23 @@ The engagement's chase list. Every "to confirm" in any deliverable is a row here
 | 12 | Founder's name for the signature on the Reasoning Note; approver name for `persona-bible.md` front page | `reasoning-note.md` signature line; guardrails 10 | owner | | founder sign-off | |
 | 13 | Staff dress and style (not in the book) | Dominant-dimension column at M07, M08, M17; Stage 3 non-verbal frames | owner | | before Stage 3 | |
 | 14 | Whether the events line (Memento enquire / join / offer) is a customer line to map, and its persona | A separate map; not in v1.0 | owner, VIOS Stage 1 | | before Stage 3 | |
+| 15 | Founder's own answer to "what are you trying to build" (intake used the book's § 1.1–1.2) | Intake record; diagnosis purpose line | founder | | founder sign-off | |
+| 16 | Timeline: any target date (intake recorded "trading, no deadline") | Engagement timeline (intake Move 5) | founder | | before proposal | |
+| 17 | Partner list complete? Designer's name | Intake Move 2; designer brief | founder | | before proposal | |
+| 18 | Outcome that makes the engagement worth it (intake used the README's three moves) | Scope; monthly report KPIs | founder | | before proposal | |
+| 19 | Scope ratified: Stage 4 in or out | Proposal (`vios-proposal`) | founder | | before proposal | |
+| 20 | Owner interview: the ten brand-voice questions (diagnosis Step 2) | Founder sign-off of `diagnosis.md`; purpose in the founder's words | founder | | founder sign-off | |
+| 21 | 12-month Barsy export (covers, average spend, peak days, top sellers) before Barsy is replaced | Diagnosis § 1; calendar rhythm; monthly report baseline | Memento, owner | | before Barsy switch-off | |
+| 22 | W6 competitor scoring, 10–20 Sofia competitors, six criteria | Diagnosis § 4 | account manager | | before brand book v3 | |
+| 23 | Review ask: where and how (Razberry QR cards vs book block 5 "reviews requested" as a failure mode) | Departure moment; GBP review plan | owner, account manager | | before Stage 3 | |
+| 24 | AI ambassador: name, voice gender; founder's agreement to the AI format given the book's § 6.5 / 6.7 lines | `persona-bible.md` front page; any persona content | founder, account manager | | before pilot | |
+| 25 | Instagram/Facebook handover from the agency (bio line, AI label, insights) | Persona disclosure (a); KPIs; Metricool brand | agency, owner | | before pilot | |
+| 26 | Allergen policy and the allergen sheet the kitchen answers from | R-ALLERGY; M15 lock; guardrails 9 | owner, kitchen | | before Stage 3 lock | |
+| 27 | Who is manager and kitchen lead on each shift (names for recovery handoffs) | `design/recovery.md`; operations brief § 1 | owner | | before Stage 3 lock | |
+| 28 | Native-speaker read of every BG line in `design/` and `archive/filter-test-batches.md` | All Stage 3 locks | account manager | | before Stage 3 lock | |
+| 29 | Book claims not on the fact sheet: no Wi-Fi; BG forms of the descriptor and tagline ("Кухня-пивоварна", „Готвим за бирата. Варим за храната.“) | M14 Wi-Fi line; M02 bio | owner, founder | | before Stage 3 lock | |
+| 30 | Trainer for the Journey Training Plan (floor manager?) | `training/staff/journey-training-plan.md` cover; sign-off | owner | | before the first trainee | |
+| 31 | BG staff edition of the training plan and the playbook (redraft, not translation) | All staff materials | account manager | | before the first trainee | |
+| 32 | Go-live date for the signed design (day 0) | `training/first-thirty-days.md`; handoff dates; thirty-day review | owner, account manager | | after observation | |
 
-Open: 14 rows. Row 9 (observation) blocks Stage 2 from closing; rows 3, 6 and 12 are needed for the founder's signature.
+Open: 32 rows (15–19 intake, 20–23 diagnosis, 24–25 persona, 26–29 Stage 3, 30–32 Stage 4, 2026-11-02). Row 9 (observation) blocks Stage 2 from closing and every lock after it. Row 9 (observation) blocks Stage 2 from closing and every Stage 3 lock. Row 9 (observation) blocks Stage 2 from closing; rows 3, 6 and 12 are needed for the founder's signature.

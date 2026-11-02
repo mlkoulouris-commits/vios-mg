@@ -13,4 +13,4 @@
 | Google Ads | — | not set |
 | POS | Barsy | open: export access |
 | Booking | venue hire form on site; table booking none visible | open |
-| Approver | — | **open, blocks all publishing** |
+| Approver | mkoulouris (Vios), set 2026-11-01 | interim, until ONE names someone |

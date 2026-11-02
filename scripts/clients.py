@@ -5,7 +5,7 @@
   python scripts/clients.py check [slug]         validate status.json against setup/status.schema.json (light, no jsonschema dependency)
   python scripts/clients.py facts <slug>         ClickUp task.create_many body for the open rows of open-facts.md (paste into the connector)
   python scripts/clients.py new <slug> "<Name>"  create clients/<slug>/ from templates/client/ with status.json filled in
-  python scripts/clients.py pdf <slug> <file.md> [Title]   render a client deliverable to clients/<slug>/deliverables/<Title>.pdf (headless Edge; pip install markdown)
+  python scripts/clients.py pdf <slug> <file.md> [Title] [Kind]   render a client deliverable, Vios-branded, to clients/<slug>/deliverables/<Title>.pdf (headless Edge; pip install markdown). Kind = cover label (Proposal, Brand Book, Report)
 
 Skills call `status` at the start of a step and update status.json at the end; /vios <client> is the front door.
 """
@@ -126,25 +126,54 @@ def new_client(slug: str, name: str) -> None:
     print(f"created {dest}")
 
 
+BRAND = REPO / "setup" / "brand"
 PDF_CSS = """
-@page { size: A4; margin: 20mm 18mm; }
-body { font-family: Georgia, 'Times New Roman', serif; font-size: 10.5pt; line-height: 1.45; color: #222; }
-h1 { font-size: 20pt; margin-top: 0; }
-h2 { font-size: 15pt; margin-top: 28pt; border-bottom: 1px solid #999; padding-bottom: 3pt; page-break-before: always; }
-h3 { font-size: 12pt; margin-top: 16pt; } h4 { font-size: 11pt; }
-table { border-collapse: collapse; width: 100%; margin: 8pt 0; font-size: 9.5pt; }
-th, td { border: 1px solid #bbb; padding: 4pt 6pt; vertical-align: top; text-align: left; }
-th { background: #f0f0f0; } tr { page-break-inside: avoid; }
-em { color: #555; } code { font-family: Consolas, monospace; font-size: 9pt; background: #f5f5f5; }
-blockquote { border-left: 3px solid #ccc; margin: 8pt 0; padding-left: 10pt; color: #444; }
-hr { border: 0; border-top: 1px solid #ccc; margin: 14pt 0; }
+@page { size: A4; margin: 14mm 18mm 12mm 18mm; }
+@page :first { margin: 0; }
+html { -webkit-print-color-adjust: exact; }
+body { font-family: Roboto, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #333; margin: 0; }
+.cover { position: relative; width: 210mm; height: 297mm; margin: 0; padding: 26mm 22mm; box-sizing: border-box; background: #503629; color: #fff; page-break-after: always; }
+.cover img { width: 52mm; display: block; }
+.cover .kind { margin-top: 48mm; font-size: 11pt; letter-spacing: 0.18em; text-transform: uppercase; color: #d9cbb8; font-weight: 400; }
+.cover h1 { font-size: 30pt; font-weight: 300; line-height: 1.15; margin: 6mm 0 0; color: #fff; max-width: 140mm; }
+.cover .sub { margin-top: 8mm; font-size: 12pt; font-weight: 300; color: #e8dfd3; max-width: 140mm; }
+.cover .foot { position: absolute; left: 22mm; right: 22mm; bottom: 22mm; font-size: 9.5pt; color: #d9cbb8; border-top: 1px solid #7a6150; padding-top: 4mm; display: flex; justify-content: space-between; }
+.page { width: 100%; border-collapse: collapse; margin: 0; } .page > thead > tr > td, .page > tfoot > tr > td, .page > tbody > tr > td { padding: 0; border: 0; background: none; }
+.hdr { height: 8mm; margin-bottom: 8mm; border-bottom: 1px solid #e6ddd1; display: flex; justify-content: space-between; align-items: center; font-size: 8pt; color: #88704f; letter-spacing: 0.08em; text-transform: uppercase; }
+.hdr img { height: 6.5mm; }
+.ftr { margin-top: 6mm; font-size: 8pt; color: #88704f; border-top: 1px solid #e6ddd1; padding-top: 2mm; display: flex; justify-content: space-between; }
+h1 { font-size: 20pt; font-weight: 300; color: #503629; margin: 0 0 6mm; }
+h2 { font-size: 15pt; font-weight: 400; color: #503629; margin: 10mm 0 3mm; padding-bottom: 1.5mm; border-bottom: 1.5px solid #88704f; page-break-before: always; page-break-after: avoid; }
+h2.first, .compact h2 { page-break-before: auto; } h2.first { margin-top: 0; }
+h3 { font-size: 12pt; font-weight: 500; color: #503629; margin: 7mm 0 2mm; page-break-after: avoid; }
+h4 { font-size: 10.5pt; font-weight: 700; color: #503629; margin: 5mm 0 1.5mm; }
+p { margin: 0 0 2.6mm; }
+table { border-collapse: collapse; width: 100%; margin: 2mm 0 5mm; font-size: 9.5pt; }
+th { background: #503629; color: #fff; font-weight: 500; text-align: left; padding: 2.2mm 2.5mm; border: 0; }
+td { padding: 2mm 2.5mm; border-bottom: 1px solid #e6ddd1; vertical-align: top; }
+tr:nth-child(even) td { background: #f7f4ef; }
+tr { page-break-inside: avoid; }
+em { color: #6b5c4e; } strong { color: #503629; }
+code { font-family: Consolas, monospace; font-size: 8.8pt; color: #503629; background: #f3efe9; padding: 0 1mm; }
+blockquote { border-left: 3px solid #88704f; background: #f7f4ef; margin: 3mm 0; padding: 2.5mm 4mm; color: #4a4038; }
+hr { border: 0; border-top: 1px solid #e6ddd1; margin: 6mm 0; }
+ul, ol { margin: 0 0 3mm; padding-left: 5mm; } li { margin-bottom: 1mm; }
+a { color: #88704f; text-decoration: none; }
 """
 
 EDGE = [Path(r"C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"), Path(r"C:/Program Files/Microsoft/Edge/Application/msedge.exe")]
 
 
-def pdf(slug: str, md_file: str, title: str | None = None) -> Path:
-    """Markdown → HTML (python-markdown) → PDF (headless Edge). The HTML is kept beside the PDF for a re-render."""
+def _client_name(slug: str) -> str:
+    try:
+        return json.loads(read(CLIENTS / slug / "status.json"))["name"]
+    except Exception:
+        return slug
+
+
+def pdf(slug: str, md_file: str, title: str | None = None, kind: str | None = None) -> Path:
+    """Markdown -> branded HTML (Vios cover, running header/footer) -> PDF via headless Edge. The HTML is kept beside the PDF."""
+    import html as htmlmod
     import subprocess
     try:
         import markdown
@@ -154,16 +183,51 @@ def pdf(slug: str, md_file: str, title: str | None = None) -> Path:
     out_dir = CLIENTS / slug / "deliverables"
     out_dir.mkdir(exist_ok=True)
     name = title or src.stem
-    text = read(src)
-    heading = next((l[2:].strip() for l in text.splitlines() if l.startswith("# ")), name)
-    body = markdown.markdown(text, extensions=["tables", "fenced_code"])
+    lines = read(src).splitlines()
+    heading = next((l[2:].strip() for l in lines if l.startswith("# ")), name)
+    # the H1 goes on the cover; a plain line right after it becomes the cover subtitle
+    body_lines, sub, seen_h1 = [], "", False
+    for l in lines:
+        if not seen_h1 and l.startswith("# "):
+            seen_h1 = True
+            continue
+        if seen_h1 and not sub and not body_lines:
+            if not l.strip():
+                continue
+            if not l.startswith(("|", "#", "-", "*", ">", "<")):
+                sub = l.strip()
+                continue
+        body_lines.append(l)
+    body = markdown.markdown("\n".join(body_lines), extensions=["tables", "fenced_code"])
+    body = body.replace("<h2>", '<h2 class="first">', 1)
+    compact = len(" ".join(body_lines).split()) < 1500  # short documents flow; long ones get a page per section
+    client = _client_name(slug)
+    kind = kind or ("Proposal" if "proposal" in src.name.lower() else "Deliverable")
+    logo_w = (BRAND / "vios-logo-inverted-crop.png").resolve().as_uri()
+    logo_b = (BRAND / "vios-logo-crop.png").resolve().as_uri()
+    today = date.today().strftime("%d %B %Y")
+    esc = htmlmod.escape
+    html = (
+        "<!doctype html><html><head><meta charset='utf-8'><title>" + esc(heading) + "</title>"
+        "<link rel='preconnect' href='https://fonts.googleapis.com'>"
+        "<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' rel='stylesheet'>"
+        "<style>" + PDF_CSS + "</style></head><body>"
+        "<div class='cover'><img src='" + logo_w + "' alt='Vios'>"
+        "<div class='kind'>" + esc(kind) + " · " + esc(client) + "</div>"
+        "<h1>" + esc(heading) + "</h1>"
+        "<div class='sub'>" + esc(sub) + "</div>"
+        "<div class='foot'><span>VIOS Practice · Meaningful Gastronomy</span><span>" + today + "</span></div></div>"
+        "<table class='page'><thead><tr><td><div class='hdr'><img src='" + logo_b + "' alt=''><span>" + esc(client) + " · " + esc(heading)[:70] + "</span></div></td></tr></thead>"
+        "<tfoot><tr><td><div class='ftr'><span>VIOS Meaningful Gastronomy · vios-mg.com</span><span>Prepared for " + esc(client) + " · " + today + " · confidential</span></div></td></tr></tfoot>"
+        "<tbody><tr><td><div class='body" + (" compact" if compact else "") + "'>" + body + "</div></td></tr></tbody></table></body></html>"
+    )
     html_path = out_dir / f"{name}.html"
-    html_path.write_text(f"<!doctype html><html><head><meta charset='utf-8'><title>{heading}</title><style>{PDF_CSS}</style></head><body>{body}</body></html>", encoding="utf-8")
+    html_path.write_text(html, encoding="utf-8")
     edge = next((e for e in EDGE if e.exists()), None)
     if not edge:
         sys.exit(f"Edge not found; open {html_path} and print to PDF")
     pdf_path = out_dir / f"{name}.pdf"
-    subprocess.run([str(edge), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={pdf_path}", html_path.resolve().as_uri()], check=True, capture_output=True, timeout=120)
+    subprocess.run([str(edge), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--virtual-time-budget=8000", f"--print-to-pdf={pdf_path}", html_path.resolve().as_uri()], check=True, capture_output=True, timeout=180)
     print(pdf_path)
     return pdf_path
 
@@ -190,7 +254,7 @@ def main(argv: list[str]) -> None:
     elif cmd == "new":
         new_client(argv[2], argv[3])
     elif cmd == "pdf":
-        pdf(argv[2], argv[3], argv[4] if len(argv) > 4 else None)
+        pdf(argv[2], argv[3], argv[4] if len(argv) > 4 else None, argv[5] if len(argv) > 5 else None)
     else:
         sys.exit(__doc__)
 

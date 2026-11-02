@@ -16,7 +16,7 @@ One screen, one question. The user should never need to remember which skill com
 ## The card (at most eight lines, plain words, no file paths, no fact numbers)
 
 ```
-Stochna — Stage 2 (journey map) · approver: to confirm
+<Client> — Stage 2 (journey map) · approver: to confirm
 Proposal: not sent · marketing loop: in
 Stages: 1 revision/in progress · 2 in/review · 3 in/not started · 4 to confirm
 Awaiting your sign-off: Journey map, Reasoning Note
@@ -24,6 +24,8 @@ Blocked by: two observed services (account manager); approver name (founder)
 Open facts: 32, 4 overdue
 Next: send the proposal
 ```
+
+The card above is a real one with the name removed (`plugin/vios-core/references/worked-examples.md` › E1).
 
 Then **one question** with at most four choices, the recommended one first:
 

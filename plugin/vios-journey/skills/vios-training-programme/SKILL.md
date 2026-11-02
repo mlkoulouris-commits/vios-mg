@@ -30,7 +30,9 @@ Stage 4. The design is true on paper and useless on the floor until the people c
 - `vios-core:vios-filter-test`: built into the floor playbook, the wall chart and the operating handbook so staff who improvise can self-check.
 - `[client]/journey/design/` in full: pages, choreography, recovery, briefs; plus the brand book and the journey map, so materials stay anchored to strategy, not only to pages; plus the operating concept (menu, beverage programme, systems), which staff must know at least as deeply as the brand.
 
-## House form (from the ONE Gallery Journey Training Plan v2 and Operations Brief, Oct 2026)
+## House form
+
+Taken from the practice's worked training plan and operations brief (`plugin/vios-core/references/worked-examples.md` › E14).
 
 For a venue that is already open, the practice ships one **Journey Training Plan**: an onboarding programme that takes one new team member at a time through the whole journey, trainer named on the cover, aligned to the brand-book edition. Its shape:
 

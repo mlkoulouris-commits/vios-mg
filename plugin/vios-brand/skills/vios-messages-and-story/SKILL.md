@@ -53,7 +53,7 @@ Then write each as the house format the practice's books use: **For** (who) · *
 
 ## Step 2 — Secondary core messages (4)
 
-Purpose, vision, mission, and **one message per value** (ONE Gallery: Welcome, Ritual, Discovery, Quality each as a single line), each rewritten as a takeaway for the audience, not a fact about the brand ("We believe…" becomes "You should understand that here…"). Format: **Underlying belief** · **Understanding we want to create** · **Reinforces** (the behaviours, choices and refusals that prove it).
+Purpose, vision, mission, and **one message per value** (in the house example each of the four values carries a single line: `plugin/vios-core/references/worked-examples.md` › E5), each rewritten as a takeaway for the audience, not a fact about the brand ("We believe…" becomes "You should understand that here…"). Format: **Underlying belief** · **Understanding we want to create** · **Reinforces** (the behaviours, choices and refusals that prove it).
 
 Then a **tone-by-moment** table: the voice stays one, the tone is calibrated to the moment (morning, afternoon, golden hour, evening for a day-long venue; arrival, the evening, departure for a dinner venue), one line of direction and one example each.
 

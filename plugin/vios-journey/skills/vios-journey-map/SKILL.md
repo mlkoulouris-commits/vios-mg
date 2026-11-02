@@ -29,7 +29,9 @@ Stage 2. The map translates the brand into the moments where it has to act, what
 - `[client]/fact-sheet.md`: the operation as it is (hours, service model, reservation route, the room).
 - `../../references/section-3-3-three-registers.md`: the map is written in the operational register and points forward to floor scripts; it never contains them.
 
-## House form (from the ONE Gallery map, the practice's worked deliverable)
+## House form
+
+Taken from the practice's worked map (`plugin/vios-core/references/worked-examples.md` › E10).
 
 - **Markers**: ★ signature (the one moment where the differentiator becomes visible), ◉ peak, ⊐ end (may be two moments, end-1 and end-2, designed as one), ○ silent. All four are named on the cover legend with the count of HIGH, MEDIUM and LOW moments.
 - **One table per phase**, columns: code · moment · weight · brand intention · role-in-moment · dominant dimension · customer target state · marker. Schematic row: `| M12 | Menu presented | MEDIUM | Pillar: proper choices. Everything on the list earned its place; nothing needs decoding. | Guide: hands it, names one thing, steps back | language | "I know what to choose." | |` and a silent row: `| M13 | Reading the menu | ○ | | | | | ○ |`. Not five separate bands; the bands are the columns. Codes are two-digit from the start (M01 … M31) so the design pages match. Silent rows carry code, name, ○ in weight and marker, and nothing else; the reason lives in the Reasoning Note. LOW rows keep the intention to twelve words or fewer; the full text lives in the inventory. A map of 25–35 moments renders in three or four pages with these rules; the manuscript's one or two is the target, not a rule.

@@ -51,7 +51,7 @@ Generate candidates per technique, at least three each, in the worksheet table:
 | Metaphor | a word that stands for the brand |
 | Abstraction | a coined word with the keyword's sound or rhythm |
 
-Local languages first (BG, GR), then EN. Place names and the venue's own history count as keywords (a Stochna Gara is a keyword, not a coincidence).
+Local languages first (BG, GR), then EN. Place names and the venue's own history count as keywords (an old station name attached to the site is a keyword, not a coincidence; `plugin/vios-core/references/worked-examples.md` › E6).
 
 ## Step 4 — Short list, tested against strategy
 
@@ -59,7 +59,7 @@ Score each candidate yes/no on: archetype and Brand Role fit · positioning fit 
 
 ## Step 5 — Tagline (optional by design)
 
-Same keyword-driven process into the worksheet-4 table: keyword | tagline concept. Tests: everything in step 4, plus **one thing**: placed next to the name it reads as one idea, not two phrases. A tagline is a plain claim the brand can keep for years; no superlatives, no price, no pressure (guardrails 1, 3). Consider the **two-line system** (ONE Gallery): a lockup tagline for the identity, three nouns or fewer that categorise in two seconds, and an editorial tagline for story-facing use that carries the brand belief; both must pass the one-thing test next to the name, each in its own place. If no concept carries the conviction the rest of the strategy has, the recommendation is **no tagline**, documented. A weak tagline harms more than none.
+Same keyword-driven process into the worksheet-4 table: keyword | tagline concept. Tests: everything in step 4, plus **one thing**: placed next to the name it reads as one idea, not two phrases. A tagline is a plain claim the brand can keep for years; no superlatives, no price, no pressure (guardrails 1, 3). Consider the **two-line system** (`plugin/vios-core/references/worked-examples.md` › E7): a lockup tagline for the identity, three nouns or fewer that categorise in two seconds, and an editorial tagline for story-facing use that carries the brand belief; both must pass the one-thing test next to the name, each in its own place. If no concept carries the conviction the rest of the strategy has, the recommendation is **no tagline**, documented. A weak tagline harms more than none.
 
 ## Step 6 — Decision record
 
@@ -78,4 +78,4 @@ End with one line: the recommended name, the tagline or "no tagline", what is "t
 
 ## Example (placeholders)
 
-Keyword set fragment: *together · made here · proper · the table · worth the trip · gara (the old station)*. Long list, combination: "Table & Tank"; metaphor: "Gara"; morphology (BG): "Stochna". Short list test: "Table & Tank" fails distinctiveness (a taproom in the audit uses "Tank"); "Gara" passes strategy, fails ownership (handle taken, trademark in class 43 live). Tagline concepts: "We cook for beer. We brew for food." passes the one-thing test next to the name; "Sofia's best craft evening" fails guardrails 1 and the conviction test.
+Keyword set fragment: *together · made here · proper · the table · worth the trip · the old station*. Long list, combination: "Table & Tank"; metaphor: "Gara"; morphology (BG): a coined form of the station's old name. Short list test: "Table & Tank" fails distinctiveness (a taproom in the audit uses "Tank"); "Gara" passes strategy, fails ownership (handle taken, trademark in class 43 live). Tagline concepts: "We cook for beer. We brew for food." passes the one-thing test next to the name; "Sofia's best craft evening" fails guardrails 1 and the conviction test. Worked from a real naming: `plugin/vios-core/references/worked-examples.md` › E8.

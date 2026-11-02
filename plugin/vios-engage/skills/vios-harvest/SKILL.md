@@ -59,4 +59,4 @@ Propose the manuscript increment the harvest justifies: minor for patterns, entr
 
 ## Example (placeholders)
 
-Engagement: a counter-format gelato atelier. Promoted: none yet (first use of the small-format page; second engagement needed). Held: the counter collision pattern, the end on two pages. Library: one NV sub-entry under D.3 (the hand-over of a small object), one BE illustration under 7 (peak-end at a fifteen-second peak). Case: recommend, lesson "the signature can precede the peak", window April. Version proposed: 1.3 → 1.4, minor.
+Engagement: a counter-format gelato shop. Promoted: none yet (first use of the small-format page; second engagement needed). Held: the counter collision pattern, the end on two pages. Library: one NV sub-entry under D.3 (the hand-over of a small object), one BE illustration under 7 (peak-end at a fifteen-second peak). Case: recommend, lesson "the signature can precede the peak", window April. Version proposed: 1.3 → 1.4, minor. Worked from a real harvest: `plugin/vios-core/references/worked-examples.md` › E3.

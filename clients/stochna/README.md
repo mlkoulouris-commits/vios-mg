@@ -24,6 +24,8 @@ Read: a trading venue with a complete brand book (V2, 23 Feb 2026) — the metho
 
 **Moves 4–6** — workspace already open (2026-10-29). Timeline: not set (no deadline). Approver: not named (open fact 12). Founder confirmation: pending.
 
+**Proposal v1 (2026-11-02)** — status: drafted, not sent (prices to confirm). Doc: [Stochna — Proposal v1](https://claude.ai/artifact/Kt4EZ2DJ7htgQ19dxzgHUR). Client sheet: `proposal-v1-deliverables.pdf` (source `proposal-v1-deliverables.md`).
+
 Status 2026-10-29: folder created from the template. Facts pulled from Memento and the
 2026-10-23 Google brief; every line marked CONFIRM needs the owner.
 

@@ -4,7 +4,7 @@
   "name": "Stochna",
   "approver": "to confirm",
   "account_manager": "Menelaos Koulouris",
-  "proposal": { "version": 0, "status": "not sent", "doc": "", "pdf": "" },
+  "proposal": { "version": 1, "status": "not sent", "doc": "https://claude.ai/artifact/Kt4EZ2DJ7htgQ19dxzgHUR", "pdf": "clients/stochna/proposal-v1-deliverables.pdf" },
   "marketing_loop": "in",
   "current_stage": "2 Map",
   "stages": {

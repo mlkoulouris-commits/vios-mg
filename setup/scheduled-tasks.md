@@ -12,6 +12,16 @@ Claude scheduled tasks created in the personal account on 2026-10-29. They run w
 
 All five run over every folder in `clients/` and read ids from each client's `accounts.md` (since 2026-10-30). All five: draft only, never publish, send, spend, commit or push.
 
+## ClickUp Review
+
+Since 2026-11-02 every run ends in ClickUp, not in chat: the approver approves there (build order step 5, `docs/operating-system.md`). The pattern, shared by all five prompts:
+
+- After the run writes its files under `clients/<slug>/data/<YYYY-MM>/` as before, it creates tasks with `clickup_execute_operator` (model `task`, operator `create_many`), **one call per list**. List id from the client's `accounts.md` ("ClickUp lists" row); the report and quarterly tasks go to "Department — Setup & SOP" (`1500500000053389`).
+- Every task: `status_label: "review"`, assigned to the account manager, Stage field = "Marketing", Approver field = the client's approver from `status.json` matched to an option in `setup/clickup.json` › `folder_fields` ("To confirm" when unmatched; the quarterly review uses "Menelaos Koulouris").
+- Naming: calendar `<date> · <platform> · <pillar> · <working title>` (one per post, due = publish date, description = caption draft + asset note + Anchor/Block); triage `<date> triage: <n> replies` plus `ESCALATION: <topic>` (facts only); ads `<week> ads audit: <n> actions` (pauses and budget changes flagged "needs client owner"); report `Report <Client> <Month YYYY> — review before sending`; quarterly `Quarterly review <YYYY-Qn>`.
+- Bookkeeping: `status.json` › `updated` is set on every run; a blocked client (no accounts, no Metricool brand, empty persona) gets a blocker in `status.json` and no draft tasks, never a guess.
+- Nothing is written to Metricool, Meta, Google or any other network. Each run ends with one line per client: `<n> tasks in Review for <approver>: <ClickUp list link>`.
+
 ## Prompt copies
 
 The full prompts are in `setup/prompts/<taskId>.md` (exported from the scheduled-tasks folder). Regenerate the copies with:

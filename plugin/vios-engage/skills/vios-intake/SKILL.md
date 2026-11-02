@@ -7,11 +7,31 @@ description: "Run the VIOS Practice intake protocol for a prospective F&B client
 
 The six moves at the start of an engagement, from the first conversation to the formal opening of the workspace. Half a day to two days of practitioner time. An engagement that skips this slides from conversation into work and drifts; the intake's small cost prevents the large one. Hard lines: `vios-core:vios-guardrails` 10 (named approver from day one), 12 (client data stays private).
 
+**Work in six steps, one per move. Stop after each and ask one question.** Each step shows at most ten plain lines; no fact numbers, no section references, no file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written before the user has seen the step that writes it, except `status.json` and `open-facts.md` bookkeeping.
+
+## Steps
+
+1. **The conversation** (move 1): the four answers in the founder's words, whether the method can serve the brief, and the client's folder name (new or existing). Ask: *"Are these the founder's words as given?"*
+2. **Scope** (move 2): stages in / out / part, briefs, partners, marketing loop, as a checklist. Ask: *"Is this the scope? Tick or strike."*
+3. **Starting set** (move 3): patterns, library entries, templates, closest prior case. Ask: *"Keep, add or drop any?"*
+4. **The intake record** (move 4): the record's lines and the open-facts rows as they will be written, approver named. Ask: *"Is this the record, with this approver?"*
+5. **Timeline** (move 5): the dates as one short table. Ask: *"Dates right? Set any 'to confirm' now, or leave for the founder."*
+6. **Confirm and begin** (move 6): what the founder has confirmed in writing, and where. Ask: *"Confirmed on the record, or does it wait for the proposal?"*
+
+## Ask only when necessary; never invent
+
+- The founder's four answers, the scope ratification and the move 6 confirmation are the founder's words, never drafted by the practice. Founder absent → the step records **"not held"**, a row in `[client]/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`; the record says *to confirm* with the question.
+- Approver (hard line 10), dates, partners, prices: only from the call, the files or the user. A missing one is one question if the step cannot proceed, otherwise "to confirm" and a row. A question is asked once; never ask what `status.json`, `open-facts.md` or an existing `[client]/` already answers.
+
+## After every step
+
+Write the step's lines into `[client]/README.md` › Intake record (new client: `python scripts/clients.py new <slug> "<Name>"` once, after step 1, which creates the folder, `status.json` and `open-facts.md`; an existing folder is updated). Then `status.json`: `current_stage` "0 intake", approver, `marketing_loop`, each stage's scope, blockers, `next_action`, `updated`. Then the ClickUp task "Intake <Client>" in the client's Deliverables list (ids in `setup/clickup.json`): **draft** while writing, **review** at step 6, **approved** on the founder's confirmation. No client PDF by default; when the founder confirms from the record itself rather than the proposal, `python scripts/clients.py pdf <slug> README.md "<Client>-Intake-v1"` at step 6 and hand the PDF to the user.
+
 ## Read first
 
 - `../../references/parts-4-5-examples-and-production.md` § 5.2 (the three layers) and § 5.3 (the intake protocol), verbatim.
 - `vios-core:vios-guardrails` › client file convention: the workspace this intake opens.
-- `[client]/` if a folder already exists (a marketing-only client coming into a Practice engagement): read it before the call.
+- `[client]/` if a folder already exists (a marketing-only client coming into a Practice engagement): read it before the call, and `python scripts/clients.py status <slug>`.
 
 ## Move 1 — The initial conversation
 
@@ -41,7 +61,8 @@ The founder confirms scope, timeline, starting set and rhythm in writing (a date
 
 1. `[client]/README.md` › Intake record (the six moves, dated).
 2. `[client]/open-facts.md` opened with the first rows: what the founder could not answer on the call.
-3. One line to the account manager: in scope / out of scope / not ready, and the next step (`vios-proposal`).
+3. `[client]/status.json` created or updated, the ClickUp intake task moved.
+4. One line to the account manager: in scope / out of scope / not ready, what is "to confirm" and who confirms it, and the next step (`vios-proposal`). Then stop; the front door reruns the card.
 
 ## Example (placeholders)
 

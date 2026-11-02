@@ -7,6 +7,22 @@ description: "Turn a Vios F&B client's journey design into staff capability: the
 
 Stage 4. The design is true on paper and useless on the floor until the people can do it. This stage produces the documents and the cadence by which they do it, written for the conditions in which staff read: in fragments, between shifts, apron on. Hard lines: `vios-core:vios-guardrails` 6 (AI disclosure lines in any AI-carried moment), 9 (allergen and claim lines verified), 11 (escalation routes in every recovery card).
 
+**Work in seven steps (the seven moves below, in their order). Stop after each and ask one question. Each step shows at most ten plain lines; the documents live in the files.** "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before the user has seen the step that writes it (`status.json` and `open-facts.md` bookkeeping excepted). Start by reading `clients/<slug>/status.json` and `open-facts.md`; never ask what they already answer.
+
+## Steps
+
+1. **Translation checklist** (Move 1). Show the counts (moments · recoveries · operational elements) and the case: venue open or opening, team size, minimum set or full stack. Writes the checklist as the opening section of `training/architecture.md`. Ask: *"Open venue with the minimum set, or the full architecture?"*
+2. **Registers** (Move 2). Show three triples (concept → operational → floor), the HIGH moments first. Writes `training/registers.md`. Ask: *"Do the floor lines sound like the brand with a guest?"*
+3. **Architecture** (Move 3). Show the document table: one line per document in, owner named; omissions with their reason. Writes `architecture.md` in full. Ask: *"Approve the architecture before writing starts?"* (founder and operations team; the task goes to Review).
+4. **Cadence** (Move 4). Show onboarding / standard / compressed and why, the week or session sequence, the trainer and the dates. Writes `cadence-calendar.md`. Ask: *"Opening date and trainer right?"*
+5. **Materials** (Move 5). Show the documents written in this pass with their length, and the allergen, alcohol, claim and AI-disclosure lines checked (count). Writes `staff/` and `management/`. Ask: *"Read-aloud drafts to the founder and the operations team?"*
+6. **Coaching infrastructure** (Move 6). Show the four components with their owner and first date, and the register-audit date. Writes the coaching guides, the pre-shift facilitator guide and the calendar rows. Ask: *"Who is the manager-as-coach?"*
+7. **Close** (Move 7). Show the six-question test as six rows, the three handoff dates, the thirty-day review date. Writes `handoffs.md`, `first-thirty-days.md`, the harvest and the retrospective; renders the PDF. Ask: *"Hand over to the founder?"*
+
+**Ask only when necessary; never invent.** The trainer's name, the opening date, the team size and shift pattern, the manager who coaches, the rotating content (current menu or exhibition, prices) and the escalation person on every recovery card come from the client folder or the user; a missing one is written "to confirm", gets a row in `clients/<slug>/open-facts.md` and a blocker in `status.json`, and the step goes on. Allergen, alcohol and claim lines are checked against `fact-sheet.md` before they reach a card; an unverified line is CONFIRM, never a guess. Scripts are quoted from the design pages, never redrafted here. The founder's approval of the architecture and his sign-off at handoff are his, never recorded for him. One question per gap, asked once.
+
+**After every step**: write the files → update `clients/<slug>/status.json` (deliverable `status` draft / review / approved / done, `file`, blockers, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; Draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7, `python scripts/clients.py pdf <slug> training/journey-training-plan.md "<Client>-Journey-Training-Plan-vN"` (the Journey Training Plan of the house form for a running venue; for an opening, the floor playbook as `"<Client>-Floor-Playbook-vN"`) and send the PDF to the user. The user forwards it; the practice never emails a client.
+
 ## Read first
 
 - `../../references/stage-4-training.md`, the chapter verbatim: seven moves, the document architecture, patterns S4-01 to S4-07, the handoffs, the engagement harvest.
@@ -85,7 +101,7 @@ New Stage 4 patterns, template refinements, library entries (coaching-ready trea
 
 `[client]/training/` with `architecture.md`, `registers.md`, `cadence-calendar.md`, `staff/` (workbooks by role, role-cards, wall-charts, floor-playbook, reader if any), `management/` (facilitator-guides by module, operating-handbook, coaching-guides, assessment), `handoffs.md`, `first-thirty-days.md`. Claude Docs for anything the founder reviews.
 
-End with: documents produced per stack (or the minimum set, with omissions recorded), cadence chosen (onboarding, standard or compressed) and why, the sign-off criteria, the three handoff dates, and the thirty-day review date.
+End with one line: documents produced per stack (or the minimum set, with omissions recorded), cadence chosen (onboarding, standard or compressed) and why, the sign-off criteria, the three handoff dates, the thirty-day review date, what is "to confirm" and who confirms it, and the next step (the engagement harvest, `vios-engage:vios-harvest`). Then stop.
 - **Chase list**: `[client]/open-facts.md`, one table for the whole engagement, appended at every stage: fact needed · which moment, page or section it blocks · who holds it · asked on · due. Every "to confirm" in the deliverable points at a row here; the account manager works the list, nobody else. Say in the final line how many rows are open and which one blocks the stage from closing.
 
 

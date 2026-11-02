@@ -13,4 +13,5 @@
 | Google Ads | — | not set |
 | POS | Barsy | open: export access |
 | Booking | venue hire form on site; table booking none visible | open |
+| ClickUp lists | Content 1500500000076491 · Engagement 1500500000076492 · Ads 1500500000076493 · Deliverables 1500500000076489 · Open facts 1500500000076490 | created 2026-11-02 |
 | Approver | mkoulouris (Vios), set 2026-11-01 | interim, until ONE names someone |

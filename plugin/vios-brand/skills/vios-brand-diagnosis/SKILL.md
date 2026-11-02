@@ -9,6 +9,22 @@ The first step of every Vios Marketing engagement. Understand before acting: we 
 
 Built on the Vios Branding Tool Box (Worksheets 1–8 and 10, Brand Personality Questionnaire). The worksheets are in this skill: read `references/worksheets.md` for the exact questions in order, `references/archetypes.md` for the twelve archetypes (drive, fear, strategy, voice, message) before Step 4 and Step 7, and copy `references/competitor-audit-template.md` into the client folder for Step 5. Ask the worksheet questions in their own words; the steps below are the order and the tests.
 
+**Work in seven steps. Stop after each and ask one question.** Each step shows at most ten plain lines; no open-fact numbers, section references or file paths on screen (those go in the file). "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before the user has seen the step that writes it (status.json and open-facts.md bookkeeping aside). Start by reading `clients/<slug>/status.json` and `open-facts.md`: what they already answer is never asked again.
+
+## Steps
+
+1. **Inputs and the real business** (Inputs, Step 1): what is on file of the five inputs, and the numbers page. Ask: *"Anything to add to the inputs before I read them as the real business?"*
+2. **Owner interview** (Step 2): the ten questions, answered by the owner only. Show which answers are on file and which are open. Ask: *"Can you answer the open ones now, or do they go to the owner?"*
+3. **Meaning check** (Step 3): purpose, vision, mission, values as drafted or confirmed; the gate verdict. Ask: *"Does the purpose read as the owner's own, or does it need building?"*
+4. **Audience** (Step 4): persona, archetype mix, the Brand Affinity Audit patterns, a second audience where one exists. Ask: *"Is this the guest you see in the room?"*
+5. **Competitors** (Step 5): the scored table, IDEAS and OPPORTUNITIES. Ask: *"Any competitor missing or misjudged?"*
+6. **Differentiator, positioning, archetype and role** (Steps 6–7). Ask: *"Does the positioning read as one claim?"*
+7. **The Diagnosis doc** (Output): now write `[client]/diagnosis.md` and the PDF. Ask: *"Read the doc. Change anything before the PDF?"*
+
+**Ask only when necessary; never invent.** The owner's interview answers (step 2), the purpose in the owner's words and the verdict's sign-off are never drafted by the practice: an open one is written *to confirm* with the question, a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`. POS numbers, covers, spend, review counts and competitor names come only from the files or the user; no POS export means the numbers page says so, not an estimate. A gap that stops a step and that the user can answer now is one question; any other gap is a row and the step goes on.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Diagnosis": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> diagnosis.md "<Client>-Diagnosis-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
+
 ## Principles
 
 - **Meaning first.** If the business has no authentic meaning (purpose) and the owner won't build one, say so plainly and stop. That is the Vios client filter.
@@ -74,7 +90,7 @@ Score each on Brand Message, Positioning, Personality, Identity, Web/UX, Reviews
 
 Three steps, in order: audience archetype → what they want in the context of their situation → brand archetype that serves that need. Then Brand Role: Guide, Inspiration, Defender, Peer or Leader.
 
-## Output — the Diagnosis doc
+## Output — the Diagnosis doc (`[client]/diagnosis.md`)
 
 1. One-line verdict: meaning present / meaning to build / no meaning (decline)
 2. The real business in numbers
@@ -86,4 +102,4 @@ Three steps, in order: audience archetype → what they want in the context of t
 8. Contradictions found and what must change upstream
 9. Recommended next step: `vios-messages-and-story` (steps 10–11) when the positioning reads as one claim; then `vios-persona-builder`, `vios-name-and-tagline`, `vios-brand-book`; or branding work upstream first
 
-End with the verdict in one sentence and the next step.
+End with one line: the verdict, what is "to confirm" and who confirms it, and the next step and its skill. Then stop.

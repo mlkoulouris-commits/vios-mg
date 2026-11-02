@@ -1,0 +1,193 @@
+{
+  "$schema": "../../setup/status.schema.json",
+  "client": "one-gallery",
+  "name": "ONE Gallery",
+  "approver": "to confirm",
+  "account_manager": "Menelaos Koulouris",
+  "proposal": {
+    "version": 0,
+    "status": "not sent",
+    "doc": "",
+    "pdf": ""
+  },
+  "marketing_loop": "in",
+  "current_stage": "1 Brand",
+  "stages": {
+    "1 Brand": {
+      "scope": "in",
+      "status": "in progress",
+      "deliverables": {
+        "Diagnosis": {
+          "status": "done",
+          "file": "diagnosis.md",
+          "clickup": "1amp9gr24d7"
+        },
+        "Persona Bible v1.0": {
+          "status": "draft",
+          "file": "persona-bible.md",
+          "clickup": "1amp9gr24d8"
+        },
+        "Brand book v2.2 (quick reference; PDF in Drive)": {
+          "status": "done",
+          "file": "brand-book.md",
+          "where": "Drive › one gallery new › 01 Brand, brand-book-v2.2.pdf",
+          "clickup": "1amp9gr24d9"
+        },
+        "Fact sheet": {
+          "status": "draft",
+          "file": "fact-sheet.md",
+          "clickup": "1amp9gr24da"
+        },
+        "Filter test batches": {
+          "status": "draft",
+          "file": "archive/filter-test-batches.md",
+          "clickup": "1amp9gr24de"
+        }
+      }
+    },
+    "2 Map": {
+      "scope": "in",
+      "status": "done",
+      "deliverables": {
+        "Journey Map v2.2 EN/BG": {
+          "status": "done",
+          "file": "",
+          "where": "Drive › one gallery new › 01 Brand, ONE_Gallery_Journey_Map_v2_2.pdf / _BG.pdf (journey/ empty in repo)",
+          "clickup": "1amp9gr24dh"
+        },
+        "Reasoning Note (May 2026)": {
+          "status": "done",
+          "file": "",
+          "where": "OneDrive/projects/one gallery/onegallery current files vios practice/ (practitioner only)",
+          "clickup": "1amp9gr24dj"
+        },
+        "Stage 3 Handoff (May 2026)": {
+          "status": "done",
+          "file": "",
+          "where": "OneDrive/projects/one gallery/onegallery current files vios practice/ (practitioner only)",
+          "clickup": "1amp9gr24dm"
+        }
+      }
+    },
+    "3 Design": {
+      "scope": "in",
+      "status": "done",
+      "deliverables": {
+        "Journey Design v2": {
+          "status": "done",
+          "file": "",
+          "where": "Drive › one gallery new › 02 Operations (+ _BG)",
+          "clickup": "1amp9gr24dn"
+        },
+        "Choreography v2": {
+          "status": "done",
+          "file": "",
+          "where": "Drive › one gallery new › 02 Operations (+ _BG)",
+          "clickup": "1amp9gr24dq"
+        },
+        "Operations Brief v2": {
+          "status": "done",
+          "file": "",
+          "where": "Drive › one gallery new › 02 Operations (+ _BG)",
+          "clickup": "1amp9gr24dr"
+        },
+        "Exhibition Workflow v2": {
+          "status": "done",
+          "file": "",
+          "where": "Drive › one gallery new › 02 Operations",
+          "clickup": "1amp9gr24dt"
+        }
+      }
+    },
+    "4 Training": {
+      "scope": "in",
+      "status": "done",
+      "deliverables": {
+        "Journey Training Plan v2": {
+          "status": "done",
+          "file": "",
+          "where": "Drive › one gallery new › 02 Operations, ONE_Gallery_Journey_Training_Plan_v2 (training/ empty in repo)",
+          "clickup": "1amp9gr24du"
+        }
+      }
+    },
+    "Marketing": {
+      "scope": "in",
+      "status": "in progress",
+      "deliverables": {
+        "Content calendar Nov 2026 (Дихание)": {
+          "status": "done",
+          "file": "calendar-2026-11-dihanie.md",
+          "clickup": "1amp9gr24dv"
+        },
+        "Calendar sources Nov 2026": {
+          "status": "done",
+          "file": "calendar-sources.md",
+          "clickup": "1amp9gr24dw"
+        },
+        "Ads plan": {
+          "status": "draft",
+          "file": "ads-plan.md",
+          "clickup": "1amp9gr24dy"
+        },
+        "Shoot brief 27 Oct 2026": {
+          "status": "done",
+          "file": "briefs/shoot-2026-10-27.md",
+          "clickup": "1amp9gr24dz"
+        },
+        "Week 1 captions": {
+          "status": "draft",
+          "file": "briefs/week1-captions.md",
+          "clickup": "1amp9gr24e0"
+        },
+        "Week 2 schedule (2–8 Nov)": {
+          "status": "draft",
+          "file": "briefs/week2-schedule.md",
+          "clickup": "1amp9gr24e1"
+        },
+        "Staff release template": {
+          "status": "draft",
+          "file": "consents/staff-release-template.md",
+          "clickup": "1amp9gr24e2"
+        },
+        "UGC permission template": {
+          "status": "draft",
+          "file": "consents/ugc-permission-template.md",
+          "clickup": "1amp9gr24e3"
+        },
+        "Character sheet (ONE)": {
+          "status": "not started",
+          "file": "character-sheet/README.md",
+          "clickup": "1amp9gr24e4"
+        },
+        "Google reviews pull 2026-10": {
+          "status": "done",
+          "file": "data/2026-10/google-reviews_source-google-maps_pulled-2026-10-26.md",
+          "clickup": "1amp9gr24e5"
+        }
+      }
+    }
+  },
+  "blockers": [
+    {
+      "what": "Approver named by ONE Gallery (interim: mkoulouris, Vios, since 2026-11-01)",
+      "holds": "ONE Gallery",
+      "blocks": "Persona Bible sign-off, every publication"
+    },
+    {
+      "what": "Barsy export (12 months): covers, average spend, peak days, top sellers",
+      "holds": "ONE Gallery",
+      "blocks": "Diagnosis numbers, ads plan"
+    },
+    {
+      "what": "Fact sheet gaps: prices, menu names, allergens; address 1 vs 1А",
+      "holds": "ONE Gallery",
+      "blocks": "Captions with facts, ads plan"
+    }
+  ],
+  "next_action": {
+    "skill": "vios-engage:vios-engagement-setup",
+    "what": "Get ONE Gallery to name the approver, open open-facts.md from the open items in diagnosis.md, fact-sheet.md and accounts.md, and confirm the engagement scope: Persona Bible sign-off only, or a Stage 1–4 revision pass"
+  },
+  "updated": "2026-11-02"
+}

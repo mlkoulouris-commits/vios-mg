@@ -1,3 +1,6 @@
+ARCHIVED 2026-11-02. Superseded by clients/atelier/ (fresh engagement opened 2026-11-01).
+Read only as a source of facts; no status.json, not on the board.
+
 # Atelier del Gelato — pilot client
 
 Status 2026-10-30: Vios has full access to Instagram and Facebook, both connected to Metricool brand 7633845. This makes Atelier the pilot instead of Stochna (whose networks are still with the agency).

@@ -78,9 +78,14 @@
         "Stochna — Deliverables": "1500500000076208",
         "Stochna — Open facts": "1500500000076209",
         "Atelier — Deliverables": "1500500000076210",
-        "Atelier — Open facts": "1500500000076211"
+        "Atelier — Open facts": "1500500000076211",
+        "ONE Gallery — Deliverables": "1500500000076489",
+        "ONE Gallery — Open facts": "1500500000076490",
+        "ONE Gallery — Content": "1500500000076491",
+        "ONE Gallery — Engagement": "1500500000076492",
+        "ONE Gallery — Ads": "1500500000076493"
       },
-      "updated": "2026-11-02: statuses renamed QA→Review, Reported→Done; Stage + Approver folder fields; Deliverables + Open facts lists per client"
+      "updated": "2026-11-02: statuses renamed QA→Review, Reported→Done; Stage + Approver folder fields; Deliverables + Open facts lists per client; 2026-11-02: ONE Gallery five lists"
     }
   },
   "per_client_rule": "Each client's accounts.md lists its three ClickUp list ids; scheduled tasks read them from there.",

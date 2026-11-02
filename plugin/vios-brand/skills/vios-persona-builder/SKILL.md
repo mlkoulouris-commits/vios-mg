@@ -7,6 +7,22 @@ description: "Build a Vios Marketing Brand Persona (Persona Bible, character she
 
 Turns a client's brand foundation into a Brand Persona: the brand as a character that can appear on camera, speak and post every day without drifting. Hard lines: `vios-guardrails` 1–12. Output lands in `[client]/persona-bible.md` per the guardrails client-file convention. The brand book's Part 5 (How we sound) is assembled from this file, so every Part 5 element is built here, not by the assembler.
 
+**Work in seven steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a short table counts as its rows); no open-fact numbers, section references or file paths on screen. The method's own one-question-at-a-time inside a step stays as it is. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before step 7 (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+
+## Steps
+
+1. **Inputs and archetype** (Steps 0–1): what the diagnosis and the messages give; 2–3 archetype pairs with one line each. Ask: *"Which pair?"*
+2. **Format** (Step 2): the three formats, one recommended with its reason; the three AI rules if AI. Ask: *"Which format?"*
+3. **Personality and tone by mood** (Steps 3–4): the seven personality questions one at a time, then the is/is-not pairs and the mood rows. Ask: *"Is this the person who walks into the room?"*
+4. **Persona in practice, behaviour, journey** (Steps 4b–5): sliders, word rules, hard moments, the ten-line checklist; the matrix; speaks / present / silent per touchpoint. Ask: *"Any cell or touchpoint that feels off?"*
+5. **Expression palette and the locks** (Steps 6–7): palette rows; character sheet brief, voice spec, consent plan. Ask: *"Who signs the consent, and what does it cover?"*
+6. **Objective, KPIs, disclosure, error protocol, pilot** (Steps 8–11): the job sentence, 4–6 KPIs, who does what, the pilot. Ask: *"Which measures are yours, and who is the approver?"*
+7. **The Persona Bible** (Output): now write `[client]/persona-bible.md` and the PDF. Ask: *"Read it. Change anything before the PDF?"*
+
+**Ask only when necessary; never invent.** The client's choices (archetype pair, format, traits, never-list), the approver, the consent signatories and the KPI baselines are never drafted by the practice: when the client is not in the room the step records the recommendation and writes *to confirm* with the question, a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`. Alcohol yes/no, the address register, the name and the signature phrases come only from the files or the client; a baseline not on file is "open". No approver on file is a blocker on the front page, never a placeholder name. A gap that stops a step and that the user can answer now is one question; any other gap is a row and the step goes on.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Persona Bible": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7: `python scripts/clients.py pdf <slug> persona-bible.md "<Client>-Persona-Bible-vN"` and send the PDF to the user. The user forwards it; the practice never emails a client.
+
 ## Principles
 
 - Meaning first. If the client has no authentic purpose or won't build one, stop and say so (the Vios client filter).
@@ -117,4 +133,4 @@ One doc (Docs artifact when available), saved as `[client]/persona-bible.md`. Fr
 15. Pilot before scaling
 16. Guardrails that apply (link `vios-guardrails` 1–12)
 
-End with a one-line summary of the persona and the next step: pilot clips, character sheet production with the creative operator, then `vios-content-calendar`. If no approver is named, say so: nothing ships until one is.
+End with one line: the persona in a sentence, what is "to confirm" and who confirms it, and the next step: pilot clips, character sheet production with the creative operator, then `vios-content-calendar`. If no approver is named, say so: nothing ships until one is. Then stop.

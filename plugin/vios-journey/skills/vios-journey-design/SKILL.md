@@ -7,6 +7,22 @@ description: "Design the customer journey of a Vios F&B client moment by moment 
 
 Stage 3. The experience itself, specified in operational terms so that two staff members trained on it perform it the same way and a trainer who was not in the engagement can teach it. Strategy becomes the room here. Hard lines: `vios-core:vios-guardrails` 5 (food truth in the sensory frame), 9 (claims and allergens in scripts), 10, 11 (escalation topics are recoveries handed to a named person).
 
+**Work in seven steps, in the working order below (HIGH first, silent last, then choreography, recovery, briefs, close). Stop after each and ask one question. Each step shows at most ten plain lines; a page is never shown whole in chat, its locked line and its recovery code are.** "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before the user has seen the step that writes it (`status.json` and `open-facts.md` bookkeeping excepted). Start by reading `clients/<slug>/status.json` and `open-facts.md`; never ask what they already answer.
+
+## Steps
+
+1. **Schedule**. Show the inputs check (map, Reasoning Note signed, filter test on file: yes/no each), the tiers with counts, the recovery codes seeded, small-format variant or not. Writes `design/schedule.md`. Ask: *"Start with the peak and the end?"*
+2. **HIGH pages**, peak and end first. Show one line per HIGH moment: code · locked line (marked NEW where first written here) · recovery code. Writes `pages/Mnn.md` for the HIGH tier and the filter-test batch. Ask: *"Lock these lines?"*
+3. **MEDIUM, LOW and silent pages**. Show counts per tier, the new locked lines (one line each), any CONFIRM fact on a page. Writes the rest of `pages/`. Ask: *"Any line that does not sound like the brand?"*
+4. **Choreography**. Show the moment cluster around the peak in one line, then the continuities (five or fewer, one line each). Writes `choreography.md`. Ask: *"Do these continuities hold on every daypart?"*
+5. **Recovery**. Show the scenario list (one line each: trigger → who takes over), the escalation person named or "to confirm". Writes `recovery.md`. Ask: *"Who takes over on escalation?"*
+6. **Operations brief**. Show the coverage table by daypart (from POS or booking data, or marked "to replace with data"), the team structure in one line, equipment dependencies as a count. Writes `briefs/operations.md` (and `briefs/equipment-layout.md` when the build warrants it). Ask: *"Are these the staffing bands you run?"*
+7. **Close**. Show the six-question test as six rows (YES / NO / trainable except the facts listed) and the open-facts count. Writes the harvest; renders the PDF. Ask: *"Send the operations brief to the approver?"*
+
+**Ask only when necessary; never invent.** Allergen lines, serving age and licence conditions are quoted from `fact-sheet.md` with their verification date, never from memory: until sourced the page says CONFIRM, the fact gets a row in `clients/<slug>/open-facts.md` and a blocker in `status.json`, and the page cannot lock. The same for room facts (sightlines, sound level, the host stand's place), staffing and hours, the POS bands behind the coverage table, and the named person every escalation ends with. A locked line is the practice's draft until the approver locks it; a founder's decision (compensation policy, the escalation person) is his, never written for him. One question per gap, asked once.
+
+**After every step**: write the files → update `clients/<slug>/status.json` (deliverable `status` draft / review / approved / done, `file`, blockers, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; Draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 7, `python scripts/clients.py pdf <slug> journey/design/briefs/operations.md "<Client>-Operations-Brief-vN"` and send the PDF to the user; the pages set goes to the founder as files or Claude Docs when the account manager asks. The user forwards the PDF; the practice never emails a client.
+
 ## Read first
 
 - `../../references/stage-3-journey-design.md`, the chapter verbatim: seven moves, the design-page template, patterns S3-01 to S3-08, the briefs, the harvest.
@@ -90,7 +106,7 @@ Six questions, yes/no with the fix: every map moment has a page · every page na
 
 `[client]/journey/design/` with `pages/M01.md … Mnn.md` in journey order (two-digit codes, the same as the map), `choreography.md`, `recovery.md`, `briefs/operations.md`, `briefs/equipment-layout.md`, `schedule.md` (the design schedule), and `[client]/archive/harvest-stage-3.md` (new patterns, recovery scenarios, library entries, template refinements, collated from the `Harvest:` flags on the page footers; an hour or two when the footers were flagged as the pages were written, half a day when they were not; the practice's pattern factory). Claude Docs for the founder's review only when the account manager asks for them, not as part of writing the files. Volume is expected: two to three hundred pages for thirty moments; the uniform template is what keeps it usable.
 
-End with: pages written by tier, HIGH recoveries done, the threshold sequence and the bookended end in one line each, open dependencies, and the next step (`vios-training-programme`).
+End with one line: pages written by tier, HIGH recoveries done, the threshold sequence and the bookended end in one line each, open dependencies and who confirms them, and the next step (`vios-training-programme`). Then stop.
 - **Chase list**: `[client]/open-facts.md`, one table for the whole engagement, appended at every stage: fact needed · which moment, page or section it blocks · who holds it · asked on · due. Every "to confirm" in the deliverable points at a row here; the account manager works the list, nobody else. Say in the final line how many rows are open and which one blocks the stage from closing.
 
 

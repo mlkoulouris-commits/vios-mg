@@ -7,6 +7,21 @@ description: "Run the deep brand interrogation, extract the keyword set, and dev
 
 Steps 12 and 13: the brand's surface, reached only after the strategy is settled. The name and the tagline are tested against the strategy, never chosen for their sound alone. Hard lines: `vios-core:vios-guardrails` (3 for price words in taglines, 9 for claims).
 
+**Work in six steps. Stop after each and ask one question.** Each step shows at most ten plain lines (a short table counts as its rows); no open-fact numbers, section references or file paths on screen. "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before the user has seen the step that writes it (status.json and open-facts.md bookkeeping aside). Read `clients/<slug>/status.json` and `open-facts.md` first: what they answer is never asked again.
+
+## Steps
+
+1. **The deep interrogation** (Step 1): which of the eleven answers are on file, at length, in the owner's words; which are open. Writes the archive. Ask: *"Are the open answers coming from the owner now, or does the keyword set wait for them?"*
+2. **Keyword set** (Step 2): the ranked keywords with their source. Ask: *"Any word the brand would miss that is not here?"*
+3. **Long list** (Step 3): candidates per technique, local languages first. Ask: *"Any technique to push further before the short list?"*
+4. **Short list** (Step 4): 3–5 names with the strategy tests, then the practical tests. Ask: *"Any name to add or strike before ownership is checked?"*
+5. **Tagline** (Step 5): the concepts with their tests, or the no-tagline recommendation. Ask: *"Tagline, two-line system, or none?"*
+6. **Decision record** (Step 6): the recommendation and the owner's decision, or *to confirm*. Writes the book's Part 5, the archive and the PDF. Ask: *"Read it. Change anything before the PDF?"*
+
+**Ask only when necessary; never invent.** The owner's interrogation answers are never drafted by the practice: an open answer is a row in `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`, and the keyword set draws only on the answers that exist. The decision is the owner's: until it is given, the record says *to confirm* with the recommendation beside it. Ownership (domain, trademark, handles) is written only with the date it was checked; unchecked is *to confirm*, never assumed free. Competitor names come from the audit, place names and the venue's history from the files or the user. A gap that stops a step and that the user can answer now is one question; any other gap is a row and the step goes on.
+
+**After every step:** write the file → update `clients/<slug>/status.json` (deliverable "Name and tagline": draft → review → approved → done, blockers added or removed, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; draft while writing, Review when it waits for the approver, Approved on sign-off, Done when delivered) → at step 6: `python scripts/clients.py pdf <slug> archive/naming.md "<Client>-Name-and-Tagline-vN"` (the decision record on the first page, the long list and scores after it) and send the PDF to the user. The user forwards it; the practice never emails a client.
+
 ## Read first
 
 - `../../references/stage-1-brand-strategy.md` § 2.1.2.12, 2.1.2.13 and pattern S1-05. The eleven questions, the five techniques and the tests are there verbatim.
@@ -59,7 +74,7 @@ Chosen name, the reasoning, the rejected short-list names with the test each fai
 5. Tagline concepts with tests, or the no-tagline recommendation.
 6. Decision record.
 
-End with one line: the recommended name, the tagline or "no tagline", and the next step (`vios-brand-book` to assemble, or designer selection per § 2.1.2.14).
+End with one line: the recommended name, the tagline or "no tagline", what is "to confirm" and who confirms it (the owner's decision above all), and the next step (`vios-brand-book` to assemble, or designer selection per § 2.1.2.14). Then stop.
 
 ## Example (placeholders)
 

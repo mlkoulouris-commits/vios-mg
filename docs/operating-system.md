@@ -37,10 +37,12 @@ ClickUp → what is awaiting your sign-off → approve or comment. Claude → `/
 | --- | --- | --- |
 | 1 | ClickUp statuses, fields, Deliverables + Open facts lists; status.json schema; `scripts/clients.py`; Stochna + Atelier seeded | done 2026-11-02 |
 | 2 | Front door `/vios <client>` (plugin `vios-engage`) | done 2026-11-02 |
-| 3 | Engage skills (intake, proposal, setup, harvest) to the contract | proposal done; rest open |
-| 4 | Brand + journey skills to the contract, each with a client PDF | open |
-| 5 | Marketing loop: scheduled tasks drop drafts as ClickUp tasks in Review | open |
-| 6 | Migrate ONE Gallery; retire `atelier-2026-10` | open |
+| 3 | Engage skills (intake, proposal, setup, harvest) to the contract (`docs/skill-contract.md`) | 2026-11-02 |
+| 4 | Brand (5) + journey (3) skills to the contract, each with a client PDF | 2026-11-02 |
+| 5 | Marketing loop: the five scheduled tasks drop drafts as ClickUp tasks in Review | 2026-11-02 |
+| 6 | ONE Gallery on the system; `atelier-2026-10` archived | 2026-11-02 |
+| 7 | Marketing skills (calendar, voice, video, QA, ads, report) to the contract | open |
+| 8 | Core lenses stay as review passes (no steps); guardrails unchanged | n/a |
 
 ## Not in scope
 

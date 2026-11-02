@@ -16,6 +16,7 @@ See `docs/plan.md`. Short version: copy = `vios-persona-voice`; video = `vios-vi
 month plan = `vios-content-calendar`; gate = `vios-consistency-qa` (append a row to `qa-log.csv`);
 publish = Metricool connector only after `signed_off_at` is filled; ads = `vios-ad-factory` /
 `vios-ads-audit`; month end = `vios-monthly-report`.
+Every scheduled run hands its drafts to ClickUp as tasks in status Review (`setup/scheduled-tasks.md` › ClickUp Review); the approver approves there, not in chat.
 
 ## Rules
 - Never schedule, publish, reply publicly, spend, or email a client. Draft and hand to the approver.

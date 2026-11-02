@@ -7,6 +7,21 @@ description: "Build the customer journey map for a Vios F&B client from a finish
 
 Stage 2. The map translates the brand into the moments where it has to act, what it has to do there, and which moments carry disproportionate weight in memory. It is a short strategic instrument (one or two pages in the manuscript, three or four in the house form), not an emotion diagram and not a touchpoint inventory. Hard lines: `vios-core:vios-guardrails` 10 (the founder signs the map), 11.
 
+**Work in six steps (the six moves below, in their order). Stop after each and ask one question. Each step shows at most ten plain lines; the full tables live in the file.** "All good" moves to the next step; "all good to the end" runs the rest without stopping. Nothing is written to disk before the user has seen the step that writes it (`status.json` and `open-facts.md` bookkeeping excepted). Start by reading `clients/<slug>/status.json` and `open-facts.md`; never ask what they already answer.
+
+## Steps
+
+1. **Intake summary** (Move 0). Show the six elements as six lines with the brand-book edition; name any thin element. Writes `journey/intake-stage-2.md`. Ask: *"Is this the brand we map from?"*
+2. **The arc** (Move 1). Show the arc table (4–8 phases: name · duration · what the customer is doing). Writes the cover and arc of `journey/journey-map.md` (draft). Ask: *"Are these the phases, named for this customer?"*
+3. **Moments and observation** (Moves 2, 2b). Show one line per phase (count of moments, the "(if)" ones named) and whether the two shadowed services and the review read are on file. Writes `archive/journey-inventory.md` and `journey/observation.md` (or the provisional note). Ask: *"Observation on file, or do we issue provisional?"*
+4. **Weights** (Move 3). Show the HIGH table (3–7 rows, source per row), one line with the HIGH/MEDIUM/LOW/silent counts, one line naming ★ ◉ ⊐. Writes the weights into the map. Ask: *"Is this the hierarchy?"*
+5. **Placement and silences** (Moves 4, 5). Show the HIGH placements (intention · role-in-moment · dimension · target state) and the silent moments in one line. Writes the phase tables of the map in full. Ask: *"Any placement the brand book does not support?"*
+6. **Close** (Move 6). Show the five-question test as five rows with YES/NO, then the Reasoning Note's close calls in one line. Writes `reasoning-note.md`, `handoff-to-design.md`, the bridge, the harvest; renders the PDFs. Ask: *"Send the map and the Reasoning Note to the founder for signature?"*
+
+**Ask only when necessary; never invent.** Weights assigned before observation are provisional and the map says so on the cover (step 3). Room facts, hours, the service model, the reservation route and staffing come from `fact-sheet.md` or the user; a missing one is written "to confirm", gets a row in `clients/<slug>/open-facts.md` and a blocker in `status.json`, and the step goes on. A phase whose customer has no persona is mapped thin, never filled in. The Reasoning Note is signed by the founder: his signature, never the practice's; "awaiting signature" is a blocker, not a line to draft. One question per gap, asked once.
+
+**After every step**: write the file → update `clients/<slug>/status.json` (deliverable `status` draft / review / approved / done, `file`, blockers, `next_action`, `updated`) → move the ClickUp task (id in `status.json` › `clickup`; Draft while writing, Review when it waits for the founder, Approved on signature, Done when delivered) → at step 6, `python scripts/clients.py pdf <slug> journey/journey-map.md "<Client>-Journey-Map-vN"` and the same for `journey/reasoning-note.md` as `"<Client>-Reasoning-Note-vN"`, and send the PDFs to the user. The user forwards them; the practice never emails a client.
+
 ## Read first
 
 - `../../references/stage-2-journey-map.md`, the chapter verbatim: six moves, the five-band template, patterns S2-01 to S2-05, the harvest. This skill applies it; it does not restate it.
@@ -88,7 +103,7 @@ Five questions, each yes or no with the fix: arc specific to this customer · al
 - **Chase list**: `[client]/open-facts.md`, one table for the whole engagement, appended at every stage: fact needed · which moment, page or section it blocks · who holds it · asked on · due. Every "to confirm" in the deliverable points at a row here; the account manager works the list, nobody else. Say in the final line how many rows are open and which one blocks the stage from closing.
 
 
-End with: phase count, moment count, the HIGH/MEDIUM/LOW split, the signature, the peak and the end named, the silences, and the next step (`vios-journey-design`). The founder signs the Reasoning Note before design starts.
+End with one line: phase count, moment count, the HIGH/MEDIUM/LOW split, the signature, the peak and the end named, the silences; what is "to confirm" and who confirms it (the founder's signature first); and the next step (`vios-journey-design`). The founder signs the Reasoning Note before design starts. Then stop.
 
 ## Example (brewery, band 4 for one HIGH moment; placeholders)
 

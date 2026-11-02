@@ -1,5 +1,5 @@
 {
-  "description": "ClickUp structure for one VIOS Practice engagement, created by vios-engage:vios-engagement-setup under the client's folder. Lists are made only for the stages in scope.",
+  "description": "Seed list of deliverable tasks per VIOS Practice stage, used by vios-engage:vios-engagement-setup to fill the client's single '<Client> — Deliverables' list (one list, Stage field per task; statuses from setup/clickup.json). Only the stages in scope are seeded. Since 2026-11-02 there are no lists per stage; the 'statuses' block below is kept for the record of the pre-2026-11-02 layout.",
   "statuses": [
     {
       "status": "Draft",

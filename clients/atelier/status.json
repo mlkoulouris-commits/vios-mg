@@ -4,7 +4,12 @@
   "name": "Atelier del Gelato",
   "approver": "Menelaos Koulouris",
   "account_manager": "Menelaos Koulouris",
-  "proposal": { "version": 0, "status": "not sent", "doc": "", "pdf": "" },
+  "proposal": {
+    "version": 0,
+    "status": "not sent",
+    "doc": "",
+    "pdf": ""
+  },
   "marketing_loop": "in",
   "current_stage": "1 Brand",
   "stages": {
@@ -12,57 +17,155 @@
       "scope": "in",
       "status": "in progress",
       "deliverables": {
-        "Diagnosis": { "status": "review", "file": "diagnosis.md", "clickup": "1amp9gr23pg", "due": "2026-11-06" },
-        "Messages and story": { "status": "draft", "file": "brand-book.md", "clickup": "1amp9gr23ph", "due": "2026-11-20" },
-        "Persona Bible": { "status": "draft", "file": "persona-bible.md", "clickup": "1amp9gr23pj", "due": "2026-11-20" },
-        "Name and tagline check": { "status": "draft", "file": "archive/naming.md", "clickup": "1amp9gr23pk", "due": "2026-11-20" },
-        "Brand book (Format A)": { "status": "review", "file": "brand-book-v1.md", "pdf": "deliverables/Atelier-Brand-Book-v1.0-draft.pdf", "clickup": "1amp9gr23pm", "due": "2026-11-20" },
-        "Identity designer brief": { "status": "not started", "clickup": "1amp9gr23pn", "due": "2026-11-20" }
+        "Diagnosis": {
+          "status": "review",
+          "file": "diagnosis.md",
+          "clickup": "1amp9gr23pg",
+          "due": "2026-11-06"
+        },
+        "Messages and story": {
+          "status": "draft",
+          "file": "brand-book.md",
+          "clickup": "1amp9gr23ph",
+          "due": "2026-11-20"
+        },
+        "Persona Bible": {
+          "status": "draft",
+          "file": "persona-bible.md",
+          "clickup": "1amp9gr23pj",
+          "due": "2026-11-20"
+        },
+        "Name and tagline check": {
+          "status": "draft",
+          "file": "archive/naming.md",
+          "clickup": "1amp9gr23pk",
+          "due": "2026-11-20"
+        },
+        "Brand book (Format A)": {
+          "status": "review",
+          "file": "brand-book-v1.md",
+          "pdf": "deliverables/Atelier-Brand-Book-v1.0-draft.pdf",
+          "clickup": "1amp9gr23pm",
+          "due": "2026-11-20"
+        },
+        "Identity designer brief": {
+          "status": "not started",
+          "clickup": "1amp9gr23pn",
+          "due": "2026-11-20"
+        }
       }
     },
     "2 Map": {
       "scope": "in",
       "status": "in progress",
       "deliverables": {
-        "Observation": { "status": "not started", "file": "journey/observation.md", "clickup": "1amp9gr23pp", "due": "2026-11-27" },
-        "Journey map": { "status": "draft", "file": "journey/journey-map.md", "clickup": "1amp9gr23pq", "due": "2026-12-04" },
-        "Reasoning Note": { "status": "draft", "file": "journey/reasoning-note.md", "clickup": "1amp9gr23pr", "due": "2026-12-04" },
-        "Handoff to design": { "status": "not started", "clickup": "1amp9gr23pt", "due": "2026-12-04" }
+        "Observation": {
+          "status": "not started",
+          "file": "journey/observation.md",
+          "clickup": "1amp9gr23pp",
+          "due": "2026-11-27"
+        },
+        "Journey map": {
+          "status": "draft",
+          "file": "journey/journey-map.md",
+          "clickup": "1amp9gr23pq",
+          "due": "2026-12-04"
+        },
+        "Reasoning Note": {
+          "status": "draft",
+          "file": "journey/reasoning-note.md",
+          "clickup": "1amp9gr23pr",
+          "due": "2026-12-04"
+        },
+        "Handoff to design": {
+          "status": "not started",
+          "clickup": "1amp9gr23pt",
+          "due": "2026-12-04"
+        }
       }
     },
     "3 Design": {
       "scope": "in",
       "status": "not started",
       "deliverables": {
-        "Design pages": { "status": "draft", "file": "journey/design/", "clickup": "1amp9gr23pu" },
-        "Choreography": { "status": "draft", "clickup": "1amp9gr23pv" },
-        "Recovery document": { "status": "draft", "clickup": "1amp9gr23pw" },
-        "Operations brief": { "status": "draft", "clickup": "1amp9gr23px" },
-        "B2B partner brief + Ring Mall variant": { "status": "not started", "clickup": "1amp9gr23py" }
+        "Design pages": {
+          "status": "draft",
+          "file": "journey/design/",
+          "clickup": "1amp9gr23pu"
+        },
+        "Choreography": {
+          "status": "draft",
+          "clickup": "1amp9gr23pv"
+        },
+        "Recovery document": {
+          "status": "draft",
+          "clickup": "1amp9gr23pw"
+        },
+        "Operations brief": {
+          "status": "draft",
+          "clickup": "1amp9gr23px"
+        },
+        "B2B partner brief + Ring Mall variant": {
+          "status": "not started",
+          "clickup": "1amp9gr23py"
+        }
       }
     },
     "4 Training": {
       "scope": "in",
       "status": "not started",
       "deliverables": {
-        "Onboarding plan + registers + sign-off checklist": { "status": "draft", "file": "training/", "clickup": "1amp9gr23pz" }
+        "Onboarding plan + registers + sign-off checklist": {
+          "status": "draft",
+          "file": "training/",
+          "clickup": "1amp9gr23pz"
+        }
       }
     },
     "Engagement": {
       "scope": "in",
       "status": "in progress",
       "deliverables": {
-        "Proposal v1": { "status": "not started", "clickup": "1amp9gr23pf" },
-        "Harvest + case recommendation": { "status": "not started", "clickup": "1amp9gr23q0" }
+        "Proposal v1": {
+          "status": "not started",
+          "clickup": "1amp9gr23pf"
+        },
+        "Harvest + case recommendation": {
+          "status": "not started",
+          "clickup": "1amp9gr23q0"
+        }
       }
     }
   },
   "blockers": [
-    { "what": "Move 1 conversation with Evo (the four questions, in his words)", "holds": "Evo", "open_fact": 1, "blocks": "Diagnosis signature, proposal" },
-    { "what": "Evo's agreement to a full rerun of Stage 1", "holds": "Evo", "open_fact": 5, "blocks": "Stage 1 start" },
-    { "what": "Scope and timeline ratified", "holds": "Evo", "open_fact": 6, "blocks": "Proposal" },
-    { "what": "Evo's agreement to the AI ambassador (Giulia)", "holds": "Evo", "open_fact": 26, "blocks": "Persona Bible, any persona content" }
+    {
+      "what": "Move 1 conversation with Evo (the four questions, in his words)",
+      "holds": "Evo",
+      "open_fact": 1,
+      "blocks": "Diagnosis signature, proposal"
+    },
+    {
+      "what": "Evo's agreement to a full rerun of Stage 1",
+      "holds": "Evo",
+      "open_fact": 5,
+      "blocks": "Stage 1 start"
+    },
+    {
+      "what": "Scope and timeline ratified",
+      "holds": "Evo",
+      "open_fact": 6,
+      "blocks": "Proposal"
+    },
+    {
+      "what": "Evo's agreement to the AI ambassador (Giulia)",
+      "holds": "Evo",
+      "open_fact": 26,
+      "blocks": "Persona Bible, any persona content"
+    }
   ],
-  "next_action": { "skill": "vios-engage:vios-intake", "what": "Hold the Move 1 conversation with Evo, then send the proposal" },
+  "next_action": {
+    "skill": "vios-engage:vios-intake",
+    "what": "Hold the sitting with Evo (sheet: deliverables/Atelier-Sitting-with-Evo-2026-11.pdf), file the answers, then send the proposal"
+  },
   "updated": "2026-11-02"
 }

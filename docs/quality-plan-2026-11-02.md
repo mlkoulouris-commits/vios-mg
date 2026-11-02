@@ -62,6 +62,8 @@ Changes:
 
 Done when: a diagnosis cannot pass step 4 without at least review mining on file (blocker in `status.json` otherwise).
 
+State 2026-11-02: built (brand 0.4.0, journey 0.5.0, core 0.6.2): three templates, diagnosis Inputs + step 4 Guest evidence + gate, journey-map Move 2b reads the mystery visit and the review mining, guardrails client-file row, rate-card line (to confirm). No client has review mining, interviews or a mystery visit on file yet. Open questions 2 and 3 (who interviews, who visits) still the owner's.
+
 ## Workstream 3 — Outcome KPIs in the proposal
 
 What: every proposal names what should move, by how much, by when — and the report tracks it.
@@ -75,6 +77,8 @@ Changes:
 
 Done when: the next proposal (ONE Gallery revision or the next new client) carries the KPI table.
 
+State 2026-11-02: built (engage 0.4.0, marketing 0.4.1, core 0.6.1): intake fourth question, proposal table + sentence + sprint line, client sheet section, `kpis` in status.json (schema, template, card, check), report prints the promise first and writes `latest`, harvest reads it, guardrails rule, rate-card line (sprint price to confirm). Stochna proposal v1 does not carry the table yet; no client has KPIs on file.
+
 ## Workstream 4 — Financial lens
 
 What: the brand and journey work uses the venue's money numbers, the way F&B strategy firms lead with them.
@@ -87,6 +91,8 @@ Changes:
 
 Done when: Stochna diagnosis has a filled numbers page and one HIGH design page shows its cost.
 
+State 2026-11-02: built (core 0.7.0, brand 0.4.1, journey 0.5.1, marketing 0.4.2): reference + template, diagnosis step 1 fixed page with gate on "to confirm" rows, design HIGH pages' "Cost of the moment" line, report section 4 on the page's lines, guardrails pointer. No client has a numbers page filled yet (Stochna is on Memento: fill from the pages the reference names).
+
 ## Workstream 5 — Training proof
 
 What: training ends with a measurement, not a handover.
@@ -98,6 +104,8 @@ Changes:
 
 Done when: the ONE Gallery or Stochna training close has a certification file and an audit date on the calendar.
 
+State 2026-11-02: built (journey 0.6.0, core 0.7.1): templates `training/certification.csv` + `training/behaviour-kpis.md`, training Move 7 = six questions + certification + behaviour KPIs + thirty-day audit booked, `status.json` stage audit block, guardrails row, rate card (Stage 4 includes the proof; quarterly audit 600 to confirm). No client has a certification file or an audit date yet.
+
 ## Workstream 6 — Proof and capacity
 
 What: one case with numbers, and the operation able to serve more than one client at a time.
@@ -108,6 +116,16 @@ What: one case with numbers, and the operation able to serve more than one clien
 - **Capacity**: one account manager per three clients in the loop; the scheduled tasks already iterate clients; document the handoff in `docs/sop.md` so a second person can run a client from the board.
 
 Done when: one case PDF exists in `clients/one-gallery/deliverables/` and the hygiene list is empty.
+
+State 2026-11-02: case draft v0.1 written in the Part IV seven-section form (`clients/one-gallery/deliverables/case-one-gallery-v0.1.md` + PDF), a method case with every number on file and the result numbers named "to confirm"; `docs/cases.md` row; `docs/sop.md` gains "Capacity and handoff" (one account manager per three loop clients, the five-file handoff, the board-only run). Baselines for Stochna and Atelier still to measure (WS1 "done when").
+
+Hygiene list (user-only, blocking the plan's "done"):
+- [ ] Upload the five packaged plugins: engage 0.4.0, marketing 0.4.2, brand 0.4.1, journey 0.6.0, core 0.7.1 (`plugin/*.plugin`).
+- [ ] Delete the 12 stale standalone skill copies on claude.ai (benchmark 2026-11-01).
+- [ ] Reconnect the Instagram connector (failed to connect 2026-11-02).
+- [ ] Confirm or strike on the rate card: prices (all), guest research pack 900, diagnostic sprint 1,500, quarterly service audit 600.
+- [ ] Answer open questions 2 and 3 (who interviews, who visits).
+- [ ] ONE Gallery: signed proposal date and file; POS export; one Instagram account + Metricool brand.
 
 ## Order and effort
 

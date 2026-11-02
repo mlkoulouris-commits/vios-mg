@@ -30,6 +30,24 @@
         "missing": { "type": "array", "items": { "type": "string" }, "description": "rows that read 'to confirm'" }
       }
     },
+    "kpis": {
+      "type": "array",
+      "description": "The outcome KPIs the proposal promises to move (vios-proposal step 3 'What we aim to move'); baseline from data/baseline-YYYY-MM.md; latest written by vios-monthly-report every month; the harvest's case lesson is this table's story.",
+      "items": {
+        "type": "object",
+        "required": ["name", "target", "due"],
+        "properties": {
+          "name": { "type": "string", "description": "covers per month, average check, Google rating, reach, labour %, bookings by own channel ..." },
+          "baseline": { "type": ["number", "string"], "description": "number from the baseline page, or 'measured in week 1' / 'to confirm'" },
+          "target": { "type": ["number", "string"], "description": "the 90-day (or stated) target, absolute or '+10 %'" },
+          "due": { "type": "string", "description": "YYYY-MM-DD, normally 90 days after go-live" },
+          "how_measured": { "type": "string", "description": "source and n rule, e.g. 'Memento P&L, monthly covers'" },
+          "latest": { "type": ["number", "string"], "description": "last reported value" },
+          "latest_date": { "type": "string" },
+          "attribution": { "enum": ["contribution", "lift vs baseline", "not provable"], "description": "guardrails › Shared numbers: we claim contribution, never causation, unless an offer-day lift supports it" }
+        }
+      }
+    },
     "current_stage": { "enum": ["0 intake", "1 Brand", "2 Map", "3 Design", "4 Training", "closed"] },
     "stages": {
       "type": "object",
@@ -38,6 +56,18 @@
         "properties": {
           "scope": { "enum": ["in", "out", "revision", "to confirm"] },
           "status": { "enum": ["not started", "in progress", "review", "signed", "done"] },
+          "audit": {
+            "type": "object",
+            "description": "Stage 4 only: the thirty-day register audit (a scored mystery visit on the house frame) and the certification state; written by vios-training-programme Move 7 and by the audit itself.",
+            "properties": {
+              "date": { "type": "string", "description": "YYYY-MM-DD of the thirty-day audit; planned date until done" },
+              "status": { "enum": ["planned", "done", "overdue"] },
+              "score": { "type": "string", "description": "HIGH moments at 3 / 2 / 1, e.g. '4/2/0'" },
+              "sheet": { "type": "string", "description": "repo path of the mystery-visit sheet used" },
+              "certified": { "type": "string", "description": "people certified of people on the floor, e.g. '9 of 11'" },
+              "behaviour_kpis": { "type": "string", "description": "repo path of training/behaviour-kpis.md" }
+            }
+          },
           "deliverables": {
             "type": "object",
             "description": "key = deliverable name as the practice ships it",

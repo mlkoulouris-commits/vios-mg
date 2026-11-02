@@ -16,6 +16,14 @@ Out of scope: {{out-of-scope items, or "nothing named"}}.
 | --- | --- | --- |
 | {{stage}} | {{facts, access, time}} | {{date}} |
 
+## What we aim to move (90 days from {{go-live date}})
+
+| KPI | Today | In 90 days | How we measure it |
+| --- | --- | --- | --- |
+| {{kpi}} | {{baseline figure or "measured in week 1"}} | {{target}} | {{source, monthly}} |
+
+We report these every month against the baseline, with the sample size beside each figure; we say where we contributed and we do not claim to have caused a number on our own.
+
 ## Timeline
 
 | Milestone | Date |

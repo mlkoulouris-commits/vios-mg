@@ -12,7 +12,7 @@ The six moves at the start of an engagement, from the first conversation to the 
 ## Steps
 
 1. **The conversation** (move 1): the four answers in the founder's words, whether the method can serve the brief, and the client's folder name (new or existing). Ask: *"Are these the founder's words as given?"*
-2. **Scope** (move 2): stages in / out / part, briefs, partners, marketing loop, as a checklist. Ask: *"Is this the scope? Tick or strike."*
+2. **Scope** (move 2): stages in / out / part, briefs, partners, marketing loop, as a checklist; under it the founder's answer to *"what should be different in 90 days, in numbers?"* as up to four lines (measure · today's number or "to measure" · wanted). Ask: *"Is this the scope, and are these the numbers the founder named?"*
 3. **Starting set** (move 3): patterns, library entries, templates, closest prior case. Ask: *"Keep, add or drop any?"*
 4. **The intake record** (move 4): the record's lines and the open-facts rows as they will be written, approver named. Ask: *"Is this the record, with this approver?"*
 5. **Timeline** (move 5): the dates as one short table. Ask: *"Dates right? Set any 'to confirm' now, or leave for the founder."*
@@ -40,6 +40,8 @@ Four questions, asked and answered in the founder's own words, recorded verbatim
 ## Move 2 — Scope against the four stages
 
 Three questions: which stages are in scope, in full or in part (1 brand strategy and book · 2 journey map · 3 journey design · 4 training) · which briefs will be generated (designer, architect, interior, operations) · which partners execute the work the practice does not. Output: a one-page scope summary, over-named rather than under-named, ratified by the founder before anything begins. The marketing loop (`vios-marketing`) is named as in or out of scope on the same page.
+
+A fourth question closes the move: **"What should be different in 90 days, in numbers?"** The founder names up to four measures in their own words (covers, average check, Google rating, bookings through our own channel, reach, labour %, a wait time, a review theme that must disappear). Each is written as measure · today's number as the founder says it, or "to measure" · what they want. Nothing is promised here: the baseline (`vios-engagement-setup` step 7) sets today's number, `vios-proposal` step 3 turns the wanted numbers into the KPI table the proposal carries. A founder who cannot name a number is recorded as such ("outcome: not named") and the proposal's KPI table says "set at baseline"; never invent a target for them.
 
 ## Move 3 — Pull from Layer 2
 

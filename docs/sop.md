@@ -32,6 +32,14 @@ Every item names the role, the skill, the tool and the proof that it happened.
 - AI disclosure status re-check (guardrails hard line 6).
 - Consent expiries in `consents/`.
 
+## Capacity and handoff
+
+- **Load**: one account manager carries at most three clients in the marketing loop, or one practice engagement (Stages 1–4) plus one loop client. A fourth loop client means a second account manager, named in each client's `status.json` › `account_manager` before their first calendar.
+- **Everything a client needs is in five places**, so a second person can run it from the board without the first: ClickUp (the five lists), `clients/<slug>/status.json` (the six-line status), `open-facts.md` (the chase list), `accounts.md` (every id and who holds access) and Drive (consents, data, deliverables). If something lives only in a chat, a head or a phone, it is not handed over.
+- **Handing a client over** (half a day): the leaving manager runs `/vios <client>` and fixes anything the card gets wrong; walks the receiving manager through `open-facts.md` row by row and the ClickUp Review column; transfers Metricool, Meta, Google and Drive access per client (never shared logins); writes the date and both names in `README.md` › Keys; updates `status.json` › `account_manager`. The approver is told by the leaving manager, in writing, the same day.
+- **Running a client you did not set up**: read `status.json`, then `README.md` › Intake record, then the persona bible's front page, then `fact-sheet.md`; nothing else before the first action. The scheduled tasks keep running; your first job is the Review column.
+- **Proof it happened**: the handoff line in `README.md`, the changed `account_manager`, and the access transfers logged in `accounts.md` with dates.
+
 ## Statuses (ClickUp, every list)
 
-Draft → QA → Approved → Scheduled → Published → Reported. Blocked is a flag, not a status.
+Draft → Review → Approved → Scheduled → Published → Done (renamed 2026-11-02; QA → Review, Reported → Done). Blocked is a flag, not a status.

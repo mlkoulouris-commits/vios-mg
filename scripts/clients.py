@@ -60,10 +60,18 @@ def card(slug: str) -> str:
     blockers = s.get("blockers") or []
     base = s.get("baseline") or {"status": "not started"}
     baseline = base["status"] + (f" {base['date']}" if base.get("date") else "") + (f", {len(base['missing'])} to confirm" if base.get("missing") else "")
+    kpis = s.get("kpis") or []
+    kpi_line = (
+        "KPIs: " + " · ".join(
+            f"{k['name']} {k.get('baseline', '?')} → {k['target']}" + (f" (now {k['latest']})" if k.get("latest") not in (None, "") else "")
+            for k in kpis[:4]
+        ) + (f" +{len(kpis)-4} more" if len(kpis) > 4 else "")
+    ) if kpis else "KPIs: none promised yet"
     lines = [
         f"**{s['name']}** — {s['current_stage']} · approver: {s['approver']} · updated {s['updated']}",
         f"Proposal: {s['proposal']['status']}" + (f" (v{s['proposal']['version']})" if s['proposal'].get('version') else "") + f" · marketing loop: {s['marketing_loop']} · baseline: {baseline}",
         f"Stages: {stages}",
+        kpi_line,
         f"Blocked by: " + ("; ".join(f"{b['what']} ({b['holds']})" for b in blockers[:3]) if blockers else "nothing") + (f" +{len(blockers)-3} more" if len(blockers) > 3 else ""),
         f"Open facts: {len(facts)}" + (f", {sum(1 for f in facts if f['due'] and f['due'] <= date.today().isoformat())} overdue" if facts else ""),
         f"Next: {s['next_action']['what']}  →  {s['next_action']['skill']}",
@@ -95,6 +103,10 @@ def check(slug: str) -> list[str]:
         errs.append(f"proposal.status={s.get('proposal', {}).get('status')!r}")
     if "baseline" in s and s["baseline"].get("status") not in schema["properties"]["baseline"]["properties"]["status"]["enum"]:
         errs.append(f"baseline.status={s['baseline'].get('status')!r}")
+    for k in s.get("kpis", []):
+        for req in ("name", "target", "due"):
+            if req not in k:
+                errs.append(f"kpi without {req}: {k}")
     for b in s.get("blockers", []):
         if "what" not in b or "holds" not in b:
             errs.append(f"blocker without what/holds: {b}")

@@ -11,35 +11,35 @@
       "name": "vios-core",
       "source": "./plugin/vios-core",
       "description": "Shared rules every Vios plugin loads: guardrails, BE lens, non-verbal lens, the filter test, with Part III sections 3.1, 3.2 and 3.4 as references. Enable first.",
-      "version": "0.6.0",
+      "version": "0.7.1",
       "category": "productivity"
     },
     {
       "name": "vios-brand",
       "source": "./plugin/vios-brand",
       "description": "Stage 1 end to end: diagnosis, messages and story, persona, name and tagline, brand book. Requires vios-core.",
-      "version": "0.3.5",
+      "version": "0.4.1",
       "category": "productivity"
     },
     {
       "name": "vios-journey",
       "source": "./plugin/vios-journey",
       "description": "Stages 2 to 4: journey map, journey design, training programme. Requires vios-core and vios-brand.",
-      "version": "0.4.9",
+      "version": "0.6.0",
       "category": "productivity"
     },
     {
       "name": "vios-engage",
       "source": "./plugin/vios-engage",
       "description": "The engagement wrapper: intake, proposal, workspace setup, harvest. Parts IV and V. Requires vios-core.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "category": "productivity"
     },
     {
       "name": "vios-marketing",
       "source": "./plugin/vios-marketing",
       "description": "Monthly operations: calendar, copy, video, QA, ads, report. Requires vios-core.",
-      "version": "0.4.0",
+      "version": "0.4.2",
       "category": "productivity"
     }
   ]

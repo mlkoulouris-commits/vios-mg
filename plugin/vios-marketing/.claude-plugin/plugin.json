@@ -1,6 +1,6 @@
 {
   "name": "vios-marketing",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "description": "Vios Marketing operations for F&B clients: content calendars, copy, video scripts, QA gate, ads, audits and monthly reports. Requires vios-core; built on a client folder from vios-brand.",
   "author": {
     "name": "Menelaos Koulouris — Meaningful Gastronomy Ltd (Vios)"

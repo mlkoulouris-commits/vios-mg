@@ -44,6 +44,11 @@ ClickUp → what is awaiting your sign-off → approve or comment. Claude → `/
 | 7 | Marketing skills (calendar, voice, video, ads, report) to the contract; QA + ads-audit stay verdict skills | 2026-11-02 |
 | 8 | Core lenses stay as review passes (no steps); guardrails unchanged | n/a |
 | 9 | Month-0 baseline: setup step 7, `data/baseline-YYYY-MM.md`, "Baseline" column in the monthly report, `status.json` › `baseline` (`docs/quality-plan-2026-11-02.md` WS1) | 2026-11-02 |
+| 10 | Outcome KPIs: intake's 90-day question, proposal's "What we aim to move" table (doc + client sheet), `status.json` › `kpis`, report prints the promise first, harvest reads it; diagnostic sprint on the rate card to confirm (quality plan WS3) | 2026-11-02 |
+| 11 | Guest research: review mining, interview guide (EN/BG) and mystery visit templates in `templates/client/data/`; diagnosis step 4 opens with Guest evidence and cannot pass without review mining; the map's Move 2b takes the mystery visit as its first observation; guest research pack on the rate card to confirm (quality plan WS2) | 2026-11-02 |
+| 12 | Financial lens: `vios-core/references/numbers-page.md` (definitions, Memento page per number, quadrant, cost of a moment) + `templates/client/data/numbers-page.md`; diagnosis step 1 fills it; HIGH design pages carry "Cost of the moment"; report section 4 reads marketing on its lines (quality plan WS4) | 2026-11-02 |
+| 13 | Training proof: `training/certification.csv` (10-check role cards, manager signs), `training/behaviour-kpis.md` (two counts per HIGH moment, four weeks), the thirty-day register audit on the mystery-visit sheet with its score in `status.json` › stages › 4 Training › `audit`; quarterly service audit on the rate card to confirm (quality plan WS5) | 2026-11-02 |
+| 14 | Proof and capacity: first case draft in the Part IV form (ONE Gallery v0.1, method case, results "to confirm"); `docs/sop.md` › Capacity and handoff; hygiene list in the quality plan (quality plan WS6) | 2026-11-02 |
 
 ## Not in scope
 

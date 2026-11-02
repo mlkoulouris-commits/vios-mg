@@ -14,7 +14,7 @@ The five moves at the close of an engagement, one to three days of practitioner 
 1. **Stage-harvest review** (move 1): each candidate as a row, candidate · promoted · dropped, with the second engagement when promoted. Ask: *"Agree with each status?"*
 2. **Library contributions** (move 2): the proposed sub-entries, one line each, under the principle they join. Ask: *"Keep, add or drop any?"*
 3. **Template refinements** (move 3): held or made, with the engagements behind each. Ask: *"Make these and hold those?"*
-4. **Case recommendation** (move 4): recommend or decline, the lesson, the window. Ask: *"Recommend, or decline?"*
+4. **Case recommendation** (move 4): the KPI table as promised (proposal) and as it stands (baseline · target · latest · date, from `status.json` › `kpis`), then recommend or decline, the lesson, the window. A KPI table that is empty or has no `latest` is recorded as "no outcome evidence" and the case can only be recommended for a method lesson, never for a result. Ask: *"Recommend, or decline?"*
 5. **Archive** (move 5): what becomes read-only, one line per group. Ask: *"Archive as listed?"*
 6. **Retrospective**: what worked, what did not, what changes next time. Ask: *"Is this the practitioner's view as given?"*
 7. **Version control**: the increment proposed and the change-log entry. Ask: *"Propose this increment to the owner?"*

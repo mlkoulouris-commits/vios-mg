@@ -56,6 +56,8 @@ ALWAYS use this exact structure. Numbers first, interpretation second, decisions
 "Covers 2,910 (+9 % vs Sep, n 2,670; +4 % vs Oct last year, n 2,800; +12 % vs baseline Jun–Aug avg 2,600); Tuesday bookings 11 vs 6 (too small to call); organic sends at a 6-month high."
 
 ### 2. Venue scoreboard
+First, when `status.json` › `kpis` is not empty, **the promise**: one row per KPI from the proposal — KPI · today at signature · target · due · this month · n · attribution (guardrails › Shared numbers) — and this month's value written back to `kpis[].latest` and `latest_date`. A KPI whose due date has passed is read plainly: met, not met, or not provable, with the number. No KPIs on file: one line, "no outcome KPIs promised; see the proposal", and the scoreboard follows.
+
 | Metric | Baseline | This month | Last month | Same month last year | 3-mo median | Note |
 Covers · revenue · avg spend · bookings · repeat-guest share (if trackable) · offer-day covers vs baseline · blended cost per cover · marketing spend as % of revenue. "Baseline" = the D0 page's 3-month monthly average; "vs baseline" is stated once per row, with the baseline's season named when it differs from this month's.
 
@@ -64,7 +66,7 @@ Covers · revenue · avg spend · bookings · repeat-guest share (if trackable) 
 Paid (cost per code booking, spend) · Organic (reach, saves, sends, tags) · GBP (directions, calls) · Community (reviews answered, response time)
 
 ### 4. The link between the two
-First name what *else* moved the month: weather, holidays, closures, seasonality. Then where marketing moved the venue numbers and where it didn't: offer days vs baseline; code bookings vs total bookings; reconciliation ratio stability; organic spikes vs footfall. Say plainly when the link isn't provable and how to make it provable next month (booking-source field, "how did you hear about us" at the till).
+First name what *else* moved the month: weather, holidays, closures, seasonality. Then where marketing moved the venue numbers and where it didn't, **on the numbers page's own lines** (`[client]/data/numbers-page.md`, `plugin/vios-core/references/numbers-page.md`): the category the content pushed against its revenue-mix share; the daypart the offer targeted against its covers share; the featured items against their quadrant (a pushed Star that moved units is a result, a pushed Dog that did not is a menu finding, not a marketing one); labour % and COGS % when a campaign changed covers enough to move them. Then offer days vs baseline; code bookings vs total bookings; reconciliation ratio stability; organic spikes vs footfall. No numbers page on file: say so, read on the scoreboard's lines, and add "numbers page" to the appendix's missing list. Say plainly when the link isn't provable and how to make it provable next month (booking-source field, "how did you hear about us" at the till).
 
 ### 5. What worked (top 3) and what didn't (top 3)
 Number + n, the hypothesis, what we do with it. Winners by concept and angle.

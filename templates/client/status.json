@@ -7,6 +7,7 @@
   "proposal": { "version": 0, "status": "not sent", "doc": "", "pdf": "" },
   "marketing_loop": "out",
   "baseline": { "status": "not started", "date": "", "file": "", "missing": [] },
+  "kpis": [],
   "current_stage": "0 intake",
   "stages": {
     "1 Brand":    { "scope": "to confirm", "status": "not started", "deliverables": {} },

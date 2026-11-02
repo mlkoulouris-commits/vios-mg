@@ -1,0 +1,19 @@
+{
+  "$schema": "../../setup/status.schema.json",
+  "client": "<slug>",
+  "name": "<Client>",
+  "approver": "to confirm",
+  "account_manager": "",
+  "proposal": { "version": 0, "status": "not sent", "doc": "", "pdf": "" },
+  "marketing_loop": "out",
+  "current_stage": "0 intake",
+  "stages": {
+    "1 Brand":    { "scope": "to confirm", "status": "not started", "deliverables": {} },
+    "2 Map":      { "scope": "to confirm", "status": "not started", "deliverables": {} },
+    "3 Design":   { "scope": "to confirm", "status": "not started", "deliverables": {} },
+    "4 Training": { "scope": "to confirm", "status": "not started", "deliverables": {} }
+  },
+  "blockers": [],
+  "next_action": { "skill": "vios-engage:vios-intake", "what": "Hold the four-question conversation with the founder" },
+  "updated": "YYYY-MM-DD"
+}

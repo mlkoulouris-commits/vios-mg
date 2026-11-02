@@ -1,5 +1,5 @@
 {
-  "description": "ClickUp structure for the Vios Marketing department. Recreate in any workspace by asking Claude to 'recreate the ClickUp structure from setup/clickup.json'. Ids below are the personal-account instance created 2026-10-29.",
+  "description": "ClickUp structure for the Vios department (docs/operating-system.md). Recreate in any workspace by asking Claude to 'recreate the ClickUp structure from setup/clickup.json'. Ids below are the personal-account instance.",
   "space_statuses": [
     {
       "status": "Draft",
@@ -7,7 +7,7 @@
       "color": "#d3d3d3"
     },
     {
-      "status": "QA",
+      "status": "Review",
       "type": "custom",
       "color": "#6647f0"
     },
@@ -27,7 +27,7 @@
       "color": "#7c4dff"
     },
     {
-      "status": "Reported",
+      "status": "Done",
       "type": "closed",
       "color": "#008844"
     }
@@ -40,8 +40,16 @@
         "content": "Department build tasks, onboarding checklists, quarterly reviews."
       },
       {
+        "name": "<Client> — Deliverables",
+        "content": "One task per Vios deliverable (Stages 1–4, briefs, proposal, harvest). Stage + Approver fields on every task."
+      },
+      {
+        "name": "<Client> — Open facts",
+        "content": "Mirror of clients/<slug>/open-facts.md, one task per open row; scripts/clients.py facts <slug> builds the payload."
+      },
+      {
         "name": "<Client> — Content",
-        "content": "One task per post. Draft → QA → Approved (qa-log signed) → Scheduled (Metricool) → Published → Reported."
+        "content": "One task per post. Draft → Review → Approved (qa-log signed) → Scheduled (Metricool) → Published → Done."
       },
       {
         "name": "<Client> — Engagement",
@@ -52,7 +60,7 @@
         "content": "Weekly vios-ads-audit action list. Pauses and budget changes need the client owner."
       }
     ],
-    "per_client": "Create the three <Client> lists for every onboarded client."
+    "per_client": "Create the five <Client> lists for every onboarded client."
   },
   "instances": {
     "personal_2026-10-29": {
@@ -66,9 +74,44 @@
         "Stochna — Ads": "1500500000053388",
         "Atelier — Content": "1500500000059306",
         "Atelier — Engagement": "1500500000059307",
-        "Atelier — Ads": "1500500000059310"
-      }
+        "Atelier — Ads": "1500500000059310",
+        "Stochna — Deliverables": "1500500000076208",
+        "Stochna — Open facts": "1500500000076209",
+        "Atelier — Deliverables": "1500500000076210",
+        "Atelier — Open facts": "1500500000076211"
+      },
+      "updated": "2026-11-02: statuses renamed QA→Review, Reported→Done; Stage + Approver folder fields; Deliverables + Open facts lists per client"
     }
   },
-  "per_client_rule": "Each client's accounts.md lists its three ClickUp list ids; scheduled tasks read them from there."
+  "per_client_rule": "Each client's accounts.md lists its three ClickUp list ids; scheduled tasks read them from there.",
+  "status_use": {
+    "engagement deliverables": "Draft → Review → Approved (= signed) → Done (= delivered as PDF)",
+    "marketing posts": "Draft → Review → Approved (qa-log signed) → Scheduled → Published → Done (reported)",
+    "open facts": "Draft → Done (answered in open-facts.md)"
+  },
+  "folder_fields": {
+    "Stage": {
+      "id": "09fbfc6e-1e09-4634-9364-8726ee9af4f5",
+      "type": "drop_down",
+      "options": {
+        "1 Brand": "1567ace5-05fc-40d4-a979-0c3c828b2fcf",
+        "2 Map": "228b1bff-f4cf-424a-b7dc-c1befeb12dee",
+        "3 Design": "13b74a90-e495-4fe3-8de2-2bcf9f0e03f5",
+        "4 Training": "f460ffa4-3e64-4a23-abe1-dbfc91f9ab7e",
+        "Marketing": "3c7f50e2-e881-4f5f-8d63-6fe3e1909b5e",
+        "Engagement": "41f4116c-b79a-46f6-85c4-c2604d0fa158"
+      }
+    },
+    "Approver": {
+      "id": "3abffe08-5d64-4ed6-a2ea-69b1bb3d80b5",
+      "type": "drop_down",
+      "options": {
+        "To confirm": "97af1952-1452-443f-af29-61b654022377",
+        "Menelaos Koulouris": "0da6d3e0-818f-4e37-a6bb-516911ae010e",
+        "Evo (Atelier)": "93cc827a-e1ff-4ffe-8fd0-8050cc405d82",
+        "Stochna founder": "fbfeb389-ca7a-4f0c-b0b3-92864be10f36",
+        "Account manager": "e1722905-e44d-4514-931e-5e2caadf6488"
+      }
+    }
+  }
 }

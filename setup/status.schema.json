@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vios client status",
+  "description": "One file per client at clients/<slug>/status.json. Written by the Vios skills at the end of every step, read by the /vios front door and by scripts/clients.py. The deliverables map mirrors the client's ClickUp '<Client> — Deliverables' list one to one.",
+  "type": "object",
+  "required": ["client", "name", "approver", "proposal", "marketing_loop", "current_stage", "stages", "blockers", "next_action", "updated"],
+  "properties": {
+    "client": { "type": "string", "description": "folder slug under clients/" },
+    "name": { "type": "string" },
+    "approver": { "type": "string", "description": "named person or 'to confirm' (guardrails 10)" },
+    "account_manager": { "type": "string" },
+    "proposal": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "integer" },
+        "status": { "enum": ["not sent", "sent", "signed", "declined", "superseded"] },
+        "doc": { "type": "string", "description": "Claude Doc link or repo path" },
+        "pdf": { "type": "string", "description": "repo path of the client deliverables sheet" }
+      }
+    },
+    "marketing_loop": { "enum": ["in", "out", "to confirm"] },
+    "current_stage": { "enum": ["0 intake", "1 Brand", "2 Map", "3 Design", "4 Training", "closed"] },
+    "stages": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "scope": { "enum": ["in", "out", "revision", "to confirm"] },
+          "status": { "enum": ["not started", "in progress", "review", "signed", "done"] },
+          "deliverables": {
+            "type": "object",
+            "description": "key = deliverable name as the practice ships it",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "status": { "enum": ["not started", "draft", "review", "approved", "done"] },
+                "file": { "type": "string" },
+                "pdf": { "type": "string" },
+                "clickup": { "type": "string", "description": "task id" },
+                "due": { "type": "string", "format": "date" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["what", "holds"],
+        "properties": {
+          "what": { "type": "string" },
+          "holds": { "type": "string", "description": "who has the answer" },
+          "open_fact": { "type": "integer", "description": "row in open-facts.md" },
+          "blocks": { "type": "string" }
+        }
+      }
+    },
+    "next_action": {
+      "type": "object",
+      "required": ["skill", "what"],
+      "properties": { "skill": { "type": "string" }, "what": { "type": "string" } }
+    },
+    "updated": { "type": "string", "format": "date" }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "../../setup/status.schema.json",
+  "client": "stochna",
+  "name": "Stochna",
+  "approver": "to confirm",
+  "account_manager": "Menelaos Koulouris",
+  "proposal": { "version": 0, "status": "not sent", "doc": "", "pdf": "" },
+  "marketing_loop": "in",
+  "current_stage": "2 Map",
+  "stages": {
+    "1 Brand": {
+      "scope": "revision",
+      "status": "in progress",
+      "deliverables": {
+        "Diagnosis": { "status": "not started", "file": "diagnosis.md", "clickup": "1amp9gr23p1" },
+        "Messages and story": { "status": "draft", "file": "brand-book.md", "clickup": "1amp9gr23p2" },
+        "Persona Bible": { "status": "not started", "file": "persona-bible.md", "clickup": "1amp9gr23p3" },
+        "Designer brief": { "status": "not started", "clickup": "1amp9gr23p4" }
+      }
+    },
+    "2 Map": {
+      "scope": "in",
+      "status": "review",
+      "deliverables": {
+        "Observation": { "status": "not started", "file": "journey/observation.md", "clickup": "1amp9gr23p5" },
+        "Journey map": { "status": "review", "file": "journey/journey-map.md", "clickup": "1amp9gr23p6" },
+        "Reasoning Note": { "status": "review", "file": "journey/reasoning-note.md", "clickup": "1amp9gr23p7" },
+        "Handoff to design": { "status": "not started", "clickup": "1amp9gr23p8" }
+      }
+    },
+    "3 Design": {
+      "scope": "in",
+      "status": "not started",
+      "deliverables": {
+        "Design pages": { "status": "not started", "clickup": "1amp9gr23p9" },
+        "Choreography": { "status": "not started", "clickup": "1amp9gr23pa" },
+        "Recovery document": { "status": "not started", "clickup": "1amp9gr23pb" },
+        "Operations brief": { "status": "not started", "clickup": "1amp9gr23pc" }
+      }
+    },
+    "4 Training": {
+      "scope": "to confirm",
+      "status": "not started",
+      "deliverables": {
+        "Training plan": { "status": "not started", "clickup": "1amp9gr23pd" }
+      }
+    },
+    "Engagement": {
+      "scope": "in",
+      "status": "in progress",
+      "deliverables": {
+        "Proposal v1": { "status": "not started", "clickup": "1amp9gr23p0" },
+        "Harvest + case recommendation": { "status": "not started", "clickup": "1amp9gr23pe" }
+      }
+    }
+  },
+  "blockers": [
+    { "what": "Two observed services + 50-review read (Stage 2 cannot close)", "holds": "account manager", "open_fact": 9, "blocks": "Journey map, Reasoning Note sign-off" },
+    { "what": "Approver's name", "holds": "founder", "open_fact": 12, "blocks": "Proposal, Persona Bible" },
+    { "what": "Stage 4 in or out", "holds": "founder", "open_fact": 19, "blocks": "Proposal" },
+    { "what": "Any target date", "holds": "founder", "open_fact": 16, "blocks": "Proposal timeline" }
+  ],
+  "next_action": { "skill": "vios-engage:vios-proposal", "what": "Send the proposal (ask the founder for the approver name and Stage 4 first)" },
+  "updated": "2026-11-02"
+}

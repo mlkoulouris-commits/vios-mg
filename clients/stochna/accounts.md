@@ -13,7 +13,7 @@ Ids only, never secrets. Tokens live in the connector or the password manager.
 | GA4 | G-4L1J6JXDB7 (site) | mkoulouris@gmail.com | live since 2026-10-24 |
 | Metricool brand id | none yet — brand 7633845 is Atelier; Stochna needs its own brand once the agency hands over Instagram/Facebook | | not connected |
 | Windsor.ai connection | — | | plugin not enabled |
-| ClickUp lists | Content 1500500000053386 · Engagement 1500500000053387 · Ads 1500500000053388 | mkoulouris@gmail.com | created 2026-10-29 |
+| ClickUp lists | Content 1500500000053386 · Engagement 1500500000053387 · Ads 1500500000053388 · Deliverables 1500500000076208 · Open facts 1500500000076209 | mkoulouris@gmail.com | created 2026-10-29; Deliverables + Open facts 2026-11-02 |
 | Google Drive folder | CONFIRM link | | |
 | POS | Barsy (being replaced) | Memento | live |
 | Booking system | Memento reservations, `book.stochna.com` | Memento | live |

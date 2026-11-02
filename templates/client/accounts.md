@@ -12,7 +12,7 @@ Ids only, never secrets. Tokens live in the connector or the password manager.
 | Google Ads customer id | | |
 | Metricool brand id | | |
 | Windsor.ai connection | | |
-| ClickUp list | | |
+| ClickUp lists | Deliverables · Open facts · Content · Engagement · Ads (ids) | |
 | Google Drive folder (consents, stills, data) | | |
 | POS | | |
 | Booking system | | |

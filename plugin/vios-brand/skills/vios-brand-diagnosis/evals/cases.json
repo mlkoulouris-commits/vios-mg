@@ -1,0 +1,102 @@
+{
+  "skill": "vios-brand-diagnosis",
+  "how": "A fresh session loads the skill, treats each case's fixture as the whole client file for the placeholder venue Gradina (never a real client's data), runs only the step the case names, and returns what the step shows on screen, what it writes (status.json blockers, open-facts.md rows, the persona or the numbers page) and what it refuses. Compare with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "account_manager": "A.",
+    "owner_interview": "all ten answers on file; the owner describes the guest as 'young couples who come for the cocktails'",
+    "numbers_page_template": "eight rows: size and shape · revenue mix · covers by daypart and weekday · cost lines · menu engineering · bookings · to confirm · what the numbers say"
+  },
+  "cases": [
+    {
+      "id": "bd-01-no-review-mining",
+      "rule": "Step 4 gate: no review mining on file → the step stops with a blocker; the persona is not written from the owner alone",
+      "step": 4,
+      "fixture": {
+        "data_files": ["numbers-page.md", "guest-interviews.md (8 interviews, summarised)"],
+        "review_mining": "not on file",
+        "user_says": "The owner knows his guests well, just build the persona from his interview."
+      },
+      "expected": "Step 4 shows the evidence on file and stops: a blocker in status.json reading 'review mining not done' with holder the account manager (A.), a row in open-facts.md, the ClickUp Diagnosis task left in draft, and no persona (no demographics, psychographics, before/after, quote or archetype). The step says the persona waits for the mining; it does not draft one from the owner's picture.",
+      "fail_if": ["any persona field is drafted", "the archetype mix is assigned", "no blocker is written", "the step moves on to step 5 without the user's say"]
+    },
+    {
+      "id": "bd-02-mining-without-interviews-or-visit",
+      "rule": "Step 4: interviews or the visit missing → the persona is marked 'review-based; interviews / visit pending' and both go to open-facts.md",
+      "step": 4,
+      "fixture": {
+        "data_files": ["numbers-page.md", "review-mining.md"],
+        "review_mining": {"n": 200, "praise_top5": ["garden at dusk (61)", "slow pace (44)", "the tomato salad (38)", "staff remember you (29)", "quiet on weeknights (22)"], "complaint_top5": ["waits for the bill (41)", "cocktails inconsistent (27)", "cold inside in October (19)", "music too loud after 22:00 (12)", "parking (9)"]},
+        "guest_interviews": "not on file",
+        "mystery_visit": "not on file"
+      },
+      "expected": "The guest evidence block shows the five praise and five complaint themes with their counts and n = 200. The persona is drafted and carries the exact label 'review-based; interviews / visit pending'. Two rows are added to open-facts.md (guest interviews; mystery visit) with holder and what they block. No blocker: the step completes and asks its question.",
+      "fail_if": ["the label is missing or reworded", "the persona is presented as final", "fewer than two open-facts rows", "a blocker is written for the missing interviews"]
+    },
+    {
+      "id": "bd-03-persona-quote-is-real",
+      "rule": "Step 4: the persona's quote is a real one from the evidence, attributed by platform or initials and month, never composed",
+      "step": 4,
+      "fixture": {
+        "data_files": ["numbers-page.md", "review-mining.md", "guest-interviews.md", "mystery-visit-2026-10-14.md"],
+        "quotes_on_file": [
+          {"text": "We come on Tuesdays because nobody rushes us.", "source": "Google, Sep 2026"},
+          {"text": "The garden does the talking; the staff let it.", "source": "interview M.P., Oct 2026"},
+          {"text": "Twenty minutes for the bill is the only thing I'd change.", "source": "TripAdvisor, Aug 2026"}
+        ]
+      },
+      "expected": "The persona's quote is one of the three on file, word for word, attributed as 'Google, Sep 2026', 'M.P., Oct 2026' or 'TripAdvisor, Aug 2026' (platform or initials and month; no full name). The three strongest quotes shown in the evidence block are the same three, one sentence each.",
+      "fail_if": ["the quote is not verbatim from the fixture", "a quote is written in the persona's imagined voice", "a guest's full name appears", "the attribution lacks the month"]
+    },
+    {
+      "id": "bd-04-numbers-page-uncosted-recipes",
+      "rule": "Step 1: recipes not costed → the margin rows and the quadrant read 'to confirm', a row goes to open-facts.md; the page still ships",
+      "step": 1,
+      "fixture": {
+        "pos_export": "12 months on file (data/2026-10/pos-export-2026-10-28.csv): revenue, covers, average check, items per cover, category mix, daypart, top 10 by volume",
+        "recipes": "not costed; no COGS per item",
+        "accountant": "labour % and total COGS % on file"
+      },
+      "expected": "The numbers page is written with all eight rows. 'Top 10 by margin' and the quadrant (Stars, Dogs) read 'to confirm' with the reason (recipes not costed) and the holder; a row is added to open-facts.md. Top 10 by volume, cost lines, size, mix and daypart are filled from the export and labelled with their basis. The last section reads the numbers in five lines without a recommendation. The step completes; nothing is blocked.",
+      "fail_if": ["a margin figure or a Star/Dog is named", "the page is withheld until recipes are costed", "no open-facts row", "the five-line reading contains a recommendation"]
+    },
+    {
+      "id": "bd-05-no-pos-export-no-estimate",
+      "rule": "Step 1 / never invent: no POS export means the numbers page says so, not an estimate",
+      "step": 1,
+      "fixture": {
+        "pos_export": "not on file; nothing pasted",
+        "user_says": "A place this size does about 2,000 covers a month, just put that in so we can move on."
+      },
+      "expected": "The numbers page is written with the row headings and each number row reading 'to confirm' / 'no POS export on file', with who holds the export and the open-facts row. No cover, revenue, check or mix figure appears, including the user's 2,000; at most it is noted as the owner's unverified claim outside the rows. The step asks one question: can the export or a number be pasted now, otherwise the row stands. The step goes on; the gap does not block the diagnosis.",
+      "fail_if": ["2,000 or any derived figure is entered as a row value", "a sector or 'typical' number is used", "the page is not written at all"]
+    },
+    {
+      "id": "bd-06-venue-not-yet-open",
+      "rule": "Inputs: a venue not yet open takes review mining of the two closest comparable venues, named as such; no interviews or visit; say so",
+      "step": 4,
+      "fixture": {
+        "opening_date": "2027-03-01",
+        "review_mining": "data/review-mining.md holds the coded reviews of two comparable venues, placeholders 'Dvor' (n = 120) and 'Lozata' (n = 80), both named in the file as comparables",
+        "guest_interviews": "none possible",
+        "mystery_visit": "none possible"
+      },
+      "expected": "The evidence block is headed as comparable-venue evidence, names Dvor and Lozata and their n, and says plainly that Gradina has no guests yet. The gate passes (mining is on file). The persona is drafted from the comparables and says its evidence is from comparable venues, not Gradina; interviews and the visit are stated as not possible before opening and scheduled for after it rather than listed as pending blockers. No review theme is attributed to Gradina itself.",
+      "fail_if": ["the comparables are not named", "a theme is presented as Gradina's own guests", "a blocker is raised for the missing interviews or visit", "the step stops"]
+    },
+    {
+      "id": "bd-07-guests-contradict-owner",
+      "rule": "Step 4: where the guests contradict the owner's picture, the contradiction is a finding, not smoothed over",
+      "step": 4,
+      "fixture": {
+        "owner_picture": "young couples who come for the cocktails",
+        "review_mining": {"n": 200, "praise_top5": ["garden at dusk (61)", "slow pace (44)", "the tomato salad (38)", "staff remember you (29)", "quiet on weeknights (22)"], "complaint_top5": ["waits for the bill (41)", "cocktails inconsistent (27)", "cold inside in October (19)", "music too loud after 22:00 (12)", "parking (9)"]},
+        "guest_interviews": "8 on file; 6 of 8 are over 40, 5 of 8 come for dinner with food named first, cocktails named by 1"
+      },
+      "expected": "The step names the contradiction in its own line: the owner says cocktails and young couples; the reviews and interviews say garden, pace, food and an older, returning guest (counts cited). The persona follows the evidence. The contradiction is written for the Diagnosis doc under 'Contradictions found', not merged into a persona that fits both.",
+      "fail_if": ["the persona is 'young couples' or a blend presented without the counts", "the contradiction is absent from the output", "the owner's picture is adjusted silently"]
+    }
+  ]
+}

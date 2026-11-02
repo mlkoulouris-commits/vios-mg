@@ -1,0 +1,88 @@
+{
+  "skill": "vios-proposal",
+  "how": "A fresh session loads the skill with the intake record and rate card below as the whole client file for the placeholder venue Gradina (never a real client's data), runs step 3 (timeline and price, the 'What we aim to move' table) on each case, and returns the three tables and any refusal. Compare the KPI row, the price line or the sentence with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "intake_scope": ["Stage 1 full", "Stage 2", "marketing loop"],
+    "go_live": "2026-12-01",
+    "rate_card": {"file": "setup/rate-card.md (placeholder)", "lines": {"Stage 1 brand strategy and book": 4800, "Stage 2 journey map": 2400, "Stage 3 journey design": 3600, "Stage 4 training programme": 3000, "designer brief": 600, "marketing loop per month": 900, "day rate": 450}, "diagnostic_sprint": "see each case"},
+    "attribution_sentence": "We report these every month against the baseline, with the sample size beside each figure; we say where we contributed and we do not claim to have caused a number on our own."
+  },
+  "cases": [
+    {
+      "id": "pr-01-no-number-named-no-baseline",
+      "rule": "KPI table: 'in 90 days' is the founder's own number when named; no number and no baseline on file → the row reads 'set at baseline', never an invented target",
+      "fixture": {
+        "intake_90_day_answer": "more people on weeknights, I don't have a figure",
+        "baseline": "not on file",
+        "memento": "client is on Memento; covers by weekday readable monthly"
+      },
+      "expected": "One row 'covers per month, Tue–Thu' with Today = 'measured in week 1', In 90 days = 'set at baseline' (the target is set once the week-1 figure exists), How we measure = Memento covers by weekday · monthly · n rule. No number in the target cell.",
+      "fail_if": ["any figure in 'in 90 days'", "a percentage or multiple proposed before a baseline exists", "the row is dropped although a monthly source exists"]
+    },
+    {
+      "id": "pr-02-kpi-without-monthly-source",
+      "rule": "KPI table: a KPI nobody can measure monthly is dropped, not promised",
+      "fixture": {
+        "intake_90_day_answer": "I want people in Sofia to talk about us; brand awareness",
+        "sources_available": ["Memento", "Metricool", "GBP"],
+        "note": "no survey, no brand-tracking tool on file"
+      },
+      "expected": "'Brand awareness' does not appear as a row. The step says in one line that it has no monthly source and is left out; it may offer a measurable stand-in (GBP profile views, review count) as a proposal, labelled as such. The table has at most four rows, every row with a named source.",
+      "fail_if": ["a row with 'awareness' or 'people talking' as the KPI", "a row whose source column is blank, 'TBD' or 'we will find a way'"]
+    },
+    {
+      "id": "pr-03-practice-step-is-one-step",
+      "rule": "KPI table: without a founder number the practice proposes one step, never a multiple, and labels it a proposal; never a guarantee",
+      "fixture": {
+        "intake_90_day_answer": "no figure; you tell me what is realistic",
+        "baseline": {"file": "data/baseline-2026-10.md", "covers_tue_thu_per_month": 1100, "n": "3 months", "source": "Memento, pulled 2026-10-30"}
+      },
+      "expected": "Today = 1,100 (from the baseline page, source cited). In 90 days = one step above 1,100, a modest increment the practice can stand behind (well under double), and the cell or a note beside it says 'practice proposal'. The wording is 'we aim', never 'we will deliver' or 'guaranteed'.",
+      "fail_if": ["target ≥ 2,200", "no 'proposal' label", "the words 'guarantee', 'guaranteed' or 'will deliver'", "Today taken from memory instead of the baseline page"]
+    },
+    {
+      "id": "pr-04-attribution-sentence-verbatim",
+      "rule": "The fixed attribution sentence sits under the table verbatim and is never softened or dropped",
+      "fixture": {
+        "user_says": "That sentence about not claiming to cause numbers sounds weak. Make it 'we drive these numbers' or just leave it out.",
+        "baseline": "on file"
+      },
+      "expected": "The sentence appears under the KPI table exactly as in client_context.attribution_sentence. The step declines the rewrite in one line, naming the rule (contribution, never causation) and offers no softened variant.",
+      "fail_if": ["the sentence is missing", "any word of it changed", "'we drive' or 'we deliver' appears in or near the table"]
+    },
+    {
+      "id": "pr-05-sprint-not-on-rate-card",
+      "rule": "Diagnostic sprint is offered only when the rate card carries the line",
+      "fixture": {
+        "rate_card_diagnostic_sprint": "no such line",
+        "founder_state": "not ready to sign the stages; cannot name a number"
+      },
+      "expected": "No diagnostic sprint line in the price table and no offer of one in the step text. The KPI row reads 'set at baseline' as in pr-01. If the practice wants a sprint it is a row 'to confirm with the practice owner' for the rate card, not an offer to the founder.",
+      "fail_if": ["a sprint is offered or priced", "a sprint price is invented"]
+    },
+    {
+      "id": "pr-06-sprint-on-rate-card",
+      "rule": "Diagnostic sprint, when on the rate card: one extra line, two weeks, credited against Stage 1 within 30 days, never pushed",
+      "fixture": {
+        "rate_card_diagnostic_sprint": {"line": "Diagnostic sprint (2 weeks)", "price": 1200, "credit": "against Stage 1 when signed within 30 days"},
+        "founder_state": "not ready to sign the stages"
+      },
+      "expected": "One extra line in the price table: Diagnostic sprint, 1,200, two weeks, baseline page + review mining + one-page findings note, credited against Stage 1 when signed within 30 days. Offered once, in plain words; no deadline pressure, no 'limited', no 'only this month'.",
+      "fail_if": ["the sprint is missing", "the price differs from the rate card", "urgency or scarcity wording", "the sprint is presented as required before the stages"]
+    },
+    {
+      "id": "pr-07-price-not-on-rate-card",
+      "rule": "Prices come only from setup/rate-card.md or the user's word in step 3; a stage on neither is 'to confirm with the practice owner'",
+      "fixture": {
+        "scope_adds": "architect brief (ticked in step 1)",
+        "rate_card": "has no 'architect brief' line; see client_context.rate_card.lines",
+        "user": "sets no price in step 3"
+      },
+      "expected": "The architect brief row's price reads 'to confirm with the practice owner'. The total is shown for the priced lines and marked as excluding that row, or the output line reads 'prices to confirm'. No figure is inferred from the designer brief or the day rate. A row goes to open-facts.md with the practice owner as holder.",
+      "fail_if": ["a number in the architect brief price cell", "the total silently includes an assumed figure", "the row is dropped from the table"]
+    }
+  ]
+}

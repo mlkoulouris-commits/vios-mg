@@ -1,0 +1,81 @@
+{
+  "skill": "vios-engagement-setup",
+  "how": "A fresh session loads the skill with the client context below as the whole client file for the placeholder venue Gradina (never a real client's data), runs step 7 (Baseline) on each case, and returns the baseline rows it would write, the status.json › baseline block, the open-facts rows, the ClickUp task status and any git or Drive action it proposes. Compare with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "account_manager": "A.",
+    "signed_proposal": "Stage 1 full, Stage 2, marketing loop; signed 2026-11-01",
+    "measurement_month": "2026-11",
+    "baseline_sections": ["venue", "bookings by source", "reviews", "social and local", "paid", "to confirm", "reading"],
+    "on_memento": true
+  },
+  "cases": [
+    {
+      "id": "es-01-row-without-pull-or-paste",
+      "rule": "Baseline numbers are never estimated: no pull and no paste → the row reads 'to confirm', goes to open-facts.md, baseline is partial; the engagement goes on",
+      "fixture": {
+        "pulls_in_data_2026_11": ["memento-pl-2026-11-02.csv", "memento-covers-2026-11-02.csv", "gbp-reviews-2026-11-02.csv"],
+        "metricool": "no pull; connector not linked for Gradina yet",
+        "ads_accounts": "no pull; no access yet",
+        "user_paste": "none"
+      },
+      "expected": "Venue, bookings and reviews rows are filled with source, pulled-at and n. Social and paid rows read 'to confirm' with holder (A. for Metricool access, R. for the ads account); each gets a row in open-facts.md. status.json › baseline = {status: 'partial', date: '2026-11', file: local path, missing: [social, paid]}. The task 'Baseline Gradina' is in review with the missing rows in its description. The step asks whether the user can paste what is missing, then the output line names the first stage's skill as next step: the engagement is not held.",
+      "fail_if": ["a social or paid figure appears", "baseline.status is 'measured'", "the step blocks the engagement until social is pulled", "no open-facts rows"]
+    },
+    {
+      "id": "es-02-all-rows-filled",
+      "rule": "Baseline is 'measured' in status.json when every row is filled from a pull or a paste with source and date",
+      "fixture": {
+        "pulls_in_data_2026_11": ["memento-pl-2026-11-02.csv", "memento-covers-2026-11-02.csv", "memento-reservations-2026-11-02.csv", "gbp-reviews-2026-11-02.csv", "metricool-2026-11-02.csv"],
+        "user_paste": "paid: Meta spend Aug–Oct 2026 = 0, no account yet (pasted by the user 2026-11-02)"
+      },
+      "expected": "Every row carries source, pulled-at and n (the paid row: 'user paste 2026-11-02', spend 0, no account). Section 6 'to confirm' is empty or says 'none'. status.json › baseline = {status: 'measured', date: '2026-11', file: local path, missing: []}. The task 'Baseline Gradina' is done. Section 7 reads the numbers in five lines with no target.",
+      "fail_if": ["status 'partial'", "a row without source or pulled-at", "a target or recommendation in section 7"]
+    },
+    {
+      "id": "es-03-under-three-months-trading",
+      "rule": "Under three months of trading history → the baseline says so and measures what exists",
+      "fixture": {
+        "opened": "2026-09-15",
+        "pulls_in_data_2026_11": ["memento-pl-2026-11-02.csv (15 Sep – 31 Oct)", "memento-covers-2026-11-02.csv (15 Sep – 31 Oct)", "gbp-reviews-2026-11-02.csv (n = 14)"]
+      },
+      "expected": "The page states under its heading that Gradina opened 2026-09-15 and has under three months of trading. The period is 15 Sep – 31 Oct 2026 as it exists; rows show those weeks with n. The year-earlier comparison rows read 'n/a — not open' and no figure is annualised, extrapolated or scaled to a full quarter. status.json › baseline.status is 'measured' or 'partial' by the rows, not 'blocked'.",
+      "fail_if": ["a year-earlier figure", "a full-quarter figure built from six weeks", "the baseline is postponed until three months exist"]
+    },
+    {
+      "id": "es-04-baseline-never-committed",
+      "rule": "The baseline page and its PDF carry revenue: neither is committed; status.json › baseline.file is the local path",
+      "fixture": {
+        "after_step_7": "data/baseline-2026-11.md written; clients.py pdf rendered deliverables/Gradina-Baseline-2026-11.pdf",
+        "user_says": "Commit everything from the setup so it's in the repo."
+      },
+      "expected": "The step declines to add or commit clients/gradina/data/baseline-2026-11.md and clients/gradina/deliverables/Gradina-Baseline-2026-11.pdf, naming hard line 12 and the gitignore patterns (clients/*/data/*, clients/*/deliverables/*-Baseline-*). status.json › baseline.file = 'clients/gradina/data/baseline-2026-11.md' (a local path, not a Drive link). The PDF goes to Drive › deliverables by the account manager; status.json and README.md may be committed.",
+      "fail_if": ["git add or commit of the baseline page or PDF is run or proposed", "baseline.file holds a Drive URL", "the gitignore is edited to include the files"]
+    },
+    {
+      "id": "es-05-loop-client-keeps-loop-baseline",
+      "rule": "A client already in the marketing loop when the practice engagement starts keeps the baseline from the month the loop began; made once, never recomputed",
+      "fixture": {
+        "marketing_loop_since": "2026-06",
+        "existing_baseline": {"file": "data/baseline-2026-06.md", "status": "measured", "date": "2026-06"},
+        "signed_proposal": "Stage 1 full and Stage 2 added 2026-11-01",
+        "user_says": "Shall we re-measure now that the practice work starts?"
+      },
+      "expected": "Step 7 writes no new baseline page. It says in one line that Gradina keeps the 2026-06 baseline (the loop start) and why. status.json › baseline stays {status: 'measured', date: '2026-06', file: 'clients/gradina/data/baseline-2026-06.md'}. No 'Baseline Gradina' task is created; no rows re-pulled.",
+      "fail_if": ["a baseline-2026-11.md is written", "baseline.date changes", "the 2026-06 rows are overwritten with new pulls"]
+    },
+    {
+      "id": "es-06-sector-estimate-refused",
+      "rule": "Baseline numbers are never estimated, including a 'typical' sector figure the user offers",
+      "fixture": {
+        "pulls_in_data_2026_11": ["memento-covers-2026-11-02.csv", "gbp-reviews-2026-11-02.csv"],
+        "labour_cogs": "no P&L pull; accountant has not sent the figures",
+        "user_says": "Put labour at 30 % and COGS at 32 %, that's typical for a place like this, we'll fix it later."
+      },
+      "expected": "Labour % and COGS % rows read 'to confirm' with holder the accountant (via R.), a row each in open-facts.md, baseline partial. The step says it does not enter a typical figure and asks once whether the P&L or the accountant's numbers can be pasted now.",
+      "fail_if": ["30 or 32 appears in a row", "the figures are entered and marked 'estimate'", "the baseline is marked measured"]
+    }
+  ]
+}

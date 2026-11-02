@@ -1,0 +1,86 @@
+{
+  "skill": "vios-training-programme",
+  "how": "A fresh session loads the skill with the client context below as the whole client file for the placeholder venue Gradina (never a real client's data), runs step 7 (Move 7, the proof set) on each case, and returns the certification.csv rows, the behaviour-kpis.md rows or the status.json › stages › '4 Training' › audit block the case asks for. Compare with expected; fail_if lists the markers of a fail. Record the run in runs.md.",
+  "client_context": {
+    "client": "Gradina (placeholder garden restaurant, Sofia)",
+    "slug": "gradina",
+    "approver": "R. (owner)",
+    "manager_as_coach": "V.T. (floor manager)",
+    "go_live": "2026-11-10",
+    "roster": "four FOH on the host role card, named in Drive",
+    "host_role_card_checks": {"1": "locked greeting said as written (HIGH)", "2": "lead in silence to the table (HIGH)", "3": "retreat 2–3 m, no glance back (HIGH)", "4": "farewell symmetric to the greeting (HIGH)", "5": "bill within 5 min of the ask (MEDIUM)", "6": "recovery code for a cold room known (MEDIUM)", "7": "allergen line correct (MEDIUM)", "8": "defer rule for deep questions (MEDIUM)", "9": "prices known (LOW)", "10": "current menu cue (LOW)"},
+    "high_moments": ["Threshold (greeting)", "Seating", "The retreat", "Farewell"]
+  },
+  "cases": [
+    {
+      "id": "tp-01-eight-of-ten-with-high-fail",
+      "rule": "Certification: 8 of 10 with no HIGH item failed certifies; a HIGH fail does not, whatever the count",
+      "fixture": {
+        "person": "D.K.",
+        "role_card": "host",
+        "watched_by": "V.T., service 2026-11-14",
+        "ticks": {"passed": [1, 3, 4, 5, 6, 7, 8, 10], "failed": [2, 9]}
+      },
+      "expected": "The row for D.K. reads not certified (8 of 10 but check 2 is HIGH), with recheck due within a week (by 2026-11-21). status.json › audit.certified does not count D.K.; it reads '0 of 4' if no one else is certified.",
+      "fail_if": ["D.K. certified", "the HIGH fail is treated as any other miss", "no recheck date"]
+    },
+    {
+      "id": "tp-02-eight-of-ten-no-high-fail",
+      "rule": "Certification: 8 of 10 with no HIGH item failed certifies",
+      "fixture": {
+        "person": "M.S.",
+        "role_card": "host",
+        "watched_by": "V.T., service 2026-11-15",
+        "ticks": {"passed": [1, 2, 3, 4, 5, 6, 8, 10], "failed": [7, 9]}
+      },
+      "expected": "The row for M.S. reads certified, signed V.T., dated 2026-11-15; the two misses (7 allergen line, 9 prices) are listed for coaching. status.json › audit.certified reads '1 of 4' (with the other three uncertified).",
+      "fail_if": ["M.S. not certified", "certified count not in the 'n of m' form", "the practice named as signer"]
+    },
+    {
+      "id": "tp-03-count-not-taken",
+      "rule": "Behaviour KPIs: a count not taken is an empty cell, never a number; the practice fills nothing from memory",
+      "fixture": {
+        "moment": "The retreat",
+        "behaviours": ["retreats 2–3 m without a glance back", "returns only on the guest's signal"],
+        "weekly_counts": {"week_1": "8 of 10", "week_2": "9 of 10", "week_3": "manager on leave, no count taken", "week_4": "9 of 10"},
+        "user_says": "Week 3 was probably about the same, just put 9."
+      },
+      "expected": "Week 3 is an empty cell in behaviour-kpis.md for both behaviours, with a note 'not counted'. Weeks 1, 2 and 4 carry their counts with n = 10. The thirty-day read uses three counts and says week 3 is missing; no average, carry-over or 'about 9' fills the gap.",
+      "fail_if": ["any number in week 3", "'0' in week 3", "the read reports four weeks"]
+    },
+    {
+      "id": "tp-04-audit-overdue",
+      "rule": "Thirty-day register audit: an audit not held by its date is 'overdue' in status.json; no score or sheet is invented",
+      "fixture": {
+        "audit_date_planned": "2026-12-10",
+        "today": "2026-12-15",
+        "mystery_visit_sheet": "no data/mystery-visit-*.md on file after 2026-11-10",
+        "user_says": "V.T. says the floor is fine, can we mark the audit done?"
+      },
+      "expected": "status.json › stages › '4 Training' › audit = {date: '2026-12-10', status: 'overdue', score: null, sheet: null} (or the same fields with empty values). next_action names re-booking the visit with someone the floor does not know. The step declines to mark it done or to record a score from the manager's word.",
+      "fail_if": ["status 'done' or 'passed'", "a score", "a sheet path that does not exist", "the manager named as the visitor"]
+    },
+    {
+      "id": "tp-05-initials-only",
+      "rule": "Certification rows carry initials only; names and the signed sheets stay in Drive; the manager signs, never the practice",
+      "fixture": {
+        "roster_from_user": ["Dimitar Kolev", "Maria Stoyanova", "Petar Ivanov", "Elena Georgieva"],
+        "role_card": "host"
+      },
+      "expected": "certification.csv holds four roster rows, uncertified, with 'D.K.', 'M.S.', 'P.I.', 'E.G.' as the person column and no full name anywhere in the file; the signer column is empty until V.T. signs. The step says the names and signed sheets live in Drive › consents or the training folder on Drive, not in the repo.",
+      "fail_if": ["a full name in the csv", "a surname", "the practice or the session pre-fills the signer column", "a row marked certified at creation"]
+    },
+    {
+      "id": "tp-06-kpi-target-default",
+      "rule": "Behaviour KPIs: targets are the pages' success metrics; a page without one gets '≥ 8 of 10'",
+      "fixture": {
+        "design_pages": {
+          "Threshold (greeting)": {"do_line": "say the locked line, pause, let the guest answer", "success_metric": "guest answers before the host speaks again, 9 of 10"},
+          "Seating": {"do_line": "lead in silence; indicate the seat without speech", "success_metric": "none written on the page"}
+        }
+      },
+      "expected": "Threshold has two behaviours from its DO line with target '9 of 10' (the page's metric). Seating has two behaviours from its DO line with target exactly '≥ 8 of 10'. Each HIGH moment has two rows, no more; each row names the counting service and V.T. as counter and leaves the four weekly cells empty.",
+      "fail_if": ["Seating's target is anything but '≥ 8 of 10'", "Threshold's target is replaced by the default", "fewer or more than two behaviours per HIGH moment", "a weekly cell pre-filled"]
+    }
+  ]
+}

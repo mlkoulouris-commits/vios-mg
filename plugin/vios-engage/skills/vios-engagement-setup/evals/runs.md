@@ -2,4 +2,19 @@
 
 One block per run: date · plugin version · session id · table (case id · expected · got · pass/fail) · what was changed as a result.
 
-No run yet.
+## 2026-11-02 · vios-engage 0.4.0 · session: eval run after benchmark fixes 11ec378
+
+Step 7 run on the Gradina placeholder (signed 2026-11-01, measurement month 2026-11, on Memento); `git check-ignore -v` run in the repo for es-04.
+
+| Case | Expected | Got | Pass/fail | Note |
+| --- | --- | --- | --- | --- |
+| es-01-row-without-pull-or-paste | venue/bookings/reviews filled; social + paid "to confirm" with holders; partial, missing [social, paid]; task review; engagement goes on | venue rows from memento-pl + memento-covers (pulled 2026-11-02, n 3 months), reviews from gbp-reviews; social "to confirm" (A., Metricool access), paid "to confirm" (R., ads account); **bookings also "to confirm"** (no reservations pull in the fixture); baseline {partial, 2026-11, clients/gradina/data/baseline-2026-11.md, missing [bookings, social, paid]}; 3 open-facts rows; task "Baseline Gradina" review with the missing rows; asks once for a paste; end line → `vios-brand-diagnosis` | pass | fail_if clear. Expected text says bookings filled and missing [social, paid]: the fixture has no `memento-reservations` pull (es-02 does), so by "No pull and no paste → the row reads 'to confirm'" bookings is to confirm. Wrong expectation wording, not a regression: add the reservations pull to the fixture or widen `missing` |
+| es-02-all-rows-filled | every row sourced; §6 none; measured, missing []; task done; §7 five lines, no target | all rows carry source · pulled-at · n (paid: "user paste 2026-11-02, spend 0, no account"); §6 "none"; baseline {measured, 2026-11, local path, missing []}; task done; §7 five plain lines, no targets; theme rows wait for the mining and do not make it partial | pass | |
+| es-03-under-three-months-trading | page says opened 2026-09-15, < 3 months; period as it exists; year-earlier n/a; no scaling; status by rows | heading line "opened 2026-09-15; under three months of trading, measured as it exists"; period 15 Sep – 31 Oct 2026 (6.5 weeks, n per row); year-earlier column "n/a — not open"; no annualised or full-quarter figure; status partial by rows (bookings, social, paid to confirm), not blocked | pass | |
+| es-04-baseline-never-committed | hard line 12 named; gitignore check shown; baseline.file local path; PDF to Drive by A. | declines to commit the page and PDF (hard line 12); shows `git check-ignore -v`: `.gitignore:4 clients/*/data/*` → baseline-2026-11.md, `.gitignore:15 clients/*/deliverables/*-Baseline-*` → Gradina-Baseline-2026-11.pdf; baseline.file = clients/gradina/data/baseline-2026-11.md; A. copies the PDF to Drive › deliverables; the rest of the setup (README, accounts, status, open-facts) may be committed on the user's word | pass | nothing committed in the run |
+| es-05-loop-client-keeps-loop-baseline | no new page; keeps 2026-06; status unchanged; no task; no re-pull | one line: Gradina keeps the 2026-06 baseline (loop start; "made once, never recomputed"); no baseline-2026-11.md; baseline stays {measured, 2026-06, clients/gradina/data/baseline-2026-06.md}; no "Baseline Gradina" task; no pulls | pass | re-measure request declined; the monthly report keeps comparing to 2026-06 |
+| es-06-sector-estimate-refused | labour/COGS "to confirm" (accountant via R.); open-facts rows; partial; refuse typical figure; ask once | labour % and COGS % = "to confirm" (holder accountant via R.), one open-facts row each; no 30 / 32 anywhere, nothing marked "estimate"; baseline partial (revenue, check, mix also to confirm: no P&L pull); one question: "can the P&L or the accountant's figures be pasted now?" | pass | skill: "Baseline numbers are never estimated." |
+
+6/6 pass. Nothing changed as a result; es-01's expected wording flagged for the case owner.
+
+Case fix 2026-11-02 (docs/evals.md › a failed case is a regression or a wrong expectation): es-01 expected text corrected: bookings 'to confirm' (no reservations pull in the fixture); pass stands.

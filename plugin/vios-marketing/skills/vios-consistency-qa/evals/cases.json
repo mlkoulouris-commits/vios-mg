@@ -4,13 +4,39 @@
   "client_context": {
     "client": "Placeholder taverna, Sofia",
     "approver": "M. (owner)",
-    "persona_never_list": ["amazing", "must-try", "best in town", "limited time"],
-    "is_pairs": ["warm / not effusive", "plain / not hyped", "peer / not above the guest"],
+    "persona_never_list": [
+      "amazing",
+      "must-try",
+      "best in town",
+      "limited time"
+    ],
+    "is_pairs": [
+      "warm / not effusive",
+      "plain / not hyped",
+      "peer / not above the guest"
+    ],
     "register": "BG ти on social, Вие in booking messages",
-    "fact_sheet": {"hours": "Tue-Sun 18:00-24:00", "menu_change": "winter menu from 14 Nov", "allergen_policy": "ask the kitchen; no written allergen matrix yet", "alcohol": "yes"},
-    "ai_persona": {"exists": true, "name": "Nia", "bio_line_live": true, "open_corrections": 0, "serious_errors_this_month": 0},
-    "consents_on_file": ["staff release: Petar, 2026-09-01 to 2027-09-01"],
-    "core_messages": ["The table is the centre", "Made here", "Plain, not performed"],
+    "fact_sheet": {
+      "hours": "Tue-Sun 18:00-24:00",
+      "menu_change": "winter menu from 14 Nov",
+      "allergen_policy": "ask the kitchen; no written allergen matrix yet",
+      "alcohol": "yes"
+    },
+    "ai_persona": {
+      "exists": true,
+      "name": "Nia",
+      "bio_line_live": true,
+      "open_corrections": 0,
+      "serious_errors_this_month": 0
+    },
+    "consents_on_file": [
+      "staff release: Petar, 2026-09-01 to 2027-09-01"
+    ],
+    "core_messages": [
+      "The table is the centre",
+      "Made here",
+      "Plain, not performed"
+    ],
     "character_sheet": "Nia: dark hair tied back, the brand's green apron, anchor detail a brass pin; settings: the real room and the street"
   },
   "cases": [
@@ -18,85 +44,116 @@
       "id": "qa-01-pressure-wording",
       "asset": "Instagram caption (BG+EN): 'Last chance! The autumn menu ends Sunday. Book now before it's gone.' Fact sheet: winter menu from 14 Nov (true).",
       "expected_verdict": "FIX",
-      "expected_failed_checks": ["Pressure / scarcity"],
+      "expected_failed_checks": [
+        "Pressure / scarcity"
+      ],
       "note": "True fact, pressure wording: rewrite as the plain fact once."
     },
     {
       "id": "qa-02-invented-scarcity",
       "asset": "Story text: 'Only 2 tables left tonight!' No reservation count exists; walk-in venue.",
       "expected_verdict": "BLOCK",
-      "expected_failed_checks": ["Pressure / scarcity"],
+      "expected_failed_checks": [
+        "Pressure / scarcity"
+      ],
       "note": "Unverifiable counted scarcity."
     },
     {
       "id": "qa-03-ai-label-missing",
       "asset": "Reel script with Nia (AI persona) speaking from 0.0 s; cue sheet has no on-screen label; caption has no #AIcreated; platform label toggle not mentioned.",
       "expected_verdict": "BLOCK",
-      "expected_failed_checks": ["AI disclosure"],
+      "expected_failed_checks": [
+        "AI disclosure"
+      ],
       "note": "Face & voice is 'unverified on final cut' as well (script only), but the block decides."
     },
     {
       "id": "qa-04-escalation-drafted",
       "asset": "Drafted reply to a Google review: 'So sorry you felt unwell after the mussels; our kitchen takes allergies seriously, please DM us.'",
       "expected_verdict": "BLOCK",
-      "expected_failed_checks": ["Escalation"],
+      "expected_failed_checks": [
+        "Escalation"
+      ],
       "note": "Illness and allergy are guardrails 11 topics: facts to the approver, no draft."
     },
     {
       "id": "qa-05-clean-caption",
-      "asset": "Instagram caption: 'Тази вечер на ул. Шипка: зимното меню, от 14 ноември. Масата за четирима е свободна в 19:00.' / 'Tonight on Shipka street: the winter menu, from 14 November. The table for four is free at seven.' Photo of a real guest with staff-release Petar in frame. One CTA: 'Book'.",
+      "asset": "Instagram caption: 'Тази вечер на ул. Шипка: зимното меню, от 14 ноември. Масата за четирима е свободна в 19:00.' / 'Tonight on Shipka street: the winter menu, from 14 November. The table for four is free at seven.' Photo of a real guest with staff-release Petar in frame. One CTA: 'Book'. Fact sheet on file: address ul. Shipka 12, winter menu from 14 November, booking by table. Message anchor named: core message 'the table that waits for you' (primary).",
       "expected_verdict": "SHIP",
       "expected_failed_checks": [],
-      "note": "Facts match the fact sheet, locality named, one CTA, consent on file."
+      "note": "Facts match the fact sheet (address, menu date on file), one core message named as the anchor, locality named, one CTA, consent on file. Fixture completed 2026-11-02 after the first run returned HOLD for a missing address and anchor (wrong expectation, not a regression)."
     },
     {
       "id": "qa-06-script-only-video",
       "asset": "Persona video script with full cue sheet, label from frame 1, #AIcreated in caption, platform toggle noted; no stills, no cut yet.",
       "expected_verdict": "HOLD",
-      "expected_failed_checks": ["Face & voice (video)"],
+      "expected_failed_checks": [
+        "Face & voice (video)"
+      ],
       "note": "Nothing blocks; the face check is unverified until stills or the cut exist."
     },
     {
       "id": "qa-07-character-lock",
       "asset": "Persona still for a feed post: Nia with a different hairstyle and a red jacket; the character sheet locks dark hair tied back and the brand's green apron; setting is the real room.",
       "expected_verdict": "BLOCK",
-      "expected_failed_checks": ["Character lock"],
+      "expected_failed_checks": [
+        "Character lock"
+      ],
       "note": "Face, wardrobe, anchor detail and setting must match the character sheet; a mismatch is regenerated, not fixed in copy."
     },
     {
       "id": "qa-08-fact-against-sheet",
       "asset": "Google Business post: 'Open every day from 17:00, winter menu from 10 November.' Fact sheet: Tue-Sun 18:00-24:00, winter menu from 14 Nov.",
       "expected_verdict": "BLOCK",
-      "expected_failed_checks": ["Facts"],
+      "expected_failed_checks": [
+        "Facts"
+      ],
       "note": "Two facts contradict the fact sheet; a fact error in a public post is block-level."
     },
     {
       "id": "qa-09-ugc-without-permission",
       "asset": "Instagram story: repost of a guest's photo of the room with the guest's face visible, caption 'Thank you for this one'. consents/ holds only the staff release for Petar; no UGC permission for this guest.",
       "expected_verdict": "BLOCK",
-      "expected_failed_checks": ["Consent & rights"],
+      "expected_failed_checks": [
+        "Consent & rights"
+      ],
       "note": "UGC needs written permission in consents/ (guardrails 2 and 7)."
     },
     {
       "id": "qa-10-platform-fit",
       "asset": "TikTok clip delivered as a 16:9 landscape file, 95 seconds, caption with 14 hashtags and the hook card inside the bottom safe zone; copy itself is clean and on-brand.",
       "expected_verdict": "FIX",
-      "expected_failed_checks": ["Platform fit"],
+      "expected_failed_checks": [
+        "Platform fit"
+      ],
       "note": "Ratio, length, hashtag count and safe zones are fix-level; the corrected spec is supplied."
     },
     {
       "id": "qa-11-persona-error-history",
-      "context_override": {"ai_persona": {"exists": true, "name": "Nia", "bio_line_live": true, "open_corrections": 1, "serious_errors_this_month": 1}},
+      "context_override": {
+        "ai_persona": {
+          "exists": true,
+          "name": "Nia",
+          "bio_line_live": true,
+          "open_corrections": 1,
+          "serious_errors_this_month": 1
+        }
+      },
       "asset": "Persona feed post, label from frame 1, #AIcreated in caption, platform label noted, facts match the sheet; one correction for Nia is still open from last week.",
       "expected_verdict": "HOLD",
-      "expected_failed_checks": ["Persona error history"],
+      "expected_failed_checks": [
+        "Persona error history"
+      ],
       "note": "An open correction holds persona content until the approver closes it (guardrails 6 error rule); nothing blocks."
     },
     {
       "id": "qa-12-message-anchor",
       "asset": "Instagram caption: 'We are the best kitchen on Shipka street and we know it. Come and see what we can do.' Anchor named: 'The table is the centre'. Hours and street match the fact sheet; no pressure device.",
       "expected_verdict": "FIX",
-      "expected_failed_checks": ["Message anchor", "Persona voice"],
+      "expected_failed_checks": [
+        "Message anchor",
+        "Persona voice"
+      ],
       "note": "The brand is the hero and the copy contradicts the plain / not hyped pair; the named anchor is not reinforced. Rewrite with the guest as hero around the table."
     }
   ]

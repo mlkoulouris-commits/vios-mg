@@ -21,7 +21,7 @@ The five moves at the close of an engagement, one to three days of practitioner 
 
 ## Ask only when necessary; never invent
 
-- A missing stage harvest or retrospective is not reconstructed: the step records **"not held"**, a row in `[client]/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`, and goes on with the harvests that exist.
+- A missing stage harvest or retrospective is not reconstructed: the step records **"not held"**, a row in `[client]/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and, when it blocks the next action or the stage from closing, a blocker in `status.json`, and goes on with the harvests that exist.
 - The second engagement that promotes a pattern, a refinement's second engagement, a case lesson, a version number: only from `docs/dry-run-*.md`, `docs/method.md`, `docs/cases.md`, the stage harvests or the user. None on file → the row stays *candidate* / *held* / *to confirm*; never promoted on a guess.
 - The retrospective and the increment are the practitioner's and the owner's words: the practitioner's view is taken as given at step 6, the increment is proposed at step 7 and never made. A question is asked once; never ask what `status.json`, `open-facts.md` or the archive already answers.
 

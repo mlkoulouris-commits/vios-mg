@@ -20,7 +20,7 @@ The six moves at the start of an engagement, from the first conversation to the 
 
 ## Ask only when necessary; never invent
 
-- The founder's four answers, the scope ratification and the move 6 confirmation are the founder's words, never drafted by the practice. Founder absent → the step records **"not held"**, a row in `[client]/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and a blocker in `status.json`; the record says *to confirm* with the question.
+- The founder's four answers, the scope ratification and the move 6 confirmation are the founder's words, never drafted by the practice. Founder absent → the step records **"not held"**, a row in `[client]/open-facts.md` (fact · what it blocks · who holds it · asked on · due) and, when it blocks the next action or the stage from closing, a blocker in `status.json`; the record says *to confirm* with the question.
 - Approver (hard line 10), dates, partners, prices: only from the call, the files or the user. A missing one is one question if the step cannot proceed, otherwise "to confirm" and a row. A question is asked once; never ask what `status.json`, `open-facts.md` or an existing `[client]/` already answers.
 
 ## After every step

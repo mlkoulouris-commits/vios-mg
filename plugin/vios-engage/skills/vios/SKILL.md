@@ -9,6 +9,7 @@ One screen, one question. The user should never need to remember which skill com
 
 ## Read first
 
+- `python scripts/release.py status` once per session: when an installed plugin is behind the repo version, say so in one line before the card ("engage installed 0.2.3, repo 0.4.0: the new steps load after the upload") and go on; for the steps the install lacks, follow the repo's `SKILL.md` text read from disk.
 - `scripts/clients.py status <slug>` (run it; it renders the card from `clients/<slug>/status.json` and counts open rows in `open-facts.md`). No `status.json` → say so and offer `clients.py new <slug> "<Name>"` or, for an existing folder, write one from the README's intake record.
 - `setup/clickup.json` › the client's Deliverables and Open facts list ids; `clickup_filter_tasks` on the Deliverables list for anything in **review** (awaiting the user's sign-off).
 - `vios-core:vios-guardrails` stays loaded for any client work that follows.

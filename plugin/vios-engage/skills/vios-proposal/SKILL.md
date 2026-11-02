@@ -56,9 +56,9 @@ Price per stage and per brief from `setup/rate-card.md`; day rate for anything o
 | --- | --- | --- | --- |
 | covers per month | baseline figure, or "measured in week 1" | the founder's wanted number, or a step the practice can stand behind | source · monthly · n rule |
 
-Rules of the table: every KPI has a source the practice can read every month (Memento, POS export, GBP, Metricool, the booking book); "today" comes from the baseline page or reads "measured in week 1", never from memory; "in 90 days" is the founder's own number when they named one, otherwise the practice proposes one step (never a multiple) and says it is a proposal; a KPI nobody can measure monthly is dropped, not promised. Under the table one sentence, fixed: *"We report these every month against the baseline, with the sample size beside each figure; we say where we contributed and we do not claim to have caused a number on our own."* The 90 days run from go-live (first published post, or the first stage sign-off for a practice-only engagement), the date written in the table's heading.
+Rules of the table: every KPI has a source the practice can read every month (Memento, POS export, GBP, Metricool, the booking book); "today" comes from the baseline page or reads "measured in week 1" ("measured in month 1 after opening" for a venue not yet trading); the number the founder claimed at intake stays in the intake record and never fills "today"; "in 90 days" is the founder's own number when they named one, otherwise the practice proposes one step (never a multiple) and says it is a proposal, or reads "set at baseline" with the reasoning in `kpis[].target_note`; a KPI nobody can measure monthly is dropped from the table and named under it in one line, *"Not promised: <KPI>, no monthly source"*, with an open-facts row when a source could be built. Under the table one sentence, fixed: *"We report these every month against the baseline, with the sample size beside each figure; we say where we contributed and we do not claim to have caused a number on our own."* The 90 days run from go-live, the date written in the table's heading: the first published post for a marketing client, the first stage sign-off for a practice-only engagement, or opening day for a venue not yet trading.
 
-**Diagnostic sprint** (rate card; only when the line exists there): offered when the founder is not ready to sign the stages, or cannot name a number. Two weeks, the baseline page plus review mining plus a one-page findings note, credited against Stage 1 when signed within 30 days. Shown as one extra line in the price table, never pushed (hard line 1).
+**Diagnostic sprint** (rate card; only when the line exists there, and only for a venue that trades, since it reads a baseline and reviews): offered when the founder is not ready to sign the stages, or cannot name a number. Two weeks, the baseline page plus review mining plus a one-page findings note, credited against Stage 1 when signed within 30 days. Shown as one extra line in the price table, never pushed (hard line 1).
 
 Show the three tables. Ask: *"Dates, prices and the four KPIs right? Set any 'to confirm' now, or leave for the owner."* A price the user sets here goes into the proposal, not into the rate card; say so.
 
@@ -69,7 +69,7 @@ Now write the Claude Doc "<Client> — Proposal v1 (date)" via the docs connecto
 1. **What you told us** (one paragraph in the founder's words, from move 1 of the intake).
 2. **What we propose**: the stages from step 1, deliverables from step 2, approver per stage. Out of scope named.
 3. **What you supply**: the "client supplies" column, by stage.
-4. **What we aim to move**: the KPI table from step 3, the go-live date, the fixed attribution sentence.
+4. **What we aim to move**: the KPI table from step 3, the go-live date, the fixed attribution sentence, the "Not promised" line when a KPI was dropped.
 5. **Timeline**: from step 3, with the retrospective and the case window shown.
 6. **Price**: from step 3, one total, terms; the diagnostic sprint line when offered.
 7. **How we work**: one writer per deliverable, named sign-off at each stage, drafts never published, the client's data stays in the client's workspace, the harvest at close and what the practice keeps (patterns, never the client's material).
@@ -79,9 +79,9 @@ Ask: *"Read the doc. Change anything before the client PDF?"*
 
 ## Step 5 — The client PDF
 
-"<Client> — What you get" (1–2 pages), from `templates/proposal/deliverables-sheet.md` filled with steps 1–3: deliverables table, what the client supplies, the KPI table with its sentence, timeline, total, signature line. No method prose, no practice history. Render with the Adobe `markdown_to_pdf` tool (fallback: hand the filled markdown to the user to print) and save as `[client]/proposal-v1-deliverables.pdf` beside the markdown.
+"<Client> — What you get" (a cover and up to three pages), from `templates/proposal/deliverables-sheet.md` filled with steps 1–3: deliverables table, what the client supplies, the KPI table with its sentence, timeline, total, signature line. No method prose, no practice history. Write `[client]/proposal-vN-deliverables.md` and render it with `python scripts/clients.py pdf <slug> proposal-vN-deliverables.md "<Client>-What-you-get-vN"` → `[client]/deliverables/`.
 
-Then: a line in `[client]/README.md` › Intake record pointing at the doc and the PDF with status (sent · signed · declined · superseded); `status.json` › `kpis` written from the table (name, baseline, target, due, how_measured, attribution "contribution") so the monthly report and the harvest read the same promise; and the ClickUp task "Proposal <Client> — awaiting signature" in the department's setup list. The user sends the PDF; the practice never emails a client.
+Then: `status.json` › `proposal` (`version` N, `status` sent, `doc`, `pdf`; the previous version moves into `proposal.history[]` as superseded) and `kpis` written from the table (name, baseline, target, target_note where used, due, how_measured, attribution "contribution") so the monthly report and the harvest read the same promise; a line in `[client]/README.md` › Intake record pointing at the doc and the PDF; and the ClickUp task "Proposal <Client> vN — awaiting signature" in the client's Deliverables list (Stage = Engagement, Approver = the founder), **review** until signed. The user sends the PDF; the practice never emails a client.
 
 ## Rules
 

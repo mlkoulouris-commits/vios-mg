@@ -15,7 +15,12 @@
         "version": { "type": "integer" },
         "status": { "enum": ["not sent", "sent", "signed", "declined", "superseded"] },
         "doc": { "type": "string", "description": "Claude Doc link or repo path" },
-        "pdf": { "type": "string", "description": "repo path of the client deliverables sheet" }
+        "pdf": { "type": "string", "description": "repo path of the client deliverables sheet" },
+        "history": {
+          "type": "array",
+          "description": "earlier versions, moved here when a new version is written: {version, status, doc, pdf, date}",
+          "items": { "type": "object", "properties": { "version": { "type": "integer" }, "status": { "type": "string" }, "doc": { "type": "string" }, "pdf": { "type": "string" }, "date": { "type": "string" } } }
+        }
       }
     },
     "marketing_loop": { "enum": ["in", "out", "to confirm"] },
@@ -24,7 +29,7 @@
       "description": "The month-0 measurement (templates/client/data/baseline.md), made by vios-engagement-setup step 7 before any deliverable; the monthly report compares against it.",
       "required": ["status"],
       "properties": {
-        "status": { "enum": ["not started", "in progress", "measured", "partial"] },
+        "status": { "enum": ["not started", "in progress", "measured", "partial", "not trading"] },
         "date": { "type": "string", "description": "measurement date YYYY-MM-DD; the period is the three full months before it" },
         "file": { "type": "string", "description": "repo path, clients/<slug>/data/baseline-YYYY-MM.md" },
         "missing": { "type": "array", "items": { "type": "string" }, "description": "rows that read 'to confirm'" }
@@ -39,7 +44,8 @@
         "properties": {
           "name": { "type": "string", "description": "covers per month, average check, Google rating, reach, labour %, bookings by own channel ..." },
           "baseline": { "type": ["number", "string"], "description": "number from the baseline page, or 'measured in week 1' / 'to confirm'" },
-          "target": { "type": ["number", "string"], "description": "the 90-day (or stated) target, absolute or '+10 %'" },
+          "target": { "type": ["number", "string"], "description": "the 90-day (or stated) target, absolute or '+10 %', or 'set at baseline'; short, the card prints it" },
+          "target_note": { "type": "string", "description": "the sentence behind a short target, when one is needed" },
           "due": { "type": "string", "description": "YYYY-MM-DD, normally 90 days after go-live" },
           "how_measured": { "type": "string", "description": "source and n rule, e.g. 'Memento P&L, monthly covers'" },
           "latest": { "type": ["number", "string"], "description": "last reported value" },

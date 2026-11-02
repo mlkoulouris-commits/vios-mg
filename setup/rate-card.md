@@ -11,7 +11,7 @@ Prices in EUR, excluding VAT. `vios-proposal` prices only from this file. **Set 
 | Stage 4 — Training programme | 4,500 | per venue | full stack for an opening; onboarding plan only for a running venue: 2,500; both include certification, four weeks of behaviour counts and the thirty-day register audit |
 | Quarterly service audit | 600 | per visit | a scored mystery visit on the house frame + a one-page read against the behaviour KPIs; standing option after Stage 4 (quality plan WS5; owner to confirm or strike) |
 | Guest research pack | 900 | per venue | review mining (last 200 reviews) + 8–10 guest interviews + one mystery visit; inside Stage 1 by default (no extra charge); sold alone to marketing-only clients and as the yearly re-read (quality plan WS2; owner to confirm or strike) |
-| Diagnostic sprint | 1,500 | per venue, two weeks | baseline page + review mining + one-page findings; credited against Stage 1 when signed within 30 days; offered, never pushed (quality plan WS3, open question 1: owner to confirm or strike) |
+| Diagnostic sprint | 1,500 | per venue, two weeks | baseline page + review mining + one-page findings; trading venues only (nothing to read before opening); credited against Stage 1 when signed within 30 days; offered, never pushed (quality plan WS3, open question 1: owner to confirm or strike) |
 | Partner brief (architect, interior, operations) | 900 | each | designer brief is inside Stage 1 |
 | Marketing loop | 1,500 | per month | the five scheduled tasks, calendar, copy, QA, ads management, monthly report; ad spend not included |
 | Day rate outside scope | 600 | per day | |

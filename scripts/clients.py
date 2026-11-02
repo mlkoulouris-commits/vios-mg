@@ -63,7 +63,7 @@ def card(slug: str) -> str:
     kpis = s.get("kpis") or []
     kpi_line = (
         "KPIs: " + " · ".join(
-            f"{k['name']} {k.get('baseline', '?')} → {k['target']}" + (f" (now {k['latest']})" if k.get("latest") not in (None, "") else "")
+            f"{k['name']} {k.get('baseline', '?')} → {str(k['target'])[:24]}" + (f" (now {k['latest']})" if k.get("latest") not in (None, "") else "")
             for k in kpis[:4]
         ) + (f" +{len(kpis)-4} more" if len(kpis) > 4 else "")
     ) if kpis else "KPIs: none promised yet"
@@ -116,8 +116,10 @@ def check(slug: str) -> list[str]:
 
 
 def facts_payload(slug: str) -> dict:
-    """task.create_many body for the client's '<Client> — Open facts' list. Names: '#n [holder] fact', cut at 110 chars."""
-    tasks = []
+    """task.create_many body for the client's '<Client> — Open facts' list. Names: '#n [holder] fact', cut at 110 chars.
+    Rows the practice itself holds (holder mentions the practice, Vios or the practice owner) go to 'department_tasks'
+    for the 'Department — Setup & SOP' list instead: they are not the client's to answer."""
+    tasks, dept = [], []
     for f in open_facts(slug):
         name = f"#{f['n']} [{f['holds']}] {f['fact']}"
         if len(name) > 110:
@@ -126,8 +128,8 @@ def facts_payload(slug: str) -> dict:
         if re.match(r"^\d{4}-\d{2}-\d{2}$", f["due"]):
             t["due_date"] = f["due"] + "T00:00:00Z"
             t["due_date_time"] = False
-        tasks.append(t)
-    return {"tasks": tasks}
+        (dept if re.search(r"practice|vios", f["holds"], re.I) else tasks).append(t)
+    return {"tasks": tasks, "department_tasks": dept}
 
 
 def new_client(slug: str, name: str) -> None:
@@ -139,6 +141,10 @@ def new_client(slug: str, name: str) -> None:
     s = json.loads(read(p))
     s.update({"client": slug, "name": name, "updated": date.today().isoformat()})
     p.write_text(json.dumps(s, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    for md in dest.rglob("*.md"):
+        t = read(md)
+        if "<Client>" in t or "<slug>" in t:
+            md.write_text(t.replace("<Client>", name).replace("<slug>", slug), encoding="utf-8")
     print(f"created {dest}")
 
 

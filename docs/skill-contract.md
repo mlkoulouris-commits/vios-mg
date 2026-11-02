@@ -13,7 +13,7 @@ Every Vios skill that talks to the user follows this. It changes how a skill *ta
 
 - A fact the client folder does not hold is **not written as if known**. Three outcomes, in this order:
   1. The step cannot proceed without it and the user can answer now → **one question** to the user.
-  2. The step can proceed with a gap → write **"to confirm"** in the deliverable, add a row to `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due), add a blocker to `status.json`, and go on.
+  2. The step can proceed with a gap → write **"to confirm"** in the deliverable, add a row to `clients/<slug>/open-facts.md` (fact · what it blocks · who holds it · asked on · due), and go on. A **blocker** in `status.json` only when the gap blocks the next action or the stage from closing: the card shows at most three, so a blocker is the thing the account manager must chase today, not every open row. A row the practice itself holds (price, access, a decision of the owner) goes to the Department list, not the client's Open facts (`clients.py facts` routes it).
   3. The method itself needs the founder's words (interview answers, signatures, decisions) → never drafted by the practice; a row in `open-facts.md` and the deliverable says *to confirm* with the question.
 - A question is asked **once**. The skill never asks what `status.json`, `open-facts.md` or the client folder already answers.
 - Dates, prices, names, numbers: only from the files or the user. A missing timeline is a question, not a guess (the proposal skill, step 3, is the pattern).

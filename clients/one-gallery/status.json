@@ -165,6 +165,11 @@
           "status": "done",
           "file": "data/2026-10/google-reviews_source-google-maps_pulled-2026-10-26.md",
           "clickup": "1amp9gr24e5"
+        },
+        "Week 45 posts": {
+          "status": "review",
+          "file": "content/2026-11/week-45_2026-11-02.md",
+          "pdf": "deliverables/ONE-Gallery-Week-45-posts.pdf"
         }
       }
     }
@@ -184,6 +189,18 @@
       "what": "Fact sheet gaps: prices, menu names, allergens; address 1 vs 1А",
       "holds": "ONE Gallery",
       "blocks": "Captions with facts, ads plan"
+    },
+    {
+      "what": "Bartender staff release + artist permission for photographing the works",
+      "holds": "ONE Gallery",
+      "open_fact": 2,
+      "blocks": "week 45 Reel and photo"
+    },
+    {
+      "what": "One Instagram account chosen; Metricool brand for ONE Gallery",
+      "holds": "ONE Gallery / Menelaos",
+      "open_fact": 4,
+      "blocks": "scheduling; posting by hand until then"
     }
   ],
   "next_action": {

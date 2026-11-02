@@ -1,0 +1,27 @@
+---
+name: vios-weekly-content
+description: Every Monday, draft this week's posts per client from the month's calendar, QA them, put one ClickUp task per post in Review and render a weekly pack PDF for the approver.
+---
+
+You are the Vios Marketing department's content lead preparing this week's social posts for every client that has a content calendar.
+
+Setup: the repo C:\Users\mkoul\Documents\GitHub\vios-ops is the system of record. Read its CLAUDE.md and docs/skill-contract.md, then load vios-core:vios-guardrails, vios-marketing:vios-persona-voice and vios-marketing:vios-consistency-qa.
+
+Clients: every folder under clients/ that has status.json (skip folders whose README says ARCHIVED or DEMO). For each, read status.json, accounts.md, persona-bible.md, fact-sheet.md, calendar-sources.md and the current month's calendar: the newest of clients/<slug>/data/<YYYY-MM>/calendar_*.md, clients/<slug>/content/<YYYY-MM>/calendar_*.md or clients/<slug>/calendar-<YYYY-MM>*.md. No calendar for the current month → one ClickUp task in the client's Content list named "Weekly content blocked: no calendar for <month>", status review, and move on.
+
+The week: Monday (today) to Sunday. Take every calendar row dated in that week (feed posts, Google posts, stories with a planned idea). Rows already marked drafted or scheduled are re-read, not rewritten, unless the calendar says "idea".
+
+Per post, in the persona voice (BG first, EN second, as the Persona Bible's address register says): the caption, the hook line, the asset note (what to shoot or reuse; consent needed), the Anchor/Block line, and the hard-line check. Facts (hours, prices, dish and drink names, dates, name days) only from fact-sheet.md, calendar-sources.md and the calendar itself; a fact not there is written "to confirm" and becomes a row in clients/<slug>/open-facts.md, never invented. Hard-line 11 topics are never drafted. Then run vios-consistency-qa on the batch and append one row per post to clients/<slug>/qa-log.csv (signed_off_at empty; the approver fills it).
+
+Output, per client:
+1. Write clients/<slug>/content/<YYYY-MM>/week-<ISO week>_<YYYY-MM-DD>.md: a title line "<Client> — Week <n> posts (<Mon date>–<Sun date>)", a one-line plan, then one section per post (date · platform · pillar · format · caption BG · caption EN · hook · asset · anchor/block · QA verdict).
+2. Render the pack: `python scripts/clients.py pdf <slug> content/<YYYY-MM>/week-<ISO week>_<YYYY-MM-DD>.md "<Client>-Week-<n>-posts" "Weekly posts"` (run from the repo root) and send the PDF to the user.
+3. ClickUp Review (the approver approves in ClickUp, not in chat): `clickup_execute_operator`, model `task`, operator `create_many`, ONE call for the client's Content list (list id from the "ClickUp lists" row of accounts.md); call `clickup_get_operators` first if the parameters are not yet known in this session. Before creating, `clickup_filter_tasks` on that list for the same names; a task that already exists is updated with `clickup_update_task` instead of duplicated.
+   - Per post: name "<YYYY-MM-DD> · <platform> · <pillar> · <working title>"; description = the captions (BG, EN, marked DRAFT), "Asset: …", "Anchor: … · Block: …", "QA: <verdict>"; due date = the publish date; `status_label: "review"`; assigned to me; custom fields from C:\Users\mkoul\Documents\GitHub\vios-ops\setup\clickup.json › folder_fields: Stage (09fbfc6e-1e09-4634-9364-8726ee9af4f5) = "Marketing" (3c7f50e2-e881-4f5f-8d63-6fe3e1909b5e); Approver (3abffe08-5d64-4ed6-a2ea-69b1bb3d80b5) = the option whose name matches `approver` in status.json, else "To confirm" (97af1952-1452-443f-af29-61b654022377).
+   - One summary task "Week <n> pack — approve" with the PDF path and the post list, due Tuesday.
+
+Bookkeeping, per client: set `updated` in status.json to today. If blocked (no calendar, empty persona-bible.md, no accounts.md), add one blocker to status.json › blockers as {"what": "<what is missing>", "holds": "<who can supply it>", "blocks": "weekly content"} unless an equal `what` is already there, and create no post tasks for that client. A client with no Metricool brand id still gets the pack and the tasks; the pack's plan line says "posting by hand until Metricool is connected".
+
+Writes: only repo files under clients/<slug>/ and ClickUp tasks. Nothing to Metricool, Instagram, Facebook or Google: no scheduling, no drafts there, no upload. Never commit or push.
+
+End with exactly one line per client: "<n> posts in Review for <approver>, pack <PDF path>: https://app.clickup.com/1500500000004655/v/li/<Content list id>" (a blocked client: "0 posts in Review for <approver>: <reason>").
